@@ -1,0 +1,754 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 10.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     33705,        745]
+NotebookOptionsPosition[     33022,        718]
+NotebookOutlinePosition[     33382,        734]
+CellTagsIndexPosition[     33339,        731]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"$PreRead", "=", 
+   RowBox[{"(", 
+    RowBox[{
+     RowBox[{"#", "/.", 
+      RowBox[{
+       RowBox[{"s_String", "/;", 
+        RowBox[{
+         RowBox[{"StringMatchQ", "[", 
+          RowBox[{"s", ",", "NumberString"}], "]"}], "&&", 
+         RowBox[{
+          RowBox[{"Precision", "@", 
+           RowBox[{"ToExpression", "@", "s"}]}], "\[Equal]", 
+          "MachinePrecision"}]}]}], "\[RuleDelayed]", 
+       RowBox[{"s", "<>", "\"\<`20.\>\""}]}]}], "&"}], ")"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"On", "[", "Assert", "]"}], ";"}]}], "Input",
+ CellChangeTimes->{{3.707690975476903*^9, 3.707690975502083*^9}, {
+  3.707691675416909*^9, 3.7076916846070147`*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"dihedraldet", "[", 
+    RowBox[{
+    "d12_", ",", " ", "d13_", ",", " ", "d14_", ",", " ", "d23_", ",", " ", 
+     "d24_", ",", " ", "d34_"}], "]"}], ":=", 
+   RowBox[{"Det", "[", "\[IndentingNewLine]", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"-", "1"}], ",", " ", 
+        RowBox[{"Cos", "[", "d34", "]"}], ",", 
+        RowBox[{"Cos", "[", "d24", "]"}], ",", " ", 
+        RowBox[{"Cos", "[", "d23", "]"}]}], " ", "}"}], ",", 
+      "\[IndentingNewLine]", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"Cos", "[", "d34", "]"}], ",", " ", 
+        RowBox[{"-", "1"}], ",", " ", 
+        RowBox[{"Cos", "[", "d14", "]"}], ",", " ", 
+        RowBox[{"Cos", "[", "d13", "]"}]}], "}"}], ",", "\[IndentingNewLine]", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"Cos", "[", "d24", "]"}], ",", " ", 
+        RowBox[{"Cos", "[", "d14", "]"}], ",", " ", 
+        RowBox[{"-", "1"}], ",", " ", 
+        RowBox[{"Cos", "[", "d12", "]"}]}], "}"}], ",", "\[IndentingNewLine]", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"Cos", "[", "d23", "]"}], ",", " ", 
+        RowBox[{"Cos", "[", "d13", "]"}], ",", " ", 
+        RowBox[{"Cos", "[", "d12", "]"}], ",", " ", 
+        RowBox[{"-", "1"}]}], "}"}]}], "}"}], "]"}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.707693598085205*^9, 3.707693609931422*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"dihedralmat", "[", 
+    RowBox[{
+    "d12_", ",", " ", "d13_", ",", " ", "d14_", ",", " ", "d23_", ",", " ", 
+     "d24_", ",", " ", "d34_"}], "]"}], ":=", "\[IndentingNewLine]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"-", "1"}], ",", " ", 
+       RowBox[{"Cos", "[", "d34", "]"}], ",", 
+       RowBox[{"Cos", "[", "d24", "]"}], ",", " ", 
+       RowBox[{"Cos", "[", "d23", "]"}]}], " ", "}"}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"Cos", "[", "d34", "]"}], ",", " ", 
+       RowBox[{"-", "1"}], ",", " ", 
+       RowBox[{"Cos", "[", "d14", "]"}], ",", " ", 
+       RowBox[{"Cos", "[", "d13", "]"}]}], "}"}], ",", "\[IndentingNewLine]", 
+     
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"Cos", "[", "d24", "]"}], ",", " ", 
+       RowBox[{"Cos", "[", "d14", "]"}], ",", " ", 
+       RowBox[{"-", "1"}], ",", " ", 
+       RowBox[{"Cos", "[", "d12", "]"}]}], "}"}], ",", "\[IndentingNewLine]", 
+     
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"Cos", "[", "d23", "]"}], ",", " ", 
+       RowBox[{"Cos", "[", "d13", "]"}], ",", " ", 
+       RowBox[{"Cos", "[", "d12", "]"}], ",", " ", 
+       RowBox[{"-", "1"}]}], "}"}]}], "}"}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.707686336932029*^9, 3.70768634552415*^9}, {
+   3.707686446574848*^9, 3.707686496643941*^9}, {3.7076865998355427`*^9, 
+   3.7076867396758633`*^9}, 3.707688685200841*^9, {3.707688720585294*^9, 
+   3.7076887296324463`*^9}, {3.7076935459474993`*^9, 3.707693571360373*^9}}],
+
+Cell["Incongruent Faces: aabcde with adjacent a", "Item",
+ CellChangeTimes->{{3.708275816601128*^9, 3.7082758204275103`*^9}, {
+  3.708293498134975*^9, 3.708293515908752*^9}, {3.7082935499617033`*^9, 
+  3.7082935885156116`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Module", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+    "d12", ",", " ", "d23", ",", " ", "d24", ",", " ", "d34", ",", " ", "a", 
+     ",", " ", "b", ",", "c", ",", "det", ",", "asolved", ",", " ", 
+     RowBox[{"counter", "=", "0"}], ",", " ", 
+     RowBox[{"checkt", "=", 
+      RowBox[{"10", "^", 
+       RowBox[{"-", "14"}]}]}], ",", " ", 
+     RowBox[{"conditiont", "=", 
+      RowBox[{"10", "^", 
+       RowBox[{"-", "4"}]}]}], ",", " ", "esys", ",", " ", "areas"}], "}"}], 
+   ",", "\[IndentingNewLine]", 
+   RowBox[{"(*", 
+    RowBox[{
+    "Loop", " ", "to", " ", "iterate", " ", "through", "  ", "integer", " ", 
+     "d14", " ", "values"}], "*)"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"Do", "[", " ", "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"Do", "[", "\[IndentingNewLine]", 
+        RowBox[{
+         RowBox[{"Do", "[", " ", "\[IndentingNewLine]", 
+          RowBox[{
+           RowBox[{"Do", "[", "\[IndentingNewLine]", 
+            RowBox[{
+             RowBox[{
+              RowBox[{"If", "[", 
+               RowBox[{
+                RowBox[{
+                 RowBox[{"d13", "==", 
+                  RowBox[{"Pi", "/", "2"}]}], "&&", " ", 
+                 RowBox[{"d14", " ", "\[Equal]", 
+                  RowBox[{"Pi", "/", "2"}]}], "&&", 
+                 RowBox[{"d34", "\[Equal]", 
+                  RowBox[{"Pi", "/", "2"}]}]}], ",", " ", 
+                RowBox[{"Continue", "[", "]"}]}], "]"}], ";", 
+              "\[IndentingNewLine]", 
+              RowBox[{"If", "[", 
+               RowBox[{
+                RowBox[{
+                 RowBox[{"d14", "+", "d24", "+", "d34"}], "\[LessEqual]", " ",
+                  "Pi"}], ",", " ", 
+                RowBox[{"Continue", "[", "]"}]}], "]"}], ";", 
+              "\[IndentingNewLine]", 
+              RowBox[{"For", "[", 
+               RowBox[{
+                RowBox[{"m", "=", "2"}], ",", " ", 
+                RowBox[{"m", "\[LessEqual]", " ", "6"}], ",", " ", 
+                RowBox[{"m", "+=", "2"}], ",", "\[IndentingNewLine]", 
+                RowBox[{"For", "[", 
+                 RowBox[{
+                  RowBox[{"n", "=", "2"}], ",", " ", 
+                  RowBox[{"n", "\[LessEqual]", " ", "6"}], ",", " ", 
+                  RowBox[{"n", "+=", "2"}], ",", "\[IndentingNewLine]", 
+                  RowBox[{
+                   RowBox[{"If", "[", 
+                    RowBox[{
+                    RowBox[{
+                    RowBox[{"m", "+", "n"}], ">", "8"}], ",", " ", 
+                    RowBox[{"Continue", "[", "]"}]}], "]"}], ";", 
+                   "\[IndentingNewLine]", "\[IndentingNewLine]", 
+                   RowBox[{"d12", "=", "\[Alpha]"}], ";", 
+                   "\[IndentingNewLine]", 
+                   RowBox[{"d23", "=", 
+                    RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"2", "Pi"}], " ", "-", 
+                    RowBox[{"m", " ", "\[Alpha]"}]}], ")"}], "/", "n"}]}], 
+                   ";", "\[IndentingNewLine]", 
+                   RowBox[{"det", "=", 
+                    RowBox[{"Simplify", "[", 
+                    RowBox[{"dihedraldet", "[", 
+                    RowBox[{
+                    "d12", ",", " ", "d13", ",", " ", "d14", ",", " ", "d23", 
+                    ",", " ", "d24", ",", " ", "d34"}], "]"}], "]"}]}], ";", 
+                   "\[IndentingNewLine]", 
+                   RowBox[{"If", "[", 
+                    RowBox[{
+                    RowBox[{"NumericQ", "[", "det", "]"}], ",", 
+                    "\[IndentingNewLine]", 
+                    RowBox[{
+                    RowBox[{"Print", "[", 
+                    RowBox[{
+                    "\"\<The following case has a constant determinant \>\"", 
+                    ",", " ", "det", ",", " ", "\"\<. \>\""}], "]"}], ";", 
+                    "\[IndentingNewLine]", 
+                    RowBox[{"Print", "[", 
+                    RowBox[{
+                    "\"\<m=\>\"", ",", "m", ",", "\"\<, n=\>\"", ",", "n", 
+                    ",", "\"\<, d12=\>\"", ",", 
+                    RowBox[{"d12", "*", 
+                    RowBox[{"180", "/", "Pi"}]}], ",", " ", "\"\<, d13=\>\"", 
+                    ",", " ", 
+                    RowBox[{"N", "[", 
+                    RowBox[{"d13", "*", 
+                    RowBox[{"180", "/", "Pi"}]}], "]"}], ",", "  ", 
+                    "\"\<, d14=\>\"", ",", " ", 
+                    RowBox[{"N", "[", 
+                    RowBox[{"d14", "*", 
+                    RowBox[{"180", "/", "Pi"}]}], "]"}], ",", " ", 
+                    "\"\<, d23=\>\"", ",", " ", 
+                    RowBox[{"d23", "*", 
+                    RowBox[{"180", "/", "Pi"}]}], ",", " ", "\"\<, d24=\>\"", 
+                    ",", " ", 
+                    RowBox[{"N", "[", 
+                    RowBox[{"d24", "*", 
+                    RowBox[{"180", "/", "Pi"}]}], "]"}], ",", " ", 
+                    "\"\<, d34=\>\"", ",", " ", 
+                    RowBox[{"d34", "*", 
+                    RowBox[{"180", "/", "Pi"}]}]}], "]"}], ";", 
+                    "\[IndentingNewLine]", 
+                    RowBox[{"Continue", "[", "]"}], ";"}]}], 
+                    "\[IndentingNewLine]", "]"}], ";", "\[IndentingNewLine]", 
+                   
+                   RowBox[{"asolved", "=", 
+                    RowBox[{"\[Alpha]", "/.", 
+                    RowBox[{"NSolve", "[", 
+                    RowBox[{
+                    RowBox[{
+                    RowBox[{"det", "\[Equal]", "0"}], "&&", 
+                    RowBox[{
+                    RowBox[{"Pi", "/", "5"}], "<", " ", "\[Alpha]", "<", 
+                    "Pi"}], "&&", 
+                    RowBox[{
+                    RowBox[{"Pi", "/", "5"}], "<", 
+                    RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"2", "Pi"}], " ", "-", 
+                    RowBox[{"m", " ", "\[Alpha]"}]}], ")"}], "/", "n"}], "<", 
+                    "Pi"}]}], ",", " ", "\[Alpha]", ",", " ", 
+                    RowBox[{"WorkingPrecision", "\[Rule]", "20"}]}], 
+                    "]"}]}]}], ";", "\[IndentingNewLine]", 
+                   RowBox[{"If", "[", 
+                    RowBox[{
+                    RowBox[{"asolved", "\[Equal]", "\[Alpha]"}], ",", " ", 
+                    RowBox[{"Continue", "[", "]"}]}], "]"}], ";", 
+                   "\[IndentingNewLine]", 
+                   RowBox[{"For", "[", 
+                    RowBox[{
+                    RowBox[{"i", "=", "1"}], ",", " ", 
+                    RowBox[{"i", "\[LessEqual]", " ", 
+                    RowBox[{"Length", "[", "asolved", "]"}]}], ",", 
+                    RowBox[{"i", "++"}], ",", "\[IndentingNewLine]", 
+                    RowBox[{"(*", 
+                    RowBox[{
+                    "Reassign", " ", "the", " ", "dihedral", " ", "angles", 
+                    " ", "with", " ", "newly", " ", "computed", " ", 
+                    "values"}], "*)"}], "\[IndentingNewLine]", 
+                    RowBox[{
+                    RowBox[{"d12", "=", 
+                    RowBox[{"asolved", "[", 
+                    RowBox[{"[", "i", "]"}], "]"}]}], ";", 
+                    "\[IndentingNewLine]", 
+                    RowBox[{"d23", "=", 
+                    RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"2", "Pi"}], "-", 
+                    RowBox[{"m", " ", 
+                    RowBox[{"asolved", "[", 
+                    RowBox[{"[", "i", "]"}], "]"}]}]}], ")"}], "/", "n"}]}], 
+                    ";", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+                    RowBox[{"(*", 
+                    RowBox[{
+                    "Go", " ", "through", " ", "the", " ", "following", " ", 
+                    "list", " ", "of", " ", "conditions", " ", "for", " ", 
+                    "valid", " ", "tetrahedra"}], "*)"}], 
+                    "\[IndentingNewLine]", 
+                    RowBox[{"(*", 
+                    RowBox[{
+                    "Check", " ", "that", " ", "the", " ", "determinant", " ",
+                     "of", " ", "the", " ", "dihedral", " ", "angles", " ", 
+                    "is", " ", "0"}], "*)"}], "\[IndentingNewLine]", 
+                    RowBox[{"If", "[", 
+                    RowBox[{
+                    RowBox[{
+                    RowBox[{"Abs", "[", 
+                    RowBox[{"dihedraldet", "[", 
+                    RowBox[{
+                    "d12", ",", " ", "d13", ",", " ", "d14", ",", " ", "d23", 
+                    ",", " ", "d24", ",", " ", "d34"}], "]"}], "]"}], ">", 
+                    "checkt"}], ",", " ", 
+                    RowBox[{"Interrupt", "[", "]"}]}], "]"}], ";", 
+                    "\[IndentingNewLine]", 
+                    RowBox[{"(*", 
+                    RowBox[{
+                    "Check", " ", "that", " ", "the", " ", "sum", " ", "of", 
+                    " ", "the", " ", "three", " ", "dihedral", " ", "angles", 
+                    " ", "on", " ", "each", " ", "vertex", " ", "is", " ", 
+                    "greater", " ", "than", " ", "\[Pi]"}], "*)"}], 
+                    "\[IndentingNewLine]", 
+                    RowBox[{"If", "[", 
+                    RowBox[{
+                    RowBox[{
+                    RowBox[{
+                    RowBox[{"d12", "+", "d13", "+", "d14"}], "<", 
+                    RowBox[{"Pi", "-", "conditiont"}]}], "||", 
+                    RowBox[{
+                    RowBox[{"d12", "+", "d23", "+", "d24"}], "<", 
+                    RowBox[{"Pi", "-", "conditiont"}]}], "||", 
+                    RowBox[{
+                    RowBox[{"d23", "+", "d13", "+", "d34"}], "<", 
+                    RowBox[{"Pi", "-", "conditiont"}]}], "||", 
+                    RowBox[{
+                    RowBox[{"d14", "+", "d34", "+", "d24"}], "<", 
+                    RowBox[{"Pi", "-", "conditiont"}]}]}], ",", " ", 
+                    RowBox[{"Continue", "[", "]"}]}], "]"}], ";", 
+                    "\[IndentingNewLine]", 
+                    RowBox[{"(*", 
+                    RowBox[{
+                    "Check", " ", "that", " ", "the", " ", "sum", " ", "of", 
+                    " ", "dihedral", " ", "angles", " ", "on", " ", "any", 
+                    " ", "quadrilateral", " ", "in", " ", "the", " ", 
+                    "tetrahedron", " ", "is", " ", "less", " ", "than", " ", 
+                    "2", "\[Pi]"}], "*)"}], "\[IndentingNewLine]", 
+                    RowBox[{"If", "[", 
+                    RowBox[{
+                    RowBox[{
+                    RowBox[{
+                    RowBox[{"d12", "+", "d34", "+", "d13", "+", "d24"}], ">", 
+                    
+                    RowBox[{
+                    RowBox[{"2", "Pi"}], "+", "conditiont"}]}], "||", 
+                    RowBox[{
+                    RowBox[{"d12", "+", "d34", "+", "d14", "+", "d23"}], ">", 
+                    
+                    RowBox[{
+                    RowBox[{"2", "Pi"}], "+", "conditiont"}]}], "||", 
+                    RowBox[{
+                    RowBox[{"d14", "+", "d23", "+", "d13", "+", "d24"}], ">", 
+                    
+                    RowBox[{
+                    RowBox[{"2", "Pi"}], "+", "conditiont"}]}]}], ",", " ", 
+                    RowBox[{"Continue", "[", "]"}]}], "]"}], ";", 
+                    "\[IndentingNewLine]", 
+                    RowBox[{"(*", 
+                    RowBox[{
+                    "Check", " ", "that", " ", "the", " ", "dihedral", " ", 
+                    "angles", " ", "are", " ", "at", " ", "least", " ", "36", 
+                    "\[Degree]", " ", "since", " ", "we", " ", "are", " ", 
+                    "looking", " ", "for", " ", "tetrahedra", " ", "better", 
+                    " ", "than", " ", "Sommerville", " ", "No", ".1"}], 
+                    "*)"}], "\[IndentingNewLine]", 
+                    RowBox[{"If", "[", 
+                    RowBox[{
+                    RowBox[{
+                    RowBox[{"d12", "<", 
+                    RowBox[{"36.1", "*", 
+                    RowBox[{"Pi", "/", "180"}]}]}], "||", 
+                    RowBox[{"d23", "<", 
+                    RowBox[{"36.1", "*", 
+                    RowBox[{"Pi", "/", "180"}]}]}]}], ",", " ", 
+                    RowBox[{"Continue", "[", "]"}]}], "]"}], ";", 
+                    "\[IndentingNewLine]", 
+                    RowBox[{"(*", 
+                    RowBox[{
+                    "Check", " ", "that", " ", "the", " ", "dihedral", " ", 
+                    "angles", " ", "\[Alpha]", " ", "and", " ", "\[Beta]", 
+                    " ", "are", " ", "both", " ", "not", " ", "of", " ", 
+                    "the", " ", "form", " ", "2", 
+                    RowBox[{"\[Pi]", "/", "n"}], " ", "since", " ", "those", 
+                    " ", "tetrahedra", " ", 
+                    RowBox[{"don", "'"}], "t", " ", "tile"}], "*)"}], 
+                    "\[IndentingNewLine]", 
+                    RowBox[{"If", "[", 
+                    RowBox[{
+                    RowBox[{
+                    RowBox[{
+                    RowBox[{"Abs", "[", 
+                    RowBox[{
+                    RowBox[{"Round", "[", 
+                    RowBox[{"2", 
+                    RowBox[{"Pi", "/", "d12"}]}], "]"}], "-", 
+                    RowBox[{"2", 
+                    RowBox[{"Pi", "/", "d12"}]}]}], "]"}], "<", "checkt"}], "&&", 
+                    RowBox[{
+                    RowBox[{"Abs", "[", 
+                    RowBox[{
+                    RowBox[{"Round", "[", 
+                    RowBox[{"2", 
+                    RowBox[{"Pi", "/", "d23"}]}], "]"}], "-", 
+                    RowBox[{"2", 
+                    RowBox[{"Pi", "/", "d23"}]}]}], "]"}], "<", "checkt"}]}], 
+                    ",", " ", 
+                    RowBox[{"Continue", "[", "]"}]}], "]"}], ";", 
+                    "\[IndentingNewLine]", 
+                    RowBox[{"(*", 
+                    RowBox[{
+                    "Check", " ", "that", " ", "the", " ", "tetrahedra", " ", 
+                    "are", " ", "not", " ", "in", " ", 
+                    RowBox[{"Goldberg", "'"}], "s", " ", "first", " ", 
+                    "family"}], "*)"}], "\[IndentingNewLine]", 
+                    RowBox[{"If", "[", 
+                    RowBox[{
+                    RowBox[{
+                    RowBox[{
+                    RowBox[{"Abs", "[", 
+                    RowBox[{
+                    RowBox[{"2", "d12"}], "+", "d23", "-", "Pi"}], "]"}], "<",
+                     "checkt"}], "&&", 
+                    RowBox[{
+                    RowBox[{"Abs", "[", 
+                    RowBox[{"d14", "-", 
+                    RowBox[{"Pi", "/", "3"}]}], "]"}], "<", "checkt"}], "&&", 
+                    
+                    RowBox[{
+                    RowBox[{"Abs", "[", 
+                    RowBox[{"d13", "-", 
+                    RowBox[{"Pi", "/", "2"}]}], "]"}], "<", "checkt"}]}], ",",
+                     " ", 
+                    RowBox[{"Continue", "[", "]"}]}], "]"}], ";", 
+                    "\[IndentingNewLine]", "\[IndentingNewLine]", 
+                    RowBox[{"(*", 
+                    RowBox[{
+                    "Calculate", " ", "the", " ", "eigensystem", " ", "for", 
+                    " ", "the", " ", "dihedral", " ", "angle", " ", 
+                    "matrix"}], "*)"}], "\[IndentingNewLine]", 
+                    RowBox[{"esys", "=", 
+                    RowBox[{"Eigensystem", "[", 
+                    RowBox[{"dihedralmat", "[", 
+                    RowBox[{
+                    "d12", ",", " ", "d13", ",", " ", "d14", ",", " ", "d23", 
+                    ",", " ", "d24", ",", " ", "d34"}], "]"}], "]"}]}], ";", 
+                    "\[IndentingNewLine]", 
+                    RowBox[{"(*", 
+                    RowBox[{
+                    "Interrupt", " ", "the", " ", "calculation", " ", "if", 
+                    " ", "the", " ", "fourth", " ", "eigenvalue", " ", "is", 
+                    " ", "not", " ", "0"}], "*)"}], "\[IndentingNewLine]", 
+                    RowBox[{"If", "[", 
+                    RowBox[{
+                    RowBox[{
+                    RowBox[{
+                    RowBox[{"esys", "[", 
+                    RowBox[{"[", "1", "]"}], "]"}], "[", 
+                    RowBox[{"[", "4", "]"}], "]"}], ">", "checkt"}], ",", " ", 
+                    RowBox[{"Interrupt", "[", "]"}]}], "]"}], ";", 
+                    "\[IndentingNewLine]", 
+                    RowBox[{"(*", 
+                    RowBox[{
+                    "Extract", " ", "the", " ", "surface", " ", "area", " ", 
+                    "of", " ", "the", " ", "faces", " ", "from", " ", "the", 
+                    " ", "fourth", " ", "eigenvector", " ", "of", " ", "the", 
+                    " ", "dihedral", " ", "angle", " ", "matrix"}], "*)"}], 
+                    "\[IndentingNewLine]", 
+                    RowBox[{"areas", "=", 
+                    RowBox[{
+                    RowBox[{"esys", "[", 
+                    RowBox[{"[", "2", "]"}], "]"}], "[", 
+                    RowBox[{"[", "4", "]"}], "]"}]}], ";", 
+                    "\[IndentingNewLine]", 
+                    RowBox[{"(*", 
+                    RowBox[{
+                    "Check", " ", "that", " ", "the", " ", "side", " ", 
+                    "lengths", " ", "12", " ", "and", " ", "23", " ", "are", 
+                    " ", "the", " ", "same", " ", "since", " ", "this", " ", 
+                    "must", " ", "be", " ", "the", " ", "case", " ", "by", 
+                    " ", "hypothesis"}], "*)"}], "\[IndentingNewLine]", 
+                    RowBox[{"If", "[", 
+                    RowBox[{
+                    RowBox[{
+                    RowBox[{"Abs", "[", 
+                    RowBox[{
+                    RowBox[{
+                    RowBox[{"areas", "[", 
+                    RowBox[{"[", "3", "]"}], "]"}], 
+                    RowBox[{"Sin", "[", "d12", "]"}]}], "-", 
+                    RowBox[{
+                    RowBox[{"areas", "[", 
+                    RowBox[{"[", "1", "]"}], "]"}], 
+                    RowBox[{"Sin", "[", "d23", "]"}]}]}], "]"}], "<", 
+                    "conditiont"}], ",", "\[IndentingNewLine]", 
+                    RowBox[{"(*", 
+                    RowBox[{
+                    "Count", " ", "all", " ", "the", " ", "tetrahedra", " ", 
+                    "that", " ", "meet", " ", "all", " ", "the", " ", "above",
+                     " ", "criterion", " ", "and", " ", "print", " ", 
+                    "information", " ", "about", " ", "them"}], "*)"}], 
+                    "\[IndentingNewLine]", 
+                    RowBox[{
+                    RowBox[{"counter", "++"}], ";", "\[IndentingNewLine]", 
+                    RowBox[{"Print", "[", 
+                    RowBox[{
+                    "\"\<m=\>\"", ",", "m", ",", "\"\< n=\>\"", ",", "n", 
+                    ",", "\"\< d12=\>\"", ",", 
+                    RowBox[{"d12", "*", 
+                    RowBox[{"180", "/", "Pi"}]}], ",", " ", "\"\< d13=\>\"", 
+                    ",", " ", 
+                    RowBox[{"N", "[", 
+                    RowBox[{"d13", "*", 
+                    RowBox[{"180", "/", "Pi"}]}], "]"}], ",", "  ", 
+                    "\"\< d14=\>\"", ",", " ", 
+                    RowBox[{"N", "[", 
+                    RowBox[{"d14", "*", 
+                    RowBox[{"180", "/", "Pi"}]}], "]"}], ",", " ", 
+                    "\"\< d23=\>\"", ",", " ", 
+                    RowBox[{"d23", "*", 
+                    RowBox[{"180", "/", "Pi"}]}], ",", " ", "\"\< d24=\>\"", 
+                    ",", " ", 
+                    RowBox[{"N", "[", 
+                    RowBox[{"d24", "*", 
+                    RowBox[{"180", "/", "Pi"}]}], "]"}], ",", " ", 
+                    "\"\< d34=\>\"", ",", " ", 
+                    RowBox[{"d34", "*", 
+                    RowBox[{"180", "/", "Pi"}]}], ",", "\"\< Difference=\>\"",
+                     ",", " ", 
+                    RowBox[{"Abs", "[", 
+                    RowBox[{
+                    RowBox[{
+                    RowBox[{"areas", "[", 
+                    RowBox[{"[", "3", "]"}], "]"}], 
+                    RowBox[{"Sin", "[", "d12", "]"}]}], "-", 
+                    RowBox[{
+                    RowBox[{"areas", "[", 
+                    RowBox[{"[", "1", "]"}], "]"}], 
+                    RowBox[{"Sin", "[", "d23", "]"}]}]}], "]"}]}], "]"}], 
+                    ";"}]}], "\[IndentingNewLine]", "]"}]}]}], 
+                    "\[IndentingNewLine]", "]"}]}]}], "\[IndentingNewLine]", 
+                 "]"}]}], "\[IndentingNewLine]", "]"}]}], ",", 
+             RowBox[{"{", 
+              RowBox[{"d34", ",", " ", 
+               RowBox[{"{", 
+                RowBox[{
+                 RowBox[{"Pi", "/", "2"}], ",", 
+                 RowBox[{"Pi", "/", "3"}], " ", ",", 
+                 RowBox[{"Pi", "/", "4"}]}], " ", "}"}]}], "}"}]}], "]"}], 
+           ",", "\[IndentingNewLine]", 
+           RowBox[{"{", 
+            RowBox[{"d24", ",", " ", 
+             RowBox[{"{", 
+              RowBox[{
+               RowBox[{"Pi", "/", "2"}], ",", 
+               RowBox[{"Pi", "/", "3"}], " ", ",", 
+               RowBox[{"Pi", "/", "4"}]}], " ", "}"}]}], "}"}]}], "]"}], ",", 
+         "\[IndentingNewLine]", 
+         RowBox[{"{", 
+          RowBox[{"d14", ",", " ", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"Pi", "/", "2"}], ",", 
+             RowBox[{"Pi", "/", "3"}], " ", ",", 
+             RowBox[{"Pi", "/", "4"}]}], " ", "}"}]}], "}"}]}], "]"}], ",", 
+       "\[IndentingNewLine]", 
+       RowBox[{"{", 
+        RowBox[{"d13", ",", " ", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"Pi", "/", "2"}], ",", 
+           RowBox[{"Pi", "/", "3"}], " ", ",", 
+           RowBox[{"Pi", "/", "4"}]}], " ", "}"}]}], "}"}]}], "]"}], 
+     "\[IndentingNewLine]", 
+     RowBox[{"Print", "[", 
+      RowBox[{
+      "\"\<The number of tetrahedra found is \>\"", ",", "counter", ",", " ", 
+       "\"\<.\>\""}], "]"}]}], ";"}]}], "\[IndentingNewLine]", "]"}]], "Input",\
+
+ CellChangeTimes->{
+  3.708276684370398*^9, 3.708277474046357*^9, {3.7082775648998213`*^9, 
+   3.7082778230735893`*^9}, {3.708277863542712*^9, 3.70827791160955*^9}, {
+   3.708277973348879*^9, 3.708278024305354*^9}, 3.708278072623239*^9, {
+   3.70827811795076*^9, 3.708278192503786*^9}, {3.7082782392913446`*^9, 
+   3.708278266872839*^9}, {3.708278313112311*^9, 3.7082783203771267`*^9}, {
+   3.708278362226933*^9, 3.708278394738562*^9}, {3.7082784253735447`*^9, 
+   3.7082784556770353`*^9}, {3.708278497324376*^9, 3.708278500260713*^9}, {
+   3.70827859749177*^9, 3.7082786558810587`*^9}, 3.7082787834967318`*^9, {
+   3.708278828246129*^9, 3.708278942542796*^9}, {3.7082790058731747`*^9, 
+   3.70827905160044*^9}, {3.7082791598097277`*^9, 3.708279185868325*^9}, {
+   3.708279243526992*^9, 3.7082792625183077`*^9}, {3.708279463315279*^9, 
+   3.708279478346916*^9}, {3.7082795298806067`*^9, 3.708279589614399*^9}, {
+   3.708279685539356*^9, 3.708279705047646*^9}, {3.708279820846196*^9, 
+   3.7082798230834312`*^9}, {3.7082798936171913`*^9, 3.708279928983235*^9}, {
+   3.708279959619441*^9, 3.708279961177458*^9}, {3.708280060740507*^9, 
+   3.70828007557968*^9}, {3.70828017353955*^9, 3.708280242985572*^9}, {
+   3.708280315827764*^9, 3.708280322005466*^9}, {3.7082803659344*^9, 
+   3.708280412051128*^9}, {3.708280456108642*^9, 3.708280511644154*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"The following case has a constant determinant \"\>", 
+   "\[InvisibleSpace]", 
+   RowBox[{"-", 
+    FractionBox["1", "4"]}], "\[InvisibleSpace]", "\<\". \"\>"}],
+  SequenceForm["The following case has a constant determinant ", 
+   Rational[-1, 4], ". "],
+  Editable->False]], "Print",
+ CellChangeTimes->{{3.708278643774933*^9, 3.7082786661690893`*^9}, 
+   3.7082789489242973`*^9, {3.70827903399085*^9, 3.708279056159521*^9}, 
+   3.708279193865171*^9, {3.708279252952236*^9, 3.708279264198097*^9}, 
+   3.708279590480464*^9, 3.708279705751952*^9, 3.708279823524548*^9, 
+   3.7082799295706367`*^9, 3.708279967868655*^9, 3.7082802527857933`*^9, 
+   3.708280569173051*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"m=\"\>", "\[InvisibleSpace]", "4", 
+   "\[InvisibleSpace]", "\<\", n=\"\>", "\[InvisibleSpace]", "4", 
+   "\[InvisibleSpace]", "\<\", d12=\"\>", "\[InvisibleSpace]", 
+   FractionBox[
+    RowBox[{"180", " ", "\[Alpha]"}], "\[Pi]"], 
+   "\[InvisibleSpace]", "\<\", d13=\"\>", "\[InvisibleSpace]", "60.`", 
+   "\[InvisibleSpace]", "\<\", d14=\"\>", "\[InvisibleSpace]", "90.`", 
+   "\[InvisibleSpace]", "\<\", d23=\"\>", "\[InvisibleSpace]", 
+   FractionBox[
+    RowBox[{"45", " ", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"2", " ", "\[Pi]"}], "-", 
+       RowBox[{"4", " ", "\[Alpha]"}]}], ")"}]}], "\[Pi]"], 
+   "\[InvisibleSpace]", "\<\", d24=\"\>", "\[InvisibleSpace]", "90.`", 
+   "\[InvisibleSpace]", "\<\", d34=\"\>", "\[InvisibleSpace]", "90"}],
+  SequenceForm[
+  "m=", 4, ", n=", 4, ", d12=", 180 Pi^(-1) $CellContext`\[Alpha], ", d13=", 
+   60., ", d14=", 90., ", d23=", 45 Pi^(-1) (2 Pi - 4 $CellContext`\[Alpha]), 
+   ", d24=", 90., ", d34=", 90],
+  Editable->False]], "Print",
+ CellChangeTimes->{{3.708278643774933*^9, 3.7082786661690893`*^9}, 
+   3.7082789489242973`*^9, {3.70827903399085*^9, 3.708279056159521*^9}, 
+   3.708279193865171*^9, {3.708279252952236*^9, 3.708279264198097*^9}, 
+   3.708279590480464*^9, 3.708279705751952*^9, 3.708279823524548*^9, 
+   3.7082799295706367`*^9, 3.708279967868655*^9, 3.7082802527857933`*^9, 
+   3.708280569182804*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"The following case has a constant determinant \"\>", 
+   "\[InvisibleSpace]", 
+   RowBox[{"-", 
+    FractionBox["1", "2"]}], "\[InvisibleSpace]", "\<\". \"\>"}],
+  SequenceForm["The following case has a constant determinant ", 
+   Rational[-1, 2], ". "],
+  Editable->False]], "Print",
+ CellChangeTimes->{{3.708278643774933*^9, 3.7082786661690893`*^9}, 
+   3.7082789489242973`*^9, {3.70827903399085*^9, 3.708279056159521*^9}, 
+   3.708279193865171*^9, {3.708279252952236*^9, 3.708279264198097*^9}, 
+   3.708279590480464*^9, 3.708279705751952*^9, 3.708279823524548*^9, 
+   3.7082799295706367`*^9, 3.708279967868655*^9, 3.7082802527857933`*^9, 
+   3.708280574594954*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"m=\"\>", "\[InvisibleSpace]", "4", 
+   "\[InvisibleSpace]", "\<\", n=\"\>", "\[InvisibleSpace]", "4", 
+   "\[InvisibleSpace]", "\<\", d12=\"\>", "\[InvisibleSpace]", 
+   FractionBox[
+    RowBox[{"180", " ", "\[Alpha]"}], "\[Pi]"], 
+   "\[InvisibleSpace]", "\<\", d13=\"\>", "\[InvisibleSpace]", "45.`", 
+   "\[InvisibleSpace]", "\<\", d14=\"\>", "\[InvisibleSpace]", "90.`", 
+   "\[InvisibleSpace]", "\<\", d23=\"\>", "\[InvisibleSpace]", 
+   FractionBox[
+    RowBox[{"45", " ", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"2", " ", "\[Pi]"}], "-", 
+       RowBox[{"4", " ", "\[Alpha]"}]}], ")"}]}], "\[Pi]"], 
+   "\[InvisibleSpace]", "\<\", d24=\"\>", "\[InvisibleSpace]", "90.`", 
+   "\[InvisibleSpace]", "\<\", d34=\"\>", "\[InvisibleSpace]", "90"}],
+  SequenceForm[
+  "m=", 4, ", n=", 4, ", d12=", 180 Pi^(-1) $CellContext`\[Alpha], ", d13=", 
+   45., ", d14=", 90., ", d23=", 45 Pi^(-1) (2 Pi - 4 $CellContext`\[Alpha]), 
+   ", d24=", 90., ", d34=", 90],
+  Editable->False]], "Print",
+ CellChangeTimes->{{3.708278643774933*^9, 3.7082786661690893`*^9}, 
+   3.7082789489242973`*^9, {3.70827903399085*^9, 3.708279056159521*^9}, 
+   3.708279193865171*^9, {3.708279252952236*^9, 3.708279264198097*^9}, 
+   3.708279590480464*^9, 3.708279705751952*^9, 3.708279823524548*^9, 
+   3.7082799295706367`*^9, 3.708279967868655*^9, 3.7082802527857933`*^9, 
+   3.708280574608067*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"The number of tetrahedra found is \"\>", "\[InvisibleSpace]", 
+   "0", "\[InvisibleSpace]", "\<\".\"\>"}],
+  SequenceForm["The number of tetrahedra found is ", 0, "."],
+  Editable->False]], "Print",
+ CellChangeTimes->{{3.708278643774933*^9, 3.7082786661690893`*^9}, 
+   3.7082789489242973`*^9, {3.70827903399085*^9, 3.708279056159521*^9}, 
+   3.708279193865171*^9, {3.708279252952236*^9, 3.708279264198097*^9}, 
+   3.708279590480464*^9, 3.708279705751952*^9, 3.708279823524548*^9, 
+   3.7082799295706367`*^9, 3.708279967868655*^9, 3.7082802527857933`*^9, 
+   3.7082805802854137`*^9}]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{Full, Full},
+WindowMargins->{{236, Automatic}, {Automatic, 50}},
+FrontEndVersion->"10.0 for Mac OS X x86 (32-bit, 64-bit Kernel) (December 4, \
+2014)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 725, 20, 46, "Input"],
+Cell[1286, 42, 1405, 35, 97, "Input"],
+Cell[2694, 79, 1584, 39, 97, "Input"],
+Cell[4281, 120, 227, 3, 28, "Item"],
+Cell[CellGroupData[{
+Cell[4533, 127, 23506, 480, 1100, "Input"],
+Cell[CellGroupData[{
+Cell[28064, 611, 716, 14, 38, "Print"],
+Cell[28783, 627, 1427, 28, 39, "Print"],
+Cell[30213, 657, 716, 14, 38, "Print"],
+Cell[30932, 673, 1427, 28, 39, "Print"],
+Cell[32362, 703, 632, 11, 21, "Print"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
