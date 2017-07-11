@@ -1,0 +1,311 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 10.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     10488,        302]
+NotebookOptionsPosition[     10078,        283]
+NotebookOutlinePosition[     10436,        299]
+CellTagsIndexPosition[     10393,        296]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", " ", 
+   RowBox[{"Set", " ", "machine", " ", "precision"}], " ", "*)"}], 
+  "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"$PreRead", "=", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"#", "/.", 
+        RowBox[{
+         RowBox[{"s_String", "/;", 
+          RowBox[{
+           RowBox[{"StringMatchQ", "[", 
+            RowBox[{"s", ",", "NumberString"}], "]"}], "&&", 
+           RowBox[{
+            RowBox[{"Precision", "@", 
+             RowBox[{"ToExpression", "@", "s"}]}], "\[Equal]", 
+            "MachinePrecision"}]}]}], "\[RuleDelayed]", 
+         RowBox[{"s", "<>", "\"\<`30.\>\""}]}]}], "&"}], ")"}]}], ";"}], 
+   "\[IndentingNewLine]", "\n", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"DihedralMat", "[", 
+      RowBox[{
+      "\[Theta]12_", ",", "\[Theta]13_", ",", "\[Theta]14_", ",", 
+       "\[Theta]23_", ",", "\[Theta]24_", ",", "\[Theta]34_"}], "]"}], ":=", 
+     "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"-", "1"}], ",", 
+         RowBox[{"Cos", "[", "\[Theta]34", "]"}], ",", 
+         RowBox[{"Cos", "[", "\[Theta]24", "]"}], ",", 
+         RowBox[{"Cos", "[", "\[Theta]23", "]"}]}], "}"}], ",", 
+       "\[IndentingNewLine]", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"Cos", "[", "\[Theta]34", "]"}], ",", 
+         RowBox[{"-", "1"}], ",", 
+         RowBox[{"Cos", "[", "\[Theta]14", "]"}], ",", 
+         RowBox[{"Cos", "[", "\[Theta]13", "]"}]}], "}"}], ",", 
+       "\[IndentingNewLine]", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"Cos", "[", "\[Theta]24", "]"}], ",", 
+         RowBox[{"Cos", "[", "\[Theta]14", "]"}], ",", 
+         RowBox[{"-", "1"}], ",", 
+         RowBox[{"Cos", "[", "\[Theta]12", "]"}]}], "}"}], ",", 
+       "\[IndentingNewLine]", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"Cos", "[", "\[Theta]23", "]"}], ",", 
+         RowBox[{"Cos", "[", "\[Theta]13", "]"}], ",", 
+         RowBox[{"Cos", "[", "\[Theta]12", "]"}], ",", 
+         RowBox[{"-", "1"}]}], "}"}]}], "}"}]}], ";"}], "\n", 
+   "\[IndentingNewLine]", 
+   RowBox[{"(*", 
+    RowBox[{
+    "Implicit", " ", "in", " ", "the", " ", "calculation", " ", "is", " ", 
+     "division", " ", "by", " ", "Sin", 
+     RowBox[{"(", "\[Theta]12", ")"}], " ", "in", " ", "all", " ", "terms"}], 
+    "*)"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"ModifiedMat", "[", 
+     RowBox[{
+     "\[Theta]12_", ",", "\[Theta]13_", ",", "\[Theta]14_", ",", 
+      "\[Theta]23_", ",", "\[Theta]24_", ",", "\[Theta]34_"}], "]"}], ":=", 
+    RowBox[{"Module", "[", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"mat", ",", "newmat"}], "}"}], ",", "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"mat", "=", 
+        RowBox[{"DihedralMat", "[", 
+         RowBox[{
+         "\[Theta]12", ",", "\[Theta]13", ",", "\[Theta]14", ",", 
+          "\[Theta]23", ",", "\[Theta]24", ",", "\[Theta]34"}], "]"}]}], ";", 
+       "\[IndentingNewLine]", 
+       RowBox[{"newmat", "=", 
+        RowBox[{"Transpose", "[", "\[IndentingNewLine]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{
+            RowBox[{
+             RowBox[{"Sin", "[", "\[Theta]12", "]"}], 
+             RowBox[{"mat", "[", 
+              RowBox[{"[", 
+               RowBox[{"All", ",", "1"}], "]"}], "]"}]}], "+", 
+            RowBox[{
+             RowBox[{"Sin", "[", "\[Theta]23", "]"}], 
+             RowBox[{"mat", "[", 
+              RowBox[{"[", 
+               RowBox[{"All", ",", "3"}], "]"}], "]"}]}]}], ",", 
+           RowBox[{
+            RowBox[{
+             RowBox[{"Sin", "[", "\[Theta]12", "]"}], 
+             RowBox[{"mat", "[", 
+              RowBox[{"[", 
+               RowBox[{"All", ",", "2"}], "]"}], "]"}]}], "+", 
+            RowBox[{
+             RowBox[{"Sin", "[", "\[Theta]14", "]"}], 
+             RowBox[{"mat", "[", 
+              RowBox[{"[", 
+               RowBox[{"All", ",", "4"}], "]"}], "]"}]}]}]}], "}"}], 
+         "\[IndentingNewLine]", "]"}]}], ";", "\[IndentingNewLine]", 
+       RowBox[{"Return", "[", "newmat", "]"}], ";"}]}], "\[IndentingNewLine]",
+      "]"}]}]}]}]], "Input",
+ CellChangeTimes->{{3.708703637901918*^9, 3.708703662519266*^9}, {
+  3.7087053864676723`*^9, 3.7087054352831182`*^9}, {3.7087224100332203`*^9, 
+  3.7087224588336077`*^9}, {3.7087225684410143`*^9, 3.708722598928117*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"ModifiedMat", "[", 
+   RowBox[{
+   "a", ",", " ", "b", ",", " ", "c", ",", " ", "d", " ", ",", "e", ",", " ", 
+    "f"}], "]"}], "//", "MatrixForm"}]], "Input"],
+
+Cell[BoxData[
+ TagBox[
+  RowBox[{"(", "\[NoBreak]", GridBox[{
+     {
+      RowBox[{
+       RowBox[{"-", 
+        RowBox[{"Sin", "[", "a", "]"}]}], "+", 
+       RowBox[{
+        RowBox[{"Cos", "[", "e", "]"}], " ", 
+        RowBox[{"Sin", "[", "d", "]"}]}]}], 
+      RowBox[{
+       RowBox[{
+        RowBox[{"Cos", "[", "f", "]"}], " ", 
+        RowBox[{"Sin", "[", "a", "]"}]}], "+", 
+       RowBox[{
+        RowBox[{"Cos", "[", "d", "]"}], " ", 
+        RowBox[{"Sin", "[", "c", "]"}]}]}]},
+     {
+      RowBox[{
+       RowBox[{
+        RowBox[{"Cos", "[", "f", "]"}], " ", 
+        RowBox[{"Sin", "[", "a", "]"}]}], "+", 
+       RowBox[{
+        RowBox[{"Cos", "[", "c", "]"}], " ", 
+        RowBox[{"Sin", "[", "d", "]"}]}]}], 
+      RowBox[{
+       RowBox[{"-", 
+        RowBox[{"Sin", "[", "a", "]"}]}], "+", 
+       RowBox[{
+        RowBox[{"Cos", "[", "b", "]"}], " ", 
+        RowBox[{"Sin", "[", "c", "]"}]}]}]},
+     {
+      RowBox[{
+       RowBox[{
+        RowBox[{"Cos", "[", "e", "]"}], " ", 
+        RowBox[{"Sin", "[", "a", "]"}]}], "-", 
+       RowBox[{"Sin", "[", "d", "]"}]}], 
+      RowBox[{
+       RowBox[{
+        RowBox[{"Cos", "[", "c", "]"}], " ", 
+        RowBox[{"Sin", "[", "a", "]"}]}], "+", 
+       RowBox[{
+        RowBox[{"Cos", "[", "a", "]"}], " ", 
+        RowBox[{"Sin", "[", "c", "]"}]}]}]},
+     {
+      RowBox[{
+       RowBox[{
+        RowBox[{"Cos", "[", "d", "]"}], " ", 
+        RowBox[{"Sin", "[", "a", "]"}]}], "+", 
+       RowBox[{
+        RowBox[{"Cos", "[", "a", "]"}], " ", 
+        RowBox[{"Sin", "[", "d", "]"}]}]}], 
+      RowBox[{
+       RowBox[{
+        RowBox[{"Cos", "[", "b", "]"}], " ", 
+        RowBox[{"Sin", "[", "a", "]"}]}], "-", 
+       RowBox[{"Sin", "[", "c", "]"}]}]}
+    },
+    GridBoxAlignment->{
+     "Columns" -> {{Center}}, "ColumnsIndexed" -> {}, "Rows" -> {{Baseline}}, 
+      "RowsIndexed" -> {}},
+    GridBoxSpacings->{"Columns" -> {
+        Offset[0.27999999999999997`], {
+         Offset[0.7]}, 
+        Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+        Offset[0.2], {
+         Offset[0.4]}, 
+        Offset[0.2]}, "RowsIndexed" -> {}}], "\[NoBreak]", ")"}],
+  Function[BoxForm`e$, 
+   MatrixForm[BoxForm`e$]]]], "Output",
+ CellChangeTimes->{3.708722469649294*^9}]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{"GenerateCases", ":=", "\[IndentingNewLine]", 
+  RowBox[{"Module", "[", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{
+     "\[Theta]12", ",", "\[Theta]23", ",", "\[Theta]14", ",", "mat", ",", 
+      "det1", ",", " ", "det2", ",", " ", "det3", ",", "minimum", ",", 
+      RowBox[{"cases", "=", 
+       RowBox[{"{", "}"}]}], ",", 
+      RowBox[{"examinedcnt", "=", "0"}], ",", 
+      RowBox[{"remaincnt", "=", "0"}], ",", 
+      RowBox[{"nonzerot", "=", 
+       RowBox[{"10", "^", 
+        RowBox[{"-", "5"}]}]}], ",", " ", 
+      RowBox[{"counter", "=", "0"}]}], "}"}], ",", "\[IndentingNewLine]", 
+    RowBox[{"(*", " ", 
+     RowBox[{
+      RowBox[{"Iterate", " ", "through", " ", "\[Theta]23"}], ",", " ", 
+      "\[Theta]24", ",", " ", 
+      RowBox[{
+      "\[Theta]34", " ", "for", " ", "the", " ", "three", " ", "values", " ", 
+       "within", " ", "constraints"}]}], "*)"}], "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"Do", "[", " ", "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"Do", "[", "\[IndentingNewLine]", 
+         RowBox[{
+          RowBox[{
+           RowBox[{"Do", "[", 
+            RowBox[{",", "\[IndentingNewLine]", 
+             RowBox[{"{", 
+              RowBox[{"\[Theta]34", ",", 
+               RowBox[{"{", 
+                RowBox[{
+                 RowBox[{"Pi", "/", "2"}], ",", 
+                 RowBox[{"Pi", "/", "3"}], " ", ",", 
+                 RowBox[{"Pi", "/", "4"}]}], " ", "}"}]}], "}"}]}], "]"}], 
+           ";"}], ",", "\[IndentingNewLine]", 
+          RowBox[{"{", 
+           RowBox[{"\[Theta]24", ",", 
+            RowBox[{"{", 
+             RowBox[{
+              RowBox[{"Pi", "/", "2"}], ",", 
+              RowBox[{"Pi", "/", "3"}], " ", ",", 
+              RowBox[{"Pi", "/", "4"}]}], " ", "}"}]}], "}"}]}], "]"}], ";"}],
+        ",", "\[IndentingNewLine]", 
+       RowBox[{"{", 
+        RowBox[{"\[Theta]13", ",", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"Pi", "/", "2"}], ",", 
+           RowBox[{"Pi", "/", "3"}], " ", ",", 
+           RowBox[{"Pi", "/", "4"}]}], " ", "}"}]}], "}"}]}], "]"}], ";", 
+     "\[IndentingNewLine]", 
+     RowBox[{"Print", "[", 
+      RowBox[{
+      "\"\<Examined \>\"", ",", "examinedcnt", ",", "\"\< cases.\>\""}], 
+      "]"}], ";", "\[IndentingNewLine]", 
+     RowBox[{"Print", "[", 
+      RowBox[{"remaincnt", ",", "\"\< cases remain.\>\""}], "]"}], ";", 
+     "\[IndentingNewLine]", 
+     RowBox[{"Return", "[", "cases", "]"}], ";"}]}], "\[IndentingNewLine]", 
+   "]"}]}]], "Input",
+ CellChangeTimes->{{3.7087226307360973`*^9, 3.70872265840233*^9}}]
+},
+WindowSize->{Full, Full},
+WindowMargins->{{12, Automatic}, {Automatic, 2}},
+FrontEndVersion->"10.0 for Mac OS X x86 (32-bit, 64-bit Kernel) (December 4, \
+2014)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 4398, 112, 301, "Input"],
+Cell[CellGroupData[{
+Cell[4981, 136, 195, 5, 28, "Input"],
+Cell[5179, 143, 2265, 70, 92, "Output"]
+}, Open  ]],
+Cell[7459, 216, 2615, 65, 233, "Input"]
+}
+]
+*)
+
+(* End of internal cache information *)
