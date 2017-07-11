@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     10488,        302]
-NotebookOptionsPosition[     10078,        283]
-NotebookOutlinePosition[     10436,        299]
-CellTagsIndexPosition[     10393,        296]
+NotebookDataLength[     97377,       2133]
+NotebookOptionsPosition[     93530,       2021]
+NotebookOutlinePosition[     93888,       2037]
+CellTagsIndexPosition[     93845,       2034]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -229,7 +229,8 @@ Cell[BoxData[
       RowBox[{"nonzerot", "=", 
        RowBox[{"10", "^", 
         RowBox[{"-", "5"}]}]}], ",", " ", 
-      RowBox[{"counter", "=", "0"}]}], "}"}], ",", "\[IndentingNewLine]", 
+      RowBox[{"counter", "=", "0"}], ",", " ", "n12", ",", " ", "n23", ",", 
+      " ", "n14", ",", "minvars"}], "}"}], ",", "\[IndentingNewLine]", 
     RowBox[{"(*", " ", 
      RowBox[{
       RowBox[{"Iterate", " ", "through", " ", "\[Theta]23"}], ",", " ", 
@@ -245,7 +246,281 @@ Cell[BoxData[
          RowBox[{
           RowBox[{
            RowBox[{"Do", "[", 
-            RowBox[{",", "\[IndentingNewLine]", 
+            RowBox[{
+             RowBox[{
+              RowBox[{"For", "[", 
+               RowBox[{
+                RowBox[{"n12", "=", "0"}], ",", " ", 
+                RowBox[{"n12", "\[LessEqual]", " ", "9"}], ",", " ", 
+                RowBox[{"n12", "++"}], ",", "\[IndentingNewLine]", 
+                RowBox[{
+                 RowBox[{"For", "[", 
+                  RowBox[{
+                   RowBox[{"n23", "=", "0"}], ",", " ", 
+                   RowBox[{"n23", "\[LessEqual]", " ", "9"}], ",", " ", 
+                   RowBox[{"n23", "++"}], ",", "\[IndentingNewLine]", 
+                   RowBox[{
+                    RowBox[{"For", "[", 
+                    RowBox[{
+                    RowBox[{"n14", "=", "0"}], ",", " ", 
+                    RowBox[{"n14", "\[LessEqual]", " ", "9"}], ",", " ", 
+                    RowBox[{"n14", "++"}], ",", "\[IndentingNewLine]", 
+                    RowBox[{"(*", 
+                    RowBox[{"Remove", " ", "symmetrical", " ", "cases"}], 
+                    "*)"}], "\[IndentingNewLine]", 
+                    RowBox[{
+                    RowBox[{"If", "[", 
+                    RowBox[{
+                    RowBox[{"!", 
+                    RowBox[{"(", " ", 
+                    RowBox[{"n23", "\[LessEqual]", " ", "n14"}], ")"}]}], ",", 
+                    RowBox[{
+                    RowBox[{"Continue", "[", "]"}], ";"}]}], "]"}], ";", 
+                    "\[IndentingNewLine]", 
+                    RowBox[{"(*", 
+                    RowBox[{
+                    "Can", " ", "have", " ", "at", " ", "most", " ", "one", 
+                    " ", "zero"}], "*)"}], "\[IndentingNewLine]", 
+                    RowBox[{"If", "[", 
+                    RowBox[{
+                    RowBox[{
+                    RowBox[{
+                    RowBox[{"n12", " ", "n23"}], " ", "\[Equal]", "0"}], "&&", 
+                    RowBox[{
+                    RowBox[{"n12", " ", "n14"}], "\[Equal]", "0"}], "&&", 
+                    RowBox[{
+                    RowBox[{"n23", " ", "n14"}], "\[Equal]", "0"}]}], ",", 
+                    RowBox[{
+                    RowBox[{"Continue", "[", "]"}], ";"}]}], "]"}], ";", 
+                    "\[IndentingNewLine]", 
+                    RowBox[{"(*", 
+                    RowBox[{
+                    "The", " ", "number", " ", "of", " ", "angles", " ", 
+                    "cannot", " ", "be", " ", "greater", " ", "than", " ", 
+                    "8"}], "*)"}], "\[IndentingNewLine]", 
+                    RowBox[{"If", "[", 
+                    RowBox[{
+                    RowBox[{
+                    RowBox[{"n12", "+", "n23", "+", "n14"}], ">", "8"}], ",", 
+                    " ", 
+                    RowBox[{
+                    RowBox[{"Continue", "[", "]"}], ";"}]}], "]"}], ";", 
+                    "\[IndentingNewLine]", 
+                    RowBox[{"(*", 
+                    RowBox[{
+                    "The", " ", "number", " ", "of", " ", "angles", " ", "is",
+                     " ", "all", " ", "even"}], "*)"}], "\[IndentingNewLine]", 
+                    RowBox[{"If", "[", 
+                    RowBox[{
+                    RowBox[{
+                    RowBox[{
+                    RowBox[{"Mod", "[", 
+                    RowBox[{"n12", ",", "2"}], "]"}], "\[NotEqual]", " ", 
+                    "0"}], "||", 
+                    RowBox[{
+                    RowBox[{"Mod", "[", 
+                    RowBox[{"n13", ",", "2"}], "]"}], "\[NotEqual]", " ", 
+                    "0"}], "||", 
+                    RowBox[{
+                    RowBox[{"Mod", "[", 
+                    RowBox[{"n14", ",", "2"}], "]"}], "\[NotEqual]", " ", 
+                    "0"}]}], ",", " ", 
+                    RowBox[{
+                    RowBox[{"Continue", "[", "]"}], ";"}]}], "]"}], ";", 
+                    "\[IndentingNewLine]", "\[IndentingNewLine]", 
+                    RowBox[{"remaincnt", "++"}], ";", "\[IndentingNewLine]", 
+                    "\[IndentingNewLine]", 
+                    RowBox[{"(*", 
+                    RowBox[{
+                    RowBox[{
+                    "Minimize", " ", "with", " ", "respect", " ", "to", " ", 
+                    "\[Theta]12", " ", "and", " ", "\[Theta]23", " ", "when", 
+                    " ", "n14", " ", "is", " ", "not", " ", "zero"}], ",", 
+                    " ", 
+                    RowBox[{
+                    "otherwise", " ", "minimize", " ", "with", " ", "respect",
+                     " ", "to", " ", "\[Theta]12", " ", "and", " ", 
+                    "\[Theta]14"}]}], "*)"}], "\[IndentingNewLine]", 
+                    RowBox[{"If", "[", 
+                    RowBox[{
+                    RowBox[{"n14", "\[NotEqual]", " ", "0"}], ",", 
+                    "\[IndentingNewLine]", 
+                    RowBox[{
+                    RowBox[{"Clear", "[", "\[Theta]23", "]"}], ";", 
+                    RowBox[{"\[Theta]14", "=", 
+                    RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"2", "Pi"}], "-", " ", 
+                    RowBox[{"n12", " ", "\[Theta]12"}], "-", 
+                    RowBox[{"n23", " ", "\[Theta]23"}]}], ")"}], "/", 
+                    "n14"}]}], ";", 
+                    RowBox[{"minvars", "=", 
+                    RowBox[{"{", 
+                    RowBox[{"\[Theta]12", ",", "\[Theta]23"}], "}"}]}], ";"}],
+                     ",", "\[IndentingNewLine]", 
+                    RowBox[{
+                    RowBox[{"Clear", "[", "\[Theta]14", "]"}], ";", 
+                    RowBox[{"\[Theta]23", "=", 
+                    RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"2", "Pi"}], "-", " ", 
+                    RowBox[{"n12", " ", "\[Theta]12"}]}], ")"}], "/", 
+                    "n23"}]}], " ", ";", 
+                    RowBox[{"minvars", "=", 
+                    RowBox[{"{", 
+                    RowBox[{"\[Theta]12", ",", "\[Theta]14"}], "}"}]}]}]}], 
+                    "\[IndentingNewLine]", "]"}], ";", "\[IndentingNewLine]", 
+                    "\[IndentingNewLine]", 
+                    RowBox[{"mat", "=", 
+                    RowBox[{"ModifiedMat", "[", 
+                    RowBox[{
+                    "\[Theta]12", ",", " ", "\[Theta]13", ",", " ", 
+                    "\[Theta]14", ",", " ", "\[Theta]23", ",", " ", 
+                    "\[Theta]24", ",", " ", "\[Theta]34"}], "]"}]}], ";", 
+                    "\[IndentingNewLine]", 
+                    RowBox[{"det1", "=", 
+                    RowBox[{
+                    RowBox[{"mat", "[", 
+                    RowBox[{"[", 
+                    RowBox[{"{", 
+                    RowBox[{"1", ",", " ", "2"}], "}"}], "]"}], "]"}], "//", 
+                    "Det"}]}], ";", "\[IndentingNewLine]", 
+                    RowBox[{"det2", "=", 
+                    RowBox[{
+                    RowBox[{"mat", "[", 
+                    RowBox[{"[", 
+                    RowBox[{"{", 
+                    RowBox[{"1", ",", " ", "3"}], "}"}], "]"}], "]"}], "//", 
+                    "Det"}]}], ";", "\[IndentingNewLine]", 
+                    RowBox[{"det3", "=", 
+                    RowBox[{
+                    RowBox[{"mat", "[", 
+                    RowBox[{"[", 
+                    RowBox[{"{", 
+                    RowBox[{"1", ",", " ", "4"}], "}"}], "]"}], "]"}], "//", 
+                    "Det"}]}], ";", "\[IndentingNewLine]", 
+                    "\[IndentingNewLine]", 
+                    RowBox[{"minimum", "=", 
+                    RowBox[{"NMinimize", "[", 
+                    RowBox[{
+                    RowBox[{"{", "\[IndentingNewLine]", 
+                    RowBox[{
+                    RowBox[{
+                    RowBox[{"det1", "^", "2"}], "+", 
+                    RowBox[{"det2", "^", "2"}], "+", 
+                    RowBox[{"det3", "^", "2"}]}], ",", "\[IndentingNewLine]", 
+                    
+                    RowBox[{
+                    RowBox[{
+                    RowBox[{"4", " ", 
+                    RowBox[{"Pi", "/", "5"}]}], ">", "\[Theta]12", ">", 
+                    RowBox[{
+                    RowBox[{"Pi", "/", "180"}], "*", "36.5"}]}], "&&", 
+                    "\[IndentingNewLine]", 
+                    RowBox[{
+                    RowBox[{"4", " ", 
+                    RowBox[{"Pi", "/", "5"}]}], ">", "\[Theta]23", ">", 
+                    RowBox[{
+                    RowBox[{"Pi", "/", "180"}], "*", "36.5"}]}], "&&", 
+                    "\[IndentingNewLine]", 
+                    RowBox[{
+                    RowBox[{"4", " ", 
+                    RowBox[{"Pi", "/", "5"}]}], ">", "\[Theta]14", ">", 
+                    RowBox[{
+                    RowBox[{"Pi", "/", "180"}], "*", "36.5"}]}], "&&", 
+                    "\[IndentingNewLine]", 
+                    RowBox[{
+                    RowBox[{
+                    "\[Theta]12", "+", "\[Theta]13", "+", "\[Theta]14"}], ">",
+                     "Pi"}], "&&", "\[IndentingNewLine]", 
+                    RowBox[{
+                    RowBox[{
+                    "\[Theta]12", "+", "\[Theta]23", "+", "\[Theta]24"}], ">",
+                     "Pi"}], "&&", "\[IndentingNewLine]", 
+                    RowBox[{
+                    RowBox[{
+                    "\[Theta]13", "+", "\[Theta]23", "+", "\[Theta]34"}], ">",
+                     "Pi"}], "&&", "\[IndentingNewLine]", 
+                    RowBox[{
+                    RowBox[{
+                    "\[Theta]14", "+", "\[Theta]24", "+", "\[Theta]34"}], ">",
+                     "Pi"}], "&&", "\[IndentingNewLine]", 
+                    RowBox[{
+                    RowBox[{
+                    "\[Theta]12", "+", "\[Theta]34", "+", "\[Theta]13", "+", 
+                    "\[Theta]24"}], "<", 
+                    RowBox[{"2", "Pi"}]}], "&&", "\[IndentingNewLine]", 
+                    RowBox[{
+                    RowBox[{
+                    "\[Theta]12", "+", "\[Theta]34", "+", "\[Theta]14", "+", 
+                    "\[Theta]23"}], "<", 
+                    RowBox[{"2", "Pi"}]}], "&&", "\[IndentingNewLine]", 
+                    RowBox[{
+                    RowBox[{
+                    "\[Theta]13", "+", "\[Theta]24", "+", "\[Theta]14", "+", 
+                    "\[Theta]23"}], "<", 
+                    RowBox[{"2", "Pi"}]}]}]}], "}"}], ",", 
+                    "\[IndentingNewLine]", " ", "minvars", ",", 
+                    "\[IndentingNewLine]", 
+                    RowBox[{"Method", "\[Rule]", 
+                    RowBox[{"{", 
+                    RowBox[{"\"\<RandomSearch\>\"", ",", 
+                    RowBox[{"\"\<SearchPoints\>\"", "\[Rule]", "10"}], ",", 
+                    RowBox[{"\"\<RandomSeed\>\"", "\[Rule]", "0"}]}], "}"}]}],
+                     ",", "\[IndentingNewLine]", 
+                    RowBox[{"WorkingPrecision", "\[Rule]", "30"}]}], "]"}]}], 
+                    ";", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+                    RowBox[{"(*", " ", 
+                    RowBox[{
+                    "Ignore", " ", "if", " ", "minimum", " ", "is", " ", 
+                    "greather", " ", "than", " ", "zero"}], " ", "*)"}], 
+                    "\[IndentingNewLine]", 
+                    RowBox[{"If", "[", 
+                    RowBox[{
+                    RowBox[{
+                    RowBox[{"Abs", "[", 
+                    RowBox[{"minimum", "[", 
+                    RowBox[{"[", "1", "]"}], "]"}], "]"}], ">", "nonzerot"}], 
+                    ",", "\[IndentingNewLine]", 
+                    RowBox[{
+                    RowBox[{"Print", "[", 
+                    RowBox[{
+                    "remaincnt", ",", 
+                    "\"\<: Determinant minimization does not give 0. The \
+minimum is \>\"", ",", 
+                    RowBox[{"minimum", "[", 
+                    RowBox[{"[", "1", "]"}], "]"}]}], "]"}], ";", 
+                    RowBox[{"Continue", "[", "]"}], ";"}]}], "]"}], ";", 
+                    "\[IndentingNewLine]", "\[IndentingNewLine]", 
+                    RowBox[{"Print", "[", 
+                    RowBox[{
+                    "\"\<\[Theta]13=\>\"", ",", "\[Theta]13", ",", 
+                    "\"\< \[Theta]24=\>\"", ",", "\[Theta]24", ",", 
+                    "\"\< \[Theta]34=\>\"", ",", "\[Theta]34", ",", 
+                    "\"\< n12=\>\"", ",", "n12", ",", "\"\< n23=\>\"", ",", 
+                    "n23", ",", "\"\< n14=\>\"", ",", "n14", " ", ",", 
+                    "\[IndentingNewLine]", "\"\< mininum=\>\"", ",", 
+                    RowBox[{"minimum", "[", 
+                    RowBox[{"[", "1", "]"}], "]"}], ",", "\"\< at \>\"", ",", 
+                    
+                    RowBox[{"minimum", "[", 
+                    RowBox[{"[", "2", "]"}], "]"}]}], "]"}], ";", 
+                    "\[IndentingNewLine]", "\[IndentingNewLine]", 
+                    RowBox[{"AppendTo", "[", 
+                    RowBox[{"cases", ",", 
+                    RowBox[{"{", 
+                    RowBox[{
+                    "\[Theta]13", ",", "\[Theta]24", ",", "\[Theta]34", ",", 
+                    "n12", ",", "n23", ",", "n14", ",", 
+                    RowBox[{"minimum", "[", 
+                    RowBox[{"[", "1", "]"}], "]"}], ",", 
+                    RowBox[{"minimum", "[", 
+                    RowBox[{"[", "2", "]"}], "]"}]}], "}"}]}], "]"}], ";"}]}],
+                     "\[IndentingNewLine]", "\[IndentingNewLine]", "]"}], 
+                    ";"}]}], "]"}], ";"}]}], "]"}], ";"}], ",", 
+             "\[IndentingNewLine]", 
              RowBox[{"{", 
               RowBox[{"\[Theta]34", ",", 
                RowBox[{"{", 
@@ -279,7 +554,1470 @@ Cell[BoxData[
      "\[IndentingNewLine]", 
      RowBox[{"Return", "[", "cases", "]"}], ";"}]}], "\[IndentingNewLine]", 
    "]"}]}]], "Input",
- CellChangeTimes->{{3.7087226307360973`*^9, 3.70872265840233*^9}}]
+ CellChangeTimes->{{3.7087226307360973`*^9, 3.70872265840233*^9}, {
+   3.708728831348394*^9, 3.708728847274665*^9}, {3.708728908965727*^9, 
+   3.708728941358369*^9}, {3.708728983312051*^9, 3.708729142340954*^9}, {
+   3.708729254946773*^9, 3.708729325293481*^9}, {3.708729393016171*^9, 
+   3.708729412945704*^9}, {3.708729479438284*^9, 3.708729570081979*^9}, {
+   3.708729644694274*^9, 3.70872969503953*^9}, {3.708729732144206*^9, 
+   3.7087298122597027`*^9}, {3.7087300842315683`*^9, 3.708730178064777*^9}, {
+   3.708730219090193*^9, 3.708730308126175*^9}, {3.708730339706073*^9, 
+   3.708730409971302*^9}, {3.708730800748373*^9, 3.708730803352497*^9}, {
+   3.70873083472139*^9, 3.7087308556820707`*^9}, 3.708730905116243*^9, {
+   3.708730991428617*^9, 3.708731002135083*^9}, {3.70873122281562*^9, 
+   3.708731239007566*^9}, {3.708731314586052*^9, 3.708731424125637*^9}, {
+   3.708731865159617*^9, 3.70873194421618*^9}, {3.708731975903084*^9, 
+   3.708732060017199*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"cases", " ", "=", "GenerateCases"}]], "Input",
+ CellChangeTimes->{{3.708728896623752*^9, 3.7087289036191196`*^9}, 
+   3.70872906615584*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"NMinimize", "::", "nsol"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"There are no points that satisfy the constraints \
+\[NoBreak]\\!\\({\\(\\(\\(\\(\\(\\(-\\(\\(\\(4\\\\ \[Pi]\\)\\/5\\)\\)\\)\\) + \
+\[Theta]12$1648953\\)\\) \[LessEqual] 0\\)\\), \\(\\(\\(\\(\[Pi]\\/5 - \
+\[Theta]23$1648953\\/2\\)\\) \[LessEqual] 0\\)\\), \
+\\(\\(\\(\\(\\(\\(-\\(\\(\\(4\\\\ \[Pi]\\)\\/5\\)\\)\\)\\) + \
+\[Theta]23$1648953\\)\\) \[LessEqual] 0\\)\\), \
+\\(\\(\\(\\(0.6370451769779302955771471304983436404066482393177297914757`30. \
+- \[Theta]12$1648953\\)\\) \[LessEqual] 0\\)\\), \
+\\(\\(\\(\\(\\(\\(-\[Pi]\\)\\) + \[Theta]23$1648953\\/2\\)\\) \[LessEqual] \
+0\\)\\), \\(\\(\\(\\(\\(\\(-2.\
+5045474766118629428854962527811592437905211600573760294993`30.594559036613536\
+\\)\\) + \[Theta]23$1648953\\/2\\)\\) \[LessEqual] 0\\)\\), \
+\\(\\(\\(\\(0.6370451769779302955771471304983436404066482393177297914757`30. \
+- \[Theta]23$1648953\\)\\) \[LessEqual] 0\\)\\), \
+\\(\\(\\(\\(-\[Theta]23$1648953\\)\\) \[LessEqual] 0\\)\\), \
+\\(\\(\\(\\(\\(\\(-\\(\\(\[Pi]\\/2\\)\\)\\)\\) + \[Theta]12$1648953\\)\\) \
+\[LessEqual] 0\\)\\), \\(\\(\[Theta]23$1648953\\/2 \[LessEqual] 0\\)\\)}\\)\
+\[NoBreak]. \\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", \
+ButtonStyle->\\\"Link\\\", ButtonFrame->None, \
+ButtonData:>\\\"paclet:ref/message/NMinimize/nsol\\\", ButtonNote -> \
+\\\"NMinimize::nsol\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{3.7087303166088533`*^9, 3.708730414009232*^9, 
+  3.708730806411579*^9, 3.708730859357291*^9, 3.708732073284327*^9}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "1", "\[InvisibleSpace]", "\<\": Determinant minimization does not give 0. \
+The minimum is \"\>", "\[InvisibleSpace]", "\[Infinity]"}],
+  SequenceForm[
+  1, ": Determinant minimization does not give 0. The minimum is ", 
+   DirectedInfinity[1]],
+  Editable->False]], "Print",
+ CellChangeTimes->{{3.708729066880496*^9, 3.7087291196263237`*^9}, {
+   3.7087292931475067`*^9, 3.708729318252365*^9}, {3.708729385397081*^9, 
+   3.708729414439868*^9}, 3.708730316598797*^9, 3.708730539646228*^9, 
+   3.708730806418367*^9, 3.708730859364602*^9, 3.708732073294488*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "2", "\[InvisibleSpace]", "\<\": Determinant minimization does not give 0. \
+The minimum is \"\>", "\[InvisibleSpace]", 
+   "0.0673162419029598228650992966658914505370714278713462554781`30."}],
+  SequenceForm[
+  2, ": Determinant minimization does not give 0. The minimum is ", 
+   0.0673162419029598228650992966658914505370714278713462554781`30.],
+  Editable->False]], "Print",
+ CellChangeTimes->{{3.708729066880496*^9, 3.7087291196263237`*^9}, {
+   3.7087292931475067`*^9, 3.708729318252365*^9}, {3.708729385397081*^9, 
+   3.708729414439868*^9}, 3.708730316598797*^9, 3.708730539646228*^9, 
+   3.708730806418367*^9, 3.708730859364602*^9, 3.7087320789832573`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "3", "\[InvisibleSpace]", "\<\": Determinant minimization does not give 0. \
+The minimum is \"\>", "\[InvisibleSpace]", 
+   "0.7194012046611329185379197463337437126472448280262344756089`30."}],
+  SequenceForm[
+  3, ": Determinant minimization does not give 0. The minimum is ", 
+   0.7194012046611329185379197463337437126472448280262344756089`30.],
+  Editable->False]], "Print",
+ CellChangeTimes->{{3.708729066880496*^9, 3.7087291196263237`*^9}, {
+   3.7087292931475067`*^9, 3.708729318252365*^9}, {3.708729385397081*^9, 
+   3.708729414439868*^9}, 3.708730316598797*^9, 3.708730539646228*^9, 
+   3.708730806418367*^9, 3.708730859364602*^9, 3.708732083955591*^9}]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"Join", "::", "heads"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"Heads \[NoBreak]\\!\\(Equal\\)\[NoBreak] and \[NoBreak]\\!\
+\\(List\\)\[NoBreak] at positions \[NoBreak]\\!\\(1\\)\[NoBreak] and \
+\[NoBreak]\\!\\(2\\)\[NoBreak] are expected to be the same. \
+\\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", ButtonStyle->\\\"Link\\\", \
+ButtonFrame->None, ButtonData:>\\\"paclet:ref/message/General/heads\\\", \
+ButtonNote -> \\\"Join::heads\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{3.7087303166088533`*^9, 3.708730414009232*^9, 
+  3.708730806411579*^9, 3.708730859357291*^9, 3.708732084010232*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"NMinimize", "::", "nsol"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"There are no points that satisfy the constraints \
+\[NoBreak]\\!\\(Join[\\(\\(\\(\\(Optimization`NMinimizeDump`lineq \[Equal] \
+0\\)\\), \\(\\({\\(\\(\\(\\(\\(\\(-\\(\\(\\(4\\\\ \[Pi]\\)\\/5\\)\\)\\)\\) + \
+\[Theta]12$1648953\\)\\) \[LessEqual] 0\\)\\), \\(\\(\\(\\(\[Pi]\\/5 - \
+\[Theta]23$1648953\\)\\) \[LessEqual] 0\\)\\), \
+\\(\\(\\(\\(\\(\\(-\\(\\(\\(4\\\\ \[Pi]\\)\\/5\\)\\)\\)\\) + \
+\[Theta]23$1648953\\)\\) \[LessEqual] 0\\)\\), \
+\\(\\(\\(\\(0.6370451769779302955771471304983436404066482393177297914757`30. \
+- \[Theta]12$1648953\\)\\) \[LessEqual] 0\\)\\), \
+\\(\\(\\(\\(\\(\\(-\[Pi]\\)\\) + \[Theta]23$1648953\\)\\) \[LessEqual] \
+0\\)\\), \\(\\(\\(\\(\\(\\(-\\(\\(\[Pi]\\/2\\)\\)\\)\\) - \[Theta]12$1648953 \
++ \[Theta]23$1648953\\)\\) \[LessEqual] 0\\)\\), \
+\\(\\(\\(\\(\\(\\(-2.\
+5045474766118629428854962527811592437905211600573760294993`30.594559036613536\
+\\)\\) + \[Theta]23$1648953\\)\\) \[LessEqual] 0\\)\\), \
+\\(\\(\\(\\(0.6370451769779302955771471304983436404066482393177297914757`30. \
+- \[Theta]23$1648953\\)\\) \[LessEqual] 0\\)\\), \
+\\(\\(\\(\\(-\[Theta]23$1648953\\)\\) \[LessEqual] 0\\)\\), \\(\\(\\(\\(\[Pi]\
+\\/2 - \[Theta]12$1648953 - \[Theta]23$1648953\\)\\) \[LessEqual] 0\\)\\), \
+\\(\\(\\(\\(\\(\\(-\\(\\(\[Pi]\\/2\\)\\)\\)\\) + \[Theta]12$1648953\\)\\) \
+\[LessEqual] 0\\)\\), False, \\(\\(\\(\\(\\(\\(-\\(\\(\[Pi]\\/2\\)\\)\\)\\) + \
+\[Theta]12$1648953\\)\\) \[LessEqual] 0\\)\\)}\\)\\)\\)\\)]\\)\[NoBreak]. \\!\
+\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", ButtonStyle->\\\"Link\\\", \
+ButtonFrame->None, ButtonData:>\\\"paclet:ref/message/NMinimize/nsol\\\", \
+ButtonNote -> \\\"NMinimize::nsol\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{3.7087303166088533`*^9, 3.708730414009232*^9, 
+  3.708730806411579*^9, 3.708730859357291*^9, 3.708732084059947*^9}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "4", "\[InvisibleSpace]", "\<\": Determinant minimization does not give 0. \
+The minimum is \"\>", "\[InvisibleSpace]", "\[Infinity]"}],
+  SequenceForm[
+  4, ": Determinant minimization does not give 0. The minimum is ", 
+   DirectedInfinity[1]],
+  Editable->False]], "Print",
+ CellChangeTimes->{{3.708729066880496*^9, 3.7087291196263237`*^9}, {
+   3.7087292931475067`*^9, 3.708729318252365*^9}, {3.708729385397081*^9, 
+   3.708729414439868*^9}, 3.708730316598797*^9, 3.708730539646228*^9, 
+   3.708730806418367*^9, 3.708730859364602*^9, 3.7087320840665503`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "5", "\[InvisibleSpace]", "\<\": Determinant minimization does not give 0. \
+The minimum is \"\>", "\[InvisibleSpace]", 
+   "0.0514855601730919879230845825153456989546709784798080347822`30."}],
+  SequenceForm[
+  5, ": Determinant minimization does not give 0. The minimum is ", 
+   0.0514855601730919879230845825153456989546709784798080347822`30.],
+  Editable->False]], "Print",
+ CellChangeTimes->{{3.708729066880496*^9, 3.7087291196263237`*^9}, {
+   3.7087292931475067`*^9, 3.708729318252365*^9}, {3.708729385397081*^9, 
+   3.708729414439868*^9}, 3.708730316598797*^9, 3.708730539646228*^9, 
+   3.708730806418367*^9, 3.708730859364602*^9, 3.708732088118985*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "6", "\[InvisibleSpace]", "\<\": Determinant minimization does not give 0. \
+The minimum is \"\>", "\[InvisibleSpace]", 
+   "0.7499732924876404719505637990902433095459184539826763251901`30."}],
+  SequenceForm[
+  6, ": Determinant minimization does not give 0. The minimum is ", 
+   0.7499732924876404719505637990902433095459184539826763251901`30.],
+  Editable->False]], "Print",
+ CellChangeTimes->{{3.708729066880496*^9, 3.7087291196263237`*^9}, {
+   3.7087292931475067`*^9, 3.708729318252365*^9}, {3.708729385397081*^9, 
+   3.708729414439868*^9}, 3.708730316598797*^9, 3.708730539646228*^9, 
+   3.708730806418367*^9, 3.708730859364602*^9, 3.70873209250978*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "7", "\[InvisibleSpace]", "\<\": Determinant minimization does not give 0. \
+The minimum is \"\>", "\[InvisibleSpace]", 
+   "0.0815824840180097208619729961098294271229413932777172857985`30."}],
+  SequenceForm[
+  7, ": Determinant minimization does not give 0. The minimum is ", 
+   0.0815824840180097208619729961098294271229413932777172857985`30.],
+  Editable->False]], "Print",
+ CellChangeTimes->{{3.708729066880496*^9, 3.7087291196263237`*^9}, {
+   3.7087292931475067`*^9, 3.708729318252365*^9}, {3.708729385397081*^9, 
+   3.708729414439868*^9}, 3.708730316598797*^9, 3.708730539646228*^9, 
+   3.708730806418367*^9, 3.708730859364602*^9, 3.708732096622019*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "8", "\[InvisibleSpace]", "\<\": Determinant minimization does not give 0. \
+The minimum is \"\>", "\[InvisibleSpace]", 
+   "0.7201965960838978671007667675335295140761494714285353478743`30."}],
+  SequenceForm[
+  8, ": Determinant minimization does not give 0. The minimum is ", 
+   0.7201965960838978671007667675335295140761494714285353478743`30.],
+  Editable->False]], "Print",
+ CellChangeTimes->{{3.708729066880496*^9, 3.7087291196263237`*^9}, {
+   3.7087292931475067`*^9, 3.708729318252365*^9}, {3.708729385397081*^9, 
+   3.708729414439868*^9}, 3.708730316598797*^9, 3.708730539646228*^9, 
+   3.708730806418367*^9, 3.708730859364602*^9, 3.708732099800448*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "9", "\[InvisibleSpace]", "\<\": Determinant minimization does not give 0. \
+The minimum is \"\>", "\[InvisibleSpace]", 
+   "1.3538141476386316359512656523114283736656207206733510788687`30."}],
+  SequenceForm[
+  9, ": Determinant minimization does not give 0. The minimum is ", 
+   1.3538141476386316359512656523114283736656207206733510788687`30.],
+  Editable->False]], "Print",
+ CellChangeTimes->{{3.708729066880496*^9, 3.7087291196263237`*^9}, {
+   3.7087292931475067`*^9, 3.708729318252365*^9}, {3.708729385397081*^9, 
+   3.708729414439868*^9}, 3.708730316598797*^9, 3.708730539646228*^9, 
+   3.708730806418367*^9, 3.708730859364602*^9, 3.708732103278083*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "10", "\[InvisibleSpace]", "\<\": Determinant minimization does not give 0. \
+The minimum is \"\>", "\[InvisibleSpace]", 
+   "0.0570542121560937397286417012716791917323307179911608749082`30."}],
+  SequenceForm[
+  10, ": Determinant minimization does not give 0. The minimum is ", 
+   0.0570542121560937397286417012716791917323307179911608749082`30.],
+  Editable->False]], "Print",
+ CellChangeTimes->{{3.708729066880496*^9, 3.7087291196263237`*^9}, {
+   3.7087292931475067`*^9, 3.708729318252365*^9}, {3.708729385397081*^9, 
+   3.708729414439868*^9}, 3.708730316598797*^9, 3.708730539646228*^9, 
+   3.708730806418367*^9, 3.708730859364602*^9, 3.708732106706903*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "11", "\[InvisibleSpace]", "\<\": Determinant minimization does not give 0. \
+The minimum is \"\>", "\[InvisibleSpace]", 
+   "0.1875000000000000000000000000000819344017285653469093419301`30."}],
+  SequenceForm[
+  11, ": Determinant minimization does not give 0. The minimum is ", 
+   0.1875000000000000000000000000000819344017285653469093419301`30.],
+  Editable->False]], "Print",
+ CellChangeTimes->{{3.708729066880496*^9, 3.7087291196263237`*^9}, {
+   3.7087292931475067`*^9, 3.708729318252365*^9}, {3.708729385397081*^9, 
+   3.708729414439868*^9}, 3.708730316598797*^9, 3.708730539646228*^9, 
+   3.708730806418367*^9, 3.708730859364602*^9, 3.708732118912552*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "12", "\[InvisibleSpace]", "\<\": Determinant minimization does not give 0. \
+The minimum is \"\>", "\[InvisibleSpace]", 
+   "0.2610562933111032231056009528537678826595732027851772546085`30."}],
+  SequenceForm[
+  12, ": Determinant minimization does not give 0. The minimum is ", 
+   0.2610562933111032231056009528537678826595732027851772546085`30.],
+  Editable->False]], "Print",
+ CellChangeTimes->{{3.708729066880496*^9, 3.7087291196263237`*^9}, {
+   3.7087292931475067`*^9, 3.708729318252365*^9}, {3.708729385397081*^9, 
+   3.708729414439868*^9}, 3.708730316598797*^9, 3.708730539646228*^9, 
+   3.708730806418367*^9, 3.708730859364602*^9, 3.7087321221448812`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "13", "\[InvisibleSpace]", "\<\": Determinant minimization does not give 0. \
+The minimum is \"\>", "\[InvisibleSpace]", 
+   "0.0541104280701001531296986290475545800201375844604244737887`30."}],
+  SequenceForm[
+  13, ": Determinant minimization does not give 0. The minimum is ", 
+   0.0541104280701001531296986290475545800201375844604244737887`30.],
+  Editable->False]], "Print",
+ CellChangeTimes->{{3.708729066880496*^9, 3.7087291196263237`*^9}, {
+   3.7087292931475067`*^9, 3.708729318252365*^9}, {3.708729385397081*^9, 
+   3.708729414439868*^9}, 3.708730316598797*^9, 3.708730539646228*^9, 
+   3.708730806418367*^9, 3.708730859364602*^9, 3.708732125408277*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "14", "\[InvisibleSpace]", "\<\": Determinant minimization does not give 0. \
+The minimum is \"\>", "\[InvisibleSpace]", 
+   "0.1087618405463753010715887043711163114076385359104085941665`30."}],
+  SequenceForm[
+  14, ": Determinant minimization does not give 0. The minimum is ", 
+   0.1087618405463753010715887043711163114076385359104085941665`30.],
+  Editable->False]], "Print",
+ CellChangeTimes->{{3.708729066880496*^9, 3.7087291196263237`*^9}, {
+   3.7087292931475067`*^9, 3.708729318252365*^9}, {3.708729385397081*^9, 
+   3.708729414439868*^9}, 3.708730316598797*^9, 3.708730539646228*^9, 
+   3.708730806418367*^9, 3.708730859364602*^9, 3.708732128726417*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "15", "\[InvisibleSpace]", "\<\": Determinant minimization does not give 0. \
+The minimum is \"\>", "\[InvisibleSpace]", 
+   "0.1875000000000000119788948225902022841334659073471968753801`30."}],
+  SequenceForm[
+  15, ": Determinant minimization does not give 0. The minimum is ", 
+   0.1875000000000000119788948225902022841334659073471968753801`30.],
+  Editable->False]], "Print",
+ CellChangeTimes->{{3.708729066880496*^9, 3.7087291196263237`*^9}, {
+   3.7087292931475067`*^9, 3.708729318252365*^9}, {3.708729385397081*^9, 
+   3.708729414439868*^9}, 3.708730316598797*^9, 3.708730539646228*^9, 
+   3.708730806418367*^9, 3.708730859364602*^9, 3.7087321338962593`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "16", "\[InvisibleSpace]", "\<\": Determinant minimization does not give 0. \
+The minimum is \"\>", "\[InvisibleSpace]", 
+   "0.2377217684527993229966425450011022132623435465510045357709`30."}],
+  SequenceForm[
+  16, ": Determinant minimization does not give 0. The minimum is ", 
+   0.2377217684527993229966425450011022132623435465510045357709`30.],
+  Editable->False]], "Print",
+ CellChangeTimes->{{3.708729066880496*^9, 3.7087291196263237`*^9}, {
+   3.7087292931475067`*^9, 3.708729318252365*^9}, {3.708729385397081*^9, 
+   3.708729414439868*^9}, 3.708730316598797*^9, 3.708730539646228*^9, 
+   3.708730806418367*^9, 3.708730859364602*^9, 3.708732135871808*^9}]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"Join", "::", "heads"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"Heads \[NoBreak]\\!\\(Equal\\)\[NoBreak] and \[NoBreak]\\!\
+\\(List\\)\[NoBreak] at positions \[NoBreak]\\!\\(1\\)\[NoBreak] and \
+\[NoBreak]\\!\\(2\\)\[NoBreak] are expected to be the same. \
+\\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", ButtonStyle->\\\"Link\\\", \
+ButtonFrame->None, ButtonData:>\\\"paclet:ref/message/General/heads\\\", \
+ButtonNote -> \\\"Join::heads\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{3.7087303166088533`*^9, 3.708730414009232*^9, 
+  3.708730806411579*^9, 3.708730859357291*^9, 3.7087321359119577`*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"NMinimize", "::", "nsol"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"There are no points that satisfy the constraints \
+\[NoBreak]\\!\\(Join[\\(\\(\\(\\(Optimization`NMinimizeDump`lineq \[Equal] \
+0\\)\\), \\(\\({\\(\\(\\(\\(\\(\\(-\\(\\(\\(3\\\\ \[Pi]\\)\\/10\\)\\)\\)\\) - \
+\[Theta]12$1648953\\)\\) \[LessEqual] 0\\)\\), \
+\\(\\(\\(\\(\\(\\(-\\(\\(\\(4\\\\ \[Pi]\\)\\/5\\)\\)\\)\\) + \
+\[Theta]12$1648953\\)\\) \[LessEqual] 0\\)\\), \
+\\(\\(\\(\\(\\(\\(-\\(\\(\\(4\\\\ \[Pi]\\)\\/5\\)\\)\\)\\) + \
+\[Theta]23$1648953\\)\\) \[LessEqual] 0\\)\\), \\(\\(\\(\\(\\(\\(-\\(\\(\[Pi]\
+\\/2\\)\\)\\)\\) + \[Theta]12$1648953\\)\\) \[LessEqual] 0\\)\\), \
+\\(\\(\\(\\(\\(\\(-0.\
+9337511498169663236541745611414078016919364603698231190118`30.166060917564753\
+\\)\\) + \[Theta]12$1648953\\)\\) \[LessEqual] 0\\)\\), \
+\\(\\(\\(\\(0.6370451769779302955771471304983436404066482393177297914757`30. \
+- \[Theta]12$1648953\\)\\) \[LessEqual] 0\\)\\), False, \
+\\(\\(\\(\\(0.6370451769779302955771471304983436404066482393177297914757`30. \
+- \[Theta]23$1648953\\)\\) \[LessEqual] 0\\)\\), \
+\\(\\(\\(\\(-\[Theta]23$1648953\\)\\) \[LessEqual] 0\\)\\), \\(\\(\\(\\(\[Pi]\
+\\/2 - \[Theta]12$1648953 - \[Theta]23$1648953\\)\\) \[LessEqual] 0\\)\\), \
+\\(\\(\\(\\(\\(\\(-\\(\\(\[Pi]\\/2\\)\\)\\)\\) + \[Theta]12$1648953\\)\\) \
+\[LessEqual] 0\\)\\), \\(\\(\\(\\(\\(\\(-\\(\\(\[Pi]\\/2\\)\\)\\)\\) - \
+\[Theta]12$1648953 + \[Theta]23$1648953\\)\\) \[LessEqual] 0\\)\\), \\(\\(\\(\
+\\(\\(\\(-\[Pi]\\)\\) + \[Theta]23$1648953\\)\\) \[LessEqual] \
+0\\)\\)}\\)\\)\\)\\)]\\)\[NoBreak]. \\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\
+\", ButtonStyle->\\\"Link\\\", ButtonFrame->None, \
+ButtonData:>\\\"paclet:ref/message/NMinimize/nsol\\\", ButtonNote -> \
+\\\"NMinimize::nsol\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{3.7087303166088533`*^9, 3.708730414009232*^9, 
+  3.708730806411579*^9, 3.708730859357291*^9, 3.7087321359634666`*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"General", "::", "stop"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"Further output of \[NoBreak]\\!\\(\\*StyleBox[\\(NMinimize \
+:: nsol\\), \\\"MessageName\\\"]\\)\[NoBreak] will be suppressed during this \
+calculation. \\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", \
+ButtonStyle->\\\"Link\\\", ButtonFrame->None, \
+ButtonData:>\\\"paclet:ref/message/General/stop\\\", ButtonNote -> \
+\\\"General::stop\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{3.7087303166088533`*^9, 3.708730414009232*^9, 
+  3.708730806411579*^9, 3.708730859357291*^9, 3.7087321359828987`*^9}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "17", "\[InvisibleSpace]", "\<\": Determinant minimization does not give 0. \
+The minimum is \"\>", "\[InvisibleSpace]", "\[Infinity]"}],
+  SequenceForm[
+  17, ": Determinant minimization does not give 0. The minimum is ", 
+   DirectedInfinity[1]],
+  Editable->False]], "Print",
+ CellChangeTimes->{{3.708729066880496*^9, 3.7087291196263237`*^9}, {
+   3.7087292931475067`*^9, 3.708729318252365*^9}, {3.708729385397081*^9, 
+   3.708729414439868*^9}, 3.708730316598797*^9, 3.708730539646228*^9, 
+   3.708730806418367*^9, 3.708730859364602*^9, 3.70873213598941*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "18", "\[InvisibleSpace]", "\<\": Determinant minimization does not give 0. \
+The minimum is \"\>", "\[InvisibleSpace]", 
+   "0.0783140193245885305142638814799202426984482259016205828791`30."}],
+  SequenceForm[
+  18, ": Determinant minimization does not give 0. The minimum is ", 
+   0.0783140193245885305142638814799202426984482259016205828791`30.],
+  Editable->False]], "Print",
+ CellChangeTimes->{{3.708729066880496*^9, 3.7087291196263237`*^9}, {
+   3.7087292931475067`*^9, 3.708729318252365*^9}, {3.708729385397081*^9, 
+   3.708729414439868*^9}, 3.708730316598797*^9, 3.708730539646228*^9, 
+   3.708730806418367*^9, 3.708730859364602*^9, 3.708732139719351*^9}]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"NMinimize", "::", "incst"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"\[NoBreak]\\!\\(NMinimize\\)\[NoBreak] was unable to \
+generate any initial points satisfying the inequality constraints \
+\[NoBreak]\\!\\({\\(\\(\\(\\(\[Pi]\\/5 - \\(\\(2\\\\ \[Theta]12$1648953\\)\\) \
+- \[Theta]23$1648953\\)\\) \[LessEqual] 0\\)\\), \\(\\(\\(\\(\[Pi]\\/2 - \
+\[Theta]12$1648953 - \[Theta]23$1648953\\)\\) \[LessEqual] 0\\)\\), \\(\\(\\(\
+\\(\\(\\(-\\(\\(\[Pi]\\/2\\)\\)\\)\\) + \[Theta]12$1648953 + \
+\[Theta]23$1648953\\)\\) \[LessEqual] 0\\)\\), \
+\\(\\(\\(\\(\\(\\(-2.\
+5045474766118629428854962527811592437905211600573760294993`30.594559036613536\
+\\)\\) + \\(\\(2\\\\ \[Theta]12$1648953\\)\\) + \[Theta]23$1648953\\)\\) \
+\[LessEqual] 0\\)\\), \\(\\(\\(\\(\\(\\(-\[Pi]\\)\\) + \\(\\(2\\\\ \
+\[Theta]12$1648953\\)\\) + \[Theta]23$1648953\\)\\) \[LessEqual] 0\\)\\)}\\)\
+\[NoBreak]. The initial region specified may not contain any feasible points. \
+Changing the initial region or specifying explicit initial points may provide \
+a better solution. \\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", ButtonStyle->\
+\\\"Link\\\", ButtonFrame->None, \
+ButtonData:>\\\"paclet:ref/message/NMinimize/incst\\\", ButtonNote -> \
+\\\"NMinimize::incst\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{3.7087303166088533`*^9, 3.708730414009232*^9, 
+  3.708730806411579*^9, 3.708730859357291*^9, 3.708732140123246*^9}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "19", "\[InvisibleSpace]", "\<\": Determinant minimization does not give 0. \
+The minimum is \"\>", "\[InvisibleSpace]", 
+   "0.0599631766421869893728309019877466166330442495372777710387`30."}],
+  SequenceForm[
+  19, ": Determinant minimization does not give 0. The minimum is ", 
+   0.0599631766421869893728309019877466166330442495372777710387`30.],
+  Editable->False]], "Print",
+ CellChangeTimes->{{3.708729066880496*^9, 3.7087291196263237`*^9}, {
+   3.7087292931475067`*^9, 3.708729318252365*^9}, {3.708729385397081*^9, 
+   3.708729414439868*^9}, 3.708730316598797*^9, 3.708730539646228*^9, 
+   3.708730806418367*^9, 3.708730859364602*^9, 3.7087321432686987`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "20", "\[InvisibleSpace]", "\<\": Determinant minimization does not give 0. \
+The minimum is \"\>", "\[InvisibleSpace]", 
+   "0.0553036613732939346940069719383672225534076564536761717436`30."}],
+  SequenceForm[
+  20, ": Determinant minimization does not give 0. The minimum is ", 
+   0.0553036613732939346940069719383672225534076564536761717436`30.],
+  Editable->False]], "Print",
+ CellChangeTimes->{{3.708729066880496*^9, 3.7087291196263237`*^9}, {
+   3.7087292931475067`*^9, 3.708729318252365*^9}, {3.708729385397081*^9, 
+   3.708729414439868*^9}, 3.708730316598797*^9, 3.708730539646228*^9, 
+   3.708730806418367*^9, 3.708730859364602*^9, 3.708732146614387*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "21", "\[InvisibleSpace]", "\<\": Determinant minimization does not give 0. \
+The minimum is \"\>", "\[InvisibleSpace]", "\[Infinity]"}],
+  SequenceForm[
+  21, ": Determinant minimization does not give 0. The minimum is ", 
+   DirectedInfinity[1]],
+  Editable->False]], "Print",
+ CellChangeTimes->{{3.708729066880496*^9, 3.7087291196263237`*^9}, {
+   3.7087292931475067`*^9, 3.708729318252365*^9}, {3.708729385397081*^9, 
+   3.708729414439868*^9}, 3.708730316598797*^9, 3.708730539646228*^9, 
+   3.708730806418367*^9, 3.708730859364602*^9, 3.7087321466802673`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"\[Theta]13=\"\>", "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "2"], "\[InvisibleSpace]", "\<\" \[Theta]24=\"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "2"], "\[InvisibleSpace]", "\<\" \[Theta]34=\"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "3"], "\[InvisibleSpace]", "\<\" n12=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" n23=\"\>", 
+   "\[InvisibleSpace]", "1", "\[InvisibleSpace]", "\<\" n14=\"\>", 
+   "\[InvisibleSpace]", "4", "\[InvisibleSpace]", "\<\" mininum=\"\>", 
+   "\[InvisibleSpace]", 
+   "9.375392143304281849773285539152417845490087308913392`30.*^-6", 
+   "\[InvisibleSpace]", "\<\" at \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{
+     "\[Theta]12$1648953", "\[Rule]", 
+      "0.6370451769779302955771471304983436404066482393177297914757`29.\
+69897000433602"}], ",", 
+     RowBox[{
+     "\[Theta]23$1648953", "\[Rule]", 
+      "1.2520932965367352329676980109217041094683414419888042256793`30."}]}], 
+    "}"}]}],
+  SequenceForm[
+  "\[Theta]13=", Rational[1, 2] Pi, " \[Theta]24=", Rational[1, 2] Pi, 
+   " \[Theta]34=", Rational[1, 3] Pi, " n12=", 0, " n23=", 1, " n14=", 4, 
+   " mininum=", 9.375392143304281849773285539152417845490087308913392`30.*^-6,
+    " at ", {$CellContext`\[Theta]12$1648953 -> 
+    0.6370451769779302955771471304983436404066482393177297914757`29.\
+69897000433602, $CellContext`\[Theta]23$1648953 -> 
+    1.2520932965367352329676980109217041094683414419888042256793`30.}],
+  Editable->False]], "Print",
+ CellChangeTimes->{{3.708729066880496*^9, 3.7087291196263237`*^9}, {
+   3.7087292931475067`*^9, 3.708729318252365*^9}, {3.708729385397081*^9, 
+   3.708729414439868*^9}, 3.708730316598797*^9, 3.708730539646228*^9, 
+   3.708730806418367*^9, 3.708730859364602*^9, 3.7087321496832743`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"\[Theta]13=\"\>", "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "2"], "\[InvisibleSpace]", "\<\" \[Theta]24=\"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "2"], "\[InvisibleSpace]", "\<\" \[Theta]34=\"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "3"], "\[InvisibleSpace]", "\<\" n12=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" n23=\"\>", 
+   "\[InvisibleSpace]", "1", "\[InvisibleSpace]", "\<\" n14=\"\>", 
+   "\[InvisibleSpace]", "6", "\[InvisibleSpace]", "\<\" mininum=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" at \"\>", 
+   "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{
+     "\[Theta]12$1648953", "\[Rule]", 
+      "1.3463968515384828164839900214060737397692215068900968416177`30."}], 
+     ",", 
+     RowBox[{
+     "\[Theta]23$1648953", "\[Rule]", 
+      "0.8975979010256552109893266809367638723483694588659784415048`30."}]}], 
+    "}"}]}],
+  SequenceForm[
+  "\[Theta]13=", Rational[1, 2] Pi, " \[Theta]24=", Rational[1, 2] Pi, 
+   " \[Theta]34=", Rational[1, 3] Pi, " n12=", 0, " n23=", 1, " n14=", 6, 
+   " mininum=", 0, 
+   " at ", {$CellContext`\[Theta]12$1648953 -> 
+    1.3463968515384828164839900214060737397692215068900968416177`30., \
+$CellContext`\[Theta]23$1648953 -> 
+    0.8975979010256552109893266809367638723483694588659784415048`30.}],
+  Editable->False]], "Print",
+ CellChangeTimes->{{3.708729066880496*^9, 3.7087291196263237`*^9}, {
+   3.7087292931475067`*^9, 3.708729318252365*^9}, {3.708729385397081*^9, 
+   3.708729414439868*^9}, 3.708730316598797*^9, 3.708730539646228*^9, 
+   3.708730806418367*^9, 3.708730859364602*^9, 3.7087321501519003`*^9}]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"Join", "::", "heads"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"Heads \[NoBreak]\\!\\(Equal\\)\[NoBreak] and \[NoBreak]\\!\
+\\(List\\)\[NoBreak] at positions \[NoBreak]\\!\\(1\\)\[NoBreak] and \
+\[NoBreak]\\!\\(2\\)\[NoBreak] are expected to be the same. \
+\\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", ButtonStyle->\\\"Link\\\", \
+ButtonFrame->None, ButtonData:>\\\"paclet:ref/message/General/heads\\\", \
+ButtonNote -> \\\"Join::heads\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{3.7087303166088533`*^9, 3.708730414009232*^9, 
+  3.708730806411579*^9, 3.708730859357291*^9, 3.708732150196582*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"General", "::", "stop"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"Further output of \[NoBreak]\\!\\(\\*StyleBox[\\(Join :: \
+heads\\), \\\"MessageName\\\"]\\)\[NoBreak] will be suppressed during this \
+calculation. \\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", \
+ButtonStyle->\\\"Link\\\", ButtonFrame->None, \
+ButtonData:>\\\"paclet:ref/message/General/stop\\\", ButtonNote -> \
+\\\"General::stop\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{3.7087303166088533`*^9, 3.708730414009232*^9, 
+  3.708730806411579*^9, 3.708730859357291*^9, 3.708732150259364*^9}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "24", "\[InvisibleSpace]", "\<\": Determinant minimization does not give 0. \
+The minimum is \"\>", "\[InvisibleSpace]", "\[Infinity]"}],
+  SequenceForm[
+  24, ": Determinant minimization does not give 0. The minimum is ", 
+   DirectedInfinity[1]],
+  Editable->False]], "Print",
+ CellChangeTimes->{{3.708729066880496*^9, 3.7087291196263237`*^9}, {
+   3.7087292931475067`*^9, 3.708729318252365*^9}, {3.708729385397081*^9, 
+   3.708729414439868*^9}, 3.708730316598797*^9, 3.708730539646228*^9, 
+   3.708730806418367*^9, 3.708730859364602*^9, 3.7087321502821913`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"\[Theta]13=\"\>", "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "2"], "\[InvisibleSpace]", "\<\" \[Theta]24=\"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "2"], "\[InvisibleSpace]", "\<\" \[Theta]34=\"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "3"], "\[InvisibleSpace]", "\<\" n12=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" n23=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n14=\"\>", 
+   "\[InvisibleSpace]", "4", "\[InvisibleSpace]", "\<\" mininum=\"\>", 
+   "\[InvisibleSpace]", 
+   "3.31642246736985497811294577296894346386313543705947502603578081161`30.*^-\
+31", "\[InvisibleSpace]", "\<\" at \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{
+     "\[Theta]12$1648953", "\[Rule]", 
+      "1.0471975511965977191190845558454172214596074149567065305946`30."}], 
+     ",", 
+     RowBox[{
+     "\[Theta]23$1648953", "\[Rule]", 
+      "1.0471975511965972519184556630452503006337923014309891575859`30."}]}], 
+    "}"}]}],
+  SequenceForm[
+  "\[Theta]13=", Rational[1, 2] Pi, " \[Theta]24=", Rational[1, 2] Pi, 
+   " \[Theta]34=", Rational[1, 3] Pi, " n12=", 0, " n23=", 2, " n14=", 4, 
+   " mininum=", 
+   3.31642246736985497811294577296894346386313543705947502603578081161`30.*^-\
+31, " at ", {$CellContext`\[Theta]12$1648953 -> 
+    1.0471975511965977191190845558454172214596074149567065305946`30., \
+$CellContext`\[Theta]23$1648953 -> 
+    1.0471975511965972519184556630452503006337923014309891575859`30.}],
+  Editable->False]], "Print",
+ CellChangeTimes->{{3.708729066880496*^9, 3.7087291196263237`*^9}, {
+   3.7087292931475067`*^9, 3.708729318252365*^9}, {3.708729385397081*^9, 
+   3.708729414439868*^9}, 3.708730316598797*^9, 3.708730539646228*^9, 
+   3.708730806418367*^9, 3.708730859364602*^9, 3.708732150423971*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"\[Theta]13=\"\>", "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "2"], "\[InvisibleSpace]", "\<\" \[Theta]24=\"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "2"], "\[InvisibleSpace]", "\<\" \[Theta]34=\"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "3"], "\[InvisibleSpace]", "\<\" n12=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" n23=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n14=\"\>", 
+   "\[InvisibleSpace]", "6", "\[InvisibleSpace]", "\<\" mininum=\"\>", 
+   "\[InvisibleSpace]", 
+   "5.98478713582011808624987555797155953943324991889211557428082418118`30.*^-\
+31", "\[InvisibleSpace]", "\<\" at \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{
+     "\[Theta]12$1648953", "\[Rule]", 
+      "1.5707963267948957529901653066840645567879023847708744047441`30."}], 
+     ",", 
+     RowBox[{
+     "\[Theta]23$1648953", "\[Rule]", 
+      "0.7853981633974484580946491887921149337083781047693652696097`30."}]}], 
+    "}"}]}],
+  SequenceForm[
+  "\[Theta]13=", Rational[1, 2] Pi, " \[Theta]24=", Rational[1, 2] Pi, 
+   " \[Theta]34=", Rational[1, 3] Pi, " n12=", 0, " n23=", 2, " n14=", 6, 
+   " mininum=", 
+   5.98478713582011808624987555797155953943324991889211557428082418118`30.*^-\
+31, " at ", {$CellContext`\[Theta]12$1648953 -> 
+    1.5707963267948957529901653066840645567879023847708744047441`30., \
+$CellContext`\[Theta]23$1648953 -> 
+    0.7853981633974484580946491887921149337083781047693652696097`30.}],
+  Editable->False]], "Print",
+ CellChangeTimes->{{3.708729066880496*^9, 3.7087291196263237`*^9}, {
+   3.7087292931475067`*^9, 3.708729318252365*^9}, {3.708729385397081*^9, 
+   3.708729414439868*^9}, 3.708730316598797*^9, 3.708730539646228*^9, 
+   3.708730806418367*^9, 3.708730859364602*^9, 3.7087321506312838`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"\[Theta]13=\"\>", "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "2"], "\[InvisibleSpace]", "\<\" \[Theta]24=\"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "2"], "\[InvisibleSpace]", "\<\" \[Theta]34=\"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "3"], "\[InvisibleSpace]", "\<\" n12=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" n23=\"\>", 
+   "\[InvisibleSpace]", "3", "\[InvisibleSpace]", "\<\" n14=\"\>", 
+   "\[InvisibleSpace]", "4", "\[InvisibleSpace]", "\<\" mininum=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" at \"\>", 
+   "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{
+     "\[Theta]12$1648953", "\[Rule]", 
+      "1.346396851538482816483990021405854310036401211779193143662`30."}], 
+     ",", 
+     RowBox[{
+     "\[Theta]23$1648953", "\[Rule]", 
+      "0.897597901025655210989326680937055007291088431502593201926`30."}]}], 
+    "}"}]}],
+  SequenceForm[
+  "\[Theta]13=", Rational[1, 2] Pi, " \[Theta]24=", Rational[1, 2] Pi, 
+   " \[Theta]34=", Rational[1, 3] Pi, " n12=", 0, " n23=", 3, " n14=", 4, 
+   " mininum=", 0, 
+   " at ", {$CellContext`\[Theta]12$1648953 -> 
+    1.346396851538482816483990021405854310036401211779193143662`30., \
+$CellContext`\[Theta]23$1648953 -> 
+    0.897597901025655210989326680937055007291088431502593201926`30.}],
+  Editable->False]], "Print",
+ CellChangeTimes->{{3.708729066880496*^9, 3.7087291196263237`*^9}, {
+   3.7087292931475067`*^9, 3.708729318252365*^9}, {3.708729385397081*^9, 
+   3.708729414439868*^9}, 3.708730316598797*^9, 3.708730539646228*^9, 
+   3.708730806418367*^9, 3.708730859364602*^9, 3.708732150802321*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"\[Theta]13=\"\>", "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "2"], "\[InvisibleSpace]", "\<\" \[Theta]24=\"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "2"], "\[InvisibleSpace]", "\<\" \[Theta]34=\"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "3"], "\[InvisibleSpace]", "\<\" n12=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" n23=\"\>", 
+   "\[InvisibleSpace]", "4", "\[InvisibleSpace]", "\<\" n14=\"\>", 
+   "\[InvisibleSpace]", "4", "\[InvisibleSpace]", "\<\" mininum=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" at \"\>", 
+   "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{
+     "\[Theta]12$1648953", "\[Rule]", 
+      "1.5707963267948966192313216916397543620191495315582555004858`30."}], 
+     ",", 
+     RowBox[{
+     "\[Theta]23$1648953", "\[Rule]", 
+      "0.7853981633974483096156608458198783760080069713814136847116`30."}]}], 
+    "}"}]}],
+  SequenceForm[
+  "\[Theta]13=", Rational[1, 2] Pi, " \[Theta]24=", Rational[1, 2] Pi, 
+   " \[Theta]34=", Rational[1, 3] Pi, " n12=", 0, " n23=", 4, " n14=", 4, 
+   " mininum=", 0, 
+   " at ", {$CellContext`\[Theta]12$1648953 -> 
+    1.5707963267948966192313216916397543620191495315582555004858`30., \
+$CellContext`\[Theta]23$1648953 -> 
+    0.7853981633974483096156608458198783760080069713814136847116`30.}],
+  Editable->False]], "Print",
+ CellChangeTimes->{{3.708729066880496*^9, 3.7087291196263237`*^9}, {
+   3.7087292931475067`*^9, 3.708729318252365*^9}, {3.708729385397081*^9, 
+   3.708729414439868*^9}, 3.708730316598797*^9, 3.708730539646228*^9, 
+   3.708730806418367*^9, 3.708730859364602*^9, 3.708732151004133*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "29", "\[InvisibleSpace]", "\<\": Determinant minimization does not give 0. \
+The minimum is \"\>", "\[InvisibleSpace]", 
+   "0.5465617332988590042568151565537697526567779278552869298633`30."}],
+  SequenceForm[
+  29, ": Determinant minimization does not give 0. The minimum is ", 
+   0.5465617332988590042568151565537697526567779278552869298633`30.],
+  Editable->False]], "Print",
+ CellChangeTimes->{{3.708729066880496*^9, 3.7087291196263237`*^9}, {
+   3.7087292931475067`*^9, 3.708729318252365*^9}, {3.708729385397081*^9, 
+   3.708729414439868*^9}, 3.708730316598797*^9, 3.708730539646228*^9, 
+   3.708730806418367*^9, 3.708730859364602*^9, 3.7087321546908703`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"\[Theta]13=\"\>", "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "2"], "\[InvisibleSpace]", "\<\" \[Theta]24=\"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "2"], "\[InvisibleSpace]", "\<\" \[Theta]34=\"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "3"], "\[InvisibleSpace]", "\<\" n12=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n23=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" n14=\"\>", 
+   "\[InvisibleSpace]", "4", "\[InvisibleSpace]", "\<\" mininum=\"\>", 
+   "\[InvisibleSpace]", 
+   "1.427764764316846595354873125943686559898517026649036483710269802`30.*^-\
+33", "\[InvisibleSpace]", "\<\" at \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{
+     "\[Theta]12$1648953", "\[Rule]", 
+      "1.6490507080883752715460907794283616804566288019732999505453`30."}], 
+     ",", 
+     RowBox[{
+     "\[Theta]23$1648953", "\[Rule]", 
+      "0.7462709727507089499748320015613619328782550630445429467152`30."}]}], 
+    "}"}]}],
+  SequenceForm[
+  "\[Theta]13=", Rational[1, 2] Pi, " \[Theta]24=", Rational[1, 2] Pi, 
+   " \[Theta]34=", Rational[1, 3] Pi, " n12=", 2, " n23=", 0, " n14=", 4, 
+   " mininum=", 
+   1.427764764316846595354873125943686559898517026649036483710269802`30.*^-33,
+    " at ", {$CellContext`\[Theta]12$1648953 -> 
+    1.6490507080883752715460907794283616804566288019732999505453`30., \
+$CellContext`\[Theta]23$1648953 -> 
+    0.7462709727507089499748320015613619328782550630445429467152`30.}],
+  Editable->False]], "Print",
+ CellChangeTimes->{{3.708729066880496*^9, 3.7087291196263237`*^9}, {
+   3.7087292931475067`*^9, 3.708729318252365*^9}, {3.708729385397081*^9, 
+   3.708729414439868*^9}, 3.708730316598797*^9, 3.708730539646228*^9, 
+   3.708730806418367*^9, 3.708730859364602*^9, 3.708732154963274*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "31", "\[InvisibleSpace]", "\<\": Determinant minimization does not give 0. \
+The minimum is \"\>", "\[InvisibleSpace]", 
+   "0.0340041342177747283698994738346638570022030539307070925782`30."}],
+  SequenceForm[
+  31, ": Determinant minimization does not give 0. The minimum is ", 
+   0.0340041342177747283698994738346638570022030539307070925782`30.],
+  Editable->False]], "Print",
+ CellChangeTimes->{{3.708729066880496*^9, 3.7087291196263237`*^9}, {
+   3.7087292931475067`*^9, 3.708729318252365*^9}, {3.708729385397081*^9, 
+   3.708729414439868*^9}, 3.708730316598797*^9, 3.708730539646228*^9, 
+   3.708730806418367*^9, 3.708730859364602*^9, 3.708732159030098*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "32", "\[InvisibleSpace]", "\<\": Determinant minimization does not give 0. \
+The minimum is \"\>", "\[InvisibleSpace]", 
+   "0.138985718872480824141622096102664044049668759907207483141`30."}],
+  SequenceForm[
+  32, ": Determinant minimization does not give 0. The minimum is ", 
+   0.138985718872480824141622096102664044049668759907207483141`30.],
+  Editable->False]], "Print",
+ CellChangeTimes->{{3.708729066880496*^9, 3.7087291196263237`*^9}, {
+   3.7087292931475067`*^9, 3.708729318252365*^9}, {3.708729385397081*^9, 
+   3.708729414439868*^9}, 3.708730316598797*^9, 3.708730539646228*^9, 
+   3.708730806418367*^9, 3.708730859364602*^9, 3.708732161298305*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "33", "\[InvisibleSpace]", "\<\": Determinant minimization does not give 0. \
+The minimum is \"\>", "\[InvisibleSpace]", 
+   "0.0192757844172482367857761795199488844999525446715250943376`30."}],
+  SequenceForm[
+  33, ": Determinant minimization does not give 0. The minimum is ", 
+   0.0192757844172482367857761795199488844999525446715250943376`30.],
+  Editable->False]], "Print",
+ CellChangeTimes->{{3.708729066880496*^9, 3.7087291196263237`*^9}, {
+   3.7087292931475067`*^9, 3.708729318252365*^9}, {3.708729385397081*^9, 
+   3.708729414439868*^9}, 3.708730316598797*^9, 3.708730539646228*^9, 
+   3.708730806418367*^9, 3.708730859364602*^9, 3.708732167389093*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"\[Theta]13=\"\>", "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "2"], "\[InvisibleSpace]", "\<\" \[Theta]24=\"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "2"], "\[InvisibleSpace]", "\<\" \[Theta]34=\"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "3"], "\[InvisibleSpace]", "\<\" n12=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n23=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n14=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" mininum=\"\>", 
+   "\[InvisibleSpace]", 
+   "2.20821601514943368512469695872825188868265563355739061060005051821`30.*^-\
+31", "\[InvisibleSpace]", "\<\" at \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{
+     "\[Theta]12$1648953", "\[Rule]", 
+      "1.6820223597478329690101996961130868195183552881409892611511`30."}], 
+     ",", 
+     RowBox[{
+     "\[Theta]23$1648953", "\[Rule]", 
+      "0.7297851469209796363364447714623866678241924401383404533852`30."}]}], 
+    "}"}]}],
+  SequenceForm[
+  "\[Theta]13=", Rational[1, 2] Pi, " \[Theta]24=", Rational[1, 2] Pi, 
+   " \[Theta]34=", Rational[1, 3] Pi, " n12=", 2, " n23=", 2, " n14=", 2, 
+   " mininum=", 
+   2.20821601514943368512469695872825188868265563355739061060005051821`30.*^-\
+31, " at ", {$CellContext`\[Theta]12$1648953 -> 
+    1.6820223597478329690101996961130868195183552881409892611511`30., \
+$CellContext`\[Theta]23$1648953 -> 
+    0.7297851469209796363364447714623866678241924401383404533852`30.}],
+  Editable->False]], "Print",
+ CellChangeTimes->{{3.708729066880496*^9, 3.7087291196263237`*^9}, {
+   3.7087292931475067`*^9, 3.708729318252365*^9}, {3.708729385397081*^9, 
+   3.708729414439868*^9}, 3.708730316598797*^9, 3.708730539646228*^9, 
+   3.708730806418367*^9, 3.708730859364602*^9, 3.7087321679868*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "35", "\[InvisibleSpace]", "\<\": Determinant minimization does not give 0. \
+The minimum is \"\>", "\[InvisibleSpace]", 
+   "0.1196582469654721394163071824826941007344697956643736812029`30."}],
+  SequenceForm[
+  35, ": Determinant minimization does not give 0. The minimum is ", 
+   0.1196582469654721394163071824826941007344697956643736812029`30.],
+  Editable->False]], "Print",
+ CellChangeTimes->{{3.708729066880496*^9, 3.7087291196263237`*^9}, {
+   3.7087292931475067`*^9, 3.708729318252365*^9}, {3.708729385397081*^9, 
+   3.708729414439868*^9}, 3.708730316598797*^9, 3.708730539646228*^9, 
+   3.708730806418367*^9, 3.708730859364602*^9, 3.708732172471003*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"\[Theta]13=\"\>", "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "2"], "\[InvisibleSpace]", "\<\" \[Theta]24=\"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "2"], "\[InvisibleSpace]", "\<\" \[Theta]34=\"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "3"], "\[InvisibleSpace]", "\<\" n12=\"\>", 
+   "\[InvisibleSpace]", "4", "\[InvisibleSpace]", "\<\" n23=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" n14=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" mininum=\"\>", 
+   "\[InvisibleSpace]", 
+   "3.97973969957783018792839026063270311751277196450009450969522904402`30.*^-\
+31", "\[InvisibleSpace]", "\<\" at \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{
+     "\[Theta]12$1648953", "\[Rule]", 
+      "1.0471975511965974894277536020067092026222973145072363124099`30."}], 
+     ",", 
+     RowBox[{
+     "\[Theta]23$1648953", "\[Rule]", 
+      "1.0471975511965973287441596842529440695541423009491029170499`30."}]}], 
+    "}"}]}],
+  SequenceForm[
+  "\[Theta]13=", Rational[1, 2] Pi, " \[Theta]24=", Rational[1, 2] Pi, 
+   " \[Theta]34=", Rational[1, 3] Pi, " n12=", 4, " n23=", 0, " n14=", 2, 
+   " mininum=", 
+   3.97973969957783018792839026063270311751277196450009450969522904402`30.*^-\
+31, " at ", {$CellContext`\[Theta]12$1648953 -> 
+    1.0471975511965974894277536020067092026222973145072363124099`30., \
+$CellContext`\[Theta]23$1648953 -> 
+    1.0471975511965973287441596842529440695541423009491029170499`30.}],
+  Editable->False]], "Print",
+ CellChangeTimes->{{3.708729066880496*^9, 3.7087291196263237`*^9}, {
+   3.7087292931475067`*^9, 3.708729318252365*^9}, {3.708729385397081*^9, 
+   3.708729414439868*^9}, 3.708730316598797*^9, 3.708730539646228*^9, 
+   3.708730806418367*^9, 3.708730859364602*^9, 3.708732172691921*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "37", "\[InvisibleSpace]", "\<\": Determinant minimization does not give 0. \
+The minimum is \"\>", "\[InvisibleSpace]", "\[Infinity]"}],
+  SequenceForm[
+  37, ": Determinant minimization does not give 0. The minimum is ", 
+   DirectedInfinity[1]],
+  Editable->False]], "Print",
+ CellChangeTimes->{{3.708729066880496*^9, 3.7087291196263237`*^9}, {
+   3.7087292931475067`*^9, 3.708729318252365*^9}, {3.708729385397081*^9, 
+   3.708729414439868*^9}, 3.708730316598797*^9, 3.708730539646228*^9, 
+   3.708730806418367*^9, 3.708730859364602*^9, 3.708732172707177*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "38", "\[InvisibleSpace]", "\<\": Determinant minimization does not give 0. \
+The minimum is \"\>", "\[InvisibleSpace]", 
+   "0.0000371167497472565834956414512227750617539837382813219819`30."}],
+  SequenceForm[
+  38, ": Determinant minimization does not give 0. The minimum is ", 
+   0.0000371167497472565834956414512227750617539837382813219819`30.],
+  Editable->False]], "Print",
+ CellChangeTimes->{{3.708729066880496*^9, 3.7087291196263237`*^9}, {
+   3.7087292931475067`*^9, 3.708729318252365*^9}, {3.708729385397081*^9, 
+   3.708729414439868*^9}, 3.708730316598797*^9, 3.708730539646228*^9, 
+   3.708730806418367*^9, 3.708730859364602*^9, 3.708732176090838*^9}]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"NMinimize", "::", "incst"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"\[NoBreak]\\!\\(NMinimize\\)\[NoBreak] was unable to \
+generate any initial points satisfying the inequality constraints \
+\[NoBreak]\\!\\({\\(\\(\\(\\(\[Pi]\\/5 - \\(\\(2\\\\ \[Theta]12$1648953\\)\\) \
+- \[Theta]23$1648953\\)\\) \[LessEqual] 0\\)\\), \\(\\(\\(\\(\[Pi]\\/2 - \
+\[Theta]12$1648953 - \[Theta]23$1648953\\)\\) \[LessEqual] 0\\)\\), \\(\\(\\(\
+\\(\\(\\(-\\(\\(\[Pi]\\/2\\)\\)\\)\\) + \[Theta]12$1648953 + \
+\[Theta]23$1648953\\)\\) \[LessEqual] 0\\)\\), \
+\\(\\(\\(\\(\\(\\(-2.\
+5045474766118629428854962527811592437905211600573760294993`30.594559036613536\
+\\)\\) + \\(\\(2\\\\ \[Theta]12$1648953\\)\\) + \[Theta]23$1648953\\)\\) \
+\[LessEqual] 0\\)\\), \\(\\(\\(\\(\\(\\(-\\(\\(\\(5\\\\ \[Pi]\\)\\/6\\)\\)\\)\
+\\) + \\(\\(2\\\\ \[Theta]12$1648953\\)\\) + \[Theta]23$1648953\\)\\) \
+\[LessEqual] 0\\)\\)}\\)\[NoBreak]. The initial region specified may not \
+contain any feasible points. Changing the initial region or specifying \
+explicit initial points may provide a better solution. \
+\\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", ButtonStyle->\\\"Link\\\", \
+ButtonFrame->None, ButtonData:>\\\"paclet:ref/message/NMinimize/incst\\\", \
+ButtonNote -> \\\"NMinimize::incst\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{3.7087303166088533`*^9, 3.708730414009232*^9, 
+  3.708730806411579*^9, 3.708730859357291*^9, 3.708732176456444*^9}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "39", "\[InvisibleSpace]", "\<\": Determinant minimization does not give 0. \
+The minimum is \"\>", "\[InvisibleSpace]", 
+   "0.1506204781234706634797944749828952444998848239012998511197`30."}],
+  SequenceForm[
+  39, ": Determinant minimization does not give 0. The minimum is ", 
+   0.1506204781234706634797944749828952444998848239012998511197`30.],
+  Editable->False]], "Print",
+ CellChangeTimes->{{3.708729066880496*^9, 3.7087291196263237`*^9}, {
+   3.7087292931475067`*^9, 3.708729318252365*^9}, {3.708729385397081*^9, 
+   3.708729414439868*^9}, 3.708730316598797*^9, 3.708730539646228*^9, 
+   3.708730806418367*^9, 3.708730859364602*^9, 3.70873218633729*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "40", "\[InvisibleSpace]", "\<\": Determinant minimization does not give 0. \
+The minimum is \"\>", "\[InvisibleSpace]", 
+   "0.0001410890275831031544538649553538645255351994501414717143`30."}],
+  SequenceForm[
+  40, ": Determinant minimization does not give 0. The minimum is ", 
+   0.0001410890275831031544538649553538645255351994501414717143`30.],
+  Editable->False]], "Print",
+ CellChangeTimes->{{3.708729066880496*^9, 3.7087291196263237`*^9}, {
+   3.7087292931475067`*^9, 3.708729318252365*^9}, {3.708729385397081*^9, 
+   3.708729414439868*^9}, 3.708730316598797*^9, 3.708730539646228*^9, 
+   3.708730806418367*^9, 3.708730859364602*^9, 3.708732189896576*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "41", "\[InvisibleSpace]", "\<\": Determinant minimization does not give 0. \
+The minimum is \"\>", "\[InvisibleSpace]", "\[Infinity]"}],
+  SequenceForm[
+  41, ": Determinant minimization does not give 0. The minimum is ", 
+   DirectedInfinity[1]],
+  Editable->False]], "Print",
+ CellChangeTimes->{{3.708729066880496*^9, 3.7087291196263237`*^9}, {
+   3.7087292931475067`*^9, 3.708729318252365*^9}, {3.708729385397081*^9, 
+   3.708729414439868*^9}, 3.708730316598797*^9, 3.708730539646228*^9, 
+   3.708730806418367*^9, 3.708730859364602*^9, 3.70873218998413*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "42", "\[InvisibleSpace]", "\<\": Determinant minimization does not give 0. \
+The minimum is \"\>", "\[InvisibleSpace]", 
+   "0.0090723559511081363948901252859496810993693147199873033256`30."}],
+  SequenceForm[
+  42, ": Determinant minimization does not give 0. The minimum is ", 
+   0.0090723559511081363948901252859496810993693147199873033256`30.],
+  Editable->False]], "Print",
+ CellChangeTimes->{{3.708729066880496*^9, 3.7087291196263237`*^9}, {
+   3.7087292931475067`*^9, 3.708729318252365*^9}, {3.708729385397081*^9, 
+   3.708729414439868*^9}, 3.708730316598797*^9, 3.708730539646228*^9, 
+   3.708730806418367*^9, 3.708730859364602*^9, 3.708732194057633*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "43", "\[InvisibleSpace]", "\<\": Determinant minimization does not give 0. \
+The minimum is \"\>", "\[InvisibleSpace]", 
+   "0.0550534441740584008261263573856783121204582531388552809768`30."}],
+  SequenceForm[
+  43, ": Determinant minimization does not give 0. The minimum is ", 
+   0.0550534441740584008261263573856783121204582531388552809768`30.],
+  Editable->False]], "Print",
+ CellChangeTimes->{{3.708729066880496*^9, 3.7087291196263237`*^9}, {
+   3.7087292931475067`*^9, 3.708729318252365*^9}, {3.708729385397081*^9, 
+   3.708729414439868*^9}, 3.708730316598797*^9, 3.708730539646228*^9, 
+   3.708730806418367*^9, 3.708730859364602*^9, 3.7087322000976067`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "44", "\[InvisibleSpace]", "\<\": Determinant minimization does not give 0. \
+The minimum is \"\>", "\[InvisibleSpace]", "\[Infinity]"}],
+  SequenceForm[
+  44, ": Determinant minimization does not give 0. The minimum is ", 
+   DirectedInfinity[1]],
+  Editable->False]], "Print",
+ CellChangeTimes->{{3.708729066880496*^9, 3.7087291196263237`*^9}, {
+   3.7087292931475067`*^9, 3.708729318252365*^9}, {3.708729385397081*^9, 
+   3.708729414439868*^9}, 3.708730316598797*^9, 3.708730539646228*^9, 
+   3.708730806418367*^9, 3.708730859364602*^9, 3.708732200109387*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "45", "\[InvisibleSpace]", "\<\": Determinant minimization does not give 0. \
+The minimum is \"\>", "\[InvisibleSpace]", 
+   "0.9892766952966380998263197469533295010644501513008886986667`30."}],
+  SequenceForm[
+  45, ": Determinant minimization does not give 0. The minimum is ", 
+   0.9892766952966380998263197469533295010644501513008886986667`30.],
+  Editable->False]], "Print",
+ CellChangeTimes->{{3.708729066880496*^9, 3.7087291196263237`*^9}, {
+   3.7087292931475067`*^9, 3.708729318252365*^9}, {3.708729385397081*^9, 
+   3.708729414439868*^9}, 3.708730316598797*^9, 3.708730539646228*^9, 
+   3.708730806418367*^9, 3.708730859364602*^9, 3.708732205247868*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "46", "\[InvisibleSpace]", "\<\": Determinant minimization does not give 0. \
+The minimum is \"\>", "\[InvisibleSpace]", 
+   "0.2515157073758221738215510472959845093971831423267729292242`30."}],
+  SequenceForm[
+  46, ": Determinant minimization does not give 0. The minimum is ", 
+   0.2515157073758221738215510472959845093971831423267729292242`30.],
+  Editable->False]], "Print",
+ CellChangeTimes->{{3.708729066880496*^9, 3.7087291196263237`*^9}, {
+   3.7087292931475067`*^9, 3.708729318252365*^9}, {3.708729385397081*^9, 
+   3.708729414439868*^9}, 3.708730316598797*^9, 3.708730539646228*^9, 
+   3.708730806418367*^9, 3.708730859364602*^9, 3.708732209091609*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "47", "\[InvisibleSpace]", "\<\": Determinant minimization does not give 0. \
+The minimum is \"\>", "\[InvisibleSpace]", 
+   "0.1721725372764120380140509673620100191070936398099562509235`30."}],
+  SequenceForm[
+  47, ": Determinant minimization does not give 0. The minimum is ", 
+   0.1721725372764120380140509673620100191070936398099562509235`30.],
+  Editable->False]], "Print",
+ CellChangeTimes->{{3.708729066880496*^9, 3.7087291196263237`*^9}, {
+   3.7087292931475067`*^9, 3.708729318252365*^9}, {3.708729385397081*^9, 
+   3.708729414439868*^9}, 3.708730316598797*^9, 3.708730539646228*^9, 
+   3.708730806418367*^9, 3.708730859364602*^9, 3.70873221231507*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "48", "\[InvisibleSpace]", "\<\": Determinant minimization does not give 0. \
+The minimum is \"\>", "\[InvisibleSpace]", 
+   "0.2515157073758221738215510473139146523409608996825466298241`30."}],
+  SequenceForm[
+  48, ": Determinant minimization does not give 0. The minimum is ", 
+   0.2515157073758221738215510473139146523409608996825466298241`30.],
+  Editable->False]], "Print",
+ CellChangeTimes->{{3.708729066880496*^9, 3.7087291196263237`*^9}, {
+   3.7087292931475067`*^9, 3.708729318252365*^9}, {3.708729385397081*^9, 
+   3.708729414439868*^9}, 3.708730316598797*^9, 3.708730539646228*^9, 
+   3.708730806418367*^9, 3.708730859364602*^9, 3.708732215259313*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "49", "\[InvisibleSpace]", "\<\": Determinant minimization does not give 0. \
+The minimum is \"\>", "\[InvisibleSpace]", 
+   "0.5000000000000006081331769158207845320246251925293141574231`30."}],
+  SequenceForm[
+  49, ": Determinant minimization does not give 0. The minimum is ", 
+   0.5000000000000006081331769158207845320246251925293141574231`30.],
+  Editable->False]], "Print",
+ CellChangeTimes->{{3.708729066880496*^9, 3.7087291196263237`*^9}, {
+   3.7087292931475067`*^9, 3.708729318252365*^9}, {3.708729385397081*^9, 
+   3.708729414439868*^9}, 3.708730316598797*^9, 3.708730539646228*^9, 
+   3.708730806418367*^9, 3.708730859364602*^9, 3.7087322209589787`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "50", "\[InvisibleSpace]", "\<\": Determinant minimization does not give 0. \
+The minimum is \"\>", "\[InvisibleSpace]", 
+   "0.0070788496888803119240206246427438721238181011097808739671`30."}],
+  SequenceForm[
+  50, ": Determinant minimization does not give 0. The minimum is ", 
+   0.0070788496888803119240206246427438721238181011097808739671`30.],
+  Editable->False]], "Print",
+ CellChangeTimes->{{3.708729066880496*^9, 3.7087291196263237`*^9}, {
+   3.7087292931475067`*^9, 3.708729318252365*^9}, {3.708729385397081*^9, 
+   3.708729414439868*^9}, 3.708730316598797*^9, 3.708730539646228*^9, 
+   3.708730806418367*^9, 3.708730859364602*^9, 3.7087322250480423`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "51", "\[InvisibleSpace]", "\<\": Determinant minimization does not give 0. \
+The minimum is \"\>", "\[InvisibleSpace]", 
+   "0.0576570381843555793772908180342515010591654146016330977087`30."}],
+  SequenceForm[
+  51, ": Determinant minimization does not give 0. The minimum is ", 
+   0.0576570381843555793772908180342515010591654146016330977087`30.],
+  Editable->False]], "Print",
+ CellChangeTimes->{{3.708729066880496*^9, 3.7087291196263237`*^9}, {
+   3.7087292931475067`*^9, 3.708729318252365*^9}, {3.708729385397081*^9, 
+   3.708729414439868*^9}, 3.708730316598797*^9, 3.708730539646228*^9, 
+   3.708730806418367*^9, 3.708730859364602*^9, 3.708732229472193*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "52", "\[InvisibleSpace]", "\<\": Determinant minimization does not give 0. \
+The minimum is \"\>", "\[InvisibleSpace]", 
+   "0.1028814332777447694003880193585702089332853721127391713843`30."}],
+  SequenceForm[
+  52, ": Determinant minimization does not give 0. The minimum is ", 
+   0.1028814332777447694003880193585702089332853721127391713843`30.],
+  Editable->False]], "Print",
+ CellChangeTimes->{{3.708729066880496*^9, 3.7087291196263237`*^9}, {
+   3.7087292931475067`*^9, 3.708729318252365*^9}, {3.708729385397081*^9, 
+   3.708729414439868*^9}, 3.708730316598797*^9, 3.708730539646228*^9, 
+   3.708730806418367*^9, 3.708730859364602*^9, 3.708732235246303*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "53", "\[InvisibleSpace]", "\<\": Determinant minimization does not give 0. \
+The minimum is \"\>", "\[InvisibleSpace]", 
+   "0.0492643361095948574619773032604881491474368511647584166147`30."}],
+  SequenceForm[
+  53, ": Determinant minimization does not give 0. The minimum is ", 
+   0.0492643361095948574619773032604881491474368511647584166147`30.],
+  Editable->False]], "Print",
+ CellChangeTimes->{{3.708729066880496*^9, 3.7087291196263237`*^9}, {
+   3.7087292931475067`*^9, 3.708729318252365*^9}, {3.708729385397081*^9, 
+   3.708729414439868*^9}, 3.708730316598797*^9, 3.708730539646228*^9, 
+   3.708730806418367*^9, 3.708730859364602*^9, 3.7087322416774263`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "54", "\[InvisibleSpace]", "\<\": Determinant minimization does not give 0. \
+The minimum is \"\>", "\[InvisibleSpace]", 
+   "0.0206360952947663782913557408487947689555306731452185029247`30."}],
+  SequenceForm[
+  54, ": Determinant minimization does not give 0. The minimum is ", 
+   0.0206360952947663782913557408487947689555306731452185029247`30.],
+  Editable->False]], "Print",
+ CellChangeTimes->{{3.708729066880496*^9, 3.7087291196263237`*^9}, {
+   3.7087292931475067`*^9, 3.708729318252365*^9}, {3.708729385397081*^9, 
+   3.708729414439868*^9}, 3.708730316598797*^9, 3.708730539646228*^9, 
+   3.708730806418367*^9, 3.708730859364602*^9, 3.7087322456556664`*^9}]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"NMinimize", "::", "incst"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"\[NoBreak]\\!\\(NMinimize\\)\[NoBreak] was unable to \
+generate any initial points satisfying the inequality constraints \
+\[NoBreak]\\!\\({\\(\\(\\(\\(\[Pi]\\/2 - \[Theta]12$1648953 - \
+\[Theta]23$1648953\\)\\) \[LessEqual] 0\\)\\), \
+\\(\\(\\(\\(\\(\\(-\\(\\(\\(3\\\\ \[Pi]\\)\\/10\\)\\)\\)\\) - \
+\[Theta]12$1648953\\/2 - \[Theta]23$1648953\\/2\\)\\) \[LessEqual] 0\\)\\), \
+\\(\\(\\(\\(\\(\\(-\\(\\(\[Theta]12$1648953\\/2\\)\\)\\)\\) + \
+\[Theta]23$1648953\\/2\\)\\) \[LessEqual] 0\\)\\), \\(\\(\\(\\(\\(\\(-\\(\\(\
+\[Pi]\\/2\\)\\)\\)\\) - \[Theta]12$1648953\\/2 + \[Theta]23$1648953\\/2\\)\\) \
+\[LessEqual] 0\\)\\), \
+\\(\\(\\(\\(\\(\\(-0.\
+9337511498169663236541745611414078016919364603698231190118`30.166060917564753\
+\\)\\) + \[Theta]12$1648953\\/2 + \[Theta]23$1648953\\/2\\)\\) \[LessEqual] 0\
+\\)\\), \\(\\(\\(\\(\\(\\(-\\(\\(\\(5\\\\ \[Pi]\\)\\/4\\)\\)\\)\\) + \
+\[Theta]12$1648953\\/2 + \[Theta]23$1648953\\/2\\)\\) \[LessEqual] 0\\)\\), \
+\\(\\(\\(\\(\\(\\(-\\(\\(\[Pi]\\/4\\)\\)\\)\\) + \[Theta]12$1648953\\/2 + \
+\[Theta]23$1648953\\/2\\)\\) \[LessEqual] 0\\)\\)}\\)\[NoBreak]. The initial \
+region specified may not contain any feasible points. Changing the initial \
+region or specifying explicit initial points may provide a better solution. \
+\\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", ButtonStyle->\\\"Link\\\", \
+ButtonFrame->None, ButtonData:>\\\"paclet:ref/message/NMinimize/incst\\\", \
+ButtonNote -> \\\"NMinimize::incst\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{3.7087303166088533`*^9, 3.708730414009232*^9, 
+  3.708730806411579*^9, 3.708730859357291*^9, 3.7087322460607243`*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"General", "::", "stop"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"Further output of \[NoBreak]\\!\\(\\*StyleBox[\\(NMinimize \
+:: incst\\), \\\"MessageName\\\"]\\)\[NoBreak] will be suppressed during this \
+calculation. \\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", \
+ButtonStyle->\\\"Link\\\", ButtonFrame->None, \
+ButtonData:>\\\"paclet:ref/message/General/stop\\\", ButtonNote -> \
+\\\"General::stop\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{3.7087303166088533`*^9, 3.708730414009232*^9, 
+  3.708730806411579*^9, 3.708730859357291*^9, 3.708732246147676*^9}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "55", "\[InvisibleSpace]", "\<\": Determinant minimization does not give 0. \
+The minimum is \"\>", "\[InvisibleSpace]", 
+   "0.4999999999999998141090730926012451173913508216587502779164`30."}],
+  SequenceForm[
+  55, ": Determinant minimization does not give 0. The minimum is ", 
+   0.4999999999999998141090730926012451173913508216587502779164`30.],
+  Editable->False]], "Print",
+ CellChangeTimes->{{3.708729066880496*^9, 3.7087291196263237`*^9}, {
+   3.7087292931475067`*^9, 3.708729318252365*^9}, {3.708729385397081*^9, 
+   3.708729414439868*^9}, 3.708730316598797*^9, 3.708730539646228*^9, 
+   3.708730806418367*^9, 3.708730859364602*^9, 3.70873224800665*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "56", "\[InvisibleSpace]", "\<\": Determinant minimization does not give 0. \
+The minimum is \"\>", "\[InvisibleSpace]", 
+   "0.0390084058678293430400209558199715776951391187417142031598`30."}],
+  SequenceForm[
+  56, ": Determinant minimization does not give 0. The minimum is ", 
+   0.0390084058678293430400209558199715776951391187417142031598`30.],
+  Editable->False]], "Print",
+ CellChangeTimes->{{3.708729066880496*^9, 3.7087291196263237`*^9}, {
+   3.7087292931475067`*^9, 3.708729318252365*^9}, {3.708729385397081*^9, 
+   3.708729414439868*^9}, 3.708730316598797*^9, 3.708730539646228*^9, 
+   3.708730806418367*^9, 3.708730859364602*^9, 3.708732248299955*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "57", "\[InvisibleSpace]", "\<\": Determinant minimization does not give 0. \
+The minimum is \"\>", "\[InvisibleSpace]", "\[Infinity]"}],
+  SequenceForm[
+  57, ": Determinant minimization does not give 0. The minimum is ", 
+   DirectedInfinity[1]],
+  Editable->False]], "Print",
+ CellChangeTimes->{{3.708729066880496*^9, 3.7087291196263237`*^9}, {
+   3.7087292931475067`*^9, 3.708729318252365*^9}, {3.708729385397081*^9, 
+   3.708729414439868*^9}, 3.708730316598797*^9, 3.708730539646228*^9, 
+   3.708730806418367*^9, 3.708730859364602*^9, 3.7087322483135*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "58", "\[InvisibleSpace]", "\<\": Determinant minimization does not give 0. \
+The minimum is \"\>", "\[InvisibleSpace]", 
+   "0.0135806785038601696491807458563937124054953459376030592921`30."}],
+  SequenceForm[
+  58, ": Determinant minimization does not give 0. The minimum is ", 
+   0.0135806785038601696491807458563937124054953459376030592921`30.],
+  Editable->False]], "Print",
+ CellChangeTimes->{{3.708729066880496*^9, 3.7087291196263237`*^9}, {
+   3.7087292931475067`*^9, 3.708729318252365*^9}, {3.708729385397081*^9, 
+   3.708729414439868*^9}, 3.708730316598797*^9, 3.708730539646228*^9, 
+   3.708730806418367*^9, 3.708730859364602*^9, 3.708732252747216*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "59", "\[InvisibleSpace]", "\<\": Determinant minimization does not give 0. \
+The minimum is \"\>", "\[InvisibleSpace]", 
+   "0.3992694261038640464081372902222038323215036728212531689634`30."}],
+  SequenceForm[
+  59, ": Determinant minimization does not give 0. The minimum is ", 
+   0.3992694261038640464081372902222038323215036728212531689634`30.],
+  Editable->False]], "Print",
+ CellChangeTimes->{{3.708729066880496*^9, 3.7087291196263237`*^9}, {
+   3.7087292931475067`*^9, 3.708729318252365*^9}, {3.708729385397081*^9, 
+   3.708729414439868*^9}, 3.708730316598797*^9, 3.708730539646228*^9, 
+   3.708730806418367*^9, 3.708730859364602*^9, 3.708732264908997*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "60", "\[InvisibleSpace]", "\<\": Determinant minimization does not give 0. \
+The minimum is \"\>", "\[InvisibleSpace]", 
+   "0.0083590545947744966902930138769469562466522036731655343172`30."}],
+  SequenceForm[
+  60, ": Determinant minimization does not give 0. The minimum is ", 
+   0.0083590545947744966902930138769469562466522036731655343172`30.],
+  Editable->False]], "Print",
+ CellChangeTimes->{{3.708729066880496*^9, 3.7087291196263237`*^9}, {
+   3.7087292931475067`*^9, 3.708729318252365*^9}, {3.708729385397081*^9, 
+   3.708729414439868*^9}, 3.708730316598797*^9, 3.708730539646228*^9, 
+   3.708730806418367*^9, 3.708730859364602*^9, 3.708732269272253*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "61", "\[InvisibleSpace]", "\<\": Determinant minimization does not give 0. \
+The minimum is \"\>", "\[InvisibleSpace]", "\[Infinity]"}],
+  SequenceForm[
+  61, ": Determinant minimization does not give 0. The minimum is ", 
+   DirectedInfinity[1]],
+  Editable->False]], "Print",
+ CellChangeTimes->{{3.708729066880496*^9, 3.7087291196263237`*^9}, {
+   3.7087292931475067`*^9, 3.708729318252365*^9}, {3.708729385397081*^9, 
+   3.708729414439868*^9}, 3.708730316598797*^9, 3.708730539646228*^9, 
+   3.708730806418367*^9, 3.708730859364602*^9, 3.708732269289749*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "62", "\[InvisibleSpace]", "\<\": Determinant minimization does not give 0. \
+The minimum is \"\>", "\[InvisibleSpace]", 
+   "0.3439419328716707034192863657147364625087001634483037441568`30."}],
+  SequenceForm[
+  62, ": Determinant minimization does not give 0. The minimum is ", 
+   0.3439419328716707034192863657147364625087001634483037441568`30.],
+  Editable->False]], "Print",
+ CellChangeTimes->{{3.708729066880496*^9, 3.7087291196263237`*^9}, {
+   3.7087292931475067`*^9, 3.708729318252365*^9}, {3.708729385397081*^9, 
+   3.708729414439868*^9}, 3.708730316598797*^9, 3.708730539646228*^9, 
+   3.708730806418367*^9, 3.708730859364602*^9, 3.708732274721078*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "63", "\[InvisibleSpace]", "\<\": Determinant minimization does not give 0. \
+The minimum is \"\>", "\[InvisibleSpace]", 
+   "0.1110988034803305934989324171947994663078990338562891452221`30."}],
+  SequenceForm[
+  63, ": Determinant minimization does not give 0. The minimum is ", 
+   0.1110988034803305934989324171947994663078990338562891452221`30.],
+  Editable->False]], "Print",
+ CellChangeTimes->{{3.708729066880496*^9, 3.7087291196263237`*^9}, {
+   3.7087292931475067`*^9, 3.708729318252365*^9}, {3.708729385397081*^9, 
+   3.708729414439868*^9}, 3.708730316598797*^9, 3.708730539646228*^9, 
+   3.708730806418367*^9, 3.708730859364602*^9, 3.708732279420396*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "64", "\[InvisibleSpace]", "\<\": Determinant minimization does not give 0. \
+The minimum is \"\>", "\[InvisibleSpace]", 
+   "0.0047219134336607393957428190317356917458919832494056423732`30."}],
+  SequenceForm[
+  64, ": Determinant minimization does not give 0. The minimum is ", 
+   0.0047219134336607393957428190317356917458919832494056423732`30.],
+  Editable->False]], "Print",
+ CellChangeTimes->{{3.708729066880496*^9, 3.7087291196263237`*^9}, {
+   3.7087292931475067`*^9, 3.708729318252365*^9}, {3.708729385397081*^9, 
+   3.708729414439868*^9}, 3.708730316598797*^9, 3.708730539646228*^9, 
+   3.708730806418367*^9, 3.708730859364602*^9, 3.708732282886033*^9}]
+}, Open  ]]
+}, Open  ]]
 },
 WindowSize->{Full, Full},
 WindowMargins->{{12, Automatic}, {Automatic, 2}},
@@ -301,9 +2039,102 @@ Notebook[{
 Cell[558, 20, 4398, 112, 301, "Input"],
 Cell[CellGroupData[{
 Cell[4981, 136, 195, 5, 28, "Input"],
-Cell[5179, 143, 2265, 70, 92, "Output"]
+Cell[5179, 143, 2265, 70, 81, "Output"]
 }, Open  ]],
-Cell[7459, 216, 2615, 65, 233, "Input"]
+Cell[7459, 216, 17085, 353, 1083, "Input"],
+Cell[CellGroupData[{
+Cell[24569, 573, 163, 3, 28, "Input"],
+Cell[24735, 578, 1584, 27, 118, "Message"],
+Cell[CellGroupData[{
+Cell[26344, 609, 607, 12, 22, "Print"],
+Cell[26954, 623, 711, 13, 22, "Print"],
+Cell[27668, 638, 709, 13, 22, "Print"]
+}, Open  ]],
+Cell[28392, 654, 660, 12, 24, "Message"],
+Cell[29055, 668, 1928, 31, 93, "Message"],
+Cell[CellGroupData[{
+Cell[31008, 703, 609, 12, 22, "Print"],
+Cell[31620, 717, 709, 13, 22, "Print"],
+Cell[32332, 732, 708, 13, 22, "Print"],
+Cell[33043, 747, 709, 13, 22, "Print"],
+Cell[33755, 762, 709, 13, 22, "Print"],
+Cell[34467, 777, 709, 13, 22, "Print"],
+Cell[35179, 792, 711, 13, 22, "Print"],
+Cell[35893, 807, 711, 13, 22, "Print"],
+Cell[36607, 822, 713, 13, 22, "Print"],
+Cell[37323, 837, 711, 13, 22, "Print"],
+Cell[38037, 852, 711, 13, 22, "Print"],
+Cell[38751, 867, 713, 13, 22, "Print"],
+Cell[39467, 882, 711, 13, 22, "Print"]
+}, Open  ]],
+Cell[40193, 898, 662, 12, 24, "Message"],
+Cell[40858, 912, 1970, 32, 93, "Message"],
+Cell[42831, 946, 627, 12, 24, "Message"],
+Cell[CellGroupData[{
+Cell[43483, 962, 608, 12, 22, "Print"],
+Cell[44094, 976, 711, 13, 22, "Print"]
+}, Open  ]],
+Cell[44820, 992, 1453, 24, 76, "Message"],
+Cell[CellGroupData[{
+Cell[46298, 1020, 713, 13, 22, "Print"],
+Cell[47014, 1035, 711, 13, 22, "Print"],
+Cell[47728, 1050, 611, 12, 22, "Print"],
+Cell[48342, 1064, 1850, 36, 37, "Print"],
+Cell[50195, 1102, 1702, 35, 37, "Print"]
+}, Open  ]],
+Cell[51912, 1140, 660, 12, 24, "Message"],
+Cell[52575, 1154, 621, 12, 24, "Message"],
+Cell[CellGroupData[{
+Cell[53221, 1170, 611, 12, 22, "Print"],
+Cell[53835, 1184, 1854, 37, 37, "Print"],
+Cell[55692, 1223, 1856, 37, 37, "Print"],
+Cell[57551, 1262, 1696, 35, 37, "Print"],
+Cell[59250, 1299, 1700, 35, 37, "Print"],
+Cell[60953, 1336, 713, 13, 22, "Print"],
+Cell[61669, 1351, 1852, 37, 37, "Print"],
+Cell[63524, 1390, 711, 13, 22, "Print"],
+Cell[64238, 1405, 709, 13, 22, "Print"],
+Cell[64950, 1420, 711, 13, 22, "Print"],
+Cell[65664, 1435, 1852, 37, 37, "Print"],
+Cell[67519, 1474, 711, 13, 22, "Print"],
+Cell[68233, 1489, 1854, 37, 37, "Print"],
+Cell[70090, 1528, 609, 12, 22, "Print"],
+Cell[70702, 1542, 711, 13, 22, "Print"]
+}, Open  ]],
+Cell[71428, 1558, 1481, 24, 79, "Message"],
+Cell[CellGroupData[{
+Cell[72934, 1586, 710, 13, 22, "Print"],
+Cell[73647, 1601, 711, 13, 22, "Print"],
+Cell[74361, 1616, 608, 12, 22, "Print"],
+Cell[74972, 1630, 711, 13, 22, "Print"],
+Cell[75686, 1645, 713, 13, 22, "Print"],
+Cell[76402, 1660, 609, 12, 22, "Print"],
+Cell[77014, 1674, 711, 13, 22, "Print"],
+Cell[77728, 1689, 711, 13, 22, "Print"],
+Cell[78442, 1704, 710, 13, 22, "Print"],
+Cell[79155, 1719, 711, 13, 22, "Print"],
+Cell[79869, 1734, 713, 13, 22, "Print"],
+Cell[80585, 1749, 713, 13, 22, "Print"],
+Cell[81301, 1764, 711, 13, 22, "Print"],
+Cell[82015, 1779, 711, 13, 22, "Print"],
+Cell[82729, 1794, 713, 13, 22, "Print"],
+Cell[83445, 1809, 713, 13, 22, "Print"]
+}, Open  ]],
+Cell[84173, 1825, 1745, 28, 81, "Message"],
+Cell[85921, 1855, 626, 12, 24, "Message"],
+Cell[CellGroupData[{
+Cell[86572, 1871, 710, 13, 22, "Print"],
+Cell[87285, 1886, 711, 13, 22, "Print"],
+Cell[87999, 1901, 607, 12, 22, "Print"],
+Cell[88609, 1915, 711, 13, 22, "Print"],
+Cell[89323, 1930, 711, 13, 22, "Print"],
+Cell[90037, 1945, 711, 13, 22, "Print"],
+Cell[90751, 1960, 609, 12, 22, "Print"],
+Cell[91363, 1974, 711, 13, 22, "Print"],
+Cell[92077, 1989, 711, 13, 22, "Print"],
+Cell[92791, 2004, 711, 13, 22, "Print"]
+}, Open  ]]
+}, Open  ]]
 }
 ]
 *)
