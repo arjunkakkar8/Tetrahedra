@@ -1,0 +1,2522 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 10.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[    111487,       2513]
+NotebookOptionsPosition[    108615,       2427]
+NotebookOutlinePosition[    108977,       2443]
+CellTagsIndexPosition[    108934,       2440]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", " ", 
+   RowBox[{"Set", " ", "machine", " ", "precision"}], " ", "*)"}], 
+  "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"$PreRead", "=", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"#", "/.", 
+        RowBox[{
+         RowBox[{"s_String", "/;", 
+          RowBox[{
+           RowBox[{"StringMatchQ", "[", 
+            RowBox[{"s", ",", "NumberString"}], "]"}], "&&", 
+           RowBox[{
+            RowBox[{"Precision", "@", 
+             RowBox[{"ToExpression", "@", "s"}]}], "\[Equal]", 
+            "MachinePrecision"}]}]}], "\[RuleDelayed]", 
+         RowBox[{"s", "<>", "\"\<`30.\>\""}]}]}], "&"}], ")"}]}], ";"}], 
+   "\[IndentingNewLine]", "\n", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"DihedralMat", "[", 
+      RowBox[{
+      "\[Theta]12_", ",", "\[Theta]13_", ",", "\[Theta]14_", ",", 
+       "\[Theta]23_", ",", "\[Theta]24_", ",", "\[Theta]34_"}], "]"}], ":=", 
+     "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"-", "1"}], ",", 
+         RowBox[{"Cos", "[", "\[Theta]34", "]"}], ",", 
+         RowBox[{"Cos", "[", "\[Theta]24", "]"}], ",", 
+         RowBox[{"Cos", "[", "\[Theta]23", "]"}]}], "}"}], ",", 
+       "\[IndentingNewLine]", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"Cos", "[", "\[Theta]34", "]"}], ",", 
+         RowBox[{"-", "1"}], ",", 
+         RowBox[{"Cos", "[", "\[Theta]14", "]"}], ",", 
+         RowBox[{"Cos", "[", "\[Theta]13", "]"}]}], "}"}], ",", 
+       "\[IndentingNewLine]", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"Cos", "[", "\[Theta]24", "]"}], ",", 
+         RowBox[{"Cos", "[", "\[Theta]14", "]"}], ",", 
+         RowBox[{"-", "1"}], ",", 
+         RowBox[{"Cos", "[", "\[Theta]12", "]"}]}], "}"}], ",", 
+       "\[IndentingNewLine]", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"Cos", "[", "\[Theta]23", "]"}], ",", 
+         RowBox[{"Cos", "[", "\[Theta]13", "]"}], ",", 
+         RowBox[{"Cos", "[", "\[Theta]12", "]"}], ",", 
+         RowBox[{"-", "1"}]}], "}"}]}], "}"}]}], ";"}], "\[IndentingNewLine]",
+    "\n", 
+   RowBox[{
+    RowBox[{"ModifiedMat", "[", 
+     RowBox[{
+     "\[Theta]12_", ",", "\[Theta]13_", ",", "\[Theta]14_", ",", 
+      "\[Theta]23_", ",", "\[Theta]24_", ",", "\[Theta]34_"}], "]"}], ":=", 
+    RowBox[{"Module", "[", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"mat", ",", "newmat"}], "}"}], ",", "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"mat", "=", 
+        RowBox[{"DihedralMat", "[", 
+         RowBox[{
+         "\[Theta]12", ",", "\[Theta]13", ",", "\[Theta]14", ",", 
+          "\[Theta]23", ",", "\[Theta]24", ",", "\[Theta]34"}], "]"}]}], ";", 
+       "\[IndentingNewLine]", 
+       RowBox[{"newmat", "=", 
+        RowBox[{"Transpose", "[", "\[IndentingNewLine]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"mat", "[", 
+            RowBox[{"[", 
+             RowBox[{"All", ",", "1"}], "]"}], "]"}], ",", 
+           RowBox[{
+            RowBox[{
+             RowBox[{"Sin", "[", "\[Theta]12", "]"}], 
+             RowBox[{"mat", "[", 
+              RowBox[{"[", 
+               RowBox[{"All", ",", "2"}], "]"}], "]"}]}], "+", 
+            RowBox[{
+             RowBox[{"Sin", "[", "\[Theta]13", "]"}], 
+             RowBox[{"mat", "[", 
+              RowBox[{"[", 
+               RowBox[{"All", ",", "3"}], "]"}], "]"}]}], "+", 
+            RowBox[{
+             RowBox[{"Sin", "[", "\[Theta]14", "]"}], 
+             RowBox[{"mat", "[", 
+              RowBox[{"[", 
+               RowBox[{"All", ",", "4"}], "]"}], "]"}]}]}]}], "}"}], 
+         "\[IndentingNewLine]", "]"}]}], ";", "\[IndentingNewLine]", 
+       RowBox[{"Return", "[", "newmat", "]"}], ";"}]}], "\[IndentingNewLine]",
+      "]"}]}]}]}]], "Input",
+ CellChangeTimes->{{3.708703637901918*^9, 3.708703662519266*^9}, {
+  3.7087053864676723`*^9, 3.7087054352831182`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"ModifiedMat", "[", 
+   RowBox[{
+   "a", ",", " ", "b", ",", " ", "c", ",", " ", "d", " ", ",", "e", ",", " ", 
+    "f"}], "]"}], "//", "MatrixForm"}]], "Input",
+ CellChangeTimes->{{3.708705437922207*^9, 3.708705445397656*^9}, {
+  3.708706790489357*^9, 3.7087067998573914`*^9}}],
+
+Cell[BoxData[
+ TagBox[
+  RowBox[{"(", "\[NoBreak]", GridBox[{
+     {
+      RowBox[{"-", "1"}], 
+      RowBox[{
+       RowBox[{
+        RowBox[{"Cos", "[", "f", "]"}], " ", 
+        RowBox[{"Sin", "[", "a", "]"}]}], "+", 
+       RowBox[{
+        RowBox[{"Cos", "[", "e", "]"}], " ", 
+        RowBox[{"Sin", "[", "b", "]"}]}], "+", 
+       RowBox[{
+        RowBox[{"Cos", "[", "d", "]"}], " ", 
+        RowBox[{"Sin", "[", "c", "]"}]}]}]},
+     {
+      RowBox[{"Cos", "[", "f", "]"}], 
+      RowBox[{
+       RowBox[{"-", 
+        RowBox[{"Sin", "[", "a", "]"}]}], "+", 
+       RowBox[{
+        RowBox[{"Cos", "[", "c", "]"}], " ", 
+        RowBox[{"Sin", "[", "b", "]"}]}], "+", 
+       RowBox[{
+        RowBox[{"Cos", "[", "b", "]"}], " ", 
+        RowBox[{"Sin", "[", "c", "]"}]}]}]},
+     {
+      RowBox[{"Cos", "[", "e", "]"}], 
+      RowBox[{
+       RowBox[{
+        RowBox[{"Cos", "[", "c", "]"}], " ", 
+        RowBox[{"Sin", "[", "a", "]"}]}], "-", 
+       RowBox[{"Sin", "[", "b", "]"}], "+", 
+       RowBox[{
+        RowBox[{"Cos", "[", "a", "]"}], " ", 
+        RowBox[{"Sin", "[", "c", "]"}]}]}]},
+     {
+      RowBox[{"Cos", "[", "d", "]"}], 
+      RowBox[{
+       RowBox[{
+        RowBox[{"Cos", "[", "b", "]"}], " ", 
+        RowBox[{"Sin", "[", "a", "]"}]}], "+", 
+       RowBox[{
+        RowBox[{"Cos", "[", "a", "]"}], " ", 
+        RowBox[{"Sin", "[", "b", "]"}]}], "-", 
+       RowBox[{"Sin", "[", "c", "]"}]}]}
+    },
+    GridBoxAlignment->{
+     "Columns" -> {{Center}}, "ColumnsIndexed" -> {}, "Rows" -> {{Baseline}}, 
+      "RowsIndexed" -> {}},
+    GridBoxSpacings->{"Columns" -> {
+        Offset[0.27999999999999997`], {
+         Offset[0.7]}, 
+        Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+        Offset[0.2], {
+         Offset[0.4]}, 
+        Offset[0.2]}, "RowsIndexed" -> {}}], "\[NoBreak]", ")"}],
+  Function[BoxForm`e$, 
+   MatrixForm[BoxForm`e$]]]], "Output",
+ CellChangeTimes->{3.708705446681882*^9}]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{"GenerateCases", ":=", "\[IndentingNewLine]", 
+  RowBox[{"Module", "[", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{
+     "\[Theta]12", ",", "\[Theta]13", ",", "\[Theta]14", ",", "mat", ",", 
+      "det1", ",", " ", "det2", ",", " ", "det3", ",", "minimum", ",", 
+      RowBox[{"cases", "=", 
+       RowBox[{"{", "}"}]}], ",", 
+      RowBox[{"examinedcnt", "=", "0"}], ",", 
+      RowBox[{"remaincnt", "=", "0"}], ",", 
+      RowBox[{"nonzerot", "=", 
+       RowBox[{"10", "^", 
+        RowBox[{"-", "5"}]}]}], ",", " ", 
+      RowBox[{"counter", "=", "0"}]}], "}"}], ",", "\[IndentingNewLine]", 
+    RowBox[{"(*", " ", 
+     RowBox[{
+      RowBox[{"Iterate", " ", "through", " ", "\[Theta]23"}], ",", " ", 
+      "\[Theta]24", ",", " ", 
+      RowBox[{
+      "\[Theta]34", " ", "for", " ", "the", " ", "three", " ", "values", " ", 
+       "within", " ", "constraints"}]}], "*)"}], "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"Do", "[", " ", "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"Do", "[", "\[IndentingNewLine]", 
+         RowBox[{
+          RowBox[{
+           RowBox[{"Do", "[", "\[IndentingNewLine]", 
+            RowBox[{
+             RowBox[{
+              RowBox[{"If", "[", 
+               RowBox[{
+                RowBox[{
+                "\[Theta]23", "\[Equal]", "\[Theta]24", "\[Equal]", 
+                 "\[Theta]34", "==", 
+                 RowBox[{"Pi", "/", "2"}]}], ",", " ", 
+                RowBox[{
+                 RowBox[{"Continue", "[", "]"}], ";"}]}], "]"}], ";", 
+              "\[IndentingNewLine]", 
+              RowBox[{"For", "[", 
+               RowBox[{
+                RowBox[{"n12", "=", "0"}], ",", " ", 
+                RowBox[{"n12", "\[LessEqual]", " ", "9"}], ",", " ", 
+                RowBox[{"n12", "++"}], ",", "\[IndentingNewLine]", 
+                RowBox[{
+                 RowBox[{"For", "[", 
+                  RowBox[{
+                   RowBox[{"n13", "=", "1"}], ",", " ", 
+                   RowBox[{"n13", "\[LessEqual]", " ", "9"}], ",", " ", 
+                   RowBox[{"n13", "++"}], ",", "\[IndentingNewLine]", 
+                   RowBox[{
+                    RowBox[{"For", "[", 
+                    RowBox[{
+                    RowBox[{"n14", "=", "1"}], ",", " ", 
+                    RowBox[{"n14", "\[LessEqual]", " ", "9"}], ",", " ", 
+                    RowBox[{"n14", "++"}], ",", "\[IndentingNewLine]", 
+                    RowBox[{"(*", 
+                    RowBox[{
+                    "Enforce", " ", "this", " ", "condition", " ", "to", " ", 
+                    "get", " ", "rid", " ", "of", " ", "duplicate", " ", 
+                    "cases", " ", "through", " ", "symmetry"}], "*)"}], 
+                    "\[IndentingNewLine]", 
+                    RowBox[{
+                    RowBox[{"If", "[", 
+                    RowBox[{
+                    RowBox[{"!", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    "n12", "\[LessEqual]", "n13", "\[LessEqual]", "n14"}], 
+                    ")"}]}], ",", 
+                    RowBox[{
+                    RowBox[{"Continue", "[", "]"}], ";"}]}], "]"}], ";", 
+                    "\[IndentingNewLine]", 
+                    RowBox[{"(*", 
+                    RowBox[{
+                    "The", " ", "sum", " ", "of", " ", "the", " ", "number", 
+                    " ", "of", " ", "angles", " ", "should", " ", "be", " ", 
+                    "less", " ", "than", " ", "or", " ", "equal", " ", "to", 
+                    " ", "9"}], "*)"}], "\[IndentingNewLine]", 
+                    RowBox[{"If", "[", 
+                    RowBox[{
+                    RowBox[{
+                    RowBox[{"n12", "+", "n13", "+", "n14"}], ">", "9"}], ",", 
+                    " ", 
+                    RowBox[{
+                    RowBox[{"Continue", "[", "]"}], ";"}]}], "]"}], ";", 
+                    "\[IndentingNewLine]", 
+                    RowBox[{"(*", 
+                    RowBox[{
+                    "The", " ", "number", " ", "of", " ", "angles", " ", "is",
+                     " ", "either", " ", "all", " ", "even", " ", "or", " ", 
+                    "all", " ", "odd"}], "*)"}], "\[IndentingNewLine]", 
+                    RowBox[{"If", "[", 
+                    RowBox[{
+                    RowBox[{
+                    RowBox[{"Mod", "[", 
+                    RowBox[{
+                    RowBox[{"n12", "*", "n13", "*", "n14"}], ",", " ", "2"}], 
+                    "]"}], "\[NotEqual]", "1"}], ",", "\[IndentingNewLine]", 
+                    RowBox[{
+                    RowBox[{"If", "[", 
+                    RowBox[{
+                    RowBox[{
+                    RowBox[{
+                    RowBox[{"Mod", "[", 
+                    RowBox[{"n12", ",", "2"}], "]"}], "\[NotEqual]", " ", 
+                    "0"}], "||", 
+                    RowBox[{
+                    RowBox[{"Mod", "[", 
+                    RowBox[{"n13", ",", "2"}], "]"}], "\[NotEqual]", " ", 
+                    "0"}], "||", 
+                    RowBox[{
+                    RowBox[{"Mod", "[", 
+                    RowBox[{"n14", ",", "2"}], "]"}], "\[NotEqual]", " ", 
+                    "0"}]}], ",", "\[IndentingNewLine]", 
+                    RowBox[{
+                    RowBox[{"Continue", "[", "]"}], ";"}]}], "]"}], ";"}]}], 
+                    "]"}], ";", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+                    
+                    RowBox[{"examinedcnt", "++"}], ";", "\[IndentingNewLine]",
+                     "\[IndentingNewLine]", 
+                    RowBox[{"\[Theta]14", "=", 
+                    RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"2", "Pi"}], "-", " ", 
+                    RowBox[{"n12", " ", "\[Theta]12"}], "-", 
+                    RowBox[{"n13", " ", "\[Theta]13"}]}], ")"}], "/", 
+                    "n14"}]}], ";", "\[IndentingNewLine]", 
+                    RowBox[{"mat", "=", 
+                    RowBox[{"ModifiedMat", "[", 
+                    RowBox[{
+                    "\[Theta]12", ",", " ", "\[Theta]13", ",", " ", 
+                    "\[Theta]14", ",", " ", "\[Theta]23", ",", " ", 
+                    "\[Theta]24", ",", " ", "\[Theta]34"}], "]"}]}], ";", 
+                    "\[IndentingNewLine]", 
+                    RowBox[{"det1", "=", 
+                    RowBox[{
+                    RowBox[{"mat", "[", 
+                    RowBox[{"[", 
+                    RowBox[{"{", 
+                    RowBox[{"1", ",", " ", "2"}], "}"}], "]"}], "]"}], "//", 
+                    "Det"}]}], ";", "\[IndentingNewLine]", 
+                    RowBox[{"det2", "=", 
+                    RowBox[{
+                    RowBox[{"mat", "[", 
+                    RowBox[{"[", 
+                    RowBox[{"{", 
+                    RowBox[{"1", ",", " ", "3"}], "}"}], "]"}], "]"}], "//", 
+                    "Det"}]}], ";", "\[IndentingNewLine]", 
+                    RowBox[{"det3", "=", 
+                    RowBox[{
+                    RowBox[{"mat", "[", 
+                    RowBox[{"[", 
+                    RowBox[{"{", 
+                    RowBox[{"1", ",", " ", "4"}], "}"}], "]"}], "]"}], "//", 
+                    "Det"}]}], ";", "\[IndentingNewLine]", 
+                    "\[IndentingNewLine]", 
+                    RowBox[{"minimum", "=", 
+                    RowBox[{"NMinimize", "[", 
+                    RowBox[{
+                    RowBox[{"{", "\[IndentingNewLine]", 
+                    RowBox[{
+                    RowBox[{
+                    RowBox[{"det1", "^", "2"}], "+", 
+                    RowBox[{"det2", "^", "2"}], "+", 
+                    RowBox[{"det3", "^", "2"}]}], ",", "\[IndentingNewLine]", 
+                    
+                    RowBox[{
+                    RowBox[{
+                    RowBox[{"4", " ", 
+                    RowBox[{"Pi", "/", "5"}]}], ">", "\[Theta]12", ">", 
+                    RowBox[{
+                    RowBox[{"Pi", "/", "180"}], "*", "36.5"}]}], "&&", 
+                    "\[IndentingNewLine]", 
+                    RowBox[{
+                    RowBox[{"4", " ", 
+                    RowBox[{"Pi", "/", "5"}]}], ">", "\[Theta]13", ">", 
+                    RowBox[{
+                    RowBox[{"Pi", "/", "180"}], "*", "36.5"}]}], "&&", 
+                    "\[IndentingNewLine]", 
+                    RowBox[{
+                    RowBox[{"4", " ", 
+                    RowBox[{"Pi", "/", "5"}]}], ">", "\[Theta]14", ">", 
+                    RowBox[{
+                    RowBox[{"Pi", "/", "180"}], "*", "36.5"}]}], "&&", 
+                    "\[IndentingNewLine]", 
+                    RowBox[{
+                    RowBox[{
+                    "\[Theta]12", "+", "\[Theta]13", "+", "\[Theta]14"}], ">",
+                     "Pi"}], "&&", "\[IndentingNewLine]", 
+                    RowBox[{
+                    RowBox[{
+                    "\[Theta]12", "+", "\[Theta]23", "+", "\[Theta]24"}], ">",
+                     "Pi"}], "&&", "\[IndentingNewLine]", 
+                    RowBox[{
+                    RowBox[{
+                    "\[Theta]13", "+", "\[Theta]23", "+", "\[Theta]34"}], ">",
+                     "Pi"}], "&&", "\[IndentingNewLine]", 
+                    RowBox[{
+                    RowBox[{
+                    "\[Theta]14", "+", "\[Theta]24", "+", "\[Theta]34"}], ">",
+                     "Pi"}], "&&", "\[IndentingNewLine]", 
+                    RowBox[{
+                    RowBox[{
+                    "\[Theta]12", "+", "\[Theta]34", "+", "\[Theta]13", "+", 
+                    "\[Theta]24"}], "<", 
+                    RowBox[{"2", "Pi"}]}], "&&", "\[IndentingNewLine]", 
+                    RowBox[{
+                    RowBox[{
+                    "\[Theta]12", "+", "\[Theta]34", "+", "\[Theta]14", "+", 
+                    "\[Theta]23"}], "<", 
+                    RowBox[{"2", "Pi"}]}], "&&", "\[IndentingNewLine]", 
+                    RowBox[{
+                    RowBox[{
+                    "\[Theta]13", "+", "\[Theta]24", "+", "\[Theta]14", "+", 
+                    "\[Theta]23"}], "<", 
+                    RowBox[{"2", "Pi"}]}]}]}], "}"}], ",", 
+                    "\[IndentingNewLine]", " ", 
+                    RowBox[{"{", 
+                    RowBox[{"\[Theta]12", ",", "\[Theta]13"}], "}"}], ",", 
+                    "\[IndentingNewLine]", 
+                    RowBox[{"Method", "\[Rule]", 
+                    RowBox[{"{", 
+                    RowBox[{"\"\<RandomSearch\>\"", ",", 
+                    RowBox[{"\"\<SearchPoints\>\"", "\[Rule]", "10"}], ",", 
+                    RowBox[{"\"\<RandomSeed\>\"", "\[Rule]", "0"}]}], "}"}]}],
+                     ",", "\[IndentingNewLine]", 
+                    RowBox[{"WorkingPrecision", "\[Rule]", "30"}]}], "]"}]}], 
+                    ";", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+                    RowBox[{"(*", " ", 
+                    RowBox[{
+                    "Ignore", " ", "if", " ", "minimum", " ", "is", " ", 
+                    "greather", " ", "than", " ", "zero"}], " ", "*)"}], 
+                    "\[IndentingNewLine]", 
+                    RowBox[{"If", "[", 
+                    RowBox[{
+                    RowBox[{
+                    RowBox[{"Abs", "[", 
+                    RowBox[{"minimum", "[", 
+                    RowBox[{"[", "1", "]"}], "]"}], "]"}], ">", "nonzerot"}], 
+                    ",", "\[IndentingNewLine]", 
+                    RowBox[{
+                    RowBox[{"Continue", "[", "]"}], ";"}]}], "]"}], ";", 
+                    "\[IndentingNewLine]", "\[IndentingNewLine]", 
+                    RowBox[{"Print", "[", 
+                    RowBox[{
+                    "\"\<\[Theta]23=\>\"", ",", "\[Theta]23", ",", 
+                    "\"\< \[Theta]24=\>\"", ",", "\[Theta]24", ",", 
+                    "\"\< \[Theta]34=\>\"", ",", " ", "\[Theta]34", ",", 
+                    "\"\< n12=\>\"", ",", "n12", ",", "\"\< n13=\>\"", ",", 
+                    "n13", ",", "\"\< n14=\>\"", ",", "n14", ",", 
+                    "\"\< mininum=\>\"", ",", "minimum"}], "]"}], ";", 
+                    "\[IndentingNewLine]", "\[IndentingNewLine]", 
+                    RowBox[{"AppendTo", "[", 
+                    RowBox[{"cases", ",", 
+                    RowBox[{"{", 
+                    RowBox[{
+                    "\[Theta]23", ",", "\[Theta]24", ",", "\[Theta]34", ",", 
+                    "n12", ",", "n13", ",", "n14"}], "}"}]}], "]"}], ";", 
+                    "\[IndentingNewLine]", "\[IndentingNewLine]", 
+                    RowBox[{"remaincnt", "++"}], ";"}]}], 
+                    "\[IndentingNewLine]", "\[IndentingNewLine]", "]"}], 
+                    ";"}]}], "]"}], ";"}]}], "]"}], ";"}], ",", 
+             "\[IndentingNewLine]", 
+             RowBox[{"{", 
+              RowBox[{"\[Theta]34", ",", 
+               RowBox[{"{", 
+                RowBox[{
+                 RowBox[{"Pi", "/", "2"}], ",", 
+                 RowBox[{"Pi", "/", "3"}], " ", ",", 
+                 RowBox[{"Pi", "/", "4"}]}], " ", "}"}]}], "}"}]}], "]"}], 
+           ";"}], ",", "\[IndentingNewLine]", 
+          RowBox[{"{", 
+           RowBox[{"\[Theta]24", ",", 
+            RowBox[{"{", 
+             RowBox[{
+              RowBox[{"Pi", "/", "2"}], ",", 
+              RowBox[{"Pi", "/", "3"}], " ", ",", 
+              RowBox[{"Pi", "/", "4"}]}], " ", "}"}]}], "}"}]}], "]"}], ";"}],
+        ",", "\[IndentingNewLine]", 
+       RowBox[{"{", 
+        RowBox[{"\[Theta]23", ",", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"Pi", "/", "2"}], ",", 
+           RowBox[{"Pi", "/", "3"}], " ", ",", 
+           RowBox[{"Pi", "/", "4"}]}], " ", "}"}]}], "}"}]}], "]"}], ";", 
+     "\[IndentingNewLine]", 
+     RowBox[{"Print", "[", 
+      RowBox[{
+      "\"\<Examined \>\"", ",", "examinedcnt", ",", "\"\< cases.\>\""}], 
+      "]"}], ";", "\[IndentingNewLine]", 
+     RowBox[{"Print", "[", 
+      RowBox[{"remaincnt", ",", "\"\< cases remain.\>\""}], "]"}], ";", 
+     "\[IndentingNewLine]", 
+     RowBox[{"Return", "[", "cases", "]"}], ";"}]}], "\[IndentingNewLine]", 
+   "]"}]}]], "Input",
+ CellChangeTimes->{{3.708706823617614*^9, 3.708706983654421*^9}, {
+   3.7087072031515703`*^9, 3.7087072784885073`*^9}, {3.708707313875535*^9, 
+   3.70870742587215*^9}, {3.708707478814569*^9, 3.708707514809091*^9}, {
+   3.708707561842949*^9, 3.708707592675934*^9}, {3.708707647071075*^9, 
+   3.7087077356571407`*^9}, {3.708707788299088*^9, 3.7087079128065853`*^9}, {
+   3.70870806069561*^9, 3.7087080813088903`*^9}, {3.708708121919898*^9, 
+   3.708708146662998*^9}, {3.7087081926193457`*^9, 3.7087082438846292`*^9}, {
+   3.708708347287875*^9, 3.7087083796519814`*^9}, {3.70870854275915*^9, 
+   3.708708544334064*^9}, {3.708708631248757*^9, 3.708708631304545*^9}, {
+   3.708708710771063*^9, 3.7087087281477137`*^9}, {3.708708843805224*^9, 
+   3.708708882838675*^9}, {3.7087089975750303`*^9, 3.708708998098518*^9}, {
+   3.708709116534738*^9, 3.708709168206646*^9}, 3.708709222269059*^9, {
+   3.708709544077862*^9, 3.708709712594306*^9}, {3.708709826080415*^9, 
+   3.708709827806514*^9}, {3.7087101029048157`*^9, 3.708710108354685*^9}, {
+   3.7087101470426607`*^9, 3.708710231334587*^9}, {3.70871041302427*^9, 
+   3.7087104570618753`*^9}, {3.708710772306422*^9, 3.708710911852194*^9}, {
+   3.708710952673461*^9, 3.708710977823759*^9}, 3.70871103994396*^9, {
+   3.708711638464632*^9, 3.708711646922286*^9}, {3.708711958573645*^9, 
+   3.708711959443227*^9}, {3.7087124074378138`*^9, 3.708712413868059*^9}, {
+   3.7087124755580683`*^9, 3.708712486076846*^9}, {3.708712878269376*^9, 
+   3.708712918157222*^9}, {3.7087188650072937`*^9, 3.708718966822279*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"cases", " ", "=", "GenerateCases"}]], "Input",
+ CellChangeTimes->{{3.708707285131939*^9, 3.708707288503415*^9}, {
+  3.708711547986868*^9, 3.7087115520703163`*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"Join", "::", "heads"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"Heads \[NoBreak]\\!\\(Equal\\)\[NoBreak] and \[NoBreak]\\!\
+\\(List\\)\[NoBreak] at positions \[NoBreak]\\!\\(1\\)\[NoBreak] and \
+\[NoBreak]\\!\\(2\\)\[NoBreak] are expected to be the same. \
+\\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", ButtonStyle->\\\"Link\\\", \
+ButtonFrame->None, ButtonData:>\\\"paclet:ref/message/General/heads\\\", \
+ButtonNote -> \\\"Join::heads\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{
+  3.7087104883303213`*^9, {3.708710981524494*^9, 3.708710992708355*^9}, 
+   3.70871105031466*^9, 3.7087115529733467`*^9, 3.7087116754466*^9, 
+   3.708711962910323*^9, 3.708712422793627*^9, 3.708713017382104*^9, 
+   3.7087189745668917`*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"NMinimize", "::", "nsol"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"There are no points that satisfy the constraints \
+\[NoBreak]\\!\\(Join[\\(\\(\\(\\(Optimization`NMinimizeDump`lineq \[Equal] \
+0\\)\\), \\(\\({\\(\\(\\(\\(\\(\\(-\\(\\(\\(4\\\\ \[Pi]\\)\\/5\\)\\)\\)\\) + \
+\[Theta]12$844405\\)\\) \[LessEqual] 0\\)\\), \\(\\(\\(\\(\[Pi]\\/5 - \
+\[Theta]13$844405\\)\\) \[LessEqual] 0\\)\\), \\(\\(\\(\\(\\(\\(-\\(\\(\\(4\\\
+\\ \[Pi]\\)\\/5\\)\\)\\)\\) + \[Theta]13$844405\\)\\) \[LessEqual] 0\\)\\), \
+\\(\\(\\(\\(0.6370451769779302955771471304983436404066482393177297914757`30. \
+- \[Theta]12$844405\\)\\) \[LessEqual] 0\\)\\), \
+\\(\\(\\(\\(-\[Theta]12$844405\\)\\) \[LessEqual] 0\\)\\), \
+\\(\\(\\(\\(\\(\\(-\\(\\(\\(5\\\\ \[Pi]\\)\\/6\\)\\)\\)\\) + \
+\[Theta]13$844405\\)\\) \[LessEqual] 0\\)\\), \
+\\(\\(\\(\\(\\(\\(-2.\
+5045474766118629428854962527811592437905211600573760294993`30.594559036613536\
+\\)\\) + \[Theta]13$844405\\)\\) \[LessEqual] 0\\)\\), \
+\\(\\(\\(\\(0.6370451769779302955771471304983436404066482393177297914757`30. \
+- \[Theta]13$844405\\)\\) \[LessEqual] 0\\)\\), \\(\\(\\(\\(\[Pi]\\/6 - \
+\[Theta]13$844405\\)\\) \[LessEqual] 0\\)\\), \
+\\(\\(\\(\\(-\[Theta]12$844405\\)\\) \[LessEqual] 0\\)\\), \
+\\(\\(\\(\\(\\(\\(-\\(\\(\[Pi]\\/6\\)\\)\\)\\) + \[Theta]12$844405 - \
+\[Theta]13$844405\\)\\) \[LessEqual] 0\\)\\), \\(\\(\\(\\(\\(\\(-\\(\\(\\(7\\\
+\\ \[Pi]\\)\\/6\\)\\)\\)\\) + \[Theta]12$844405 + \[Theta]13$844405\\)\\) \
+\[LessEqual] 0\\)\\), False}\\)\\)\\)\\)]\\)\[NoBreak]. \\!\\(\\*ButtonBox[\\\
+\"\[RightSkeleton]\\\", ButtonStyle->\\\"Link\\\", ButtonFrame->None, \
+ButtonData:>\\\"paclet:ref/message/NMinimize/nsol\\\", ButtonNote -> \
+\\\"NMinimize::nsol\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{
+  3.7087104883303213`*^9, {3.708710981524494*^9, 3.708710992708355*^9}, 
+   3.70871105031466*^9, 3.7087115529733467`*^9, 3.7087116754466*^9, 
+   3.708711962910323*^9, 3.708712422793627*^9, 3.708713017382104*^9, 
+   3.708718974598556*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"NMinimize", "::", "nsol"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"There are no points that satisfy the constraints \
+\[NoBreak]\\!\\({\\(\\(\\(\\(\\(\\(-\\(\\(\\(4\\\\ \[Pi]\\)\\/5\\)\\)\\)\\) + \
+\[Theta]12$844405\\)\\) \[LessEqual] 0\\)\\), \\(\\(\\(\\(\\(\\(-\\(\\(\\(4\\\
+\\ \[Pi]\\)\\/5\\)\\)\\)\\) + \[Theta]13$844405\\)\\) \[LessEqual] 0\\)\\), \
+\\(\\(\\(\\(0.6370451769779302955771471304983436404066482393177297914757`30. \
+- \[Theta]12$844405\\)\\) \[LessEqual] 0\\)\\), \
+\\(\\(\\(\\(-\[Theta]12$844405\\)\\) \[LessEqual] 0\\)\\), \
+\\(\\(\\(\\(0.6370451769779302955771471304983436404066482393177297914757`30. \
+- \[Theta]13$844405\\)\\) \[LessEqual] 0\\)\\), \\(\\(\\(\\(\[Pi]\\/6 - \
+\[Theta]13$844405\\)\\) \[LessEqual] 0\\)\\), \\(\\(\\(\\(\[Pi] - \
+\[Theta]12$844405\\)\\) \[LessEqual] 0\\)\\), \\(\\(\\(\\(\\(5\\\\ \
+\[Pi]\\)\\/6 - \[Theta]13$844405\\)\\) \[LessEqual] 0\\)\\)}\\)\[NoBreak]. \
+\\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", ButtonStyle->\\\"Link\\\", \
+ButtonFrame->None, ButtonData:>\\\"paclet:ref/message/NMinimize/nsol\\\", \
+ButtonNote -> \\\"NMinimize::nsol\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{
+  3.7087104883303213`*^9, {3.708710981524494*^9, 3.708710992708355*^9}, 
+   3.70871105031466*^9, 3.7087115529733467`*^9, 3.7087116754466*^9, 
+   3.708711962910323*^9, 3.708712422793627*^9, 3.708713017382104*^9, 
+   3.708718983092268*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"NMinimize", "::", "nsol"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"There are no points that satisfy the constraints \
+\[NoBreak]\\!\\({\\(\\(\\(\\(\\(5\\\\ \[Pi]\\)\\/7 - \\(6\\\\ \
+\[Theta]12$844405\\)\\/7 - \\(6\\\\ \[Theta]13$844405\\)\\/7\\)\\) \
+\[LessEqual] 0\\)\\), \\(\\(\\(\\(\\(\\(-\\(\\(\\(18\\\\ \
+\[Pi]\\)\\/35\\)\\)\\)\\) - \[Theta]12$844405\\/7 - \
+\[Theta]13$844405\\/7\\)\\) \[LessEqual] 0\\)\\), \
+\\(\\(\\(\\(\\(\\(-\\(\\(\\(37\\\\ \[Pi]\\)\\/42\\)\\)\\)\\) + \\(6\\\\ \
+\[Theta]12$844405\\)\\/7 - \[Theta]13$844405\\/7\\)\\) \[LessEqual] 0\\)\\), \
+\\(\\(\\(\\(\\(\\(-0.\
+2605527240477249154121795504386571836496858747894433002314`29.611725385976342\
+\\)\\) + \[Theta]12$844405\\/7 + \[Theta]13$844405\\/7\\)\\) \[LessEqual] \
+0\\)\\), \\(\\(\\(\\(\\(\\(-\\(\\(\\(5\\\\ \[Pi]\\)\\/42\\)\\)\\)\\) + \
+\[Theta]12$844405\\/7 + \[Theta]13$844405\\/7\\)\\) \[LessEqual] 0\\)\\), \\(\
+\\(\\(\\(\\(\\(-\\(\\(\\(5\\\\ \[Pi]\\)\\/7\\)\\)\\)\\) - \
+\[Theta]12$844405\\/7 + \\(6\\\\ \[Theta]13$844405\\)\\/7\\)\\) \[LessEqual] \
+0\\)\\), \\(\\(\\(\\(\\(\\(-\\(\\(\\(7\\\\ \[Pi]\\)\\/6\\)\\)\\)\\) + \
+\[Theta]12$844405 + \[Theta]13$844405\\)\\) \[LessEqual] \
+0\\)\\)}\\)\[NoBreak]. \\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", \
+ButtonStyle->\\\"Link\\\", ButtonFrame->None, \
+ButtonData:>\\\"paclet:ref/message/NMinimize/nsol\\\", ButtonNote -> \
+\\\"NMinimize::nsol\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{
+  3.7087104883303213`*^9, {3.708710981524494*^9, 3.708710992708355*^9}, 
+   3.70871105031466*^9, 3.7087115529733467`*^9, 3.7087116754466*^9, 
+   3.708711962910323*^9, 3.708712422793627*^9, 3.708713017382104*^9, 
+   3.708718991318698*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"General", "::", "stop"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"Further output of \[NoBreak]\\!\\(\\*StyleBox[\\(NMinimize \
+:: nsol\\), \\\"MessageName\\\"]\\)\[NoBreak] will be suppressed during this \
+calculation. \\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", \
+ButtonStyle->\\\"Link\\\", ButtonFrame->None, \
+ButtonData:>\\\"paclet:ref/message/General/stop\\\", ButtonNote -> \
+\\\"General::stop\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{
+  3.7087104883303213`*^9, {3.708710981524494*^9, 3.708710992708355*^9}, 
+   3.70871105031466*^9, 3.7087115529733467`*^9, 3.7087116754466*^9, 
+   3.708711962910323*^9, 3.708712422793627*^9, 3.708713017382104*^9, 
+   3.708718991386426*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"Join", "::", "heads"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"Heads \[NoBreak]\\!\\(Equal\\)\[NoBreak] and \[NoBreak]\\!\
+\\(List\\)\[NoBreak] at positions \[NoBreak]\\!\\(1\\)\[NoBreak] and \
+\[NoBreak]\\!\\(2\\)\[NoBreak] are expected to be the same. \
+\\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", ButtonStyle->\\\"Link\\\", \
+ButtonFrame->None, ButtonData:>\\\"paclet:ref/message/General/heads\\\", \
+ButtonNote -> \\\"Join::heads\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{
+  3.7087104883303213`*^9, {3.708710981524494*^9, 3.708710992708355*^9}, 
+   3.70871105031466*^9, 3.7087115529733467`*^9, 3.7087116754466*^9, 
+   3.708711962910323*^9, 3.708712422793627*^9, 3.708713017382104*^9, 
+   3.708718991841073*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"Join", "::", "heads"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"Heads \[NoBreak]\\!\\(Equal\\)\[NoBreak] and \[NoBreak]\\!\
+\\(List\\)\[NoBreak] at positions \[NoBreak]\\!\\(1\\)\[NoBreak] and \
+\[NoBreak]\\!\\(2\\)\[NoBreak] are expected to be the same. \
+\\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", ButtonStyle->\\\"Link\\\", \
+ButtonFrame->None, ButtonData:>\\\"paclet:ref/message/General/heads\\\", \
+ButtonNote -> \\\"Join::heads\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{
+  3.7087104883303213`*^9, {3.708710981524494*^9, 3.708710992708355*^9}, 
+   3.70871105031466*^9, 3.7087115529733467`*^9, 3.7087116754466*^9, 
+   3.708711962910323*^9, 3.708712422793627*^9, 3.708713017382104*^9, 
+   3.708718991900443*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"General", "::", "stop"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"Further output of \[NoBreak]\\!\\(\\*StyleBox[\\(Join :: \
+heads\\), \\\"MessageName\\\"]\\)\[NoBreak] will be suppressed during this \
+calculation. \\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", \
+ButtonStyle->\\\"Link\\\", ButtonFrame->None, \
+ButtonData:>\\\"paclet:ref/message/General/stop\\\", ButtonNote -> \
+\\\"General::stop\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{
+  3.7087104883303213`*^9, {3.708710981524494*^9, 3.708710992708355*^9}, 
+   3.70871105031466*^9, 3.7087115529733467`*^9, 3.7087116754466*^9, 
+   3.708711962910323*^9, 3.708712422793627*^9, 3.708713017382104*^9, 
+   3.708718991960882*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"NMinimize", "::", "incst"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"\[NoBreak]\\!\\(NMinimize\\)\[NoBreak] was unable to \
+generate any initial points satisfying the inequality constraints \
+\[NoBreak]\\!\\({\\(\\(\\(\\(\\(3\\\\ \[Pi]\\)\\/5 - \\(4\\\\ \
+\[Theta]12$844405\\)\\/5 - \\(4\\\\ \[Theta]13$844405\\)\\/5\\)\\) \
+\[LessEqual] 0\\)\\), \\(\\(\\(\\(\\(\\(-\\(\\(\\(2\\\\ \[Pi]\\)\\/5\\)\\)\\)\
+\\) - \[Theta]12$844405\\/5 - \[Theta]13$844405\\/5\\)\\) \[LessEqual] \
+0\\)\\), \\(\\(\\(\\(\\(\\(-\\(\\(\\(17\\\\ \[Pi]\\)\\/20\\)\\)\\)\\) + \
+\\(4\\\\ \[Theta]12$844405\\)\\/5 - \[Theta]13$844405\\/5\\)\\) \[LessEqual] \
+0\\)\\), \\(\\(\\(\\(\\(\\(-0.\
+6195918844579869998079102228134575132722195204323125369143`29.98793548859862\\\
+)\\) + \[Theta]12$844405\\/5 + \[Theta]13$844405\\/5\\)\\) \[LessEqual] \
+0\\)\\), \\(\\(\\(\\(\\(\\(-\\(\\(\\(3\\\\ \[Pi]\\)\\/20\\)\\)\\)\\) + \
+\[Theta]12$844405\\/5 + \[Theta]13$844405\\/5\\)\\) \[LessEqual] 0\\)\\), \\(\
+\\(\\(\\(\\(\\(-\\(\\(\\(3\\\\ \[Pi]\\)\\/5\\)\\)\\)\\) - \
+\[Theta]12$844405\\/5 + \\(4\\\\ \[Theta]13$844405\\)\\/5\\)\\) \[LessEqual] \
+0\\)\\), \\(\\(\\(\\(\\(\\(-\\(\\(\\(5\\\\ \[Pi]\\)\\/4\\)\\)\\)\\) + \
+\[Theta]12$844405 + \[Theta]13$844405\\)\\) \[LessEqual] \
+0\\)\\)}\\)\[NoBreak]. The initial region specified may not contain any \
+feasible points. Changing the initial region or specifying explicit initial \
+points may provide a better solution. \\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\
+\\\", ButtonStyle->\\\"Link\\\", ButtonFrame->None, \
+ButtonData:>\\\"paclet:ref/message/NMinimize/incst\\\", ButtonNote -> \
+\\\"NMinimize::incst\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{
+  3.7087104883303213`*^9, {3.708710981524494*^9, 3.708710992708355*^9}, 
+   3.70871105031466*^9, 3.7087115529733467`*^9, 3.7087116754466*^9, 
+   3.708711962910323*^9, 3.708712422793627*^9, 3.708713017382104*^9, 
+   3.7087190004390497`*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"NMinimize", "::", "incst"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"\[NoBreak]\\!\\(NMinimize\\)\[NoBreak] was unable to \
+generate any initial points satisfying the inequality constraints \
+\[NoBreak]\\!\\({\\(\\(\\(\\(\\(\\(-\\(\\(\\(2\\\\ \[Pi]\\)\\/15\\)\\)\\)\\) \
+- \[Theta]12$844405\\/3 - \[Theta]13$844405\\)\\) \[LessEqual] 0\\)\\), \
+\\(\\(\\(\\(\\(\\(-\\(\\(\\(7\\\\ \[Pi]\\)\\/12\\)\\)\\)\\) + \\(2\\\\ \
+\[Theta]12$844405\\)\\/3 - \[Theta]13$844405\\)\\) \[LessEqual] 0\\)\\), \
+\\(\\(\\(\\(\\(\\(-1.\
+4573499254152651967312817916879916157247980269323407558409`30.359393611027127\
+\\)\\) + \[Theta]12$844405\\/3 + \[Theta]13$844405\\)\\) \[LessEqual] \
+0\\)\\), \\(\\(\\(\\(\\(\\(-\\(\\(\\(5\\\\ \[Pi]\\)\\/12\\)\\)\\)\\) + \
+\[Theta]12$844405\\/3 + \[Theta]13$844405\\)\\) \[LessEqual] 0\\)\\), \
+\\(\\(\\(\\(\\(\\(-\\(\\(\\(5\\\\ \[Pi]\\)\\/4\\)\\)\\)\\) + \
+\[Theta]12$844405 + \[Theta]13$844405\\)\\) \[LessEqual] \
+0\\)\\)}\\)\[NoBreak]. The initial region specified may not contain any \
+feasible points. Changing the initial region or specifying explicit initial \
+points may provide a better solution. \\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\
+\\\", ButtonStyle->\\\"Link\\\", ButtonFrame->None, \
+ButtonData:>\\\"paclet:ref/message/NMinimize/incst\\\", ButtonNote -> \
+\\\"NMinimize::incst\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{
+  3.7087104883303213`*^9, {3.708710981524494*^9, 3.708710992708355*^9}, 
+   3.70871105031466*^9, 3.7087115529733467`*^9, 3.7087116754466*^9, 
+   3.708711962910323*^9, 3.708712422793627*^9, 3.708713017382104*^9, 
+   3.708719005454646*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"\[Theta]23=\"\>", "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "2"], "\[InvisibleSpace]", "\<\" \[Theta]24=\"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "3"], "\[InvisibleSpace]", "\<\" \[Theta]34=\"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "4"], "\[InvisibleSpace]", "\<\" n12=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" n13=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n14=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" mininum=\"\>", 
+   "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{
+    "5.52330637566667944294014981003720883868378200319327907930614611059`30.*^\
+-31", ",", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{
+       "\[Theta]12$844405", "\[Rule]", 
+        "0.7227342478134147629568052826243258455031160613500811019354`30."}], 
+       ",", 
+       RowBox[{
+       "\[Theta]13$844405", "\[Rule]", 
+        "1.2094292028881882914776678475328205368135619175227691460466`30."}]}]\
+, "}"}]}], "}"}]}],
+  SequenceForm[
+  "\[Theta]23=", Rational[1, 2] Pi, " \[Theta]24=", Rational[1, 3] Pi, 
+   " \[Theta]34=", Rational[1, 4] Pi, " n12=", 0, " n13=", 2, " n14=", 2, 
+   " mininum=", {
+   5.52330637566667944294014981003720883868378200319327907930614611059`30.*^-\
+31, {$CellContext`\[Theta]12$844405 -> 
+     0.7227342478134147629568052826243258455031160613500811019354`30., \
+$CellContext`\[Theta]13$844405 -> 
+     1.2094292028881882914776678475328205368135619175227691460466`30.}}],
+  Editable->False]], "Print",
+ CellChangeTimes->{{3.708708064778173*^9, 3.708708084498493*^9}, 
+   3.708708151405032*^9, 3.708708283220961*^9, 3.708708555208509*^9, 
+   3.7087089261320744`*^9, 3.708709230805395*^9, 3.708710488715205*^9, {
+   3.708710981791608*^9, 3.708710993004327*^9}, 3.708711050598803*^9, 
+   3.708711553358481*^9, 3.708711675761648*^9, 3.708711963142767*^9, 
+   3.708712423058366*^9, 3.708713077223712*^9, 3.708719036624751*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"NMinimize", "::", "incst"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"\[NoBreak]\\!\\(NMinimize\\)\[NoBreak] was unable to \
+generate any initial points satisfying the inequality constraints \
+\[NoBreak]\\!\\({\\(\\(\\(\\(\\(3\\\\ \[Pi]\\)\\/5 - \\(4\\\\ \
+\[Theta]12$844405\\)\\/5 - \\(4\\\\ \[Theta]13$844405\\)\\/5\\)\\) \
+\[LessEqual] 0\\)\\), \\(\\(\\(\\(\\(\\(-\\(\\(\\(2\\\\ \[Pi]\\)\\/5\\)\\)\\)\
+\\) - \[Theta]12$844405\\/5 - \[Theta]13$844405\\/5\\)\\) \[LessEqual] \
+0\\)\\), \\(\\(\\(\\(\\(\\(-\\(\\(\\(3\\\\ \[Pi]\\)\\/5\\)\\)\\)\\) + \
+\\(4\\\\ \[Theta]12$844405\\)\\/5 - \[Theta]13$844405\\/5\\)\\) \[LessEqual] \
+0\\)\\), \\(\\(\\(\\(\\(\\(-0.\
+6195918844579869998079102228134575132722195204323125369143`29.98793548859862\\\
+)\\) + \[Theta]12$844405\\/5 + \[Theta]13$844405\\/5\\)\\) \[LessEqual] \
+0\\)\\), \\(\\(\\(\\(\\(\\(-\\(\\(\\(3\\\\ \[Pi]\\)\\/20\\)\\)\\)\\) + \
+\[Theta]12$844405\\/5 + \[Theta]13$844405\\/5\\)\\) \[LessEqual] 0\\)\\), \\(\
+\\(\\(\\(\\(\\(-\\(\\(\\(17\\\\ \[Pi]\\)\\/20\\)\\)\\)\\) - \[Theta]12$844405\
+\\/5 + \\(4\\\\ \[Theta]13$844405\\)\\/5\\)\\) \[LessEqual] 0\\)\\), \
+\\(\\(\\(\\(\\(\\(-\\(\\(\\(5\\\\ \[Pi]\\)\\/4\\)\\)\\)\\) + \
+\[Theta]12$844405 + \[Theta]13$844405\\)\\) \[LessEqual] \
+0\\)\\)}\\)\[NoBreak]. The initial region specified may not contain any \
+feasible points. Changing the initial region or specifying explicit initial \
+points may provide a better solution. \\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\
+\\\", ButtonStyle->\\\"Link\\\", ButtonFrame->None, \
+ButtonData:>\\\"paclet:ref/message/NMinimize/incst\\\", ButtonNote -> \
+\\\"NMinimize::incst\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{
+  3.7087104883303213`*^9, {3.708710981524494*^9, 3.708710992708355*^9}, 
+   3.70871105031466*^9, 3.7087115529733467`*^9, 3.7087116754466*^9, 
+   3.708711962910323*^9, 3.708712422793627*^9, 3.708713017382104*^9, 
+   3.708719057966044*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"General", "::", "stop"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"Further output of \[NoBreak]\\!\\(\\*StyleBox[\\(NMinimize \
+:: incst\\), \\\"MessageName\\\"]\\)\[NoBreak] will be suppressed during this \
+calculation. \\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", \
+ButtonStyle->\\\"Link\\\", ButtonFrame->None, \
+ButtonData:>\\\"paclet:ref/message/General/stop\\\", ButtonNote -> \
+\\\"General::stop\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{
+  3.7087104883303213`*^9, {3.708710981524494*^9, 3.708710992708355*^9}, 
+   3.70871105031466*^9, 3.7087115529733467`*^9, 3.7087116754466*^9, 
+   3.708711962910323*^9, 3.708712422793627*^9, 3.708713017382104*^9, 
+   3.708719058073048*^9}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"\[Theta]23=\"\>", "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "2"], "\[InvisibleSpace]", "\<\" \[Theta]24=\"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "4"], "\[InvisibleSpace]", "\<\" \[Theta]34=\"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "4"], "\[InvisibleSpace]", "\<\" n12=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" n13=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n14=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" mininum=\"\>", 
+   "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{
+    "6.95289173264978818624853712351874827389867294773373041768806254002`30.*^\
+-31", ",", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{
+       "\[Theta]12$844405", "\[Rule]", 
+        "1.0471975511965971654821740776051815572540560495025922002478`30."}], 
+       ",", 
+       RowBox[{
+       "\[Theta]13$844405", "\[Rule]", 
+        "1.0471975511965972031830736231296165304116148391899607038445`30."}]}]\
+, "}"}]}], "}"}]}],
+  SequenceForm[
+  "\[Theta]23=", Rational[1, 2] Pi, " \[Theta]24=", Rational[1, 4] Pi, 
+   " \[Theta]34=", Rational[1, 4] Pi, " n12=", 0, " n13=", 2, " n14=", 2, 
+   " mininum=", {
+   6.95289173264978818624853712351874827389867294773373041768806254002`30.*^-\
+31, {$CellContext`\[Theta]12$844405 -> 
+     1.0471975511965971654821740776051815572540560495025922002478`30., \
+$CellContext`\[Theta]13$844405 -> 
+     1.0471975511965972031830736231296165304116148391899607038445`30.}}],
+  Editable->False]], "Print",
+ CellChangeTimes->{{3.708708064778173*^9, 3.708708084498493*^9}, 
+   3.708708151405032*^9, 3.708708283220961*^9, 3.708708555208509*^9, 
+   3.7087089261320744`*^9, 3.708709230805395*^9, 3.708710488715205*^9, {
+   3.708710981791608*^9, 3.708710993004327*^9}, 3.708711050598803*^9, 
+   3.708711553358481*^9, 3.708711675761648*^9, 3.708711963142767*^9, 
+   3.708712423058366*^9, 3.708713077223712*^9, 3.708719075722913*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"\[Theta]23=\"\>", "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "3"], "\[InvisibleSpace]", "\<\" \[Theta]24=\"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "2"], "\[InvisibleSpace]", "\<\" \[Theta]34=\"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "4"], "\[InvisibleSpace]", "\<\" n12=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" n13=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n14=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" mininum=\"\>", 
+   "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{
+    "4.43220165640877392251511586310058598894762105793099897583426923992`30.*^\
+-31", ",", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{
+       "\[Theta]12$844405", "\[Rule]", 
+        "0.7227342478134157342897583517682513705882992075895052100611`30."}], 
+       ",", 
+       RowBox[{
+       "\[Theta]13$844405", "\[Rule]", 
+        "1.9321634507016037052229859950562601210804659993148516219467`30."}]}]\
+, "}"}]}], "}"}]}],
+  SequenceForm[
+  "\[Theta]23=", Rational[1, 3] Pi, " \[Theta]24=", Rational[1, 2] Pi, 
+   " \[Theta]34=", Rational[1, 4] Pi, " n12=", 0, " n13=", 2, " n14=", 2, 
+   " mininum=", {
+   4.43220165640877392251511586310058598894762105793099897583426923992`30.*^-\
+31, {$CellContext`\[Theta]12$844405 -> 
+     0.7227342478134157342897583517682513705882992075895052100611`30., \
+$CellContext`\[Theta]13$844405 -> 
+     1.9321634507016037052229859950562601210804659993148516219467`30.}}],
+  Editable->False]], "Print",
+ CellChangeTimes->{{3.708708064778173*^9, 3.708708084498493*^9}, 
+   3.708708151405032*^9, 3.708708283220961*^9, 3.708708555208509*^9, 
+   3.7087089261320744`*^9, 3.708709230805395*^9, 3.708710488715205*^9, {
+   3.708710981791608*^9, 3.708710993004327*^9}, 3.708711050598803*^9, 
+   3.708711553358481*^9, 3.708711675761648*^9, 3.708711963142767*^9, 
+   3.708712423058366*^9, 3.708713077223712*^9, 3.7087191171624823`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"\[Theta]23=\"\>", "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "3"], "\[InvisibleSpace]", "\<\" \[Theta]24=\"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "2"], "\[InvisibleSpace]", "\<\" \[Theta]34=\"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "4"], "\[InvisibleSpace]", "\<\" n12=\"\>", 
+   "\[InvisibleSpace]", "1", "\[InvisibleSpace]", "\<\" n13=\"\>", 
+   "\[InvisibleSpace]", "1", "\[InvisibleSpace]", "\<\" n14=\"\>", 
+   "\[InvisibleSpace]", "3", "\[InvisibleSpace]", "\<\" mininum=\"\>", 
+   "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{
+    "4.1780028187537383176732519535859115909803266611012319309715509`30.*^-\
+35", ",", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{
+       "\[Theta]12$844405", "\[Rule]", 
+        "0.7227342478134156237797335186497509089544720209791327210538`30."}], 
+       ",", 
+       RowBox[{
+       "\[Theta]13$844405", "\[Rule]", 
+        "1.9321634507016044198504524100256078178542364229024911970171`30."}]}]\
+, "}"}]}], "}"}]}],
+  SequenceForm[
+  "\[Theta]23=", Rational[1, 3] Pi, " \[Theta]24=", Rational[1, 2] Pi, 
+   " \[Theta]34=", Rational[1, 4] Pi, " n12=", 1, " n13=", 1, " n14=", 3, 
+   " mininum=", {
+   4.1780028187537383176732519535859115909803266611012319309715509`30.*^-35, \
+{$CellContext`\[Theta]12$844405 -> 
+     0.7227342478134156237797335186497509089544720209791327210538`30., \
+$CellContext`\[Theta]13$844405 -> 
+     1.9321634507016044198504524100256078178542364229024911970171`30.}}],
+  Editable->False]], "Print",
+ CellChangeTimes->{{3.708708064778173*^9, 3.708708084498493*^9}, 
+   3.708708151405032*^9, 3.708708283220961*^9, 3.708708555208509*^9, 
+   3.7087089261320744`*^9, 3.708709230805395*^9, 3.708710488715205*^9, {
+   3.708710981791608*^9, 3.708710993004327*^9}, 3.708711050598803*^9, 
+   3.708711553358481*^9, 3.708711675761648*^9, 3.708711963142767*^9, 
+   3.708712423058366*^9, 3.708713077223712*^9, 3.708719120526121*^9}]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"NMinimize", "::", "cvmit"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"Failed to converge to the requested accuracy or precision \
+within \[NoBreak]\\!\\(100\\)\[NoBreak] iterations. \\!\\(\\*ButtonBox[\\\"\
+\[RightSkeleton]\\\", ButtonStyle->\\\"Link\\\", ButtonFrame->None, \
+ButtonData:>\\\"paclet:ref/NMinimize\\\", ButtonNote -> \
+\\\"NMinimize::cvmit\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{
+  3.7087104883303213`*^9, {3.708710981524494*^9, 3.708710992708355*^9}, 
+   3.70871105031466*^9, 3.7087115529733467`*^9, 3.7087116754466*^9, 
+   3.708711962910323*^9, 3.708712422793627*^9, 3.708713017382104*^9, 
+   3.7087191617440367`*^9}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"\[Theta]23=\"\>", "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "3"], "\[InvisibleSpace]", "\<\" \[Theta]24=\"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "4"], "\[InvisibleSpace]", "\<\" \[Theta]34=\"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "2"], "\[InvisibleSpace]", "\<\" n12=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" n13=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n14=\"\>", 
+   "\[InvisibleSpace]", "4", "\[InvisibleSpace]", "\<\" mininum=\"\>", 
+   "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{"0", ",", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{
+       "\[Theta]12$844405", "\[Rule]", 
+        "1.9321634507016044248205103679600723294734093074190912349658`30."}], 
+       ",", 
+       RowBox[{
+       "\[Theta]13$844405", "\[Rule]", 
+        "0.7227342478134156111783773526453641934587269788221412798673`30."}]}]\
+, "}"}]}], "}"}]}],
+  SequenceForm[
+  "\[Theta]23=", Rational[1, 3] Pi, " \[Theta]24=", Rational[1, 4] Pi, 
+   " \[Theta]34=", Rational[1, 2] Pi, " n12=", 0, " n13=", 2, " n14=", 4, 
+   " mininum=", {
+   0, {$CellContext`\[Theta]12$844405 -> 
+     1.9321634507016044248205103679600723294734093074190912349658`30., \
+$CellContext`\[Theta]13$844405 -> 
+     0.7227342478134156111783773526453641934587269788221412798673`30.}}],
+  Editable->False]], "Print",
+ CellChangeTimes->{{3.708708064778173*^9, 3.708708084498493*^9}, 
+   3.708708151405032*^9, 3.708708283220961*^9, 3.708708555208509*^9, 
+   3.7087089261320744`*^9, 3.708709230805395*^9, 3.708710488715205*^9, {
+   3.708710981791608*^9, 3.708710993004327*^9}, 3.708711050598803*^9, 
+   3.708711553358481*^9, 3.708711675761648*^9, 3.708711963142767*^9, 
+   3.708712423058366*^9, 3.708713077223712*^9, 3.708719165837192*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"\[Theta]23=\"\>", "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "3"], "\[InvisibleSpace]", "\<\" \[Theta]24=\"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "4"], "\[InvisibleSpace]", "\<\" \[Theta]34=\"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "2"], "\[InvisibleSpace]", "\<\" n12=\"\>", 
+   "\[InvisibleSpace]", "1", "\[InvisibleSpace]", "\<\" n13=\"\>", 
+   "\[InvisibleSpace]", "1", "\[InvisibleSpace]", "\<\" n14=\"\>", 
+   "\[InvisibleSpace]", "3", "\[InvisibleSpace]", "\<\" mininum=\"\>", 
+   "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{
+    "8.29786588812747348625337881871836225777206416742032402658391248761`30.*^\
+-31", ",", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{
+       "\[Theta]12$844405", "\[Rule]", 
+        "1.9321634507016035007678130479840262663020067923602746088591`30."}], 
+       ",", 
+       RowBox[{
+       "\[Theta]13$844405", "\[Rule]", 
+        "0.7227342478134164267387397337700787747784427416290688335294`30."}]}]\
+, "}"}]}], "}"}]}],
+  SequenceForm[
+  "\[Theta]23=", Rational[1, 3] Pi, " \[Theta]24=", Rational[1, 4] Pi, 
+   " \[Theta]34=", Rational[1, 2] Pi, " n12=", 1, " n13=", 1, " n14=", 3, 
+   " mininum=", {
+   8.29786588812747348625337881871836225777206416742032402658391248761`30.*^-\
+31, {$CellContext`\[Theta]12$844405 -> 
+     1.9321634507016035007678130479840262663020067923602746088591`30., \
+$CellContext`\[Theta]13$844405 -> 
+     0.7227342478134164267387397337700787747784427416290688335294`30.}}],
+  Editable->False]], "Print",
+ CellChangeTimes->{{3.708708064778173*^9, 3.708708084498493*^9}, 
+   3.708708151405032*^9, 3.708708283220961*^9, 3.708708555208509*^9, 
+   3.7087089261320744`*^9, 3.708709230805395*^9, 3.708710488715205*^9, {
+   3.708710981791608*^9, 3.708710993004327*^9}, 3.708711050598803*^9, 
+   3.708711553358481*^9, 3.708711675761648*^9, 3.708711963142767*^9, 
+   3.708712423058366*^9, 3.708713077223712*^9, 3.708719172929214*^9}]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"NMinimize", "::", "cvmit"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"Failed to converge to the requested accuracy or precision \
+within \[NoBreak]\\!\\(100\\)\[NoBreak] iterations. \\!\\(\\*ButtonBox[\\\"\
+\[RightSkeleton]\\\", ButtonStyle->\\\"Link\\\", ButtonFrame->None, \
+ButtonData:>\\\"paclet:ref/NMinimize\\\", ButtonNote -> \
+\\\"NMinimize::cvmit\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{
+  3.7087104883303213`*^9, {3.708710981524494*^9, 3.708710992708355*^9}, 
+   3.70871105031466*^9, 3.7087115529733467`*^9, 3.7087116754466*^9, 
+   3.708711962910323*^9, 3.708712422793627*^9, 3.708713017382104*^9, 
+   3.708719200541649*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"NMinimize", "::", "cvmit"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"Failed to converge to the requested accuracy or precision \
+within \[NoBreak]\\!\\(100\\)\[NoBreak] iterations. \\!\\(\\*ButtonBox[\\\"\
+\[RightSkeleton]\\\", ButtonStyle->\\\"Link\\\", ButtonFrame->None, \
+ButtonData:>\\\"paclet:ref/NMinimize\\\", ButtonNote -> \
+\\\"NMinimize::cvmit\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{
+  3.7087104883303213`*^9, {3.708710981524494*^9, 3.708710992708355*^9}, 
+   3.70871105031466*^9, 3.7087115529733467`*^9, 3.7087116754466*^9, 
+   3.708711962910323*^9, 3.708712422793627*^9, 3.708713017382104*^9, 
+   3.708719228265173*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"General", "::", "stop"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"Further output of \[NoBreak]\\!\\(\\*StyleBox[\\(NMinimize \
+:: cvmit\\), \\\"MessageName\\\"]\\)\[NoBreak] will be suppressed during this \
+calculation. \\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", \
+ButtonStyle->\\\"Link\\\", ButtonFrame->None, \
+ButtonData:>\\\"paclet:ref/message/General/stop\\\", ButtonNote -> \
+\\\"General::stop\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{
+  3.7087104883303213`*^9, {3.708710981524494*^9, 3.708710992708355*^9}, 
+   3.70871105031466*^9, 3.7087115529733467`*^9, 3.7087116754466*^9, 
+   3.708711962910323*^9, 3.708712422793627*^9, 3.708713017382104*^9, 
+   3.708719228310073*^9}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"\[Theta]23=\"\>", "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "4"], "\[InvisibleSpace]", "\<\" \[Theta]24=\"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "2"], "\[InvisibleSpace]", "\<\" \[Theta]34=\"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "4"], "\[InvisibleSpace]", "\<\" n12=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" n13=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n14=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" mininum=\"\>", 
+   "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{"0", ",", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{
+       "\[Theta]12$844405", "\[Rule]", 
+        "1.0471975511965977461542144610932833566144338220887747231483`30."}], 
+       ",", 
+       RowBox[{
+       "\[Theta]13$844405", "\[Rule]", 
+        "2.0943951023931954923084289221860073031204133021008908916692`30."}]}]\
+, "}"}]}], "}"}]}],
+  SequenceForm[
+  "\[Theta]23=", Rational[1, 4] Pi, " \[Theta]24=", Rational[1, 2] Pi, 
+   " \[Theta]34=", Rational[1, 4] Pi, " n12=", 0, " n13=", 2, " n14=", 2, 
+   " mininum=", {
+   0, {$CellContext`\[Theta]12$844405 -> 
+     1.0471975511965977461542144610932833566144338220887747231483`30., \
+$CellContext`\[Theta]13$844405 -> 
+     2.0943951023931954923084289221860073031204133021008908916692`30.}}],
+  Editable->False]], "Print",
+ CellChangeTimes->{{3.708708064778173*^9, 3.708708084498493*^9}, 
+   3.708708151405032*^9, 3.708708283220961*^9, 3.708708555208509*^9, 
+   3.7087089261320744`*^9, 3.708709230805395*^9, 3.708710488715205*^9, {
+   3.708710981791608*^9, 3.708710993004327*^9}, 3.708711050598803*^9, 
+   3.708711553358481*^9, 3.708711675761648*^9, 3.708711963142767*^9, 
+   3.708712423058366*^9, 3.708713077223712*^9, 3.708719262912401*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"\[Theta]23=\"\>", "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "4"], "\[InvisibleSpace]", "\<\" \[Theta]24=\"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "2"], "\[InvisibleSpace]", "\<\" \[Theta]34=\"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "4"], "\[InvisibleSpace]", "\<\" n12=\"\>", 
+   "\[InvisibleSpace]", "1", "\[InvisibleSpace]", "\<\" n13=\"\>", 
+   "\[InvisibleSpace]", "1", "\[InvisibleSpace]", "\<\" n14=\"\>", 
+   "\[InvisibleSpace]", "3", "\[InvisibleSpace]", "\<\" mininum=\"\>", 
+   "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{"0", ",", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{
+       "\[Theta]12$844405", "\[Rule]", 
+        "1.0471975511965977461542144610931680935114069762161030907718`30."}], 
+       ",", 
+       RowBox[{
+       "\[Theta]13$844405", "\[Rule]", 
+        "2.0943951023931954923084289221863351430615489720344943340253`30."}]}]\
+, "}"}]}], "}"}]}],
+  SequenceForm[
+  "\[Theta]23=", Rational[1, 4] Pi, " \[Theta]24=", Rational[1, 2] Pi, 
+   " \[Theta]34=", Rational[1, 4] Pi, " n12=", 1, " n13=", 1, " n14=", 3, 
+   " mininum=", {
+   0, {$CellContext`\[Theta]12$844405 -> 
+     1.0471975511965977461542144610931680935114069762161030907718`30., \
+$CellContext`\[Theta]13$844405 -> 
+     2.0943951023931954923084289221863351430615489720344943340253`30.}}],
+  Editable->False]], "Print",
+ CellChangeTimes->{{3.708708064778173*^9, 3.708708084498493*^9}, 
+   3.708708151405032*^9, 3.708708283220961*^9, 3.708708555208509*^9, 
+   3.7087089261320744`*^9, 3.708709230805395*^9, 3.708710488715205*^9, {
+   3.708710981791608*^9, 3.708710993004327*^9}, 3.708711050598803*^9, 
+   3.708711553358481*^9, 3.708711675761648*^9, 3.708711963142767*^9, 
+   3.708712423058366*^9, 3.708713077223712*^9, 3.708719271764971*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"\[Theta]23=\"\>", "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "4"], "\[InvisibleSpace]", "\<\" \[Theta]24=\"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "4"], "\[InvisibleSpace]", "\<\" \[Theta]34=\"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "2"], "\[InvisibleSpace]", "\<\" n12=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" n13=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n14=\"\>", 
+   "\[InvisibleSpace]", "4", "\[InvisibleSpace]", "\<\" mininum=\"\>", 
+   "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{
+    "2.019939912013097976297026805573537466605656590469932917105437243655`30.*^\
+-30", ",", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{
+       "\[Theta]12$844405", "\[Rule]", 
+        "2.0943951023931944781549280702355787857404693026753538270711`30."}], 
+       ",", 
+       RowBox[{
+       "\[Theta]13$844405", "\[Rule]", 
+        "1.0471975511965987324475290597974808814148353317186557287244`30."}]}]\
+, "}"}]}], "}"}]}],
+  SequenceForm[
+  "\[Theta]23=", Rational[1, 4] Pi, " \[Theta]24=", Rational[1, 4] Pi, 
+   " \[Theta]34=", Rational[1, 2] Pi, " n12=", 0, " n13=", 2, " n14=", 4, 
+   " mininum=", {
+   2.019939912013097976297026805573537466605656590469932917105437243655`30.*^-\
+30, {$CellContext`\[Theta]12$844405 -> 
+     2.0943951023931944781549280702355787857404693026753538270711`30., \
+$CellContext`\[Theta]13$844405 -> 
+     1.0471975511965987324475290597974808814148353317186557287244`30.}}],
+  Editable->False]], "Print",
+ CellChangeTimes->{{3.708708064778173*^9, 3.708708084498493*^9}, 
+   3.708708151405032*^9, 3.708708283220961*^9, 3.708708555208509*^9, 
+   3.7087089261320744`*^9, 3.708709230805395*^9, 3.708710488715205*^9, {
+   3.708710981791608*^9, 3.708710993004327*^9}, 3.708711050598803*^9, 
+   3.708711553358481*^9, 3.708711675761648*^9, 3.708711963142767*^9, 
+   3.708712423058366*^9, 3.708713077223712*^9, 3.708719329700404*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"\[Theta]23=\"\>", "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "4"], "\[InvisibleSpace]", "\<\" \[Theta]24=\"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "4"], "\[InvisibleSpace]", "\<\" \[Theta]34=\"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "2"], "\[InvisibleSpace]", "\<\" n12=\"\>", 
+   "\[InvisibleSpace]", "1", "\[InvisibleSpace]", "\<\" n13=\"\>", 
+   "\[InvisibleSpace]", "1", "\[InvisibleSpace]", "\<\" n14=\"\>", 
+   "\[InvisibleSpace]", "3", "\[InvisibleSpace]", "\<\" mininum=\"\>", 
+   "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{"0", ",", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{
+       "\[Theta]12$844405", "\[Rule]", 
+        "2.0943951023931954923084289221863407757797340975029911685453`30."}], 
+       ",", 
+       RowBox[{
+       "\[Theta]13$844405", "\[Rule]", 
+        "1.0471975511965977461542144610932718542397458371324539680964`30."}]}]\
+, "}"}]}], "}"}]}],
+  SequenceForm[
+  "\[Theta]23=", Rational[1, 4] Pi, " \[Theta]24=", Rational[1, 4] Pi, 
+   " \[Theta]34=", Rational[1, 2] Pi, " n12=", 1, " n13=", 1, " n14=", 3, 
+   " mininum=", {
+   0, {$CellContext`\[Theta]12$844405 -> 
+     2.0943951023931954923084289221863407757797340975029911685453`30., \
+$CellContext`\[Theta]13$844405 -> 
+     1.0471975511965977461542144610932718542397458371324539680964`30.}}],
+  Editable->False]], "Print",
+ CellChangeTimes->{{3.708708064778173*^9, 3.708708084498493*^9}, 
+   3.708708151405032*^9, 3.708708283220961*^9, 3.708708555208509*^9, 
+   3.7087089261320744`*^9, 3.708709230805395*^9, 3.708710488715205*^9, {
+   3.708710981791608*^9, 3.708710993004327*^9}, 3.708711050598803*^9, 
+   3.708711553358481*^9, 3.708711675761648*^9, 3.708711963142767*^9, 
+   3.708712423058366*^9, 3.708713077223712*^9, 3.708719337485053*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"\[Theta]23=\"\>", "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "4"], "\[InvisibleSpace]", "\<\" \[Theta]24=\"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "4"], "\[InvisibleSpace]", "\<\" \[Theta]34=\"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "3"], "\[InvisibleSpace]", "\<\" n12=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" n13=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n14=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" mininum=\"\>", 
+   "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{
+    "2.580790811607491430848756071737785845134233989155498442624369388393`30.*^\
+-30", ",", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{
+       "\[Theta]12$844405", "\[Rule]", 
+        "1.9106332362490177307835598840511130380616623297522792324255`30."}], 
+       ",", 
+       RowBox[{
+       "\[Theta]13$844405", "\[Rule]", 
+        "1.5707963267948958674452513138378415981050985019735602213496`30."}]}]\
+, "}"}]}], "}"}]}],
+  SequenceForm[
+  "\[Theta]23=", Rational[1, 4] Pi, " \[Theta]24=", Rational[1, 4] Pi, 
+   " \[Theta]34=", Rational[1, 3] Pi, " n12=", 0, " n13=", 2, " n14=", 2, 
+   " mininum=", {
+   2.580790811607491430848756071737785845134233989155498442624369388393`30.*^-\
+30, {$CellContext`\[Theta]12$844405 -> 
+     1.9106332362490177307835598840511130380616623297522792324255`30., \
+$CellContext`\[Theta]13$844405 -> 
+     1.5707963267948958674452513138378415981050985019735602213496`30.}}],
+  Editable->False]], "Print",
+ CellChangeTimes->{{3.708708064778173*^9, 3.708708084498493*^9}, 
+   3.708708151405032*^9, 3.708708283220961*^9, 3.708708555208509*^9, 
+   3.7087089261320744`*^9, 3.708709230805395*^9, 3.708710488715205*^9, {
+   3.708710981791608*^9, 3.708710993004327*^9}, 3.708711050598803*^9, 
+   3.708711553358481*^9, 3.708711675761648*^9, 3.708711963142767*^9, 
+   3.708712423058366*^9, 3.708713077223712*^9, 3.7087193651557837`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Examined \"\>", "\[InvisibleSpace]", "338", 
+   "\[InvisibleSpace]", "\<\" cases.\"\>"}],
+  SequenceForm["Examined ", 338, " cases."],
+  Editable->False]], "Print",
+ CellChangeTimes->{{3.708708064778173*^9, 3.708708084498493*^9}, 
+   3.708708151405032*^9, 3.708708283220961*^9, 3.708708555208509*^9, 
+   3.7087089261320744`*^9, 3.708709230805395*^9, 3.708710488715205*^9, {
+   3.708710981791608*^9, 3.708710993004327*^9}, 3.708711050598803*^9, 
+   3.708711553358481*^9, 3.708711675761648*^9, 3.708711963142767*^9, 
+   3.708712423058366*^9, 3.708713077223712*^9, 3.708719370812669*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"11", "\[InvisibleSpace]", "\<\" cases remain.\"\>"}],
+  SequenceForm[11, " cases remain."],
+  Editable->False]], "Print",
+ CellChangeTimes->{{3.708708064778173*^9, 3.708708084498493*^9}, 
+   3.708708151405032*^9, 3.708708283220961*^9, 3.708708555208509*^9, 
+   3.7087089261320744`*^9, 3.708709230805395*^9, 3.708710488715205*^9, {
+   3.708710981791608*^9, 3.708710993004327*^9}, 3.708711050598803*^9, 
+   3.708711553358481*^9, 3.708711675761648*^9, 3.708711963142767*^9, 
+   3.708712423058366*^9, 3.708713077223712*^9, 3.7087193708237886`*^9}]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     FractionBox["\[Pi]", "2"], ",", 
+     FractionBox["\[Pi]", "3"], ",", 
+     FractionBox["\[Pi]", "4"], ",", "0", ",", "2", ",", "2"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     FractionBox["\[Pi]", "2"], ",", 
+     FractionBox["\[Pi]", "4"], ",", 
+     FractionBox["\[Pi]", "4"], ",", "0", ",", "2", ",", "2"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     FractionBox["\[Pi]", "3"], ",", 
+     FractionBox["\[Pi]", "2"], ",", 
+     FractionBox["\[Pi]", "4"], ",", "0", ",", "2", ",", "2"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     FractionBox["\[Pi]", "3"], ",", 
+     FractionBox["\[Pi]", "2"], ",", 
+     FractionBox["\[Pi]", "4"], ",", "1", ",", "1", ",", "3"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     FractionBox["\[Pi]", "3"], ",", 
+     FractionBox["\[Pi]", "4"], ",", 
+     FractionBox["\[Pi]", "2"], ",", "0", ",", "2", ",", "4"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     FractionBox["\[Pi]", "3"], ",", 
+     FractionBox["\[Pi]", "4"], ",", 
+     FractionBox["\[Pi]", "2"], ",", "1", ",", "1", ",", "3"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     FractionBox["\[Pi]", "4"], ",", 
+     FractionBox["\[Pi]", "2"], ",", 
+     FractionBox["\[Pi]", "4"], ",", "0", ",", "2", ",", "2"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     FractionBox["\[Pi]", "4"], ",", 
+     FractionBox["\[Pi]", "2"], ",", 
+     FractionBox["\[Pi]", "4"], ",", "1", ",", "1", ",", "3"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     FractionBox["\[Pi]", "4"], ",", 
+     FractionBox["\[Pi]", "4"], ",", 
+     FractionBox["\[Pi]", "2"], ",", "0", ",", "2", ",", "4"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     FractionBox["\[Pi]", "4"], ",", 
+     FractionBox["\[Pi]", "4"], ",", 
+     FractionBox["\[Pi]", "2"], ",", "1", ",", "1", ",", "3"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     FractionBox["\[Pi]", "4"], ",", 
+     FractionBox["\[Pi]", "4"], ",", 
+     FractionBox["\[Pi]", "3"], ",", "0", ",", "2", ",", "2"}], "}"}]}], 
+  "}"}]], "Output",
+ CellChangeTimes->{{3.70870780711847*^9, 3.708707827421321*^9}, 
+   3.7087080091798363`*^9, {3.708708064979401*^9, 3.708708084598518*^9}, 
+   3.708708165594904*^9, 3.70870830794728*^9, 3.708708562620837*^9, 
+   3.708708940254277*^9, 3.708709231217222*^9, 3.7087107343429527`*^9, 
+   3.708710984229616*^9, 3.708711022459203*^9, 3.7087112898111467`*^9, 
+   3.708711627811337*^9, 3.7087119185301733`*^9, 3.708712315041757*^9, 
+   3.708712808528708*^9, 3.70871338661722*^9, 3.708719370835808*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Solutions", "=", 
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{
+      FractionBox["\[Pi]", "2"], ",", 
+      FractionBox["\[Pi]", "3"], ",", 
+      FractionBox["\[Pi]", "4"], ",", "0", ",", "2", ",", "2"}], "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{
+      FractionBox["\[Pi]", "2"], ",", 
+      FractionBox["\[Pi]", "4"], ",", 
+      FractionBox["\[Pi]", "4"], ",", "0", ",", "2", ",", "2"}], "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{
+      FractionBox["\[Pi]", "3"], ",", 
+      FractionBox["\[Pi]", "2"], ",", 
+      FractionBox["\[Pi]", "4"], ",", "1", ",", "1", ",", "3"}], "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{
+      FractionBox["\[Pi]", "3"], ",", 
+      FractionBox["\[Pi]", "4"], ",", 
+      FractionBox["\[Pi]", "2"], ",", "0", ",", "2", ",", "4"}], "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{
+      FractionBox["\[Pi]", "4"], ",", 
+      FractionBox["\[Pi]", "4"], ",", 
+      FractionBox["\[Pi]", "2"], ",", "0", ",", "2", ",", "4"}], "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{
+      FractionBox["\[Pi]", "4"], ",", 
+      FractionBox["\[Pi]", "4"], ",", 
+      FractionBox["\[Pi]", "2"], ",", "1", ",", "1", ",", "3"}], "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{
+      FractionBox["\[Pi]", "4"], ",", 
+      FractionBox["\[Pi]", "4"], ",", 
+      FractionBox["\[Pi]", "3"], ",", "0", ",", "2", ",", "2"}], "}"}]}], 
+   "}"}], " ", 
+  RowBox[{"(*", 
+   RowBox[{
+   "Removed", " ", "duplicates", " ", "and", " ", "hard", " ", "coded"}], 
+   "*)"}]}]], "Input",
+ CellChangeTimes->{{3.7087199289513693`*^9, 3.70871996316262*^9}, {
+  3.708720046902871*^9, 3.708720054687236*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     FractionBox["\[Pi]", "2"], ",", 
+     FractionBox["\[Pi]", "3"], ",", 
+     FractionBox["\[Pi]", "4"], ",", "0", ",", "2", ",", "2"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     FractionBox["\[Pi]", "2"], ",", 
+     FractionBox["\[Pi]", "4"], ",", 
+     FractionBox["\[Pi]", "4"], ",", "0", ",", "2", ",", "2"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     FractionBox["\[Pi]", "3"], ",", 
+     FractionBox["\[Pi]", "2"], ",", 
+     FractionBox["\[Pi]", "4"], ",", "1", ",", "1", ",", "3"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     FractionBox["\[Pi]", "3"], ",", 
+     FractionBox["\[Pi]", "4"], ",", 
+     FractionBox["\[Pi]", "2"], ",", "0", ",", "2", ",", "4"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     FractionBox["\[Pi]", "4"], ",", 
+     FractionBox["\[Pi]", "4"], ",", 
+     FractionBox["\[Pi]", "2"], ",", "0", ",", "2", ",", "4"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     FractionBox["\[Pi]", "4"], ",", 
+     FractionBox["\[Pi]", "4"], ",", 
+     FractionBox["\[Pi]", "2"], ",", "1", ",", "1", ",", "3"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     FractionBox["\[Pi]", "4"], ",", 
+     FractionBox["\[Pi]", "4"], ",", 
+     FractionBox["\[Pi]", "3"], ",", "0", ",", "2", ",", "2"}], "}"}]}], 
+  "}"}]], "Output",
+ CellChangeTimes->{{3.708720050065659*^9, 3.7087200550782433`*^9}}]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{"(*", 
+  RowBox[{
+  "Following", " ", "section", " ", "is", " ", "not", " ", "in", " ", "use", 
+   " ", "right", " ", "now", " ", "since", " ", "it", " ", "does", " ", "not",
+    " ", "solve", " ", "most", " ", "of", " ", "the", " ", "cases"}], 
+  "*)"}]], "Input",
+ CellChangeTimes->{{3.708720069776292*^9, 3.708720089549574*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"EliminateCases", "[", "cases_", "]"}], ":=", 
+  RowBox[{"Module", "[", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{
+     "\[Theta]13", ",", "\[Theta]34", ",", "n12", ",", "n13", ",", "n14", ",",
+       "n24", ",", "n23", ",", "\[Theta]12", ",", "\[Theta]23", ",", 
+      "\[Theta]14", ",", "\[Theta]24", ",", "mat", ",", "det1", ",", "det2", 
+      ",", "det3", ",", "expr", ",", "solution", ",", "\[IndentingNewLine]", 
+      "\[Theta]12solved", ",", "\[Theta]13solved", ",", "\[Theta]14solved", 
+      ",", "bad", ",", "msg", ",", 
+      RowBox[{"eliminatedcases", "=", 
+       RowBox[{"{", "}"}]}], ",", 
+      RowBox[{"remainedcases", "=", 
+       RowBox[{"{", "}"}]}], ",", 
+      RowBox[{"examinedcnt", "=", "0"}], ",", 
+      RowBox[{"remaincnt", "=", "0"}]}], "}"}], ",", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"Do", "[", "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{
+          "\[Theta]23", ",", "\[Theta]24", ",", "\[Theta]34", ",", "n12", ",",
+            "n13", ",", "n14"}], "}"}], "=", "case"}], ";", 
+        "\[IndentingNewLine]", 
+        RowBox[{"Print", "[", 
+         RowBox[{
+         "\"\<\[Theta]23=\>\"", ",", "\[Theta]23", ",", 
+          "\"\< \[Theta]24=\>\"", ",", "\[Theta]24", ",", 
+          "\"\< \[Theta]34=\>\"", ",", "\[Theta]34", ",", "\"\< n12=\>\"", 
+          ",", "n12", ",", "\"\< n13=\>\"", ",", "n13", ",", "\"\< n14=\>\"", 
+          ",", "n14"}], " ", "]"}], ";", "\[IndentingNewLine]", 
+        "\[IndentingNewLine]", 
+        RowBox[{"examinedcnt", "++"}], ";", "\[IndentingNewLine]", 
+        "\[IndentingNewLine]", 
+        RowBox[{"\[Theta]14", "=", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{"2", "Pi"}], "-", " ", 
+            RowBox[{"n12", " ", "\[Theta]12"}], "-", 
+            RowBox[{"n13", " ", "\[Theta]13"}]}], ")"}], "/", "n14"}]}], ";", 
+        "\[IndentingNewLine]", "\[IndentingNewLine]", 
+        RowBox[{"mat", "=", 
+         RowBox[{"ModifiedMat", "[", 
+          RowBox[{
+          "\[Theta]12", ",", " ", "\[Theta]13", ",", " ", "\[Theta]14", ",", 
+           " ", "\[Theta]23", ",", " ", "\[Theta]24", ",", " ", 
+           "\[Theta]34"}], "]"}]}], ";", "\[IndentingNewLine]", 
+        RowBox[{"det1", "=", 
+         RowBox[{
+          RowBox[{
+           RowBox[{"mat", "[", 
+            RowBox[{"[", 
+             RowBox[{"{", 
+              RowBox[{"1", ",", " ", "2"}], "}"}], "]"}], "]"}], "//", 
+           "Det"}], "//", "FullSimplify"}]}], ";", "\[IndentingNewLine]", 
+        RowBox[{"det2", "=", 
+         RowBox[{
+          RowBox[{
+           RowBox[{"mat", "[", 
+            RowBox[{"[", 
+             RowBox[{"{", 
+              RowBox[{"1", ",", " ", "3"}], "}"}], "]"}], "]"}], "//", 
+           "Det"}], "//", "FullSimplify"}]}], ";", "\[IndentingNewLine]", 
+        RowBox[{"det3", "=", 
+         RowBox[{
+          RowBox[{"mat", "[", 
+           RowBox[{"[", 
+            RowBox[{"{", 
+             RowBox[{"1", ",", " ", "4"}], "}"}], "]"}], "]"}], "//", 
+          RowBox[{"Det", " ", "/", "FullSimplify"}]}]}], ";", 
+        "\[IndentingNewLine]", "\[IndentingNewLine]", 
+        RowBox[{"expr", "=", 
+         RowBox[{
+          RowBox[{"det1", "\[Equal]", "0"}], "&&", "\[IndentingNewLine]", 
+          RowBox[{"det2", "\[Equal]", "0"}], "&&", "\[IndentingNewLine]", 
+          RowBox[{"det3", "\[Equal]", "0"}], "&&", "\[IndentingNewLine]", 
+          RowBox[{
+           RowBox[{"4", " ", 
+            RowBox[{"Pi", "/", "5"}]}], ">", "\[Theta]12", ">", 
+           RowBox[{
+            RowBox[{"Pi", "/", "180"}], "*", "36.5"}]}], "&&", 
+          "\[IndentingNewLine]", 
+          RowBox[{
+           RowBox[{"4", " ", 
+            RowBox[{"Pi", "/", "5"}]}], ">", "\[Theta]13", ">", 
+           RowBox[{
+            RowBox[{"Pi", "/", "180"}], "*", "36.5"}]}], "&&", 
+          "\[IndentingNewLine]", 
+          RowBox[{
+           RowBox[{"4", " ", 
+            RowBox[{"Pi", "/", "5"}]}], ">", "\[Theta]14", ">", 
+           RowBox[{
+            RowBox[{"Pi", "/", "180"}], "*", "36.5"}]}], "&&", 
+          "\[IndentingNewLine]", 
+          RowBox[{
+           RowBox[{"\[Theta]12", "+", "\[Theta]13", "+", "\[Theta]14"}], ">", 
+           "Pi"}], "&&", "\[IndentingNewLine]", 
+          RowBox[{
+           RowBox[{"\[Theta]12", "+", "\[Theta]23", "+", "\[Theta]24"}], ">", 
+           "Pi"}], "&&", "\[IndentingNewLine]", 
+          RowBox[{
+           RowBox[{"\[Theta]13", "+", "\[Theta]23", "+", "\[Theta]34"}], ">", 
+           "Pi"}], "&&", "\[IndentingNewLine]", 
+          RowBox[{
+           RowBox[{"\[Theta]14", "+", "\[Theta]24", "+", "\[Theta]34"}], ">", 
+           "Pi"}], "&&", "\[IndentingNewLine]", 
+          RowBox[{
+           RowBox[{
+           "\[Theta]12", "+", "\[Theta]34", "+", "\[Theta]13", "+", 
+            "\[Theta]24"}], "<", 
+           RowBox[{"2", "Pi"}]}], "&&", "\[IndentingNewLine]", 
+          RowBox[{
+           RowBox[{
+           "\[Theta]12", "+", "\[Theta]34", "+", "\[Theta]14", "+", 
+            "\[Theta]23"}], "<", 
+           RowBox[{"2", "Pi"}]}], "&&", "\[IndentingNewLine]", 
+          RowBox[{
+           RowBox[{
+           "\[Theta]13", "+", "\[Theta]24", "+", "\[Theta]14", "+", 
+            "\[Theta]23"}], "<", 
+           RowBox[{"2", "Pi"}]}]}]}], ";", "\[IndentingNewLine]", 
+        "\[IndentingNewLine]", 
+        RowBox[{"solution", "=", 
+         RowBox[{"NSolve", "[", 
+          RowBox[{"expr", ",", 
+           RowBox[{"{", 
+            RowBox[{"\[Theta]12", ",", "\[Theta]13"}], "}"}]}], "]"}]}], ";", 
+        "\[IndentingNewLine]", "\[IndentingNewLine]", 
+        RowBox[{"If", "[", 
+         RowBox[{
+          RowBox[{"MatchQ", "[", 
+           RowBox[{"solution", ",", "_Solve"}], "]"}], ",", 
+          "\[IndentingNewLine]", 
+          RowBox[{
+           RowBox[{"solution", "=", "\"\<Can't solve\>\""}], ";"}]}], 
+         "\[IndentingNewLine]", "]"}], ";", "\[IndentingNewLine]", 
+        "\[IndentingNewLine]", 
+        RowBox[{"solution", " ", "=", 
+         RowBox[{"solution", "//", "FullSimplify"}]}], ";", 
+        "\[IndentingNewLine]", "\[IndentingNewLine]", 
+        RowBox[{"bad", "=", "False"}], ";", "\[IndentingNewLine]", 
+        "\[IndentingNewLine]", 
+        RowBox[{"If", "[", 
+         RowBox[{
+          RowBox[{"solution", "\[Equal]", 
+           RowBox[{"{", "}"}]}], ",", "\[IndentingNewLine]", 
+          RowBox[{
+           RowBox[{"bad", "=", "True"}], ";", "\[IndentingNewLine]", 
+           RowBox[{
+           "msg", "=", "\"\<Eliminated because there is no solution.\>\""}], 
+           ";"}]}], "\[IndentingNewLine]", "]"}], ";", "\[IndentingNewLine]", 
+        "\[IndentingNewLine]", 
+        RowBox[{"If", "[", 
+         RowBox[{
+          RowBox[{
+           RowBox[{"Length", "[", "solution", "]"}], "\[Equal]", "1"}], ",", 
+          "\[IndentingNewLine]", 
+          RowBox[{
+           RowBox[{"\[Theta]12solved", "=", 
+            RowBox[{"Normal", "[", 
+             RowBox[{"\[Theta]12", "/.", 
+              RowBox[{"solution", "[", 
+               RowBox[{"[", "1", "]"}], "]"}]}], "]"}]}], ";", 
+           "\[IndentingNewLine]", 
+           RowBox[{"\[Theta]13solved", "=", 
+            RowBox[{"Normal", "[", 
+             RowBox[{"\[Theta]13", "/.", 
+              RowBox[{"solution", "[", 
+               RowBox[{"[", "1", "]"}], "]"}]}], "]"}]}], ";", 
+           "\[IndentingNewLine]", 
+           RowBox[{"\[Theta]14solved", "=", 
+            RowBox[{
+             RowBox[{"(", 
+              RowBox[{
+               RowBox[{"2", "Pi"}], "-", 
+               RowBox[{"n12", " ", "\[Theta]12solved"}], "-", 
+               RowBox[{"n13", " ", "\[Theta]13solved"}]}], ")"}], "/", 
+             "n14"}]}], " ", ";", "\[IndentingNewLine]", 
+           "\[IndentingNewLine]", 
+           RowBox[{"Which", "[", "\[IndentingNewLine]", 
+            RowBox[{
+             RowBox[{
+             "\[Theta]12solved", "\[Equal]", "\[Theta]13solved", "\[Equal]", 
+              "\[Theta]23", "\[Equal]", 
+              RowBox[{"Pi", "/", "2"}]}], ",", "\[IndentingNewLine]", 
+             RowBox[{
+              RowBox[{"bad", "=", "True"}], ";", "\[IndentingNewLine]", 
+              RowBox[{
+              "msg", "=", 
+               "\"\<Eliminated because \[Theta]12 = \[Theta]13 = \[Theta]23 = \
+Pi/2.\>\""}], ";"}], ",", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+             RowBox[{
+              RowBox[{"Element", "[", 
+               RowBox[{
+                RowBox[{"2", 
+                 RowBox[{"Pi", "/", "\[Theta]12solved"}]}], ",", "Integers"}],
+                "]"}], "&&", "\[IndentingNewLine]", 
+              RowBox[{"Element", "[", 
+               RowBox[{
+                RowBox[{"2", 
+                 RowBox[{"Pi", "/", "\[Theta]13solved"}]}], ",", "Integers"}],
+                "]"}], "&&", "\[IndentingNewLine]", 
+              RowBox[{"Element", "[", 
+               RowBox[{
+                RowBox[{"2", 
+                 RowBox[{"Pi", "/", "\[Theta]14solved"}]}], ",", "Integers"}],
+                "]"}]}], ",", "\[IndentingNewLine]", 
+             RowBox[{
+              RowBox[{"bad", "=", "True"}], ";", "\[IndentingNewLine]", 
+              RowBox[{
+              "msg", "=", 
+               "\"\<Eliminated because all dihedral angles are of the form \
+2pi/n.\>\""}], ";"}]}], "\[IndentingNewLine]", "]"}], ";"}]}], 
+         "\[IndentingNewLine]", "]"}], ";", "\[IndentingNewLine]", 
+        "\[IndentingNewLine]", "\[IndentingNewLine]", 
+        RowBox[{"Print", "[", 
+         RowBox[{
+         "\"\<\[Theta]12=\>\"", ",", "\[Theta]12solved", ",", 
+          "\"\< \[Theta]13=\>\"", ",", "\[Theta]13solved", ",", 
+          "\"\< \[Theta]14=\>\"", ",", "\[Theta]14solved", ",", " ", 
+          "\"\<Solution: \>\"", ",", " ", 
+          RowBox[{"solution", "[", 
+           RowBox[{"[", "1", "]"}], "]"}]}], "]"}], ";", 
+        "\[IndentingNewLine]", "\[IndentingNewLine]", 
+        RowBox[{"If", "[", 
+         RowBox[{"bad", ",", "\[IndentingNewLine]", 
+          RowBox[{
+           RowBox[{"Print", "[", "msg", "]"}], ";", "\[IndentingNewLine]", 
+           RowBox[{"AppendTo", "[", 
+            RowBox[{"eliminatedcases", ",", 
+             RowBox[{"{", 
+              RowBox[{
+              "\[Theta]13", ",", "\[Theta]34", ",", "n12", ",", "n23", ",", 
+               "n14", ",", "n24", ",", "solution", ",", "msg"}], "}"}]}], 
+            "]"}]}], ",", "\[IndentingNewLine]", 
+          RowBox[{
+           RowBox[{"AppendTo", "[", 
+            RowBox[{"remainedcases", ",", 
+             RowBox[{"{", 
+              RowBox[{
+              "\[Theta]13", ",", "\[Theta]34", ",", "n12", ",", "n23", ",", 
+               "n14", ",", "n24", ",", "solution"}], "}"}]}], "]"}], ";", 
+           "\[IndentingNewLine]", 
+           RowBox[{"remaincnt", "++"}], ";"}]}], "\[IndentingNewLine]", "]"}],
+         ";"}], ",", "\[IndentingNewLine]", 
+       RowBox[{"{", 
+        RowBox[{"case", ",", "cases"}], "}"}]}], "]"}], ";", 
+     "\[IndentingNewLine]", 
+     RowBox[{"Print", "[", 
+      RowBox[{
+      "\"\<Examined \>\"", ",", "examinedcnt", ",", "\"\< cases.\>\""}], 
+      "]"}], ";", "\[IndentingNewLine]", 
+     RowBox[{"Print", "[", 
+      RowBox[{"remaincnt", ",", "\"\< cases remain.\>\""}], "]"}], ";", 
+     "\[IndentingNewLine]", 
+     RowBox[{"Return", "[", 
+      RowBox[{"{", 
+       RowBox[{"eliminatedcases", ",", "remainedcases"}], "}"}], "]"}], 
+     ";"}]}], "\[IndentingNewLine]", "]"}]}]], "Input",
+ CellChangeTimes->{{3.708524160847102*^9, 3.708524213452591*^9}, {
+   3.708524503545374*^9, 3.708524539493734*^9}, {3.708524640007194*^9, 
+   3.70852472085332*^9}, {3.708524768962552*^9, 3.708524800295392*^9}, {
+   3.708524862588367*^9, 3.7085248940806503`*^9}, {3.708524957688422*^9, 
+   3.708524965229744*^9}, {3.708525014863901*^9, 3.708525015086911*^9}, {
+   3.7085250557445173`*^9, 3.70852505702188*^9}, {3.708525316408429*^9, 
+   3.7085253190297613`*^9}, {3.708525351020598*^9, 3.708525459074651*^9}, {
+   3.708525689511785*^9, 3.708525707282393*^9}, {3.70856271566151*^9, 
+   3.70856274816593*^9}, {3.70856281266763*^9, 3.70856285246445*^9}, {
+   3.708563346730698*^9, 3.7085634829606733`*^9}, {3.7085635353257427`*^9, 
+   3.708563554735909*^9}, {3.708563598551094*^9, 3.708563606967289*^9}, {
+   3.7085636418277283`*^9, 3.708563654112176*^9}, {3.708563708803114*^9, 
+   3.708563730161656*^9}, {3.708563796372484*^9, 3.708563824740551*^9}, {
+   3.708564130333465*^9, 3.708564175035346*^9}, {3.708564245595396*^9, 
+   3.708564250019205*^9}, {3.7085642889015083`*^9, 3.708564297600772*^9}, {
+   3.7085643766072607`*^9, 3.708564587134392*^9}, {3.708564619759696*^9, 
+   3.7085646533149223`*^9}, {3.708564899181139*^9, 3.708565064345891*^9}, {
+   3.7085656679961*^9, 3.708565681645002*^9}, {3.708565712168797*^9, 
+   3.708565717462195*^9}, {3.7085660879099197`*^9, 3.7085661310635433`*^9}, {
+   3.708566185979836*^9, 3.708566194348971*^9}, {3.708566404920212*^9, 
+   3.708566407665455*^9}, {3.70856643804056*^9, 3.708566467290297*^9}, {
+   3.708566502211512*^9, 3.708566509320861*^9}, {3.708566540615168*^9, 
+   3.708566549851828*^9}, {3.708567426399538*^9, 3.70856742896102*^9}, {
+   3.708567542963832*^9, 3.708567545723398*^9}, {3.70856818772674*^9, 
+   3.70856821564359*^9}, {3.708568308540745*^9, 3.7085683114632998`*^9}, {
+   3.708568356629527*^9, 3.708568367893714*^9}, {3.708568443076181*^9, 
+   3.7085685460646677`*^9}, {3.7085685787075243`*^9, 3.708568603514518*^9}, {
+   3.708568657804908*^9, 3.708568661881446*^9}, {3.708568980186805*^9, 
+   3.7085689955875072`*^9}, {3.708569493311523*^9, 3.708569501166288*^9}, {
+   3.7085695458844433`*^9, 3.708569585736782*^9}, {3.708646519283668*^9, 
+   3.7086465288325253`*^9}, {3.7087189894939013`*^9, 3.708719045749984*^9}, {
+   3.7087191039978027`*^9, 3.70871910641674*^9}, {3.7087191427000513`*^9, 
+   3.7087193030965023`*^9}, {3.7087193622069807`*^9, 
+   3.7087194189347553`*^9}, {3.708719449199667*^9, 3.708719497466385*^9}, {
+   3.7087206659364653`*^9, 3.7087206698142633`*^9}, 3.708720708993392*^9, {
+   3.708720943544491*^9, 3.7087210118743877`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", " ", 
+   RowBox[{"Run", " ", "case", " ", "elimination"}], " ", "*)"}], 
+  "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"eliminatedcases", ",", "remainedcases"}], "}"}], "=", 
+   RowBox[{"EliminateCases", "[", "Solutions", "]"}]}]}]], "Input",
+ CellChangeTimes->{{3.708524190933403*^9, 3.7085241962612267`*^9}, {
+   3.70856421673524*^9, 3.7085642365614653`*^9}, 3.708564632434045*^9, 
+   3.7085659244444304`*^9, {3.708567069662374*^9, 3.7085670750617933`*^9}, {
+   3.708567458410694*^9, 3.708567459928191*^9}, 3.7085692314319468`*^9, {
+   3.708720097835773*^9, 3.7087200988871107`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"\[Theta]23=\"\>", "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "2"], "\[InvisibleSpace]", "\<\" \[Theta]24=\"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "3"], "\[InvisibleSpace]", "\<\" \[Theta]34=\"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "4"], "\[InvisibleSpace]", "\<\" n12=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" n13=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n14=\"\>", 
+   "\[InvisibleSpace]", "2"}],
+  SequenceForm[
+  "\[Theta]23=", Rational[1, 2] Pi, " \[Theta]24=", Rational[1, 3] Pi, 
+   " \[Theta]34=", Rational[1, 4] Pi, " n12=", 0, " n13=", 2, " n14=", 2],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.708719528966358*^9, 3.708720099278222*^9, 
+  3.708720677210279*^9, 3.708720714064286*^9, 3.7087210168701878`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"\[Theta]12=\"\>", "\[InvisibleSpace]", 
+   "0.7227342478134156111783773526493304221907229341156443633513`28.\
+500746303867164", "\[InvisibleSpace]", "\<\" \[Theta]13=\"\>", 
+   "\[InvisibleSpace]", 
+   "1.2094292028881888136421330152853337442908342922812822865995`28.\
+500746303867164", "\[InvisibleSpace]", "\<\" \[Theta]14=\"\>", 
+   "\[InvisibleSpace]", 
+   "1.9321634507016044248205103679941691399063351070938235343754`28.\
+704209715617882", "\[InvisibleSpace]", "\<\"Solution: \"\>", 
+   "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{
+     "\[Theta]12$1061069", "\[Rule]", 
+      "0.7227342478134156111783773526493304221907229341156443633513`28.\
+500746303867164"}], ",", 
+     RowBox[{
+     "\[Theta]13$1061069", "\[Rule]", 
+      "1.2094292028881888136421330152853337442908342922812822865995`28.\
+500746303867164"}]}], "}"}]}],
+  SequenceForm[
+  "\[Theta]12=", 
+   0.7227342478134156111783773526493304221907229341156443633513`28.\
+500746303867164, " \[Theta]13=", 
+   1.2094292028881888136421330152853337442908342922812822865995`28.\
+500746303867164, " \[Theta]14=", 
+   1.9321634507016044248205103679941691399063351070938235343754`28.\
+704209715617882, 
+   "Solution: ", {$CellContext`\[Theta]12$1061069 -> 
+    0.7227342478134156111783773526493304221907229341156443633513`28.\
+500746303867164, $CellContext`\[Theta]13$1061069 -> 
+    1.2094292028881888136421330152853337442908342922812822865995`28.\
+500746303867164}],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.708719528966358*^9, 3.708720099278222*^9, 
+  3.708720677210279*^9, 3.708720714064286*^9, 3.708721018072982*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"\[Theta]23=\"\>", "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "2"], "\[InvisibleSpace]", "\<\" \[Theta]24=\"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "4"], "\[InvisibleSpace]", "\<\" \[Theta]34=\"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "4"], "\[InvisibleSpace]", "\<\" n12=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" n13=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n14=\"\>", 
+   "\[InvisibleSpace]", "2"}],
+  SequenceForm[
+  "\[Theta]23=", Rational[1, 2] Pi, " \[Theta]24=", Rational[1, 4] Pi, 
+   " \[Theta]34=", Rational[1, 4] Pi, " n12=", 0, " n13=", 2, " n14=", 2],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.708719528966358*^9, 3.708720099278222*^9, 
+  3.708720677210279*^9, 3.708720714064286*^9, 3.708721018078182*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"\[Theta]12=\"\>", "\[InvisibleSpace]", 
+   "0.7227342478134156111783773526493304221907229341156443633513`28.\
+500746303867164", "\[InvisibleSpace]", "\<\" \[Theta]13=\"\>", 
+   "\[InvisibleSpace]", 
+   "1.2094292028881888136421330152853337442908342922812822865995`28.\
+500746303867164", "\[InvisibleSpace]", "\<\" \[Theta]14=\"\>", 
+   "\[InvisibleSpace]", 
+   "1.9321634507016044248205103679941691399063351070938235343754`28.\
+704209715617882", "\[InvisibleSpace]", "\<\"Solution: \"\>", 
+   "\[InvisibleSpace]", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"Sin", "[", "\[Theta]12$1061069", "]"}], "\[Equal]", 
+     RowBox[{"Sin", "[", "\[Theta]13$1061069", "]"}]}], "&&", 
+    RowBox[{
+     RowBox[{"Sin", "[", "\[Theta]12$1061069", "]"}], "\[Equal]", 
+     RowBox[{
+      RowBox[{"2", " ", 
+       RowBox[{"Sin", "[", 
+        RowBox[{"\[Theta]12$1061069", "-", "\[Theta]13$1061069"}], "]"}]}], 
+      "+", 
+      RowBox[{"Sin", "[", "\[Theta]13$1061069", "]"}]}]}], "&&", 
+    RowBox[{
+     RowBox[{
+      FractionBox["Det", "FullSimplify"], "[", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"-", "1"}], ",", 
+          FractionBox[
+           RowBox[{
+            RowBox[{"Sin", "[", "\[Theta]12$1061069", "]"}], "+", 
+            RowBox[{"Sin", "[", "\[Theta]13$1061069", "]"}]}], 
+           SqrtBox["2"]]}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"0", ",", 
+          RowBox[{
+           RowBox[{"-", 
+            RowBox[{"Sin", "[", "\[Theta]13$1061069", "]"}]}], "+", 
+           RowBox[{"Sin", "[", 
+            RowBox[{"\[Theta]12$1061069", "+", "\[Theta]13$1061069"}], 
+            "]"}]}]}], "}"}]}], "}"}], "]"}], "\[Equal]", "0"}], "&&", 
+    RowBox[{
+     RowBox[{"4", " ", "\[Theta]12$1061069"}], ">", "\[Pi]"}], "&&", 
+    RowBox[{
+     FractionBox["\[Pi]", "4"], "<", "\[Theta]13$1061069", "<", 
+     FractionBox["\[Pi]", "2"]}], "&&", 
+    RowBox[{
+     RowBox[{"4", " ", "\[Theta]12$1061069"}], "<", 
+     RowBox[{"\[Pi]", "+", 
+      RowBox[{"4", " ", "\[Theta]13$1061069"}]}]}]}]}],
+  SequenceForm[
+  "\[Theta]12=", 
+   0.7227342478134156111783773526493304221907229341156443633513`28.\
+500746303867164, " \[Theta]13=", 
+   1.2094292028881888136421330152853337442908342922812822865995`28.\
+500746303867164, " \[Theta]14=", 
+   1.9321634507016044248205103679941691399063351070938235343754`28.\
+704209715617882, "Solution: ", 
+   And[Sin[$CellContext`\[Theta]12$1061069] == 
+    Sin[$CellContext`\[Theta]13$1061069], 
+    Sin[$CellContext`\[Theta]12$1061069] == 
+    2 Sin[$CellContext`\[Theta]12$1061069 - $CellContext`\[Theta]13$1061069] + 
+     Sin[$CellContext`\[Theta]13$1061069], (Det/
+     FullSimplify)[{{-1, 
+        2^Rational[-1, 2] (Sin[$CellContext`\[Theta]12$1061069] + 
+         Sin[$CellContext`\[Theta]13$1061069])}, {
+       0, -Sin[$CellContext`\[Theta]13$1061069] + 
+        Sin[$CellContext`\[Theta]12$1061069 + \
+$CellContext`\[Theta]13$1061069]}}] == 0, 4 $CellContext`\[Theta]12$1061069 > 
+    Pi, 
+    Inequality[
+    Rational[1, 4] Pi, Less, $CellContext`\[Theta]13$1061069, Less, 
+     Rational[1, 2] Pi], 4 $CellContext`\[Theta]12$1061069 < 
+    Pi + 4 $CellContext`\[Theta]13$1061069]],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.708719528966358*^9, 3.708720099278222*^9, 
+  3.708720677210279*^9, 3.708720714064286*^9, 3.7087210217526608`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"\[Theta]23=\"\>", "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "3"], "\[InvisibleSpace]", "\<\" \[Theta]24=\"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "2"], "\[InvisibleSpace]", "\<\" \[Theta]34=\"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "4"], "\[InvisibleSpace]", "\<\" n12=\"\>", 
+   "\[InvisibleSpace]", "1", "\[InvisibleSpace]", "\<\" n13=\"\>", 
+   "\[InvisibleSpace]", "1", "\[InvisibleSpace]", "\<\" n14=\"\>", 
+   "\[InvisibleSpace]", "3"}],
+  SequenceForm[
+  "\[Theta]23=", Rational[1, 3] Pi, " \[Theta]24=", Rational[1, 2] Pi, 
+   " \[Theta]34=", Rational[1, 4] Pi, " n12=", 1, " n13=", 1, " n14=", 3],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.708719528966358*^9, 3.708720099278222*^9, 
+  3.708720677210279*^9, 3.708720714064286*^9, 3.708721021758142*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"\[Theta]12=\"\>", "\[InvisibleSpace]", 
+   "0.7227342478134156111783773526493304221907229341156443633513`23.\
+94369390108338", "\[InvisibleSpace]", "\<\" \[Theta]13=\"\>", 
+   "\[InvisibleSpace]", 
+   "1.9321634507016044248205108246764028548554250752746669190949`23.\
+94369390108338", "\[InvisibleSpace]", "\<\" \[Theta]14=\"\>", 
+   "\[InvisibleSpace]", 
+   "1.2094292028881888136421328630777574971160635964533001198346`24.\
+079347815658362", "\[InvisibleSpace]", "\<\"Solution: \"\>", 
+   "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{
+     "\[Theta]12$1061069", "\[Rule]", 
+      "0.7227342478134156111783773526493304221907229341156443633513`23.\
+94369390108338"}], ",", 
+     RowBox[{
+     "\[Theta]13$1061069", "\[Rule]", 
+      "1.9321634507016044248205108246764028548554250752746669190949`23.\
+94369390108338"}]}], "}"}]}],
+  SequenceForm[
+  "\[Theta]12=", 
+   0.7227342478134156111783773526493304221907229341156443633513`23.\
+94369390108338, " \[Theta]13=", 
+   1.9321634507016044248205108246764028548554250752746669190949`23.\
+94369390108338, " \[Theta]14=", 
+   1.2094292028881888136421328630777574971160635964533001198346`24.\
+079347815658362, 
+   "Solution: ", {$CellContext`\[Theta]12$1061069 -> 
+    0.7227342478134156111783773526493304221907229341156443633513`23.\
+94369390108338, $CellContext`\[Theta]13$1061069 -> 
+    1.9321634507016044248205108246764028548554250752746669190949`23.\
+94369390108338}],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.708719528966358*^9, 3.708720099278222*^9, 
+  3.708720677210279*^9, 3.708720714064286*^9, 3.708721025615357*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"\[Theta]23=\"\>", "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "3"], "\[InvisibleSpace]", "\<\" \[Theta]24=\"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "4"], "\[InvisibleSpace]", "\<\" \[Theta]34=\"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "2"], "\[InvisibleSpace]", "\<\" n12=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" n13=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n14=\"\>", 
+   "\[InvisibleSpace]", "4"}],
+  SequenceForm[
+  "\[Theta]23=", Rational[1, 3] Pi, " \[Theta]24=", Rational[1, 4] Pi, 
+   " \[Theta]34=", Rational[1, 2] Pi, " n12=", 0, " n13=", 2, " n14=", 4],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.708719528966358*^9, 3.708720099278222*^9, 
+  3.708720677210279*^9, 3.708720714064286*^9, 3.708721025618702*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"\[Theta]12=\"\>", "\[InvisibleSpace]", 
+   RowBox[{
+   "1.9321634507016044248205103679604181231111939428997730443008`30.", "+", 
+    RowBox[{"0``61.04923230296033", " ", "\[ImaginaryI]"}]}], 
+   "\[InvisibleSpace]", "\<\" \[Theta]13=\"\>", "\[InvisibleSpace]", 
+   RowBox[{
+   "0.7227342478134156111783773526413333620252184864244402676267`30.", "+", 
+    RowBox[{"0``73.93188465528651", " ", "\[ImaginaryI]"}]}], 
+   "\[InvisibleSpace]", "\<\" \[Theta]14=\"\>", "\[InvisibleSpace]", 
+   RowBox[{
+   "1.2094292028881888136421330153190847610859754564753327766741`30.\
+524631811657652", "+", 
+    RowBox[{"0``74.23291465095049", " ", "\[ImaginaryI]"}]}], 
+   "\[InvisibleSpace]", "\<\"Solution: \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"\[Theta]12$1061069", "\[Rule]", 
+      RowBox[{
+      "1.9321634507016044248205103679604181231111939428997730443008`30.", "+", 
+       RowBox[{"0``61.04923230296033", " ", "\[ImaginaryI]"}]}]}], ",", 
+     RowBox[{"\[Theta]13$1061069", "\[Rule]", 
+      RowBox[{
+      "0.7227342478134156111783773526413333620252184864244402676267`30.", "+", 
+       RowBox[{"0``73.93188465528651", " ", "\[ImaginaryI]"}]}]}]}], "}"}]}],
+  SequenceForm["\[Theta]12=", 
+   Complex[
+   1.9321634507016044248205103679604181231111939428997730443008`30., 
+    0``61.04923230296033], " \[Theta]13=", 
+   Complex[
+   0.7227342478134156111783773526413333620252184864244402676267`30., 
+    0``73.93188465528651], " \[Theta]14=", 
+   Complex[
+   1.2094292028881888136421330153190847610859754564753327766741`30.\
+524631811657652, 0``74.23291465095049], 
+   "Solution: ", {$CellContext`\[Theta]12$1061069 -> 
+    Complex[1.9321634507016044248205103679604181231111939428997730443008`30., 
+      0``61.04923230296033], $CellContext`\[Theta]13$1061069 -> 
+    Complex[0.7227342478134156111783773526413333620252184864244402676267`30., 
+      0``73.93188465528651]}],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.708719528966358*^9, 3.708720099278222*^9, 
+  3.708720677210279*^9, 3.708720714064286*^9, 3.7087210328545017`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"\[Theta]23=\"\>", "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "4"], "\[InvisibleSpace]", "\<\" \[Theta]24=\"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "4"], "\[InvisibleSpace]", "\<\" \[Theta]34=\"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "2"], "\[InvisibleSpace]", "\<\" n12=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" n13=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n14=\"\>", 
+   "\[InvisibleSpace]", "4"}],
+  SequenceForm[
+  "\[Theta]23=", Rational[1, 4] Pi, " \[Theta]24=", Rational[1, 4] Pi, 
+   " \[Theta]34=", Rational[1, 2] Pi, " n12=", 0, " n13=", 2, " n14=", 4],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.708719528966358*^9, 3.708720099278222*^9, 
+  3.708720677210279*^9, 3.708720714064286*^9, 3.7087210328580923`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"\[Theta]12=\"\>", "\[InvisibleSpace]", "2.0943951023931953`", 
+   "\[InvisibleSpace]", "\<\" \[Theta]13=\"\>", "\[InvisibleSpace]", 
+   "1.0471975511965976`", "\[InvisibleSpace]", "\<\" \[Theta]14=\"\>", 
+   "\[InvisibleSpace]", "1.0471975511965979`", 
+   "\[InvisibleSpace]", "\<\"Solution: \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"\[Theta]12$1061069", "\[Rule]", "2.0943951023931953`"}], ",", 
+     RowBox[{"\[Theta]13$1061069", "\[Rule]", "1.0471975511965976`"}]}], 
+    "}"}]}],
+  SequenceForm[
+  "\[Theta]12=", 2.0943951023931953`, " \[Theta]13=", 1.0471975511965976`, 
+   " \[Theta]14=", 1.0471975511965979`, 
+   "Solution: ", {$CellContext`\[Theta]12$1061069 -> 
+    2.0943951023931953`, $CellContext`\[Theta]13$1061069 -> 
+    1.0471975511965976`}],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.708719528966358*^9, 3.708720099278222*^9, 
+  3.708720677210279*^9, 3.708720714064286*^9, 3.7087210381124163`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"\[Theta]23=\"\>", "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "4"], "\[InvisibleSpace]", "\<\" \[Theta]24=\"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "4"], "\[InvisibleSpace]", "\<\" \[Theta]34=\"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "2"], "\[InvisibleSpace]", "\<\" n12=\"\>", 
+   "\[InvisibleSpace]", "1", "\[InvisibleSpace]", "\<\" n13=\"\>", 
+   "\[InvisibleSpace]", "1", "\[InvisibleSpace]", "\<\" n14=\"\>", 
+   "\[InvisibleSpace]", "3"}],
+  SequenceForm[
+  "\[Theta]23=", Rational[1, 4] Pi, " \[Theta]24=", Rational[1, 4] Pi, 
+   " \[Theta]34=", Rational[1, 2] Pi, " n12=", 1, " n13=", 1, " n14=", 3],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.708719528966358*^9, 3.708720099278222*^9, 
+  3.708720677210279*^9, 3.708720714064286*^9, 3.7087210381157007`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"\[Theta]12=\"\>", "\[InvisibleSpace]", "2.0943951023931957`", 
+   "\[InvisibleSpace]", "\<\" \[Theta]13=\"\>", "\[InvisibleSpace]", 
+   "1.047197551196565`", "\[InvisibleSpace]", "\<\" \[Theta]14=\"\>", 
+   "\[InvisibleSpace]", "1.0471975511966085`", 
+   "\[InvisibleSpace]", "\<\"Solution: \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"\[Theta]12$1061069", "\[Rule]", "2.0943951023931957`"}], ",", 
+     RowBox[{"\[Theta]13$1061069", "\[Rule]", "1.047197551196565`"}]}], 
+    "}"}]}],
+  SequenceForm[
+  "\[Theta]12=", 2.0943951023931957`, " \[Theta]13=", 1.047197551196565, 
+   " \[Theta]14=", 1.0471975511966085`, 
+   "Solution: ", {$CellContext`\[Theta]12$1061069 -> 
+    2.0943951023931957`, $CellContext`\[Theta]13$1061069 -> 
+    1.047197551196565}],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.708719528966358*^9, 3.708720099278222*^9, 
+  3.708720677210279*^9, 3.708720714064286*^9, 3.708721040884243*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"\[Theta]23=\"\>", "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "4"], "\[InvisibleSpace]", "\<\" \[Theta]24=\"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "4"], "\[InvisibleSpace]", "\<\" \[Theta]34=\"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "3"], "\[InvisibleSpace]", "\<\" n12=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" n13=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n14=\"\>", 
+   "\[InvisibleSpace]", "2"}],
+  SequenceForm[
+  "\[Theta]23=", Rational[1, 4] Pi, " \[Theta]24=", Rational[1, 4] Pi, 
+   " \[Theta]34=", Rational[1, 3] Pi, " n12=", 0, " n13=", 2, " n14=", 2],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.708719528966358*^9, 3.708720099278222*^9, 
+  3.708720677210279*^9, 3.708720714064286*^9, 3.708721040888917*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"\[Theta]12=\"\>", "\[InvisibleSpace]", "1.9106332362490186`", 
+   "\[InvisibleSpace]", "\<\" \[Theta]13=\"\>", "\[InvisibleSpace]", 
+   "1.570796326794897`", "\[InvisibleSpace]", "\<\" \[Theta]14=\"\>", 
+   "\[InvisibleSpace]", "1.5707963267948961`", 
+   "\[InvisibleSpace]", "\<\"Solution: \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"\[Theta]12$1061069", "\[Rule]", "1.9106332362490186`"}], ",", 
+     RowBox[{"\[Theta]13$1061069", "\[Rule]", "1.570796326794897`"}]}], 
+    "}"}]}],
+  SequenceForm[
+  "\[Theta]12=", 1.9106332362490186`, " \[Theta]13=", 1.570796326794897, 
+   " \[Theta]14=", 1.5707963267948961`, 
+   "Solution: ", {$CellContext`\[Theta]12$1061069 -> 
+    1.9106332362490186`, $CellContext`\[Theta]13$1061069 -> 
+    1.570796326794897}],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.708719528966358*^9, 3.708720099278222*^9, 
+  3.708720677210279*^9, 3.708720714064286*^9, 3.708721041883679*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Examined \"\>", "\[InvisibleSpace]", "7", 
+   "\[InvisibleSpace]", "\<\" cases.\"\>"}],
+  SequenceForm["Examined ", 7, " cases."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.708719528966358*^9, 3.708720099278222*^9, 
+  3.708720677210279*^9, 3.708720714064286*^9, 3.708721041897381*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"7", "\[InvisibleSpace]", "\<\" cases remain.\"\>"}],
+  SequenceForm[7, " cases remain."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.708719528966358*^9, 3.708720099278222*^9, 
+  3.708720677210279*^9, 3.708720714064286*^9, 3.70872104190283*^9}]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"\[Theta]13$1061069", ",", 
+       FractionBox["\[Pi]", "4"], ",", "0", ",", "n23$1061069", ",", "2", ",",
+        "n24$1061069", ",", 
+       RowBox[{"{", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{
+          "\[Theta]12$1061069", "\[Rule]", 
+           "0.7227342478134156111783773526493304221907229341156443633513`28.\
+500746303867164"}], ",", 
+          RowBox[{
+          "\[Theta]13$1061069", "\[Rule]", 
+           "1.2094292028881888136421330152853337442908342922812822865995`28.\
+500746303867164"}]}], "}"}], "}"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\[Theta]13$1061069", ",", 
+       FractionBox["\[Pi]", "4"], ",", "0", ",", "n23$1061069", ",", "2", ",",
+        "n24$1061069", ",", 
+       RowBox[{"NSolve", "[", 
+        RowBox[{
+         RowBox[{
+          RowBox[{
+           RowBox[{"Sin", "[", "\[Theta]12$1061069", "]"}], "\[Equal]", 
+           RowBox[{"Sin", "[", "\[Theta]13$1061069", "]"}]}], "&&", 
+          RowBox[{
+           RowBox[{"Sin", "[", "\[Theta]12$1061069", "]"}], "\[Equal]", 
+           RowBox[{
+            RowBox[{"2", " ", 
+             RowBox[{"Sin", "[", 
+              RowBox[{"\[Theta]12$1061069", "-", "\[Theta]13$1061069"}], 
+              "]"}]}], "+", 
+            RowBox[{"Sin", "[", "\[Theta]13$1061069", "]"}]}]}], "&&", 
+          RowBox[{
+           RowBox[{
+            FractionBox["Det", "FullSimplify"], "[", 
+            RowBox[{"{", 
+             RowBox[{
+              RowBox[{"{", 
+               RowBox[{
+                RowBox[{"-", "1"}], ",", 
+                FractionBox[
+                 RowBox[{
+                  RowBox[{"Sin", "[", "\[Theta]12$1061069", "]"}], "+", 
+                  RowBox[{"Sin", "[", "\[Theta]13$1061069", "]"}]}], 
+                 SqrtBox["2"]]}], "}"}], ",", 
+              RowBox[{"{", 
+               RowBox[{"0", ",", 
+                RowBox[{
+                 RowBox[{"-", 
+                  RowBox[{"Sin", "[", "\[Theta]13$1061069", "]"}]}], "+", 
+                 RowBox[{"Sin", "[", 
+                  RowBox[{"\[Theta]12$1061069", "+", "\[Theta]13$1061069"}], 
+                  "]"}]}]}], "}"}]}], "}"}], "]"}], "\[Equal]", "0"}], "&&", 
+          RowBox[{
+           RowBox[{"4", " ", "\[Theta]12$1061069"}], ">", "\[Pi]"}], "&&", 
+          RowBox[{
+           FractionBox["\[Pi]", "4"], "<", "\[Theta]13$1061069", "<", 
+           FractionBox["\[Pi]", "2"]}], "&&", 
+          RowBox[{
+           RowBox[{"4", " ", "\[Theta]12$1061069"}], "<", 
+           RowBox[{"\[Pi]", "+", 
+            RowBox[{"4", " ", "\[Theta]13$1061069"}]}]}]}], ",", 
+         RowBox[{"{", 
+          RowBox[{"\[Theta]12$1061069", ",", "\[Theta]13$1061069"}], "}"}]}], 
+        "]"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\[Theta]13$1061069", ",", 
+       FractionBox["\[Pi]", "4"], ",", "1", ",", "n23$1061069", ",", "3", ",",
+        "n24$1061069", ",", 
+       RowBox[{"{", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{
+          "\[Theta]12$1061069", "\[Rule]", 
+           "0.7227342478134156111783773526493304221907229341156443633513`23.\
+94369390108338"}], ",", 
+          RowBox[{
+          "\[Theta]13$1061069", "\[Rule]", 
+           "1.9321634507016044248205108246764028548554250752746669190949`23.\
+94369390108338"}]}], "}"}], "}"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\[Theta]13$1061069", ",", 
+       FractionBox["\[Pi]", "2"], ",", "0", ",", "n23$1061069", ",", "4", ",",
+        "n24$1061069", ",", 
+       RowBox[{"{", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"\[Theta]12$1061069", "\[Rule]", 
+           RowBox[{
+           "1.9321634507016044248205103679604181231111939428997730443008`30.",
+             "+", 
+            RowBox[{"0``61.04923230296033", " ", "\[ImaginaryI]"}]}]}], ",", 
+          RowBox[{"\[Theta]13$1061069", "\[Rule]", 
+           RowBox[{
+           "0.7227342478134156111783773526413333620252184864244402676267`30.",
+             "+", 
+            RowBox[{"0``73.93188465528651", " ", "\[ImaginaryI]"}]}]}]}], 
+         "}"}], "}"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\[Theta]13$1061069", ",", 
+       FractionBox["\[Pi]", "2"], ",", "0", ",", "n23$1061069", ",", "4", ",",
+        "n24$1061069", ",", 
+       RowBox[{"{", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"\[Theta]12$1061069", "\[Rule]", "2.0943951023931953`"}], 
+          ",", 
+          RowBox[{"\[Theta]13$1061069", "\[Rule]", "1.0471975511965976`"}]}], 
+         "}"}], "}"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\[Theta]13$1061069", ",", 
+       FractionBox["\[Pi]", "2"], ",", "1", ",", "n23$1061069", ",", "3", ",",
+        "n24$1061069", ",", 
+       RowBox[{"{", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"\[Theta]12$1061069", "\[Rule]", "2.0943951023931957`"}], 
+          ",", 
+          RowBox[{"\[Theta]13$1061069", "\[Rule]", "1.047197551196565`"}]}], 
+         "}"}], "}"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\[Theta]13$1061069", ",", 
+       FractionBox["\[Pi]", "3"], ",", "0", ",", "n23$1061069", ",", "2", ",",
+        "n24$1061069", ",", 
+       RowBox[{"{", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"\[Theta]12$1061069", "\[Rule]", "1.9106332362490186`"}], 
+          ",", 
+          RowBox[{"\[Theta]13$1061069", "\[Rule]", "1.570796326794897`"}]}], 
+         "}"}], "}"}]}], "}"}]}], "}"}]}], "}"}]], "Output",
+ CellChangeTimes->{3.708719540233521*^9, 3.708720106229557*^9, 
+  3.708720682202455*^9, 3.70872073934383*^9, 3.708721041908587*^9}]
+}, Open  ]]
+},
+WindowSize->{Full, Full},
+WindowMargins->{{-1085, Automatic}, {25, Automatic}},
+FrontEndVersion->"10.0 for Mac OS X x86 (32-bit, 64-bit Kernel) (December 4, \
+2014)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 3928, 102, 284, "Input"],
+Cell[CellGroupData[{
+Cell[4511, 126, 312, 7, 28, "Input"],
+Cell[4826, 135, 1962, 59, 92, "Output"]
+}, Open  ]],
+Cell[6803, 197, 15709, 321, 1049, "Input"],
+Cell[CellGroupData[{
+Cell[22537, 522, 187, 3, 28, "Input"],
+Cell[22727, 527, 785, 15, 24, "Message"],
+Cell[23515, 544, 2041, 34, 96, "Message"],
+Cell[25559, 580, 1444, 24, 41, "Message"],
+Cell[27006, 606, 1726, 30, 60, "Message"],
+Cell[28735, 638, 748, 15, 24, "Message"],
+Cell[29486, 655, 783, 15, 24, "Message"],
+Cell[30272, 672, 783, 15, 24, "Message"],
+Cell[31058, 689, 744, 15, 24, "Message"],
+Cell[31805, 706, 1965, 32, 81, "Message"],
+Cell[33773, 740, 1659, 28, 80, "Message"],
+Cell[35435, 770, 1984, 41, 37, "Print"],
+Cell[37422, 813, 1963, 32, 81, "Message"],
+Cell[39388, 847, 749, 15, 24, "Message"],
+Cell[CellGroupData[{
+Cell[40162, 866, 1984, 41, 36, "Print"],
+Cell[42149, 909, 1986, 41, 37, "Print"],
+Cell[44138, 952, 1976, 41, 37, "Print"]
+}, Open  ]],
+Cell[46129, 996, 704, 14, 24, "Message"],
+Cell[CellGroupData[{
+Cell[46858, 1014, 1825, 38, 37, "Print"],
+Cell[48686, 1054, 1984, 41, 37, "Print"]
+}, Open  ]],
+Cell[50685, 1098, 702, 14, 24, "Message"],
+Cell[51390, 1114, 702, 14, 24, "Message"],
+Cell[52095, 1130, 749, 15, 24, "Message"],
+Cell[CellGroupData[{
+Cell[52869, 1149, 1825, 38, 36, "Print"],
+Cell[54697, 1189, 1825, 38, 36, "Print"],
+Cell[56525, 1229, 1986, 41, 36, "Print"],
+Cell[58514, 1272, 1825, 38, 36, "Print"],
+Cell[60342, 1312, 1988, 41, 37, "Print"],
+Cell[62333, 1355, 633, 11, 21, "Print"],
+Cell[62969, 1368, 588, 10, 21, "Print"]
+}, Open  ]],
+Cell[63572, 1381, 2562, 65, 45, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[66171, 1451, 1641, 45, 46, "Input"],
+Cell[67815, 1498, 1405, 39, 45, "Output"]
+}, Open  ]],
+Cell[69235, 1540, 354, 7, 28, "Input"],
+Cell[69592, 1549, 14158, 300, 1304, "Input"],
+Cell[CellGroupData[{
+Cell[83775, 1853, 645, 13, 46, "Input"],
+Cell[CellGroupData[{
+Cell[84445, 1870, 854, 16, 37, "Print"],
+Cell[85302, 1888, 1658, 37, 21, "Print"],
+Cell[86963, 1927, 852, 16, 36, "Print"],
+Cell[87818, 1945, 3408, 80, 60, "Print"],
+Cell[91229, 2027, 852, 16, 37, "Print"],
+Cell[92084, 2045, 1650, 37, 21, "Print"],
+Cell[93737, 2084, 852, 16, 37, "Print"],
+Cell[94592, 2102, 2112, 43, 44, "Print"],
+Cell[96707, 2147, 854, 16, 36, "Print"],
+Cell[97564, 2165, 1003, 20, 21, "Print"],
+Cell[98570, 2187, 854, 16, 36, "Print"],
+Cell[99427, 2205, 995, 20, 21, "Print"],
+Cell[100425, 2227, 852, 16, 37, "Print"],
+Cell[101280, 2245, 995, 20, 21, "Print"],
+Cell[102278, 2267, 342, 7, 21, "Print"],
+Cell[102623, 2276, 296, 6, 21, "Print"]
+}, Open  ]],
+Cell[102934, 2285, 5665, 139, 287, "Output"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
