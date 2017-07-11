@@ -1,0 +1,3014 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[    112457,       3006]
+NotebookOptionsPosition[    112113,       2990]
+NotebookOutlinePosition[    112467,       3006]
+CellTagsIndexPosition[    112424,       3003]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"noncases", "=", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "2"], ",", 
+       FractionBox["\[Pi]", "2"], ",", 
+       FractionBox["\[Pi]", "3"], ",", "0", ",", "2", ",", "2", ",", 
+       "\[Infinity]", ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\[Theta]12$1046", "\[Rule]", "Indeterminate"}], ",", 
+         RowBox[{"\[Theta]13$1046", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
+      "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "2"], ",", 
+       FractionBox["\[Pi]", "2"], ",", 
+       FractionBox["\[Pi]", "3"], ",", "0", ",", "2", ",", "4", ",", 
+       "0.0151743064866130293011449126540035812764552698934906913059`30.", 
+       ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{
+         "\[Theta]12$1046", "\[Rule]", 
+          "0.7145499873344167465292382863008505025254204398716923033813`30."}]\
+, ",", 
+         RowBox[{
+         "\[Theta]13$1046", "\[Rule]", 
+          "1.8675022996339326473083491222828156033838729207396462380246`29.\
+69897000433602"}]}], "}"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "2"], ",", 
+       FractionBox["\[Pi]", "2"], ",", 
+       FractionBox["\[Pi]", "3"], ",", "0", ",", "2", ",", "6", ",", 
+       "0.0544393817803720605514826500501065565971968479993665443086`30.", 
+       ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{
+         "\[Theta]12$1046", "\[Rule]", 
+          "1.3250924616016115337180265470166919591005705060984326744441`30."}]\
+, ",", 
+         RowBox[{
+         "\[Theta]13$1046", "\[Rule]", 
+          "1.230457122656001951948794133986321619023437121954016357125`30."}]}\
+], "}"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "2"], ",", 
+       FractionBox["\[Pi]", "2"], ",", 
+       FractionBox["\[Pi]", "3"], ",", "0", ",", "4", ",", "4", ",", 
+       "0.0624999999999999999999999999999999999999999999999999999997`30.", 
+       ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{
+         "\[Theta]12$1046", "\[Rule]", 
+          "1.5707963267948966192313216916397514420985846996875529104875`29.\
+69897000433602"}], ",", 
+         RowBox[{
+         "\[Theta]13$1046", "\[Rule]", 
+          "0.6429496391297967024767013146377868255628885999330566803737`30."}]\
+}], "}"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "2"], ",", 
+       FractionBox["\[Pi]", "2"], ",", 
+       FractionBox["\[Pi]", "3"], ",", "1", ",", "1", ",", "1", ",", 
+       "\[Infinity]", ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\[Theta]12$1046", "\[Rule]", "Indeterminate"}], ",", 
+         RowBox[{"\[Theta]13$1046", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
+      "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "2"], ",", 
+       FractionBox["\[Pi]", "2"], ",", 
+       FractionBox["\[Pi]", "3"], ",", "1", ",", "1", ",", "3", ",", 
+       "0.0057691111292680405018899642969111888470081241197234560444`30.", 
+       ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{
+         "\[Theta]12$1046", "\[Rule]", 
+          "0.6370451769779302955771471304983436404066482393177297914752`29.\
+69897000433602"}], ",", 
+         RowBox[{
+         "\[Theta]13$1046", "\[Rule]", 
+          "1.1404045233180090601417380878389079549620246731668874581023`30."}]\
+}], "}"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "2"], ",", 
+       FractionBox["\[Pi]", "2"], ",", 
+       FractionBox["\[Pi]", "3"], ",", "1", ",", "1", ",", "5", ",", 
+       "0.0104366313915725379841073564535112910397105336130759629819`30.", 
+       ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{
+         "\[Theta]12$1046", "\[Rule]", 
+          "0.6370451769779302955771471304983436404066482393177297914752`29.\
+69897000433602"}], ",", 
+         RowBox[{
+         "\[Theta]13$1046", "\[Rule]", 
+          "1.8348583444460703706457347767996246548613993752300141553818`30."}]\
+}], "}"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "2"], ",", 
+       FractionBox["\[Pi]", "2"], ",", 
+       FractionBox["\[Pi]", "3"], ",", "1", ",", "1", ",", "7", ",", 
+       "\[Infinity]", ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\[Theta]12$1046", "\[Rule]", "Indeterminate"}], ",", 
+         RowBox[{"\[Theta]13$1046", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
+      "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "2"], ",", 
+       FractionBox["\[Pi]", "2"], ",", 
+       FractionBox["\[Pi]", "3"], ",", "1", ",", "3", ",", "3", ",", 
+       "0.0624999999999999999999999999999999999999999999999999999997`30.", 
+       ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{
+         "\[Theta]12$1046", "\[Rule]", 
+          "1.5707963267948966192313216916397514420985846996875529104872`29.\
+69897000433602"}], ",", 
+         RowBox[{
+         "\[Theta]13$1046", "\[Rule]", 
+          "0.6421647178181822250015927800418915476158796157674170085411`30."}]\
+}], "}"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "2"], ",", 
+       FractionBox["\[Pi]", "2"], ",", 
+       FractionBox["\[Pi]", "3"], ",", "1", ",", "3", ",", "5", ",", 
+       "\[Infinity]", ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\[Theta]12$1046", "\[Rule]", "Indeterminate"}], ",", 
+         RowBox[{"\[Theta]13$1046", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
+      "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "2"], ",", 
+       FractionBox["\[Pi]", "2"], ",", 
+       FractionBox["\[Pi]", "3"], ",", "2", ",", "2", ",", "2", ",", 
+       "\[Infinity]", ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\[Theta]12$1046", "\[Rule]", "Indeterminate"}], ",", 
+         RowBox[{"\[Theta]13$1046", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
+      "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "2"], ",", 
+       FractionBox["\[Pi]", "2"], ",", 
+       FractionBox["\[Pi]", "3"], ",", "2", ",", "2", ",", "4", ",", 
+       "\[Infinity]", ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\[Theta]12$1046", "\[Rule]", "Indeterminate"}], ",", 
+         RowBox[{"\[Theta]13$1046", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
+      "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "2"], ",", 
+       FractionBox["\[Pi]", "2"], ",", 
+       FractionBox["\[Pi]", "3"], ",", "3", ",", "3", ",", "3", ",", 
+       "\[Infinity]", ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\[Theta]12$1046", "\[Rule]", "Indeterminate"}], ",", 
+         RowBox[{"\[Theta]13$1046", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
+      "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "2"], ",", 
+       FractionBox["\[Pi]", "2"], ",", 
+       FractionBox["\[Pi]", "4"], ",", "0", ",", "2", ",", "2", ",", 
+       "\[Infinity]", ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\[Theta]12$1046", "\[Rule]", "Indeterminate"}], ",", 
+         RowBox[{"\[Theta]13$1046", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
+      "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "2"], ",", 
+       FractionBox["\[Pi]", "2"], ",", 
+       FractionBox["\[Pi]", "4"], ",", "0", ",", "2", ",", "4", ",", 
+       "0.1058608599591698769794347834526796567943020908649242730212`30.", 
+       ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{
+         "\[Theta]12$1046", "\[Rule]", 
+          "0.9325791817442605699997744711161023331086788108615835443173`30."}]\
+, ",", 
+         RowBox[{
+         "\[Theta]13$1046", "\[Rule]", 
+          "1.5707963267948966192313216916399132364902815932305915949087`30."}]\
+}], "}"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "2"], ",", 
+       FractionBox["\[Pi]", "2"], ",", 
+       FractionBox["\[Pi]", "4"], ",", "0", ",", "2", ",", "6", ",", 
+       "0.2500000000000000000000000000000018698939886462902242259028`30.", 
+       ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{
+         "\[Theta]12$1046", "\[Rule]", 
+          "1.5707963267948966624736265259356130070357871735987651815452`30."}]\
+, ",", 
+         RowBox[{
+         "\[Theta]13$1046", "\[Rule]", 
+          "0.7853981633974483096156608458198757210492923498437764552437`30."}]\
+}], "}"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "2"], ",", 
+       FractionBox["\[Pi]", "2"], ",", 
+       FractionBox["\[Pi]", "4"], ",", "0", ",", "4", ",", "4", ",", 
+       "0.2499999999999999999999999999999999999970612641229442812301`30.", 
+       ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{
+         "\[Theta]12$1046", "\[Rule]", 
+          "1.5707963267948966192313216916397514420985846996875529104875`29.\
+69897000433602"}], ",", 
+         RowBox[{
+         "\[Theta]13$1046", "\[Rule]", 
+          "0.7853981633974483096156608458198757210492923498437764552437`29.\
+69897000433602"}]}], "}"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "2"], ",", 
+       FractionBox["\[Pi]", "2"], ",", 
+       FractionBox["\[Pi]", "4"], ",", "1", ",", "1", ",", "1", ",", 
+       "\[Infinity]", ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\[Theta]12$1046", "\[Rule]", "Indeterminate"}], ",", 
+         RowBox[{"\[Theta]13$1046", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
+      "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "2"], ",", 
+       FractionBox["\[Pi]", "2"], ",", 
+       FractionBox["\[Pi]", "4"], ",", "1", ",", "1", ",", "3", ",", 
+       "0.0181757591524143096824701061338124479769528822545801857018`30.", 
+       ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{
+         "\[Theta]12$1046", "\[Rule]", 
+          "0.6370451769779302955771471304983436404066482393177297914752`29.\
+69897000433602"}], ",", 
+         RowBox[{
+         "\[Theta]13$1046", "\[Rule]", 
+          "1.352075138874919880037174630121356967586984936757791121281`30."}]}\
+], "}"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "2"], ",", 
+       FractionBox["\[Pi]", "2"], ",", 
+       FractionBox["\[Pi]", "4"], ",", "1", ",", "1", ",", "5", ",", 
+       "0.0884535369096573632178245295335375448966582955428223194396`30.", 
+       ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{
+         "\[Theta]12$1046", "\[Rule]", 
+          "0.6370451769779302955771471304983436404066482393177297914752`29.\
+69897000433602"}], ",", 
+         RowBox[{
+         "\[Theta]13$1046", "\[Rule]", 
+          "1.7191493132144160600377890336645869658046715989583361366996`30."}]\
+}], "}"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "2"], ",", 
+       FractionBox["\[Pi]", "2"], ",", 
+       FractionBox["\[Pi]", "4"], ",", "1", ",", "1", ",", "7", ",", 
+       "\[Infinity]", ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\[Theta]12$1046", "\[Rule]", "Indeterminate"}], ",", 
+         RowBox[{"\[Theta]13$1046", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
+      "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "2"], ",", 
+       FractionBox["\[Pi]", "2"], ",", 
+       FractionBox["\[Pi]", "4"], ",", "1", ",", "3", ",", "3", ",", 
+       "0.2499999999999999999999999999999999999970612641229442812301`30.", 
+       ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{
+         "\[Theta]12$1046", "\[Rule]", 
+          "1.5707963267948966192313216916397514420985846996875529104872`29.\
+69897000433602"}], ",", 
+         RowBox[{
+         "\[Theta]13$1046", "\[Rule]", 
+          "0.7853981633974483096156608458198757210492923498437764552437`29.\
+69897000433602"}]}], "}"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "2"], ",", 
+       FractionBox["\[Pi]", "2"], ",", 
+       FractionBox["\[Pi]", "4"], ",", "1", ",", "3", ",", "5", ",", 
+       "\[Infinity]", ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\[Theta]12$1046", "\[Rule]", "Indeterminate"}], ",", 
+         RowBox[{"\[Theta]13$1046", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
+      "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "2"], ",", 
+       FractionBox["\[Pi]", "2"], ",", 
+       FractionBox["\[Pi]", "4"], ",", "2", ",", "2", ",", "2", ",", 
+       "\[Infinity]", ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\[Theta]12$1046", "\[Rule]", "Indeterminate"}], ",", 
+         RowBox[{"\[Theta]13$1046", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
+      "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "2"], ",", 
+       FractionBox["\[Pi]", "2"], ",", 
+       FractionBox["\[Pi]", "4"], ",", "2", ",", "2", ",", "4", ",", 
+       "\[Infinity]", ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\[Theta]12$1046", "\[Rule]", "Indeterminate"}], ",", 
+         RowBox[{"\[Theta]13$1046", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
+      "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "2"], ",", 
+       FractionBox["\[Pi]", "2"], ",", 
+       FractionBox["\[Pi]", "4"], ",", "3", ",", "3", ",", "3", ",", 
+       "\[Infinity]", ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\[Theta]12$1046", "\[Rule]", "Indeterminate"}], ",", 
+         RowBox[{"\[Theta]13$1046", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
+      "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "2"], ",", 
+       FractionBox["\[Pi]", "3"], ",", 
+       FractionBox["\[Pi]", "2"], ",", "0", ",", "2", ",", "2", ",", 
+       "0.363503024056227188525976435327312956391876378244953552611`30.", ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{
+         "\[Theta]12$1046", "\[Rule]", 
+          "0.6370451769779302955771471304983436404066482393177297914753`30."}]\
+, ",", 
+         RowBox[{
+         "\[Theta]13$1046", "\[Rule]", 
+          "1.3608714562572089808339686192330403798806783741520904162779`30."}]\
+}], "}"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "2"], ",", 
+       FractionBox["\[Pi]", "3"], ",", 
+       FractionBox["\[Pi]", "2"], ",", "0", ",", "2", ",", "4", ",", 
+       "0.0049287211896613757990735517572001646834961841476409536018`30.", 
+       ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{
+         "\[Theta]12$1046", "\[Rule]", 
+          "1.3896964175306679064125394312399058022878346896722370991472`30."}]\
+, ",", 
+         RowBox[{
+         "\[Theta]13$1046", "\[Rule]", 
+          "0.6370451769779302955771471304983436404066482393177297914752`29.\
+69897000433602"}]}], "}"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "2"], ",", 
+       FractionBox["\[Pi]", "3"], ",", 
+       FractionBox["\[Pi]", "2"], ",", "0", ",", "2", ",", "6", ",", 
+       "0.0095085998882569059472317948477947095686857131861834782276`30.", 
+       ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{
+         "\[Theta]12$1046", "\[Rule]", 
+          "1.7703351719128047341580840998660287973357524335638527673625`30."}]\
+, ",", 
+         RowBox[{
+         "\[Theta]13$1046", "\[Rule]", 
+          "0.6370451769779302955771471304983436404066482393177297914752`29.\
+507745002151278"}]}], "}"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "2"], ",", 
+       FractionBox["\[Pi]", "3"], ",", 
+       FractionBox["\[Pi]", "2"], ",", "0", ",", "4", ",", "4", ",", 
+       "0.0081915955379841109653250406705140883359376773822080294365`30.", 
+       ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{
+         "\[Theta]12$1046", "\[Rule]", 
+          "1.6814476196151633638761743977196985157525510733210603006201`30."}]\
+, ",", 
+         RowBox[{
+         "\[Theta]13$1046", "\[Rule]", 
+          "0.6370451769779302955771471304983436404066482393177297914752`29.\
+69897000433602"}]}], "}"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "2"], ",", 
+       FractionBox["\[Pi]", "3"], ",", 
+       FractionBox["\[Pi]", "2"], ",", "1", ",", "3", ",", "3", ",", 
+       "0.0088884992841290669342532977657408633291037217803927715362`30.", 
+       ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{
+         "\[Theta]12$1046", "\[Rule]", 
+          "1.7252356681324473165672698325013470387160142146795432522652`30."}]\
+, ",", 
+         RowBox[{
+         "\[Theta]13$1046", "\[Rule]", 
+          "0.6370451769779302955771471304983436404066482393177297914752`29.\
+69897000433602"}]}], "}"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "2"], ",", 
+       FractionBox["\[Pi]", "3"], ",", 
+       FractionBox["\[Pi]", "2"], ",", "1", ",", "3", ",", "5", ",", 
+       "\[Infinity]", ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\[Theta]12$1046", "\[Rule]", "Indeterminate"}], ",", 
+         RowBox[{"\[Theta]13$1046", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
+      "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "2"], ",", 
+       FractionBox["\[Pi]", "3"], ",", 
+       FractionBox["\[Pi]", "3"], ",", "0", ",", "2", ",", "2", ",", 
+       "0.0436465005582835688785547548576852545593907171765117740013`30.", 
+       ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{
+         "\[Theta]12$1046", "\[Rule]", 
+          "0.6370451769779302955771471304983436404066482393177297914752`29.\
+69897000433602"}], ",", 
+         RowBox[{
+         "\[Theta]13$1046", "\[Rule]", 
+          "1.2629683827581652994237191968059417548942235336941567224336`30."}]\
+}], "}"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "2"], ",", 
+       FractionBox["\[Pi]", "3"], ",", 
+       FractionBox["\[Pi]", "3"], ",", "0", ",", "2", ",", "4", ",", 
+       "0.1559797002144096207760248934645471059133067091711285854921`30.", 
+       ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{
+         "\[Theta]12$1046", "\[Rule]", 
+          "1.586130254996459445751524990140899781805144139133187908483`30."}],
+          ",", 
+         RowBox[{
+         "\[Theta]13$1046", "\[Rule]", 
+          "0.6370451769779302955771471304983436404066482393177297914752`29.\
+69897000433602"}]}], "}"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "2"], ",", 
+       FractionBox["\[Pi]", "3"], ",", 
+       FractionBox["\[Pi]", "3"], ",", "0", ",", "2", ",", "6", ",", 
+       "\[Infinity]", ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\[Theta]12$1046", "\[Rule]", "Indeterminate"}], ",", 
+         RowBox[{"\[Theta]13$1046", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
+      "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "2"], ",", 
+       FractionBox["\[Pi]", "3"], ",", 
+       FractionBox["\[Pi]", "3"], ",", "0", ",", "4", ",", "4", ",", 
+       "\[Infinity]", ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\[Theta]12$1046", "\[Rule]", "Indeterminate"}], ",", 
+         RowBox[{"\[Theta]13$1046", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
+      "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "2"], ",", 
+       FractionBox["\[Pi]", "3"], ",", 
+       FractionBox["\[Pi]", "3"], ",", "1", ",", "1", ",", "1", ",", 
+       "\[Infinity]", ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\[Theta]12$1046", "\[Rule]", "Indeterminate"}], ",", 
+         RowBox[{"\[Theta]13$1046", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
+      "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "2"], ",", 
+       FractionBox["\[Pi]", "3"], ",", 
+       FractionBox["\[Pi]", "3"], ",", "1", ",", "1", ",", "3", ",", 
+       "0.0961775885081676095634152867317390713617024297869614362817`30.", 
+       ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{
+         "\[Theta]12$1046", "\[Rule]", 
+          "1.1010836981926763169955635138727827118093934987993582333007`30."}]\
+, ",", 
+         RowBox[{
+         "\[Theta]13$1046", "\[Rule]", 
+          "1.1010836981926763169955635138725686134205669386011478094803`30."}]\
+}], "}"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "2"], ",", 
+       FractionBox["\[Pi]", "3"], ",", 
+       FractionBox["\[Pi]", "3"], ",", "1", ",", "1", ",", "5", ",", 
+       "\[Infinity]", ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\[Theta]12$1046", "\[Rule]", "Indeterminate"}], ",", 
+         RowBox[{"\[Theta]13$1046", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
+      "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "2"], ",", 
+       FractionBox["\[Pi]", "3"], ",", 
+       FractionBox["\[Pi]", "3"], ",", "1", ",", "1", ",", "7", ",", 
+       "\[Infinity]", ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\[Theta]12$1046", "\[Rule]", "Indeterminate"}], ",", 
+         RowBox[{"\[Theta]13$1046", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
+      "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "2"], ",", 
+       FractionBox["\[Pi]", "3"], ",", 
+       FractionBox["\[Pi]", "3"], ",", "1", ",", "3", ",", "3", ",", 
+       "\[Infinity]", ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\[Theta]12$1046", "\[Rule]", "Indeterminate"}], ",", 
+         RowBox[{"\[Theta]13$1046", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
+      "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "2"], ",", 
+       FractionBox["\[Pi]", "3"], ",", 
+       FractionBox["\[Pi]", "3"], ",", "1", ",", "3", ",", "5", ",", 
+       "\[Infinity]", ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\[Theta]12$1046", "\[Rule]", "Indeterminate"}], ",", 
+         RowBox[{"\[Theta]13$1046", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
+      "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "2"], ",", 
+       FractionBox["\[Pi]", "3"], ",", 
+       FractionBox["\[Pi]", "3"], ",", "2", ",", "2", ",", "2", ",", 
+       "\[Infinity]", ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\[Theta]12$1046", "\[Rule]", "Indeterminate"}], ",", 
+         RowBox[{"\[Theta]13$1046", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
+      "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "2"], ",", 
+       FractionBox["\[Pi]", "3"], ",", 
+       FractionBox["\[Pi]", "3"], ",", "2", ",", "2", ",", "4", ",", 
+       "\[Infinity]", ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\[Theta]12$1046", "\[Rule]", "Indeterminate"}], ",", 
+         RowBox[{"\[Theta]13$1046", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
+      "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "2"], ",", 
+       FractionBox["\[Pi]", "3"], ",", 
+       FractionBox["\[Pi]", "3"], ",", "3", ",", "3", ",", "3", ",", 
+       "\[Infinity]", ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\[Theta]12$1046", "\[Rule]", "Indeterminate"}], ",", 
+         RowBox[{"\[Theta]13$1046", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
+      "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "2"], ",", 
+       FractionBox["\[Pi]", "3"], ",", 
+       FractionBox["\[Pi]", "4"], ",", "0", ",", "2", ",", "4", ",", 
+       "\[Infinity]", ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\[Theta]12$1046", "\[Rule]", "Indeterminate"}], ",", 
+         RowBox[{"\[Theta]13$1046", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
+      "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "2"], ",", 
+       FractionBox["\[Pi]", "3"], ",", 
+       FractionBox["\[Pi]", "4"], ",", "0", ",", "2", ",", "6", ",", 
+       "\[Infinity]", ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\[Theta]12$1046", "\[Rule]", "Indeterminate"}], ",", 
+         RowBox[{"\[Theta]13$1046", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
+      "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "2"], ",", 
+       FractionBox["\[Pi]", "3"], ",", 
+       FractionBox["\[Pi]", "4"], ",", "0", ",", "4", ",", "4", ",", 
+       "\[Infinity]", ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\[Theta]12$1046", "\[Rule]", "Indeterminate"}], ",", 
+         RowBox[{"\[Theta]13$1046", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
+      "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "2"], ",", 
+       FractionBox["\[Pi]", "3"], ",", 
+       FractionBox["\[Pi]", "4"], ",", "1", ",", "1", ",", "1", ",", 
+       "\[Infinity]", ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\[Theta]12$1046", "\[Rule]", "Indeterminate"}], ",", 
+         RowBox[{"\[Theta]13$1046", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
+      "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "2"], ",", 
+       FractionBox["\[Pi]", "3"], ",", 
+       FractionBox["\[Pi]", "4"], ",", "1", ",", "1", ",", "3", ",", 
+       "0.2383591730397255832828785191905989331141744431004361605852`30.", 
+       ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{
+         "\[Theta]12$1046", "\[Rule]", 
+          "0.6370451769779302955771471304983436404066482393177297914752`29.\
+69897000433602"}], ",", 
+         RowBox[{
+         "\[Theta]13$1046", "\[Rule]", 
+          "1.602715722857628572674165507972702026508736082091636721458`30."}]}\
+], "}"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "2"], ",", 
+       FractionBox["\[Pi]", "3"], ",", 
+       FractionBox["\[Pi]", "4"], ",", "1", ",", "1", ",", "5", ",", 
+       "\[Infinity]", ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\[Theta]12$1046", "\[Rule]", "Indeterminate"}], ",", 
+         RowBox[{"\[Theta]13$1046", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
+      "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "2"], ",", 
+       FractionBox["\[Pi]", "3"], ",", 
+       FractionBox["\[Pi]", "4"], ",", "1", ",", "1", ",", "7", ",", 
+       "\[Infinity]", ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\[Theta]12$1046", "\[Rule]", "Indeterminate"}], ",", 
+         RowBox[{"\[Theta]13$1046", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
+      "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "2"], ",", 
+       FractionBox["\[Pi]", "3"], ",", 
+       FractionBox["\[Pi]", "4"], ",", "1", ",", "3", ",", "3", ",", 
+       "\[Infinity]", ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\[Theta]12$1046", "\[Rule]", "Indeterminate"}], ",", 
+         RowBox[{"\[Theta]13$1046", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
+      "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "2"], ",", 
+       FractionBox["\[Pi]", "3"], ",", 
+       FractionBox["\[Pi]", "4"], ",", "1", ",", "3", ",", "5", ",", 
+       "\[Infinity]", ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\[Theta]12$1046", "\[Rule]", "Indeterminate"}], ",", 
+         RowBox[{"\[Theta]13$1046", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
+      "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "2"], ",", 
+       FractionBox["\[Pi]", "3"], ",", 
+       FractionBox["\[Pi]", "4"], ",", "2", ",", "2", ",", "2", ",", 
+       "\[Infinity]", ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\[Theta]12$1046", "\[Rule]", "Indeterminate"}], ",", 
+         RowBox[{"\[Theta]13$1046", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
+      "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "2"], ",", 
+       FractionBox["\[Pi]", "3"], ",", 
+       FractionBox["\[Pi]", "4"], ",", "2", ",", "2", ",", "4", ",", 
+       "\[Infinity]", ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\[Theta]12$1046", "\[Rule]", "Indeterminate"}], ",", 
+         RowBox[{"\[Theta]13$1046", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
+      "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "2"], ",", 
+       FractionBox["\[Pi]", "3"], ",", 
+       FractionBox["\[Pi]", "4"], ",", "3", ",", "3", ",", "3", ",", 
+       "\[Infinity]", ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\[Theta]12$1046", "\[Rule]", "Indeterminate"}], ",", 
+         RowBox[{"\[Theta]13$1046", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
+      "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "2"], ",", 
+       FractionBox["\[Pi]", "4"], ",", 
+       FractionBox["\[Pi]", "2"], ",", "0", ",", "2", ",", "2", ",", 
+       "0.5032696140087812895250362958056175004128605705184921490055`30.", 
+       ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{
+         "\[Theta]12$1046", "\[Rule]", 
+          "0.7853981633974483096156608458198757210492923498437764552437`29.\
+69897000433602"}], ",", 
+         RowBox[{
+         "\[Theta]13$1046", "\[Rule]", 
+          "1.2299288820856408664823330021235330250201929936454243277615`30."}]\
+}], "}"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "2"], ",", 
+       FractionBox["\[Pi]", "4"], ",", 
+       FractionBox["\[Pi]", "2"], ",", "0", ",", "2", ",", "4", ",", 
+       "0.0200065028745867300173380133473704546859907090913690734438`30.", 
+       ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{
+         "\[Theta]12$1046", "\[Rule]", 
+          "1.5135169978960128716386959012955325706194704150025051258213`30."}]\
+, ",", 
+         RowBox[{
+         "\[Theta]13$1046", "\[Rule]", 
+          "0.6370451769779302955771471304983436404066482393177297914752`29.\
+69897000433602"}]}], "}"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "2"], ",", 
+       FractionBox["\[Pi]", "4"], ",", 
+       FractionBox["\[Pi]", "2"], ",", "0", ",", "2", ",", "6", ",", 
+       "0.0391645883024218753893884035068256731622571404853241451059`30.", 
+       ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{
+         "\[Theta]12$1046", "\[Rule]", 
+          "1.8592214787270004811245164917061040991547970695810341923444`30."}]\
+, ",", 
+         RowBox[{
+         "\[Theta]13$1046", "\[Rule]", 
+          "0.6370451769779302955771471304983436404066482393177297914752`29.\
+507745002151278"}]}], "}"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "2"], ",", 
+       FractionBox["\[Pi]", "4"], ",", 
+       FractionBox["\[Pi]", "2"], ",", "0", ",", "4", ",", "4", ",", 
+       "0.0341717257167968384794188165960313816985316821601273478092`30.", 
+       ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{
+         "\[Theta]12$1046", "\[Rule]", 
+          "1.7778261743797437694450328510083200521731838702079498573861`30."}]\
+, ",", 
+         RowBox[{
+         "\[Theta]13$1046", "\[Rule]", 
+          "0.6370451769779302955771471304983436404066482393177297914752`29.\
+69897000433602"}]}], "}"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "2"], ",", 
+       FractionBox["\[Pi]", "4"], ",", 
+       FractionBox["\[Pi]", "2"], ",", "1", ",", "3", ",", "3", ",", 
+       "0.0388949078846626470414702831628775902541905520817873478528`30.", 
+       ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{
+         "\[Theta]12$1046", "\[Rule]", 
+          "1.8460653058166163394293938233942189196969497586344332500997`30."}]\
+, ",", 
+         RowBox[{
+         "\[Theta]13$1046", "\[Rule]", 
+          "0.6370451769779302955771471304983436404066482393177297914752`29.\
+69897000433602"}]}], "}"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "2"], ",", 
+       FractionBox["\[Pi]", "4"], ",", 
+       FractionBox["\[Pi]", "2"], ",", "1", ",", "3", ",", "5", ",", 
+       "\[Infinity]", ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\[Theta]12$1046", "\[Rule]", "Indeterminate"}], ",", 
+         RowBox[{"\[Theta]13$1046", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
+      "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "2"], ",", 
+       FractionBox["\[Pi]", "4"], ",", 
+       FractionBox["\[Pi]", "3"], ",", "0", ",", "2", ",", "2", ",", 
+       "0.0628477892163893745856703154303870829066926660404294591196`30.", 
+       ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{
+         "\[Theta]12$1046", "\[Rule]", 
+          "0.7853981633974483096156608458198757210492923498437764552437`29.\
+69897000433602"}], ",", 
+         RowBox[{
+         "\[Theta]13$1046", "\[Rule]", 
+          "1.0980614899329452053896486624625878030402602971121653216389`30."}]\
+}], "}"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "2"], ",", 
+       FractionBox["\[Pi]", "4"], ",", 
+       FractionBox["\[Pi]", "3"], ",", "0", ",", "2", ",", "4", ",", 
+       "\[Infinity]", ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\[Theta]12$1046", "\[Rule]", "Indeterminate"}], ",", 
+         RowBox[{"\[Theta]13$1046", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
+      "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "2"], ",", 
+       FractionBox["\[Pi]", "4"], ",", 
+       FractionBox["\[Pi]", "3"], ",", "0", ",", "2", ",", "6", ",", 
+       "\[Infinity]", ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\[Theta]12$1046", "\[Rule]", "Indeterminate"}], ",", 
+         RowBox[{"\[Theta]13$1046", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
+      "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "2"], ",", 
+       FractionBox["\[Pi]", "4"], ",", 
+       FractionBox["\[Pi]", "3"], ",", "0", ",", "4", ",", "4", ",", 
+       "\[Infinity]", ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\[Theta]12$1046", "\[Rule]", "Indeterminate"}], ",", 
+         RowBox[{"\[Theta]13$1046", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
+      "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "2"], ",", 
+       FractionBox["\[Pi]", "4"], ",", 
+       FractionBox["\[Pi]", "3"], ",", "1", ",", "3", ",", "3", ",", 
+       "\[Infinity]", ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\[Theta]12$1046", "\[Rule]", "Indeterminate"}], ",", 
+         RowBox[{"\[Theta]13$1046", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
+      "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "2"], ",", 
+       FractionBox["\[Pi]", "4"], ",", 
+       FractionBox["\[Pi]", "3"], ",", "1", ",", "3", ",", "5", ",", 
+       "\[Infinity]", ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\[Theta]12$1046", "\[Rule]", "Indeterminate"}], ",", 
+         RowBox[{"\[Theta]13$1046", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
+      "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "2"], ",", 
+       FractionBox["\[Pi]", "4"], ",", 
+       FractionBox["\[Pi]", "4"], ",", "0", ",", "2", ",", "4", ",", 
+       "\[Infinity]", ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\[Theta]12$1046", "\[Rule]", "Indeterminate"}], ",", 
+         RowBox[{"\[Theta]13$1046", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
+      "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "2"], ",", 
+       FractionBox["\[Pi]", "4"], ",", 
+       FractionBox["\[Pi]", "4"], ",", "0", ",", "2", ",", "6", ",", 
+       "\[Infinity]", ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\[Theta]12$1046", "\[Rule]", "Indeterminate"}], ",", 
+         RowBox[{"\[Theta]13$1046", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
+      "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "2"], ",", 
+       FractionBox["\[Pi]", "4"], ",", 
+       FractionBox["\[Pi]", "4"], ",", "0", ",", "4", ",", "4", ",", 
+       "\[Infinity]", ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\[Theta]12$1046", "\[Rule]", "Indeterminate"}], ",", 
+         RowBox[{"\[Theta]13$1046", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
+      "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "2"], ",", 
+       FractionBox["\[Pi]", "4"], ",", 
+       FractionBox["\[Pi]", "4"], ",", "1", ",", "1", ",", "1", ",", 
+       "4.9999999999999998939750671653574052453110250148761179576254`30.", 
+       ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{
+         "\[Theta]12$1046", "\[Rule]", 
+          "2.3561944901923449818594484720857948506954515708380148161102`30."}]\
+, ",", 
+         RowBox[{
+         "\[Theta]13$1046", "\[Rule]", 
+          "2.3561944901923449818594494374760092651413902168432496947498`30."}]\
+}], "}"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "2"], ",", 
+       FractionBox["\[Pi]", "4"], ",", 
+       FractionBox["\[Pi]", "4"], ",", "1", ",", "1", ",", "3", ",", 
+       "0.9999999999999999538090645871707387502570535044857722668112`30.", 
+       ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{
+         "\[Theta]12$1046", "\[Rule]", 
+          "0.7853981633974483096156608458198757210492923498437764552437`29.\
+69897000433602"}], ",", 
+         RowBox[{
+         "\[Theta]13$1046", "\[Rule]", 
+          "0.7853981633974484481884670843076450684611602292810387799669`30."}]\
+}], "}"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "2"], ",", 
+       FractionBox["\[Pi]", "4"], ",", 
+       FractionBox["\[Pi]", "4"], ",", "1", ",", "1", ",", "5", ",", 
+       "\[Infinity]", ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\[Theta]12$1046", "\[Rule]", "Indeterminate"}], ",", 
+         RowBox[{"\[Theta]13$1046", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
+      "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "2"], ",", 
+       FractionBox["\[Pi]", "4"], ",", 
+       FractionBox["\[Pi]", "4"], ",", "1", ",", "1", ",", "7", ",", 
+       "\[Infinity]", ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\[Theta]12$1046", "\[Rule]", "Indeterminate"}], ",", 
+         RowBox[{"\[Theta]13$1046", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
+      "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "2"], ",", 
+       FractionBox["\[Pi]", "4"], ",", 
+       FractionBox["\[Pi]", "4"], ",", "1", ",", "3", ",", "3", ",", 
+       "\[Infinity]", ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\[Theta]12$1046", "\[Rule]", "Indeterminate"}], ",", 
+         RowBox[{"\[Theta]13$1046", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
+      "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "2"], ",", 
+       FractionBox["\[Pi]", "4"], ",", 
+       FractionBox["\[Pi]", "4"], ",", "1", ",", "3", ",", "5", ",", 
+       "\[Infinity]", ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\[Theta]12$1046", "\[Rule]", "Indeterminate"}], ",", 
+         RowBox[{"\[Theta]13$1046", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
+      "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "2"], ",", 
+       FractionBox["\[Pi]", "4"], ",", 
+       FractionBox["\[Pi]", "4"], ",", "2", ",", "2", ",", "2", ",", 
+       "\[Infinity]", ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\[Theta]12$1046", "\[Rule]", "Indeterminate"}], ",", 
+         RowBox[{"\[Theta]13$1046", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
+      "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "2"], ",", 
+       FractionBox["\[Pi]", "4"], ",", 
+       FractionBox["\[Pi]", "4"], ",", "2", ",", "2", ",", "4", ",", 
+       "\[Infinity]", ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\[Theta]12$1046", "\[Rule]", "Indeterminate"}], ",", 
+         RowBox[{"\[Theta]13$1046", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
+      "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "2"], ",", 
+       FractionBox["\[Pi]", "4"], ",", 
+       FractionBox["\[Pi]", "4"], ",", "3", ",", "3", ",", "3", ",", 
+       "\[Infinity]", ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\[Theta]12$1046", "\[Rule]", "Indeterminate"}], ",", 
+         RowBox[{"\[Theta]13$1046", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
+      "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "3"], ",", 
+       FractionBox["\[Pi]", "2"], ",", 
+       FractionBox["\[Pi]", "2"], ",", "0", ",", "2", ",", "4", ",", 
+       "0.0108290580708541089088747237110180801787337543105261296058`30.", 
+       ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{
+         "\[Theta]12$1046", "\[Rule]", 
+          "0.7323377407577333641416775993630993482141229279239776182555`30."}]\
+, ",", 
+         RowBox[{
+         "\[Theta]13$1046", "\[Rule]", 
+          "1.8675022996339325127605099307031810425346248193316716699467`30."}]\
+}], "}"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "3"], ",", 
+       FractionBox["\[Pi]", "2"], ",", 
+       FractionBox["\[Pi]", "2"], ",", "0", ",", "2", ",", "6", ",", 
+       "0.0050324061996519027281801827557590670437417236444884652135`30.", 
+       ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{
+         "\[Theta]12$1046", "\[Rule]", 
+          "1.4104333686889116674301855769810709251473732398894603643743`30."}]\
+, ",", 
+         RowBox[{
+         "\[Theta]13$1046", "\[Rule]", 
+          "1.2304571226560023517312019917803971045710779572677167442713`30."}]\
+}], "}"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "3"], ",", 
+       FractionBox["\[Pi]", "2"], ",", 
+       FractionBox["\[Pi]", "2"], ",", "1", ",", "1", ",", "3", ",", 
+       "0.0625000000000000000000000000000580365824700812295920753662`30.", 
+       ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{
+         "\[Theta]12$1046", "\[Rule]", 
+          "0.6444773647405436059499163979864511469346698720500179073333`30."}]\
+, ",", 
+         RowBox[{
+         "\[Theta]13$1046", "\[Rule]", 
+          "0.9263189620543535325012877255912643091526057866453135422948`30."}]\
+}], "}"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "3"], ",", 
+       FractionBox["\[Pi]", "2"], ",", 
+       FractionBox["\[Pi]", "2"], ",", "1", ",", "1", ",", "5", ",", 
+       "0.0086953119297066021724248172700201314490242411697122938889`30.", 
+       ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{
+         "\[Theta]12$1046", "\[Rule]", 
+          "1.277810480017489841659175623249452141865228771147711363803`30."}],
+          ",", 
+         RowBox[{
+         "\[Theta]13$1046", "\[Rule]", 
+          "1.2778104800174898416591756232516655701008312576242515980036`30."}]\
+}], "}"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "3"], ",", 
+       FractionBox["\[Pi]", "2"], ",", 
+       FractionBox["\[Pi]", "2"], ",", "1", ",", "1", ",", "7", ",", 
+       "\[Infinity]", ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\[Theta]12$1046", "\[Rule]", "Indeterminate"}], ",", 
+         RowBox[{"\[Theta]13$1046", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
+      "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "3"], ",", 
+       FractionBox["\[Pi]", "2"], ",", 
+       FractionBox["\[Pi]", "2"], ",", "1", ",", "3", ",", "5", ",", 
+       "\[Infinity]", ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\[Theta]12$1046", "\[Rule]", "Indeterminate"}], ",", 
+         RowBox[{"\[Theta]13$1046", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
+      "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "3"], ",", 
+       FractionBox["\[Pi]", "2"], ",", 
+       FractionBox["\[Pi]", "2"], ",", "2", ",", "2", ",", "4", ",", 
+       "\[Infinity]", ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\[Theta]12$1046", "\[Rule]", "Indeterminate"}], ",", 
+         RowBox[{"\[Theta]13$1046", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
+      "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "3"], ",", 
+       FractionBox["\[Pi]", "2"], ",", 
+       FractionBox["\[Pi]", "3"], ",", "0", ",", "2", ",", "4", ",", 
+       "0.0088639109605210397482937954266426046431546832957805412796`30.", 
+       ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{
+         "\[Theta]12$1046", "\[Rule]", 
+          
+          "1.0859628412372752373646260785099555756484670154176180484412`30."}]\
+, ",", 
+         RowBox[{
+         "\[Theta]13$1046", "\[Rule]", 
+          "1.8675022996339318351542630193581487312047000309591936436274`30."}]\
+}], "}"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "3"], ",", 
+       FractionBox["\[Pi]", "2"], ",", 
+       FractionBox["\[Pi]", "3"], ",", "0", ",", "2", ",", "6", ",", 
+       "0.1628315853004173449752945091235347386475985289520922364197`30.", 
+       ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{
+         "\[Theta]12$1046", "\[Rule]", 
+          "1.600575109010016750313369233845084508025036305933007011585`30."}],
+          ",", 
+         RowBox[{
+         "\[Theta]13$1046", "\[Rule]", 
+          "1.2304571226560023517312019917844719629772246814219164465497`29.\
+507745002151278"}]}], "}"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "3"], ",", 
+       FractionBox["\[Pi]", "2"], ",", 
+       FractionBox["\[Pi]", "3"], ",", "1", ",", "1", ",", "3", ",", 
+       "0.0273640995850040722305507538730806915439728140482793577447`30.", 
+       ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{
+         "\[Theta]12$1046", "\[Rule]", 
+          "0.6541119917790107901438700217544771865358945706333761769957`30."}]\
+, ",", 
+         RowBox[{
+         "\[Theta]13$1046", "\[Rule]", 
+          "1.7553946348271058650320862485383844720156425453753834178841`30."}]\
+}], "}"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "3"], ",", 
+       FractionBox["\[Pi]", "2"], ",", 
+       FractionBox["\[Pi]", "3"], ",", "1", ",", "1", ",", "5", ",", 
+       "0.0063403578933386583447478741642536603651718841515727087856`30.", 
+       ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{
+         "\[Theta]12$1046", "\[Rule]", 
+          "1.0050200613833878023391411132181870827530307810382303551647`30."}]\
+, ",", 
+         RowBox[{
+         "\[Theta]13$1046", "\[Rule]", 
+          "1.9041630178805817381307875362346572259937247772750602668474`30."}]\
+}], "}"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "3"], ",", 
+       FractionBox["\[Pi]", "2"], ",", 
+       FractionBox["\[Pi]", "3"], ",", "1", ",", "1", ",", "7", ",", 
+       "\[Infinity]", ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\[Theta]12$1046", "\[Rule]", "Indeterminate"}], ",", 
+         RowBox[{"\[Theta]13$1046", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
+      "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "3"], ",", 
+       FractionBox["\[Pi]", "2"], ",", 
+       FractionBox["\[Pi]", "3"], ",", "1", ",", "3", ",", "5", ",", 
+       "\[Infinity]", ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\[Theta]12$1046", "\[Rule]", "Indeterminate"}], ",", 
+         RowBox[{"\[Theta]13$1046", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
+      "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "3"], ",", 
+       FractionBox["\[Pi]", "2"], ",", 
+       FractionBox["\[Pi]", "3"], ",", "2", ",", "2", ",", "4", ",", 
+       "\[Infinity]", ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\[Theta]12$1046", "\[Rule]", "Indeterminate"}], ",", 
+         RowBox[{"\[Theta]13$1046", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
+      "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "3"], ",", 
+       FractionBox["\[Pi]", "2"], ",", 
+       FractionBox["\[Pi]", "4"], ",", "0", ",", "2", ",", "4", ",", 
+       "0.2454081631178575016214037792535022134053624397166637520261`30.", 
+       ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{
+         "\[Theta]12$1046", "\[Rule]", 
+          "1.3490070628680872416514738591620269513647642680508979616323`30."}]\
+, ",", 
+         RowBox[{
+         "\[Theta]13$1046", "\[Rule]", 
+          "1.5707963267948966192313216916397514420985846996875529104875`29.\
+69897000433602"}]}], "}"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "3"], ",", 
+       FractionBox["\[Pi]", "2"], ",", 
+       FractionBox["\[Pi]", "4"], ",", "0", ",", "2", ",", "6", ",", 
+       "\[Infinity]", ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\[Theta]12$1046", "\[Rule]", "Indeterminate"}], ",", 
+         RowBox[{"\[Theta]13$1046", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
+      "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "3"], ",", 
+       FractionBox["\[Pi]", "2"], ",", 
+       FractionBox["\[Pi]", "4"], ",", "1", ",", "1", ",", "5", ",", 
+       "0.449488850396238636682959529142380059181995575702865339467`30.", ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{
+         "\[Theta]12$1046", "\[Rule]", 
+          "0.6370451769779302955771471304983436404066482393177297914752`29.\
+69897000433602"}], ",", 
+         RowBox[{
+         "\[Theta]13$1046", "\[Rule]", 
+          "1.7191493132144156223695093341453171634316048628505407103612`30."}]\
+}], "}"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "3"], ",", 
+       FractionBox["\[Pi]", "2"], ",", 
+       FractionBox["\[Pi]", "4"], ",", "1", ",", "1", ",", "7", ",", 
+       "\[Infinity]", ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\[Theta]12$1046", "\[Rule]", "Indeterminate"}], ",", 
+         RowBox[{"\[Theta]13$1046", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
+      "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "3"], ",", 
+       FractionBox["\[Pi]", "2"], ",", 
+       FractionBox["\[Pi]", "4"], ",", "1", ",", "3", ",", "5", ",", 
+       "\[Infinity]", ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\[Theta]12$1046", "\[Rule]", "Indeterminate"}], ",", 
+         RowBox[{"\[Theta]13$1046", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
+      "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "3"], ",", 
+       FractionBox["\[Pi]", "2"], ",", 
+       FractionBox["\[Pi]", "4"], ",", "2", ",", "2", ",", "4", ",", 
+       "\[Infinity]", ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\[Theta]12$1046", "\[Rule]", "Indeterminate"}], ",", 
+         RowBox[{"\[Theta]13$1046", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
+      "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "3"], ",", 
+       FractionBox["\[Pi]", "3"], ",", 
+       FractionBox["\[Pi]", "2"], ",", "0", ",", "2", ",", "2", ",", 
+       "0.7500000000000000000000000000004060525541870966033271903118`30.", 
+       ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{
+         "\[Theta]12$1046", "\[Rule]", 
+          "1.0471975511965977461542144610931676280657231331250352736582`29.\
+69897000433602"}], ",", 
+         RowBox[{
+         "\[Theta]13$1046", "\[Rule]", 
+          "1.5707963267948960989413037291597759469196095900011862807055`30."}]\
+}], "}"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "3"], ",", 
+       FractionBox["\[Pi]", "3"], ",", 
+       FractionBox["\[Pi]", "2"], ",", "0", ",", "2", ",", "4", ",", 
+       "0.0118063353292670627363617702957166109769805712570161440388`30.", 
+       ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{
+         "\[Theta]12$1046", "\[Rule]", 
+          "1.701845266515555255726057851602372389217680804451239563591`30."}],
+          ",", 
+         RowBox[{
+         "\[Theta]13$1046", "\[Rule]", 
+          "0.8890059634167038157955687503015021052383963005560401300306`30."}]\
+}], "}"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "3"], ",", 
+       FractionBox["\[Pi]", "3"], ",", 
+       FractionBox["\[Pi]", "2"], ",", "0", ",", "2", ",", "6", ",", 
+       "0.0043373928507383833306344941988246418194220876248014990791`30.", 
+       ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{
+         "\[Theta]12$1046", "\[Rule]", 
+          "1.906816484968923004849350634292025543142019108395574162539`30."}],
+          ",", 
+         RowBox[{
+         "\[Theta]13$1046", "\[Rule]", 
+          "0.953862274745572572213072897241364342775470146574645243023`30."}]}\
+], "}"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "3"], ",", 
+       FractionBox["\[Pi]", "3"], ",", 
+       FractionBox["\[Pi]", "2"], ",", "0", ",", "4", ",", "4", ",", 
+       "0.0071730292590437856729559891237539741079719050468651099296`30.", 
+       ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{
+         "\[Theta]12$1046", "\[Rule]", 
+          "1.9763436537284624107508234999409240456606721339491105288752`30."}]\
+, ",", 
+         RowBox[{
+         "\[Theta]13$1046", "\[Rule]", 
+          "0.7853981633974483096156608458192889369542539046522247538212`30."}]\
+}], "}"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "3"], ",", 
+       FractionBox["\[Pi]", "3"], ",", 
+       FractionBox["\[Pi]", "2"], ",", "1", ",", "3", ",", "3", ",", 
+       "0.0145583640385297052531567153908033415281370759388984970227`30.", 
+       ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{
+         "\[Theta]12$1046", "\[Rule]", 
+          "2.07672895660401849023270658622584672893525141564080156557`30."}], 
+         ",", 
+         RowBox[{
+         "\[Theta]13$1046", "\[Rule]", 
+          "0.7010760584292591617294145474657073318924796236026231331767`30."}]\
+}], "}"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "3"], ",", 
+       FractionBox["\[Pi]", "3"], ",", 
+       FractionBox["\[Pi]", "2"], ",", "1", ",", "3", ",", "5", ",", 
+       "\[Infinity]", ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\[Theta]12$1046", "\[Rule]", "Indeterminate"}], ",", 
+         RowBox[{"\[Theta]13$1046", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
+      "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "3"], ",", 
+       FractionBox["\[Pi]", "3"], ",", 
+       FractionBox["\[Pi]", "3"], ",", "0", ",", "2", ",", "2", ",", 
+       "0.0491221570597492942693846237599539440808038202040777754567`30.", 
+       ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{
+         "\[Theta]12$1046", "\[Rule]", 
+          "1.2796439853111665470646388366468407607956367995981627749677`30."}]\
+, ",", 
+         RowBox[{
+         "\[Theta]13$1046", "\[Rule]", 
+          "1.5707963267948966192313216916398106259721216695437907724569`30."}]\
+}], "}"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "3"], ",", 
+       FractionBox["\[Pi]", "3"], ",", 
+       FractionBox["\[Pi]", "3"], ",", "0", ",", "2", ",", "4", ",", 
+       "0.3389209372966252265610770906532241441125302600976503217235`30.", 
+       ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{
+         "\[Theta]12$1046", "\[Rule]", 
+          "1.8433316002684512047500593253285990121878620778748333023442`30."}]\
+, ",", 
+         RowBox[{
+         "\[Theta]13$1046", "\[Rule]", 
+          "1.0471975511965977461542144610931676280657231331250352736585`29.\
+69897000433602"}]}], "}"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "3"], ",", 
+       FractionBox["\[Pi]", "3"], ",", 
+       FractionBox["\[Pi]", "3"], ",", "0", ",", "2", ",", "6", ",", 
+       "\[Infinity]", ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\[Theta]12$1046", "\[Rule]", "Indeterminate"}], ",", 
+         RowBox[{"\[Theta]13$1046", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
+      "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "3"], ",", 
+       FractionBox["\[Pi]", "3"], ",", 
+       FractionBox["\[Pi]", "3"], ",", "0", ",", "4", ",", "4", ",", 
+       "\[Infinity]", ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\[Theta]12$1046", "\[Rule]", "Indeterminate"}], ",", 
+         RowBox[{"\[Theta]13$1046", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
+      "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "3"], ",", 
+       FractionBox["\[Pi]", "3"], ",", 
+       FractionBox["\[Pi]", "3"], ",", "1", ",", "1", ",", "1", ",", 
+       "3.515625`30.", ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{
+         "\[Theta]12$1046", "\[Rule]", 
+          "2.0943951023931954923084289221863352561314462662500705473167`29.\
+69897000433602"}], ",", 
+         RowBox[{
+         "\[Theta]13$1046", "\[Rule]", 
+          "2.0943951023931954923084289221863352561314462662500705473167`29.\
+69897000433602"}]}], "}"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "3"], ",", 
+       FractionBox["\[Pi]", "3"], ",", 
+       FractionBox["\[Pi]", "3"], ",", "1", ",", "1", ",", "3", ",", 
+       "0.1132369981858022931962993672785571691563853260206159846894`30.", 
+       ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{
+         "\[Theta]12$1046", "\[Rule]", 
+          "1.5422720188636267214408606381423522826863185832696876142815`30."}]\
+, ",", 
+         RowBox[{
+         "\[Theta]13$1046", "\[Rule]", 
+          "1.5422720188636265604191369432017454765318866846487695339892`30."}]\
+}], "}"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "3"], ",", 
+       FractionBox["\[Pi]", "3"], ",", 
+       FractionBox["\[Pi]", "3"], ",", "1", ",", "1", ",", "5", ",", 
+       "\[Infinity]", ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\[Theta]12$1046", "\[Rule]", "Indeterminate"}], ",", 
+         RowBox[{"\[Theta]13$1046", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
+      "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "3"], ",", 
+       FractionBox["\[Pi]", "3"], ",", 
+       FractionBox["\[Pi]", "3"], ",", "1", ",", "1", ",", "7", ",", 
+       "\[Infinity]", ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\[Theta]12$1046", "\[Rule]", "Indeterminate"}], ",", 
+         RowBox[{"\[Theta]13$1046", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
+      "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "3"], ",", 
+       FractionBox["\[Pi]", "3"], ",", 
+       FractionBox["\[Pi]", "3"], ",", "1", ",", "3", ",", "3", ",", 
+       "\[Infinity]", ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\[Theta]12$1046", "\[Rule]", "Indeterminate"}], ",", 
+         RowBox[{"\[Theta]13$1046", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
+      "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "3"], ",", 
+       FractionBox["\[Pi]", "3"], ",", 
+       FractionBox["\[Pi]", "3"], ",", "1", ",", "3", ",", "5", ",", 
+       "\[Infinity]", ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\[Theta]12$1046", "\[Rule]", "Indeterminate"}], ",", 
+         RowBox[{"\[Theta]13$1046", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
+      "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "3"], ",", 
+       FractionBox["\[Pi]", "3"], ",", 
+       FractionBox["\[Pi]", "3"], ",", "2", ",", "2", ",", "2", ",", 
+       "\[Infinity]", ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\[Theta]12$1046", "\[Rule]", "Indeterminate"}], ",", 
+         RowBox[{"\[Theta]13$1046", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
+      "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "3"], ",", 
+       FractionBox["\[Pi]", "3"], ",", 
+       FractionBox["\[Pi]", "3"], ",", "2", ",", "2", ",", "4", ",", 
+       "\[Infinity]", ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\[Theta]12$1046", "\[Rule]", "Indeterminate"}], ",", 
+         RowBox[{"\[Theta]13$1046", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
+      "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "3"], ",", 
+       FractionBox["\[Pi]", "3"], ",", 
+       FractionBox["\[Pi]", "3"], ",", "3", ",", "3", ",", "3", ",", 
+       "\[Infinity]", ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\[Theta]12$1046", "\[Rule]", "Indeterminate"}], ",", 
+         RowBox[{"\[Theta]13$1046", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
+      "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "3"], ",", 
+       FractionBox["\[Pi]", "3"], ",", 
+       FractionBox["\[Pi]", "4"], ",", "0", ",", "2", ",", "2", ",", 
+       "0.0451465124364799560755321512557921366187380196426438630932`30.", 
+       ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{
+         "\[Theta]12$1046", "\[Rule]", 
+          "1.4283012900175994889978739520917019718283933773813288935357`30."}]\
+, ",", 
+         RowBox[{
+         "\[Theta]13$1046", "\[Rule]", 
+          "1.5707963267948966192313216916396962919347885052999478784554`30."}]\
+}], "}"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "3"], ",", 
+       FractionBox["\[Pi]", "3"], ",", 
+       FractionBox["\[Pi]", "4"], ",", "0", ",", "2", ",", "4", ",", 
+       "\[Infinity]", ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\[Theta]12$1046", "\[Rule]", "Indeterminate"}], ",", 
+         RowBox[{"\[Theta]13$1046", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
+      "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "3"], ",", 
+       FractionBox["\[Pi]", "3"], ",", 
+       FractionBox["\[Pi]", "4"], ",", "0", ",", "2", ",", "6", ",", 
+       "\[Infinity]", ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\[Theta]12$1046", "\[Rule]", "Indeterminate"}], ",", 
+         RowBox[{"\[Theta]13$1046", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
+      "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "3"], ",", 
+       FractionBox["\[Pi]", "3"], ",", 
+       FractionBox["\[Pi]", "4"], ",", "0", ",", "4", ",", "4", ",", 
+       "\[Infinity]", ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\[Theta]12$1046", "\[Rule]", "Indeterminate"}], ",", 
+         RowBox[{"\[Theta]13$1046", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
+      "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "3"], ",", 
+       FractionBox["\[Pi]", "3"], ",", 
+       FractionBox["\[Pi]", "4"], ",", "1", ",", "1", ",", "1", ",", 
+       "2.4342150697963968606998806402142625134725543636907592890826`30.", 
+       ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{
+         "\[Theta]12$1046", "\[Rule]", 
+          "2.0943951023931954923084289221863352561314462662500705473167`30."}]\
+, ",", 
+         RowBox[{
+         "\[Theta]13$1046", "\[Rule]", 
+          "2.356194490192344928846982537468379289592784785102028514338`30."}]}\
+], "}"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "3"], ",", 
+       FractionBox["\[Pi]", "3"], ",", 
+       FractionBox["\[Pi]", "4"], ",", "1", ",", "1", ",", "3", ",", 
+       "1.125`30.", ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{
+         "\[Theta]12$1046", "\[Rule]", 
+          "1.0471975511965977461542144610931676280657231331250352736582`29.\
+69897000433602"}], ",", 
+         RowBox[{
+         "\[Theta]13$1046", "\[Rule]", 
+          "1.308996938995747182692768076366459535082153916406294092073`29.\
+69897000433602"}]}], "}"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "3"], ",", 
+       FractionBox["\[Pi]", "3"], ",", 
+       FractionBox["\[Pi]", "4"], ",", "1", ",", "1", ",", "5", ",", 
+       "\[Infinity]", ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\[Theta]12$1046", "\[Rule]", "Indeterminate"}], ",", 
+         RowBox[{"\[Theta]13$1046", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
+      "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "3"], ",", 
+       FractionBox["\[Pi]", "3"], ",", 
+       FractionBox["\[Pi]", "4"], ",", "1", ",", "1", ",", "7", ",", 
+       "\[Infinity]", ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\[Theta]12$1046", "\[Rule]", "Indeterminate"}], ",", 
+         RowBox[{"\[Theta]13$1046", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
+      "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "3"], ",", 
+       FractionBox["\[Pi]", "3"], ",", 
+       FractionBox["\[Pi]", "4"], ",", "1", ",", "3", ",", "3", ",", 
+       "\[Infinity]", ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\[Theta]12$1046", "\[Rule]", "Indeterminate"}], ",", 
+         RowBox[{"\[Theta]13$1046", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
+      "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "3"], ",", 
+       FractionBox["\[Pi]", "3"], ",", 
+       FractionBox["\[Pi]", "4"], ",", "1", ",", "3", ",", "5", ",", 
+       "\[Infinity]", ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\[Theta]12$1046", "\[Rule]", "Indeterminate"}], ",", 
+         RowBox[{"\[Theta]13$1046", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
+      "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "3"], ",", 
+       FractionBox["\[Pi]", "3"], ",", 
+       FractionBox["\[Pi]", "4"], ",", "2", ",", "2", ",", "2", ",", 
+       "\[Infinity]", ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\[Theta]12$1046", "\[Rule]", "Indeterminate"}], ",", 
+         RowBox[{"\[Theta]13$1046", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
+      "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "3"], ",", 
+       FractionBox["\[Pi]", "3"], ",", 
+       FractionBox["\[Pi]", "4"], ",", "2", ",", "2", ",", "4", ",", 
+       "\[Infinity]", ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\[Theta]12$1046", "\[Rule]", "Indeterminate"}], ",", 
+         RowBox[{"\[Theta]13$1046", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
+      "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "3"], ",", 
+       FractionBox["\[Pi]", "3"], ",", 
+       FractionBox["\[Pi]", "4"], ",", "3", ",", "3", ",", "3", ",", 
+       "\[Infinity]", ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\[Theta]12$1046", "\[Rule]", "Indeterminate"}], ",", 
+         RowBox[{"\[Theta]13$1046", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
+      "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "3"], ",", 
+       FractionBox["\[Pi]", "4"], ",", 
+       FractionBox["\[Pi]", "2"], ",", "0", ",", "2", ",", "2", ",", 
+       "0.9333263590089610384815009326415514317184378909738372929852`30.", 
+       ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{
+         "\[Theta]12$1046", "\[Rule]", 
+          "1.308996938995747182692768076366459535082153916406294092073`29.\
+69897000433602"}], ",", 
+         RowBox[{
+         "\[Theta]13$1046", "\[Rule]", 
+          "1.4420806332505566840145294064432763619457223507519873992916`30."}]\
+}], "}"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "3"], ",", 
+       FractionBox["\[Pi]", "4"], ",", 
+       FractionBox["\[Pi]", "2"], ",", "0", ",", "2", ",", "6", ",", 
+       "0.0391024753604610028270579226542703147135691756341930300384`30.", 
+       ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{
+         "\[Theta]12$1046", "\[Rule]", 
+          "2.1649150747678346812625914430470941348230674945974239741585`30."}]\
+, ",", 
+         RowBox[{
+         "\[Theta]13$1046", "\[Rule]", 
+          "0.6370451769779302955771471304983436404066482393177297914752`29.\
+507745002151278"}]}], "}"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "3"], ",", 
+       FractionBox["\[Pi]", "4"], ",", 
+       FractionBox["\[Pi]", "2"], ",", "0", ",", "4", ",", "4", ",", 
+       "0.02732872819879272780364383330649852896340290934780618222`30.", ",", 
+       
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{
+         "\[Theta]12$1046", "\[Rule]", 
+          "2.1116430264666883649477466938519782395457013349038270414751`30."}]\
+, ",", 
+         RowBox[{
+         "\[Theta]13$1046", "\[Rule]", 
+          "0.6370451769779302955771471304983436404066482393177297914752`29.\
+69897000433602"}]}], "}"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "3"], ",", 
+       FractionBox["\[Pi]", "4"], ",", 
+       FractionBox["\[Pi]", "2"], ",", "1", ",", "3", ",", "3", ",", 
+       "0.1118258449874546227076424614175284093548811238614794081059`30.", 
+       ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{
+         "\[Theta]12$1046", "\[Rule]", 
+          "2.0158552860534492765168355200254871669069176244361055318928`30."}]\
+, ",", 
+         RowBox[{
+         "\[Theta]13$1046", "\[Rule]", 
+          "0.6370451769779302955771471304983436404066482393177297914752`29.\
+69897000433602"}]}], "}"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "3"], ",", 
+       FractionBox["\[Pi]", "4"], ",", 
+       FractionBox["\[Pi]", "2"], ",", "1", ",", "3", ",", "5", ",", 
+       "\[Infinity]", ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\[Theta]12$1046", "\[Rule]", "Indeterminate"}], ",", 
+         RowBox[{"\[Theta]13$1046", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
+      "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "3"], ",", 
+       FractionBox["\[Pi]", "4"], ",", 
+       FractionBox["\[Pi]", "3"], ",", "0", ",", "2", ",", "2", ",", 
+       "0.0239854518601735796174452398105951106655256818638556297602`30.", 
+       ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{
+         "\[Theta]12$1046", "\[Rule]", 
+          "1.6073749805290067667215321223865876063056467376577103118373`30."}]\
+, ",", 
+         RowBox[{
+         "\[Theta]13$1046", "\[Rule]", 
+          "1.4025645260324632528442978891096451205955074418061042978388`30."}]\
+}], "}"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "3"], ",", 
+       FractionBox["\[Pi]", "4"], ",", 
+       FractionBox["\[Pi]", "3"], ",", "0", ",", "2", ",", "4", ",", 
+       "\[Infinity]", ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\[Theta]12$1046", "\[Rule]", "Indeterminate"}], ",", 
+         RowBox[{"\[Theta]13$1046", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
+      "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "3"], ",", 
+       FractionBox["\[Pi]", "4"], ",", 
+       FractionBox["\[Pi]", "3"], ",", "0", ",", "2", ",", "6", ",", 
+       "\[Infinity]", ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\[Theta]12$1046", "\[Rule]", "Indeterminate"}], ",", 
+         RowBox[{"\[Theta]13$1046", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
+      "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "3"], ",", 
+       FractionBox["\[Pi]", "4"], ",", 
+       FractionBox["\[Pi]", "3"], ",", "0", ",", "4", ",", "4", ",", 
+       "\[Infinity]", ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\[Theta]12$1046", "\[Rule]", "Indeterminate"}], ",", 
+         RowBox[{"\[Theta]13$1046", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
+      "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "3"], ",", 
+       FractionBox["\[Pi]", "4"], ",", 
+       FractionBox["\[Pi]", "3"], ",", "1", ",", "3", ",", "3", ",", 
+       "\[Infinity]", ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\[Theta]12$1046", "\[Rule]", "Indeterminate"}], ",", 
+         RowBox[{"\[Theta]13$1046", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
+      "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "3"], ",", 
+       FractionBox["\[Pi]", "4"], ",", 
+       FractionBox["\[Pi]", "3"], ",", "1", ",", "3", ",", "5", ",", 
+       "\[Infinity]", ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\[Theta]12$1046", "\[Rule]", "Indeterminate"}], ",", 
+         RowBox[{"\[Theta]13$1046", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
+      "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "3"], ",", 
+       FractionBox["\[Pi]", "4"], ",", 
+       FractionBox["\[Pi]", "4"], ",", "0", ",", "2", ",", "2", ",", 
+       "0.1156162208669488501048225903251139773525832831706782710836`30.", 
+       ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{
+         "\[Theta]12$1046", "\[Rule]", 
+          "1.7214570032097144640091678424174227530651882097029274900694`30."}]\
+, ",", 
+         RowBox[{
+         "\[Theta]13$1046", "\[Rule]", 
+          "1.3400598960065209515690689141843301957583754620513093529999`30."}]\
+}], "}"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "3"], ",", 
+       FractionBox["\[Pi]", "4"], ",", 
+       FractionBox["\[Pi]", "4"], ",", "0", ",", "2", ",", "4", ",", 
+       "\[Infinity]", ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\[Theta]12$1046", "\[Rule]", "Indeterminate"}], ",", 
+         RowBox[{"\[Theta]13$1046", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
+      "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "3"], ",", 
+       FractionBox["\[Pi]", "4"], ",", 
+       FractionBox["\[Pi]", "4"], ",", "0", ",", "2", ",", "6", ",", 
+       "\[Infinity]", ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\[Theta]12$1046", "\[Rule]", "Indeterminate"}], ",", 
+         RowBox[{"\[Theta]13$1046", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
+      "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "3"], ",", 
+       FractionBox["\[Pi]", "4"], ",", 
+       FractionBox["\[Pi]", "4"], ",", "0", ",", "4", ",", "4", ",", 
+       "\[Infinity]", ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\[Theta]12$1046", "\[Rule]", "Indeterminate"}], ",", 
+         RowBox[{"\[Theta]13$1046", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
+      "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "3"], ",", 
+       FractionBox["\[Pi]", "4"], ",", 
+       FractionBox["\[Pi]", "4"], ",", "1", ",", "1", ",", "1", ",", 
+       "1.225080114080190856800734160209047220057046320372421218609`30.", ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{
+         "\[Theta]12$1046", "\[Rule]", 
+          "1.984157927791509692332789465276410342952588776802485143401`30."}],
+          ",", 
+         RowBox[{
+         "\[Theta]13$1046", "\[Rule]", 
+          "1.8325957145940460557698753069130433491150154829688117289019`29.\
+69897000433602"}]}], "}"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "3"], ",", 
+       FractionBox["\[Pi]", "4"], ",", 
+       FractionBox["\[Pi]", "4"], ",", "1", ",", "1", ",", "3", ",", 
+       "\[Infinity]", ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\[Theta]12$1046", "\[Rule]", "Indeterminate"}], ",", 
+         RowBox[{"\[Theta]13$1046", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
+      "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "3"], ",", 
+       FractionBox["\[Pi]", "4"], ",", 
+       FractionBox["\[Pi]", "4"], ",", "1", ",", "1", ",", "5", ",", 
+       "\[Infinity]", ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\[Theta]12$1046", "\[Rule]", "Indeterminate"}], ",", 
+         RowBox[{"\[Theta]13$1046", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
+      "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "3"], ",", 
+       FractionBox["\[Pi]", "4"], ",", 
+       FractionBox["\[Pi]", "4"], ",", "1", ",", "1", ",", "7", ",", 
+       "\[Infinity]", ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\[Theta]12$1046", "\[Rule]", "Indeterminate"}], ",", 
+         RowBox[{"\[Theta]13$1046", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
+      "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "3"], ",", 
+       FractionBox["\[Pi]", "4"], ",", 
+       FractionBox["\[Pi]", "4"], ",", "1", ",", "3", ",", "3", ",", 
+       "\[Infinity]", ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\[Theta]12$1046", "\[Rule]", "Indeterminate"}], ",", 
+         RowBox[{"\[Theta]13$1046", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
+      "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "3"], ",", 
+       FractionBox["\[Pi]", "4"], ",", 
+       FractionBox["\[Pi]", "4"], ",", "1", ",", "3", ",", "5", ",", 
+       "\[Infinity]", ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\[Theta]12$1046", "\[Rule]", "Indeterminate"}], ",", 
+         RowBox[{"\[Theta]13$1046", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
+      "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "3"], ",", 
+       FractionBox["\[Pi]", "4"], ",", 
+       FractionBox["\[Pi]", "4"], ",", "2", ",", "2", ",", "2", ",", 
+       "\[Infinity]", ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\[Theta]12$1046", "\[Rule]", "Indeterminate"}], ",", 
+         RowBox[{"\[Theta]13$1046", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
+      "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "3"], ",", 
+       FractionBox["\[Pi]", "4"], ",", 
+       FractionBox["\[Pi]", "4"], ",", "2", ",", "2", ",", "4", ",", 
+       "\[Infinity]", ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\[Theta]12$1046", "\[Rule]", "Indeterminate"}], ",", 
+         RowBox[{"\[Theta]13$1046", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
+      "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "3"], ",", 
+       FractionBox["\[Pi]", "4"], ",", 
+       FractionBox["\[Pi]", "4"], ",", "3", ",", "3", ",", "3", ",", 
+       "\[Infinity]", ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\[Theta]12$1046", "\[Rule]", "Indeterminate"}], ",", 
+         RowBox[{"\[Theta]13$1046", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
+      "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "4"], ",", 
+       FractionBox["\[Pi]", "2"], ",", 
+       FractionBox["\[Pi]", "2"], ",", "0", ",", "2", ",", "4", ",", 
+       "0.0391020424791131809852210909260626093805949825481948995424`30.", 
+       ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{
+         "\[Theta]12$1046", "\[Rule]", 
+          "0.8475250150254760710737812425542443071675050177449404394279`30."}]\
+, ",", 
+         RowBox[{
+         "\[Theta]13$1046", "\[Rule]", 
+          "1.8675022996339326473083491222828156033838729207396462380246`29.\
+69897000433602"}]}], "}"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "4"], ",", 
+       FractionBox["\[Pi]", "2"], ",", 
+       FractionBox["\[Pi]", "2"], ",", "0", ",", "2", ",", "6", ",", 
+       "0.020660114141812851604182548360331606081071531332457526012`30.", ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{
+         "\[Theta]12$1046", "\[Rule]", 
+          "1.5323039041173287453865406846485983205675394550213855140352`30."}]\
+, ",", 
+         RowBox[{
+         "\[Theta]13$1046", "\[Rule]", 
+          "1.2304571226560023517312019917844719629772246814219164465497`29.\
+507745002151278"}]}], "}"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "4"], ",", 
+       FractionBox["\[Pi]", "2"], ",", 
+       FractionBox["\[Pi]", "2"], ",", "1", ",", "1", ",", "3", ",", 
+       "0.238848703705395772077771360664010744494244864856154824876`30.", ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{
+         "\[Theta]12$1046", "\[Rule]", 
+          "1.0737927470191668782285614488776809537736275364449898610502`30."}]\
+, ",", 
+         RowBox[{
+         "\[Theta]13$1046", "\[Rule]", 
+          "1.0737927470191668782285614488770688318122471717052748215221`30."}]\
+}], "}"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "4"], ",", 
+       FractionBox["\[Pi]", "2"], ",", 
+       FractionBox["\[Pi]", "2"], ",", "1", ",", "1", ",", "5", ",", 
+       "0.026794541100752479634983901135189368555706869168879121504`30.", ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{
+         "\[Theta]12$1046", "\[Rule]", 
+          "1.3720496387054462932590946879945104719507490251457406867152`30."}]\
+, ",", 
+         RowBox[{
+         "\[Theta]13$1046", "\[Rule]", 
+          "1.3720496387054447377175309430946413665841833133080724459692`30."}]\
+}], "}"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "4"], ",", 
+       FractionBox["\[Pi]", "2"], ",", 
+       FractionBox["\[Pi]", "2"], ",", "1", ",", "1", ",", "7", ",", 
+       "\[Infinity]", ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\[Theta]12$1046", "\[Rule]", "Indeterminate"}], ",", 
+         RowBox[{"\[Theta]13$1046", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
+      "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "4"], ",", 
+       FractionBox["\[Pi]", "2"], ",", 
+       FractionBox["\[Pi]", "2"], ",", "1", ",", "3", ",", "5", ",", 
+       "\[Infinity]", ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\[Theta]12$1046", "\[Rule]", "Indeterminate"}], ",", 
+         RowBox[{"\[Theta]13$1046", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
+      "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "4"], ",", 
+       FractionBox["\[Pi]", "2"], ",", 
+       FractionBox["\[Pi]", "2"], ",", "2", ",", "2", ",", "4", ",", 
+       "\[Infinity]", ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\[Theta]12$1046", "\[Rule]", "Indeterminate"}], ",", 
+         RowBox[{"\[Theta]13$1046", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
+      "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "4"], ",", 
+       FractionBox["\[Pi]", "2"], ",", 
+       FractionBox["\[Pi]", "3"], ",", "0", ",", "2", ",", "4", ",", 
+       "0.0070691494710205615766714821479889490065796171944331906108`30.", 
+       ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{
+         "\[Theta]12$1046", "\[Rule]", 
+          "1.3223727042297598240682720165702968046553133229550089953182`30."}]\
+, ",", 
+         RowBox[{
+         "\[Theta]13$1046", "\[Rule]", 
+          "1.8675022996339326473083491222820429185442778443332846541054`30."}]\
+}], "}"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "4"], ",", 
+       FractionBox["\[Pi]", "2"], ",", 
+       FractionBox["\[Pi]", "3"], ",", "0", ",", "2", ",", "6", ",", 
+       "\[Infinity]", ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\[Theta]12$1046", "\[Rule]", "Indeterminate"}], ",", 
+         RowBox[{"\[Theta]13$1046", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
+      "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "4"], ",", 
+       FractionBox["\[Pi]", "2"], ",", 
+       FractionBox["\[Pi]", "3"], ",", "1", ",", "1", ",", "3", ",", 
+       "0.0556446034213801832962319250624406779465922244023565648953`30.", 
+       ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{
+         "\[Theta]12$1046", "\[Rule]", 
+          "1.0193694526704770042085327157459623893828815213433081458094`30."}]\
+, ",", 
+         RowBox[{
+         "\[Theta]13$1046", "\[Rule]", 
+          "1.8823286918794143366607222172811987308846043879376914118992`30."}]\
+}], "}"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "4"], ",", 
+       FractionBox["\[Pi]", "2"], ",", 
+       FractionBox["\[Pi]", "3"], ",", "1", ",", "1", ",", "5", ",", 
+       "0.0096554827075250704110100475704869529406358322136825212923`30.", 
+       ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{
+         "\[Theta]12$1046", "\[Rule]", 
+          "1.1313590305901691371642852118143009486913164950407375387812`30."}]\
+, ",", 
+         RowBox[{
+         "\[Theta]13$1046", "\[Rule]", 
+          "1.9666003916997657644391477107092845036442881934786166761801`30."}]\
+}], "}"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "4"], ",", 
+       FractionBox["\[Pi]", "2"], ",", 
+       FractionBox["\[Pi]", "3"], ",", "1", ",", "1", ",", "7", ",", 
+       "\[Infinity]", ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\[Theta]12$1046", "\[Rule]", "Indeterminate"}], ",", 
+         RowBox[{"\[Theta]13$1046", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
+      "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "4"], ",", 
+       FractionBox["\[Pi]", "2"], ",", 
+       FractionBox["\[Pi]", "3"], ",", "1", ",", "3", ",", "5", ",", 
+       "\[Infinity]", ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\[Theta]12$1046", "\[Rule]", "Indeterminate"}], ",", 
+         RowBox[{"\[Theta]13$1046", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
+      "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "4"], ",", 
+       FractionBox["\[Pi]", "2"], ",", 
+       FractionBox["\[Pi]", "3"], ",", "2", ",", "2", ",", "4", ",", 
+       "\[Infinity]", ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\[Theta]12$1046", "\[Rule]", "Indeterminate"}], ",", 
+         RowBox[{"\[Theta]13$1046", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
+      "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "4"], ",", 
+       FractionBox["\[Pi]", "2"], ",", 
+       FractionBox["\[Pi]", "4"], ",", "0", ",", "2", ",", "4", ",", 
+       "0.4196179095794427157422438671709873523482667665831375279787`30.", 
+       ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{
+         "\[Theta]12$1046", "\[Rule]", 
+          "1.5382856459580022700991057299307118493186171219416196254079`30."}]\
+, ",", 
+         RowBox[{
+         "\[Theta]13$1046", "\[Rule]", 
+          "1.5707963267948966192313216916397514420985846996875529104876`30."}]\
+}], "}"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "4"], ",", 
+       FractionBox["\[Pi]", "2"], ",", 
+       FractionBox["\[Pi]", "4"], ",", "0", ",", "2", ",", "6", ",", 
+       "\[Infinity]", ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\[Theta]12$1046", "\[Rule]", "Indeterminate"}], ",", 
+         RowBox[{"\[Theta]13$1046", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
+      "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "4"], ",", 
+       FractionBox["\[Pi]", "2"], ",", 
+       FractionBox["\[Pi]", "4"], ",", "1", ",", "1", ",", "5", ",", 
+       "0.9999999999999966803441733689470083531302220974615755136475`30.", 
+       ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{
+         "\[Theta]12$1046", "\[Rule]", 
+          "0.7853981633974483096156608458198757210492923498437764552437`29.\
+69897000433602"}], ",", 
+         RowBox[{
+         "\[Theta]13$1046", "\[Rule]", 
+          "1.5707963267948984634845587088913945721928932678202395426942`30."}]\
+}], "}"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "4"], ",", 
+       FractionBox["\[Pi]", "2"], ",", 
+       FractionBox["\[Pi]", "4"], ",", "1", ",", "1", ",", "7", ",", 
+       "\[Infinity]", ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\[Theta]12$1046", "\[Rule]", "Indeterminate"}], ",", 
+         RowBox[{"\[Theta]13$1046", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
+      "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "4"], ",", 
+       FractionBox["\[Pi]", "2"], ",", 
+       FractionBox["\[Pi]", "4"], ",", "1", ",", "3", ",", "5", ",", 
+       "\[Infinity]", ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\[Theta]12$1046", "\[Rule]", "Indeterminate"}], ",", 
+         RowBox[{"\[Theta]13$1046", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
+      "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "4"], ",", 
+       FractionBox["\[Pi]", "2"], ",", 
+       FractionBox["\[Pi]", "4"], ",", "2", ",", "2", ",", "4", ",", 
+       "\[Infinity]", ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\[Theta]12$1046", "\[Rule]", "Indeterminate"}], ",", 
+         RowBox[{"\[Theta]13$1046", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
+      "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "4"], ",", 
+       FractionBox["\[Pi]", "3"], ",", 
+       FractionBox["\[Pi]", "2"], ",", "0", ",", "2", ",", "4", ",", 
+       "0.0257925559259426050192565679476146774367789880470946236877`30.", 
+       ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{
+         "\[Theta]12$1046", "\[Rule]", 
+          "1.835029030632487056279064356507689167114023314722042809477`30."}],
+          ",", 
+         RowBox[{
+         "\[Theta]13$1046", "\[Rule]", 
+          "1.174403037837619677769861127962163612558999724833724007772`30."}]}\
+], "}"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "4"], ",", 
+       FractionBox["\[Pi]", "3"], ",", 
+       FractionBox["\[Pi]", "2"], ",", "0", ",", "2", ",", "6", ",", 
+       "0.0015688252148084405336325803547486568370614785702919465796`30.", 
+       ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{
+         "\[Theta]12$1046", "\[Rule]", 
+          "1.9565533953254709052675557894750717056314938188041034295243`30."}]\
+, ",", 
+         RowBox[{
+         "\[Theta]13$1046", "\[Rule]", 
+          "1.2304571226560018535858411751967148122389763198893195229324`30."}]\
+}], "}"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "4"], ",", 
+       FractionBox["\[Pi]", "3"], ",", 
+       FractionBox["\[Pi]", "2"], ",", "1", ",", "3", ",", "5", ",", 
+       "\[Infinity]", ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\[Theta]12$1046", "\[Rule]", "Indeterminate"}], ",", 
+         RowBox[{"\[Theta]13$1046", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
+      "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "4"], ",", 
+       FractionBox["\[Pi]", "3"], ",", 
+       FractionBox["\[Pi]", "3"], ",", "0", ",", "2", ",", "4", ",", 
+       "\[Infinity]", ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\[Theta]12$1046", "\[Rule]", "Indeterminate"}], ",", 
+         RowBox[{"\[Theta]13$1046", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
+      "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "4"], ",", 
+       FractionBox["\[Pi]", "3"], ",", 
+       FractionBox["\[Pi]", "3"], ",", "0", ",", "2", ",", "6", ",", 
+       "\[Infinity]", ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\[Theta]12$1046", "\[Rule]", "Indeterminate"}], ",", 
+         RowBox[{"\[Theta]13$1046", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
+      "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "4"], ",", 
+       FractionBox["\[Pi]", "3"], ",", 
+       FractionBox["\[Pi]", "3"], ",", "1", ",", "1", ",", "3", ",", 
+       "0.2626275643042052996688538458359326701357598167572478751217`30.", 
+       ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{
+         "\[Theta]12$1046", "\[Rule]", 
+          "1.5707963267948967347847749139909236667318238352369734788596`30."}]\
+, ",", 
+         RowBox[{
+         "\[Theta]13$1046", "\[Rule]", 
+          "1.5707963267948967376009813101581357661764417133210559074066`30."}]\
+}], "}"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "4"], ",", 
+       FractionBox["\[Pi]", "3"], ",", 
+       FractionBox["\[Pi]", "3"], ",", "1", ",", "1", ",", "5", ",", 
+       "\[Infinity]", ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\[Theta]12$1046", "\[Rule]", "Indeterminate"}], ",", 
+         RowBox[{"\[Theta]13$1046", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
+      "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "4"], ",", 
+       FractionBox["\[Pi]", "3"], ",", 
+       FractionBox["\[Pi]", "3"], ",", "1", ",", "1", ",", "7", ",", 
+       "\[Infinity]", ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\[Theta]12$1046", "\[Rule]", "Indeterminate"}], ",", 
+         RowBox[{"\[Theta]13$1046", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
+      "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "4"], ",", 
+       FractionBox["\[Pi]", "3"], ",", 
+       FractionBox["\[Pi]", "3"], ",", "1", ",", "3", ",", "5", ",", 
+       "\[Infinity]", ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\[Theta]12$1046", "\[Rule]", "Indeterminate"}], ",", 
+         RowBox[{"\[Theta]13$1046", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
+      "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "4"], ",", 
+       FractionBox["\[Pi]", "3"], ",", 
+       FractionBox["\[Pi]", "3"], ",", "2", ",", "2", ",", "4", ",", 
+       "\[Infinity]", ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\[Theta]12$1046", "\[Rule]", "Indeterminate"}], ",", 
+         RowBox[{"\[Theta]13$1046", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
+      "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "4"], ",", 
+       FractionBox["\[Pi]", "3"], ",", 
+       FractionBox["\[Pi]", "4"], ",", "0", ",", "2", ",", "4", ",", 
+       "\[Infinity]", ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\[Theta]12$1046", "\[Rule]", "Indeterminate"}], ",", 
+         RowBox[{"\[Theta]13$1046", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
+      "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "4"], ",", 
+       FractionBox["\[Pi]", "3"], ",", 
+       FractionBox["\[Pi]", "4"], ",", "0", ",", "2", ",", "6", ",", 
+       "\[Infinity]", ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\[Theta]12$1046", "\[Rule]", "Indeterminate"}], ",", 
+         RowBox[{"\[Theta]13$1046", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
+      "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "4"], ",", 
+       FractionBox["\[Pi]", "3"], ",", 
+       FractionBox["\[Pi]", "4"], ",", "1", ",", "1", ",", "3", ",", 
+       "\[Infinity]", ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\[Theta]12$1046", "\[Rule]", "Indeterminate"}], ",", 
+         RowBox[{"\[Theta]13$1046", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
+      "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "4"], ",", 
+       FractionBox["\[Pi]", "3"], ",", 
+       FractionBox["\[Pi]", "4"], ",", "1", ",", "1", ",", "5", ",", 
+       "\[Infinity]", ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\[Theta]12$1046", "\[Rule]", "Indeterminate"}], ",", 
+         RowBox[{"\[Theta]13$1046", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
+      "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "4"], ",", 
+       FractionBox["\[Pi]", "3"], ",", 
+       FractionBox["\[Pi]", "4"], ",", "1", ",", "1", ",", "7", ",", 
+       "\[Infinity]", ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\[Theta]12$1046", "\[Rule]", "Indeterminate"}], ",", 
+         RowBox[{"\[Theta]13$1046", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
+      "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "4"], ",", 
+       FractionBox["\[Pi]", "3"], ",", 
+       FractionBox["\[Pi]", "4"], ",", "1", ",", "3", ",", "5", ",", 
+       "\[Infinity]", ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\[Theta]12$1046", "\[Rule]", "Indeterminate"}], ",", 
+         RowBox[{"\[Theta]13$1046", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
+      "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "4"], ",", 
+       FractionBox["\[Pi]", "3"], ",", 
+       FractionBox["\[Pi]", "4"], ",", "2", ",", "2", ",", "4", ",", 
+       "\[Infinity]", ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\[Theta]12$1046", "\[Rule]", "Indeterminate"}], ",", 
+         RowBox[{"\[Theta]13$1046", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
+      "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "4"], ",", 
+       FractionBox["\[Pi]", "4"], ",", 
+       FractionBox["\[Pi]", "2"], ",", "0", ",", "2", ",", "2", ",", 
+       "1.0000000000000000000000000000000113229862154681318280758934`30.", 
+       ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{
+         "\[Theta]12$1046", "\[Rule]", 
+          "1.5707963267948967256408529660187750609505226316997885207917`30."}]\
+, ",", 
+         RowBox[{
+         "\[Theta]13$1046", "\[Rule]", 
+          "1.5707963267948966192313216916397596472524523679362750948517`30."}]\
+}], "}"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "4"], ",", 
+       FractionBox["\[Pi]", "4"], ",", 
+       FractionBox["\[Pi]", "2"], ",", "0", ",", "2", ",", "6", ",", 
+       "0.0697166932857306115206171103441847060317819401557914052076`30.", 
+       ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{
+         "\[Theta]12$1046", "\[Rule]", 
+          "2.2779766489529588977966588919552928199050480172688582871099`30."}]\
+, ",", 
+         RowBox[{
+         "\[Theta]13$1046", "\[Rule]", 
+          "0.7853981633974483096156608458198757210492923498437764552436`30."}]\
+}], "}"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "4"], ",", 
+       FractionBox["\[Pi]", "4"], ",", 
+       FractionBox["\[Pi]", "2"], ",", "0", ",", "4", ",", "4", ",", 
+       "0.0697166932857306115206171103441847060317819401557914052076`30.", 
+       ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{
+         "\[Theta]12$1046", "\[Rule]", 
+          "2.2779766489529588977966588919554376404523385493950529685816`30."}]\
+, ",", 
+         RowBox[{
+         "\[Theta]13$1046", "\[Rule]", 
+          "0.7853981633974483096156608458198757210492923498437764552437`30."}]\
+}], "}"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "4"], ",", 
+       FractionBox["\[Pi]", "4"], ",", 
+       FractionBox["\[Pi]", "2"], ",", "1", ",", "3", ",", "3", ",", "1.`30.",
+        ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{
+         "\[Theta]12$1046", "\[Rule]", 
+          "1.5707963267948966192313216916397514420985846996875529104875`29.\
+69897000433602"}], ",", 
+         RowBox[{
+         "\[Theta]13$1046", "\[Rule]", 
+          "0.7853981633974483096156608458198757210492923498437764552437`29.\
+69897000433602"}]}], "}"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "4"], ",", 
+       FractionBox["\[Pi]", "4"], ",", 
+       FractionBox["\[Pi]", "2"], ",", "1", ",", "3", ",", "5", ",", 
+       "\[Infinity]", ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\[Theta]12$1046", "\[Rule]", "Indeterminate"}], ",", 
+         RowBox[{"\[Theta]13$1046", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
+      "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "4"], ",", 
+       FractionBox["\[Pi]", "4"], ",", 
+       FractionBox["\[Pi]", "3"], ",", "0", ",", "2", ",", "4", ",", 
+       "\[Infinity]", ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\[Theta]12$1046", "\[Rule]", "Indeterminate"}], ",", 
+         RowBox[{"\[Theta]13$1046", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
+      "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "4"], ",", 
+       FractionBox["\[Pi]", "4"], ",", 
+       FractionBox["\[Pi]", "3"], ",", "0", ",", "2", ",", "6", ",", 
+       "\[Infinity]", ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\[Theta]12$1046", "\[Rule]", "Indeterminate"}], ",", 
+         RowBox[{"\[Theta]13$1046", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
+      "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "4"], ",", 
+       FractionBox["\[Pi]", "4"], ",", 
+       FractionBox["\[Pi]", "3"], ",", "0", ",", "4", ",", "4", ",", 
+       "\[Infinity]", ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\[Theta]12$1046", "\[Rule]", "Indeterminate"}], ",", 
+         RowBox[{"\[Theta]13$1046", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
+      "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "4"], ",", 
+       FractionBox["\[Pi]", "4"], ",", 
+       FractionBox["\[Pi]", "3"], ",", "1", ",", "3", ",", "3", ",", 
+       "\[Infinity]", ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\[Theta]12$1046", "\[Rule]", "Indeterminate"}], ",", 
+         RowBox[{"\[Theta]13$1046", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
+      "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "4"], ",", 
+       FractionBox["\[Pi]", "4"], ",", 
+       FractionBox["\[Pi]", "3"], ",", "1", ",", "3", ",", "5", ",", 
+       "\[Infinity]", ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\[Theta]12$1046", "\[Rule]", "Indeterminate"}], ",", 
+         RowBox[{"\[Theta]13$1046", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
+      "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "4"], ",", 
+       FractionBox["\[Pi]", "4"], ",", 
+       FractionBox["\[Pi]", "4"], ",", "0", ",", "2", ",", "2", ",", 
+       "0.3001024829168601928455271470271762205978865753105695563558`30.", 
+       ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{
+         "\[Theta]12$1046", "\[Rule]", 
+          "1.9901418748755088430696108978627315605146441249902969320426`30."}]\
+, ",", 
+         RowBox[{
+         "\[Theta]13$1046", "\[Rule]", 
+          "1.5707963267948966192313216916397514420985846996875529104875`30."}]\
+}], "}"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "4"], ",", 
+       FractionBox["\[Pi]", "4"], ",", 
+       FractionBox["\[Pi]", "4"], ",", "0", ",", "2", ",", "4", ",", 
+       "\[Infinity]", ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\[Theta]12$1046", "\[Rule]", "Indeterminate"}], ",", 
+         RowBox[{"\[Theta]13$1046", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
+      "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "4"], ",", 
+       FractionBox["\[Pi]", "4"], ",", 
+       FractionBox["\[Pi]", "4"], ",", "0", ",", "2", ",", "6", ",", 
+       "\[Infinity]", ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\[Theta]12$1046", "\[Rule]", "Indeterminate"}], ",", 
+         RowBox[{"\[Theta]13$1046", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
+      "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "4"], ",", 
+       FractionBox["\[Pi]", "4"], ",", 
+       FractionBox["\[Pi]", "4"], ",", "0", ",", "4", ",", "4", ",", 
+       "\[Infinity]", ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\[Theta]12$1046", "\[Rule]", "Indeterminate"}], ",", 
+         RowBox[{"\[Theta]13$1046", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
+      "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "4"], ",", 
+       FractionBox["\[Pi]", "4"], ",", 
+       FractionBox["\[Pi]", "4"], ",", "1", ",", "1", ",", "1", ",", 
+       "0.5625000000000000000000000000011538867398651545721820386835`30.", 
+       ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{
+         "\[Theta]12$1046", "\[Rule]", 
+          "2.0943951023931954923084289221862699381654822760667410746621`30."}]\
+, ",", 
+         RowBox[{
+         "\[Theta]13$1046", "\[Rule]", 
+          "2.0943951023931954923084289221849865329956239999956723073534`30."}]\
+}], "}"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "4"], ",", 
+       FractionBox["\[Pi]", "4"], ",", 
+       FractionBox["\[Pi]", "4"], ",", "1", ",", "1", ",", "3", ",", 
+       "\[Infinity]", ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\[Theta]12$1046", "\[Rule]", "Indeterminate"}], ",", 
+         RowBox[{"\[Theta]13$1046", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
+      "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "4"], ",", 
+       FractionBox["\[Pi]", "4"], ",", 
+       FractionBox["\[Pi]", "4"], ",", "1", ",", "1", ",", "5", ",", 
+       "\[Infinity]", ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\[Theta]12$1046", "\[Rule]", "Indeterminate"}], ",", 
+         RowBox[{"\[Theta]13$1046", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
+      "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "4"], ",", 
+       FractionBox["\[Pi]", "4"], ",", 
+       FractionBox["\[Pi]", "4"], ",", "1", ",", "1", ",", "7", ",", 
+       "\[Infinity]", ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\[Theta]12$1046", "\[Rule]", "Indeterminate"}], ",", 
+         RowBox[{"\[Theta]13$1046", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
+      "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "4"], ",", 
+       FractionBox["\[Pi]", "4"], ",", 
+       FractionBox["\[Pi]", "4"], ",", "1", ",", "3", ",", "3", ",", 
+       "\[Infinity]", ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\[Theta]12$1046", "\[Rule]", "Indeterminate"}], ",", 
+         RowBox[{"\[Theta]13$1046", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
+      "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "4"], ",", 
+       FractionBox["\[Pi]", "4"], ",", 
+       FractionBox["\[Pi]", "4"], ",", "1", ",", "3", ",", "5", ",", 
+       "\[Infinity]", ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\[Theta]12$1046", "\[Rule]", "Indeterminate"}], ",", 
+         RowBox[{"\[Theta]13$1046", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
+      "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "4"], ",", 
+       FractionBox["\[Pi]", "4"], ",", 
+       FractionBox["\[Pi]", "4"], ",", "2", ",", "2", ",", "2", ",", 
+       "\[Infinity]", ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\[Theta]12$1046", "\[Rule]", "Indeterminate"}], ",", 
+         RowBox[{"\[Theta]13$1046", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
+      "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "4"], ",", 
+       FractionBox["\[Pi]", "4"], ",", 
+       FractionBox["\[Pi]", "4"], ",", "2", ",", "2", ",", "4", ",", 
+       "\[Infinity]", ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\[Theta]12$1046", "\[Rule]", "Indeterminate"}], ",", 
+         RowBox[{"\[Theta]13$1046", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
+      "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "4"], ",", 
+       FractionBox["\[Pi]", "4"], ",", 
+       FractionBox["\[Pi]", "4"], ",", "3", ",", "3", ",", "3", ",", 
+       "\[Infinity]", ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\[Theta]12$1046", "\[Rule]", "Indeterminate"}], ",", 
+         RowBox[{"\[Theta]13$1046", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
+      "}"}]}], "}"}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.7087318134103107`*^9, 3.70873181434171*^9}, {
+  3.708732368581339*^9, 3.708732399638088*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"cases", "=", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "2"], ",", 
+       FractionBox["\[Pi]", "3"], ",", 
+       FractionBox["\[Pi]", "4"], ",", "0", ",", "2", ",", "2", ",", 
+       "5.5262765651065032135730675804121256557377897589`30.*^-31", ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{
+         "\[Theta]12$1046", "\[Rule]", 
+          "0.7227342478134147659488532303923462320656810550670412225853`30."}]\
+, ",", 
+         RowBox[{
+         "\[Theta]13$1046", "\[Rule]", 
+          "1.2094292028881882867480107305445397257218644656141280424566`30."}]\
+}], "}"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "2"], ",", 
+       FractionBox["\[Pi]", "4"], ",", 
+       FractionBox["\[Pi]", "4"], ",", "0", ",", "2", ",", "2", ",", 
+       "6.9528917326497881862485371222832842490161928129`30.*^-31", ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{
+         "\[Theta]12$1046", "\[Rule]", 
+          "1.0471975511965971654821740776051815572540560188807429474845`30."}]\
+, ",", 
+         RowBox[{
+         "\[Theta]13$1046", "\[Rule]", 
+          "1.0471975511965972031830736231296165304116148799137280473668`30."}]\
+}], "}"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "3"], ",", 
+       FractionBox["\[Pi]", "2"], ",", 
+       FractionBox["\[Pi]", "4"], ",", "1", ",", "1", ",", "3", ",", 
+       "7.125505409066963904498536413064501957779945`30.*^-35", ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{
+         "\[Theta]12$1046", "\[Rule]", 
+          "0.7227342478134156271911102006826975287522424819683423135476`30."}]\
+, ",", 
+         RowBox[{
+         "\[Theta]13$1046", "\[Rule]", 
+          "1.9321634507016044178867193008575243937915530487722885437652`30."}]\
+}], "}"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "3"], ",", 
+       FractionBox["\[Pi]", "4"], ",", 
+       FractionBox["\[Pi]", "2"], ",", "0", ",", "2", ",", "4", ",", "0", ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{
+         "\[Theta]12$1046", "\[Rule]", 
+          "1.9321634507016044248205103679600723294752922920729090562261`30."}]\
+, ",", 
+         RowBox[{
+         "\[Theta]13$1046", "\[Rule]", 
+          "0.7227342478134156111783773526453641934554083172786418201985`30."}]\
+}], "}"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "4"], ",", 
+       FractionBox["\[Pi]", "2"], ",", 
+       FractionBox["\[Pi]", "4"], ",", "1", ",", "1", ",", "3", ",", 
+       "1.1583292752748083642487484250033468190667877`30.*^-34", ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{
+         "\[Theta]12$1046", "\[Rule]", 
+          "1.0471975511965977598970083831878151520326247365981501180936`30."}]\
+, ",", 
+         RowBox[{
+         "\[Theta]13$1046", "\[Rule]", 
+          "2.0943951023931954856368564451116022536897583566408280177566`30."}]\
+}], "}"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "4"], ",", 
+       FractionBox["\[Pi]", "4"], ",", 
+       FractionBox["\[Pi]", "2"], ",", "0", ",", "2", ",", "4", ",", 
+       "2.0199399120130979762970266734980898318893950339`30.*^-30", ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{
+         "\[Theta]12$1046", "\[Rule]", 
+          "2.0943951023931944781549280702355787857405075644442173905206`30."}]\
+, ",", 
+         RowBox[{
+         "\[Theta]13$1046", "\[Rule]", 
+          "1.0471975511965987324475290597974808814149219693214446418091`30."}]\
+}], "}"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[Pi]", "4"], ",", 
+       FractionBox["\[Pi]", "4"], ",", 
+       FractionBox["\[Pi]", "3"], ",", "0", ",", "2", ",", "2", ",", 
+       "2.58079081160749143084875835012260954530300011474`30.*^-30", ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{
+         "\[Theta]12$1046", "\[Rule]", 
+          "1.9106332362490177307835598840511130380611812609048266786463`30."}]\
+, ",", 
+         RowBox[{
+         "\[Theta]13$1046", "\[Rule]", 
+          
+          "1.5707963267948958674452513138378415981049332794212077422527`30."}]\
+}], "}"}]}], "}"}]}], "}"}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.708732418725274*^9, 3.708732440306932*^9}, {
+   3.708732676656542*^9, 3.708732687485952*^9}, 3.708734686290133*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+  "generatemsg", "=", 
+   "\"\<Examined 224 cases.\\nSmallest nonzero minimum is \
+0.00156882521480844053363258035475.\\n7 cases remain.\>\""}], ";"}]], "Input"]
+},
+WindowSize->{808, 651},
+WindowMargins->{{Automatic, 106}, {Automatic, 0}},
+FrontEndVersion->"11.0 for Mac OS X x86 (32-bit, 64-bit Kernel) (July 28, \
+2016)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 106928, 2841, 12409, "Input"],
+Cell[107489, 2863, 4421, 118, 603, "Input"],
+Cell[111913, 2983, 196, 5, 75, "Input"]
+}
+]
+*)
+
