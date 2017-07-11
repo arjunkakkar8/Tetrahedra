@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     45416,       1096]
-NotebookOptionsPosition[     44749,       1072]
-NotebookOutlinePosition[     45103,       1088]
-CellTagsIndexPosition[     45060,       1085]
+NotebookDataLength[     43921,       1052]
+NotebookOptionsPosition[     43295,       1029]
+NotebookOutlinePosition[     43650,       1045]
+CellTagsIndexPosition[     43607,       1042]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -102,6 +102,7 @@ Cell[BoxData[
          RowBox[{"mat", "[", 
           RowBox[{"[", 
            RowBox[{"All", ",", "1"}], "]"}], "]"}], ",", 
+         "\[IndentingNewLine]", 
          RowBox[{
           RowBox[{
            RowBox[{"Sin", "[", "\[Theta]12", "]"}], 
@@ -120,7 +121,8 @@ Cell[BoxData[
              RowBox[{"All", ",", "4"}], "]"}], "]"}]}]}]}], "}"}], 
        "\[IndentingNewLine]", "]"}]}], ";", "\[IndentingNewLine]", 
      RowBox[{"Return", "[", "newmat", "]"}], ";"}]}], "\[IndentingNewLine]", 
-   "]"}]}]], "Input"],
+   "]"}]}]], "Input",
+ CellChangeTimes->{3.70877669261138*^9}],
 
 Cell[BoxData[
  RowBox[{"GenerateCases", ":=", "\[IndentingNewLine]", 
@@ -654,51 +656,6 @@ Cell[BoxData[
   3.708734403270629*^9, 3.708734409325985*^9}}],
 
 Cell[BoxData[
- RowBox[{"Solutions", "=", 
-  RowBox[{"{", 
-   RowBox[{
-    RowBox[{"{", 
-     RowBox[{
-      FractionBox["\[Pi]", "2"], ",", 
-      FractionBox["\[Pi]", "3"], ",", 
-      FractionBox["\[Pi]", "4"], ",", "0", ",", "2", ",", "2"}], "}"}], ",", 
-    RowBox[{"{", 
-     RowBox[{
-      FractionBox["\[Pi]", "2"], ",", 
-      FractionBox["\[Pi]", "4"], ",", 
-      FractionBox["\[Pi]", "4"], ",", "0", ",", "2", ",", "2"}], "}"}], ",", 
-    RowBox[{"{", 
-     RowBox[{
-      FractionBox["\[Pi]", "3"], ",", 
-      FractionBox["\[Pi]", "2"], ",", 
-      FractionBox["\[Pi]", "4"], ",", "1", ",", "1", ",", "3"}], "}"}], ",", 
-    RowBox[{"{", 
-     RowBox[{
-      FractionBox["\[Pi]", "3"], ",", 
-      FractionBox["\[Pi]", "4"], ",", 
-      FractionBox["\[Pi]", "2"], ",", "0", ",", "2", ",", "4"}], "}"}], ",", 
-    RowBox[{"{", 
-     RowBox[{
-      FractionBox["\[Pi]", "4"], ",", 
-      FractionBox["\[Pi]", "4"], ",", 
-      FractionBox["\[Pi]", "2"], ",", "0", ",", "2", ",", "4"}], "}"}], ",", 
-    RowBox[{"{", 
-     RowBox[{
-      FractionBox["\[Pi]", "4"], ",", 
-      FractionBox["\[Pi]", "4"], ",", 
-      FractionBox["\[Pi]", "2"], ",", "1", ",", "1", ",", "3"}], "}"}], ",", 
-    RowBox[{"{", 
-     RowBox[{
-      FractionBox["\[Pi]", "4"], ",", 
-      FractionBox["\[Pi]", "4"], ",", 
-      FractionBox["\[Pi]", "3"], ",", "0", ",", "2", ",", "2"}], "}"}]}], 
-   "}"}], " ", 
-  RowBox[{"(*", 
-   RowBox[{
-   "Removed", " ", "duplicates", " ", "and", " ", "hard", " ", "coded"}], 
-   "*)"}]}]], "Input"],
-
-Cell[BoxData[
  RowBox[{
   RowBox[{"EliminateCases", "[", "cases_", "]"}], ":=", 
   RowBox[{"Module", "[", 
@@ -1071,7 +1028,7 @@ Cell[BoxData[
   3.708734352791847*^9, {3.708734454734652*^9, 3.7087344851641617`*^9}}]
 },
 WindowSize->{1133, 921},
-WindowMargins->{{40, Automatic}, {Automatic, 0}},
+WindowMargins->{{-43, Automatic}, {Automatic, 0}},
 FrontEndVersion->"11.0 for Mac OS X x86 (32-bit, 64-bit Kernel) (July 28, \
 2016)",
 StyleDefinitions->"Default.nb"
@@ -1089,15 +1046,14 @@ CellTagsIndex->{}
 Notebook[{
 Cell[558, 20, 671, 20, 54, "Input"],
 Cell[1232, 42, 1338, 36, 117, "Input"],
-Cell[2573, 80, 1598, 42, 159, "Input"],
-Cell[4174, 124, 18538, 391, 1650, "Input"],
-Cell[22715, 517, 475, 12, 54, "Input"],
-Cell[23193, 531, 4625, 122, 603, "Input"],
-Cell[27821, 655, 1525, 43, 83, "Input"],
-Cell[29349, 700, 11242, 254, 1545, "Input"],
-Cell[40594, 956, 364, 9, 54, "Input"],
-Cell[40961, 967, 1791, 46, 144, "Input"],
-Cell[42755, 1015, 1990, 55, 108, "Input"]
+Cell[2573, 80, 1672, 44, 180, "Input"],
+Cell[4248, 126, 18538, 391, 1650, "Input"],
+Cell[22789, 519, 475, 12, 54, "Input"],
+Cell[23267, 533, 4625, 122, 603, "Input"],
+Cell[27895, 657, 11242, 254, 1545, "Input"],
+Cell[39140, 913, 364, 9, 54, "Input"],
+Cell[39507, 924, 1791, 46, 144, "Input"],
+Cell[41301, 972, 1990, 55, 108, "Input"]
 }
 ]
 *)
