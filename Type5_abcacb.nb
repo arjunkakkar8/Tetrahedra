@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     32170,        686]
-NotebookOptionsPosition[     31680,        666]
-NotebookOutlinePosition[     32035,        682]
-CellTagsIndexPosition[     31992,        679]
+NotebookDataLength[     31851,        680]
+NotebookOptionsPosition[     31361,        660]
+NotebookOutlinePosition[     31717,        676]
+CellTagsIndexPosition[     31674,        673]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -161,9 +161,8 @@ Cell[BoxData[
     RowBox[{"{", 
      RowBox[{
      "\[Theta]12", ",", "\[Theta]23", ",", "\[Theta]13", ",", "\[Theta]34", 
-      ",", "\[Theta]14", ",", "\[Theta]24", ",", "n12", ",", "n23", ",", 
-      "n13", ",", "n34", ",", "n14", ",", "n24", ",", "mat", ",", "det1", ",",
-       "det2", ",", "det3", ",", "det4", ",", "expr", ",", "minimum", ",", 
+      ",", "\[Theta]14", ",", "\[Theta]24", ",", "mat", ",", "det1", ",", 
+      "det2", ",", "det3", ",", "det4", ",", "expr", ",", "minimum", ",", 
       "\[IndentingNewLine]", 
       RowBox[{"cases", "=", 
        RowBox[{"{", "}"}]}], ",", 
@@ -321,12 +320,6 @@ Cell[BoxData[
                     "\[IndentingNewLine]", "\[IndentingNewLine]", 
                     RowBox[{"examinedcnt", "++"}], ";", "\[IndentingNewLine]",
                      "\[IndentingNewLine]", 
-                    RowBox[{"(*", 
-                    RowBox[{
-                    "Section", " ", "that", " ", "deals", " ", "with", " ", 
-                    "variable", " ", "assignment", " ", "when", " ", "the", 
-                    " ", "coefficients", " ", "are", " ", "0"}], "*)"}], 
-                    "\[IndentingNewLine]", 
                     RowBox[{"Clear", "[", "\[Theta]23", "]"}], ";", 
                     "\[IndentingNewLine]", 
                     RowBox[{"\[Theta]12", "=", 
@@ -633,7 +626,8 @@ Cell[BoxData[
    3.708813479403331*^9}, {3.7088137412003527`*^9, 3.7088137712381563`*^9}, {
    3.708814315861313*^9, 3.708814315979562*^9}, {3.708814632472476*^9, 
    3.7088146484945374`*^9}, {3.708867743881556*^9, 3.708867760471043*^9}, {
-   3.7088678286724854`*^9, 3.708867907678502*^9}}],
+   3.7088678286724854`*^9, 3.708867907678502*^9}, {3.708876607681086*^9, 
+   3.708876607830349*^9}, {3.708878495969369*^9, 3.708878496310999*^9}}],
 
 Cell[BoxData[
  RowBox[{
@@ -666,7 +660,7 @@ Cell[BoxData[
 },
 WindowSize->{1700, 955},
 WindowMargins->{{-34, Automatic}, {Automatic, 0}},
-FrontEndVersion->"11.0 for Mac OS X x86 (32-bit, 64-bit Kernel) (July 28, \
+FrontEndVersion->"10.4 for Mac OS X x86 (32-bit, 64-bit Kernel) (April 11, \
 2016)",
 StyleDefinitions->"Default.nb"
 ]
@@ -681,13 +675,13 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[558, 20, 69, 1, 32, "Input"],
-Cell[630, 23, 980, 25, 54, "Input"],
-Cell[1613, 50, 1403, 37, 117, "Input"],
-Cell[3019, 89, 2910, 65, 222, "Input"],
-Cell[5932, 156, 24612, 479, 1902, "Input"],
-Cell[30547, 637, 574, 13, 54, "Input"],
-Cell[31124, 652, 552, 12, 54, "Input"]
+Cell[558, 20, 69, 1, 28, "Input"],
+Cell[630, 23, 980, 25, 46, "Input"],
+Cell[1613, 50, 1403, 37, 97, "Input"],
+Cell[3019, 89, 2910, 65, 182, "Input"],
+Cell[5932, 156, 24293, 473, 1525, "Input"],
+Cell[30228, 631, 574, 13, 46, "Input"],
+Cell[30805, 646, 552, 12, 46, "Input"]
 }
 ]
 *)
