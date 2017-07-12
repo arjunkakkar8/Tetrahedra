@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     35032,        744]
-NotebookOptionsPosition[     34542,        724]
-NotebookOutlinePosition[     34898,        740]
-CellTagsIndexPosition[     34855,        737]
+NotebookDataLength[     35281,        748]
+NotebookOptionsPosition[     34792,        728]
+NotebookOutlinePosition[     35147,        744]
+CellTagsIndexPosition[     35104,        741]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -173,7 +173,7 @@ Cell[BoxData[
       RowBox[{"remaincnt", "=", "0"}], ",", 
       RowBox[{"nonzerot", "=", 
        RowBox[{"10", "^", 
-        RowBox[{"-", "3"}]}]}], ",", 
+        RowBox[{"-", "4"}]}]}], ",", 
       RowBox[{"smallestnonzero", "=", "\[Infinity]"}]}], "}"}], ",", 
     "\[IndentingNewLine]", 
     RowBox[{"(*", "\[IndentingNewLine]", 
@@ -226,7 +226,7 @@ Cell[BoxData[
     RowBox[{
      RowBox[{"For", "[", 
       RowBox[{
-       RowBox[{"n12", "=", "0"}], ",", 
+       RowBox[{"n12", "=", "2"}], ",", 
        RowBox[{"n12", "\[LessEqual]", "9"}], ",", 
        RowBox[{"n12", "+=", "2"}], ",", "\[IndentingNewLine]", 
        RowBox[{"For", "[", 
@@ -249,7 +249,7 @@ Cell[BoxData[
           "\[IndentingNewLine]", 
           RowBox[{"For", "[", 
            RowBox[{
-            RowBox[{"n13", "=", "0"}], ",", 
+            RowBox[{"n13", "=", "2"}], ",", 
             RowBox[{"n13", "\[LessEqual]", "9"}], ",", 
             RowBox[{"n13", "+=", "2"}], ",", "\[IndentingNewLine]", 
             RowBox[{"For", "[", 
@@ -272,7 +272,7 @@ Cell[BoxData[
                "\[IndentingNewLine]", 
                RowBox[{"For", "[", 
                 RowBox[{
-                 RowBox[{"n14", "=", "0"}], ",", 
+                 RowBox[{"n14", "=", "2"}], ",", 
                  RowBox[{"n14", "\[LessEqual]", "9"}], ",", 
                  RowBox[{"n14", "+=", "2"}], ",", "\[IndentingNewLine]", 
                  RowBox[{"For", "[", 
@@ -693,7 +693,9 @@ Cell[BoxData[
    3.708811493594233*^9, 3.7088115824788847`*^9}, {3.708812015585245*^9, 
    3.708812024020041*^9}, {3.708813229514064*^9, 3.708813229760879*^9}, {
    3.708813394726885*^9, 3.708813426035923*^9}, {3.708813468301176*^9, 
-   3.708813479403331*^9}}],
+   3.708813479403331*^9}, {3.7088137412003527`*^9, 3.7088137712381563`*^9}, {
+   3.708814315861313*^9, 3.708814315979562*^9}, {3.708814632472476*^9, 
+   3.7088146484945374`*^9}}],
 
 Cell[BoxData[
  RowBox[{
@@ -720,10 +722,12 @@ Cell[BoxData[
     RowBox[{"{", "}"}]}], ";"}]}]], "Input",
  CellChangeTimes->{{3.708562639147847*^9, 3.708562644952224*^9}, {
   3.7085628823903837`*^9, 3.7085628920709352`*^9}, {3.7085630782424726`*^9, 
-  3.7085630931057043`*^9}, {3.708648900761078*^9, 3.708648900949053*^9}}]
+  3.7085630931057043`*^9}, {3.708648900761078*^9, 3.708648900949053*^9}, {
+  3.708814250046983*^9, 3.708814250336616*^9}, {3.708815044138297*^9, 
+  3.708815044312215*^9}}]
 },
 WindowSize->{1700, 955},
-WindowMargins->{{24, Automatic}, {Automatic, 22}},
+WindowMargins->{{-9, Automatic}, {Automatic, 0}},
 FrontEndVersion->"10.4 for Mac OS X x86 (32-bit, 64-bit Kernel) (April 11, \
 2016)",
 StyleDefinitions->"Default.nb"
@@ -743,9 +747,9 @@ Cell[558, 20, 69, 1, 28, "Input"],
 Cell[630, 23, 980, 25, 46, "Input"],
 Cell[1613, 50, 1403, 37, 97, "Input"],
 Cell[3019, 89, 2910, 65, 182, "Input"],
-Cell[5932, 156, 27572, 539, 1933, "Input"],
-Cell[33507, 697, 574, 13, 46, "Input"],
-Cell[34084, 712, 454, 10, 46, "Input"]
+Cell[5932, 156, 27724, 541, 1933, "Input"],
+Cell[33659, 699, 574, 13, 46, "Input"],
+Cell[34236, 714, 552, 12, 46, "Input"]
 }
 ]
 *)
