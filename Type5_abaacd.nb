@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     50455,       1194]
-NotebookOptionsPosition[     49828,       1171]
-NotebookOutlinePosition[     50183,       1187]
-CellTagsIndexPosition[     50140,       1184]
+NotebookDataLength[     50918,       1205]
+NotebookOptionsPosition[     50241,       1181]
+NotebookOutlinePosition[     50596,       1197]
+CellTagsIndexPosition[     50553,       1194]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -902,6 +902,9 @@ Cell[BoxData[
            RowBox[{"{", 
             RowBox[{"\[Theta]12", ",", "\[Theta]14"}], "}"}]}], "]"}]}], ";", 
         "\[IndentingNewLine]", "\[IndentingNewLine]", 
+        RowBox[{"Clear", "[", 
+         RowBox[{"\[Theta]12", ",", "\[Theta]14", ",", "\[Theta]23"}], "]"}], 
+        ";", "\[IndentingNewLine]", "\[IndentingNewLine]", 
         RowBox[{"If", "[", 
          RowBox[{
           RowBox[{"MatchQ", "[", 
@@ -1028,7 +1031,8 @@ Cell[BoxData[
    3.7087339762517347`*^9, {3.708734047926772*^9, 3.708734115942219*^9}, {
    3.708734249556766*^9, 3.708734251651144*^9}, {3.708785411995022*^9, 
    3.708785455323132*^9}, {3.708785493674098*^9, 3.708785642604645*^9}, {
-   3.7087856855689087`*^9, 3.708785687799644*^9}}],
+   3.7087856855689087`*^9, 3.708785687799644*^9}, {3.708811810865807*^9, 
+   3.708811811592889*^9}}],
 
 Cell[BoxData[
  RowBox[{
@@ -1039,6 +1043,10 @@ Cell[BoxData[
    RowBox[{"{", 
     RowBox[{"eliminatedcases", ",", "remainedcases"}], "}"}], "=", 
    RowBox[{"EliminateCases", "[", "cases", "]"}]}]}]], "Input"],
+
+Cell[BoxData[
+ RowBox[{"{", ",", "}"}]], "Input",
+ CellChangeTimes->{{3.708812219456236*^9, 3.708812229200019*^9}}],
 
 Cell[BoxData[
  RowBox[{
@@ -1072,7 +1080,8 @@ Cell[BoxData[
         "\"\<Eliminated because there is no solution.\>\""}], "}"}]}], 
      "}"}]}], ";"}]}]], "Input",
  CellChangeTimes->{{3.708785907812904*^9, 3.708785911876091*^9}, {
-   3.708786290711645*^9, 3.70878629435688*^9}, 3.708803842786873*^9}],
+   3.708786290711645*^9, 3.70878629435688*^9}, 3.708803842786873*^9, 
+   3.708812223065237*^9}],
 
 Cell[BoxData[
  RowBox[{
@@ -1167,7 +1176,8 @@ Cell[BoxData[
         "\"\<Can't solve\>\""}], "}"}]}], "}"}]}], ";"}]}]], "Input",
  CellChangeTimes->{{3.7087859140727043`*^9, 3.70878593833279*^9}, {
   3.7087860244906178`*^9, 3.7087860400414143`*^9}, {3.7087862961492243`*^9, 
-  3.7087862996856823`*^9}, {3.708803866043797*^9, 3.708803919045806*^9}}]
+  3.7087862996856823`*^9}, {3.708803866043797*^9, 3.708803919045806*^9}, {
+  3.708812239913001*^9, 3.708812267085865*^9}}]
 },
 WindowSize->{1558, 962},
 WindowMargins->{{63, Automatic}, {Automatic, 0}},
@@ -1188,14 +1198,15 @@ CellTagsIndex->{}
 Notebook[{
 Cell[558, 20, 965, 24, 46, "Input"],
 Cell[1526, 46, 1338, 36, 97, "Input"],
-Cell[2867, 84, 1797, 47, 148, "Input"],
+Cell[2867, 84, 1797, 47, 182, "Input"],
 Cell[4667, 133, 19433, 395, 1389, "Input"],
 Cell[24103, 530, 450, 11, 46, "Input"],
 Cell[24556, 543, 8663, 230, 850, "Input"],
-Cell[33222, 775, 11373, 255, 1253, "Input"],
-Cell[44598, 1032, 298, 8, 46, "Input"],
-Cell[44899, 1042, 1277, 32, 97, "Input"],
-Cell[46179, 1076, 3645, 93, 139, "Input"]
+Cell[33222, 775, 11593, 259, 1287, "Input"],
+Cell[44818, 1036, 298, 8, 46, "Input"],
+Cell[45119, 1046, 115, 2, 28, InheritFromParent],
+Cell[45237, 1050, 1303, 33, 97, "Input"],
+Cell[46543, 1085, 3694, 94, 139, "Input"]
 }
 ]
 *)
