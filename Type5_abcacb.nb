@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     31851,        680]
-NotebookOptionsPosition[     31361,        660]
-NotebookOutlinePosition[     31717,        676]
-CellTagsIndexPosition[     31674,        673]
+NotebookDataLength[     30984,        658]
+NotebookOptionsPosition[     30493,        638]
+NotebookOutlinePosition[     30849,        654]
+CellTagsIndexPosition[     30806,        651]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -172,7 +172,7 @@ Cell[BoxData[
       RowBox[{"remaincnt", "=", "0"}], ",", 
       RowBox[{"nonzerot", "=", 
        RowBox[{"10", "^", 
-        RowBox[{"-", "4"}]}]}], ",", 
+        RowBox[{"-", "3"}]}]}], ",", 
       RowBox[{"smallestnonzero", "=", "\[Infinity]"}]}], "}"}], ",", 
     "\[IndentingNewLine]", 
     RowBox[{"(*", "\[IndentingNewLine]", 
@@ -194,14 +194,11 @@ Cell[BoxData[
       RowBox[{"n24", " ", "must", " ", "all", " ", "be", " ", "even"}], ",", 
       "\[IndentingNewLine]", 
       RowBox[{"Nondegeneracy", " ", 
-       RowBox[{"assumption", ":", " ", 
-        RowBox[{
-         RowBox[{"n12", " ", "+", " ", "n23"}], " ", ">", " ", "2"}]}]}], ",",
-       " ", 
-      RowBox[{
-       RowBox[{"n13", " ", "+", " ", "n34"}], " ", ">", " ", "2"}], ",", " ", 
-      RowBox[{
-       RowBox[{"n14", " ", "+", " ", "n24"}], " ", ">", " ", "2"}], ",", 
+       RowBox[{"assumption", ":", " ", "n12"}]}], ",", " ", "n23", ",", " ", 
+      "n13", ",", " ", "n34", ",", " ", "n14", ",", " ", 
+      RowBox[{"n24", " ", "are", " ", "nonzero", " ", 
+       RowBox[{"(", 
+        RowBox[{"reduces", " ", "to", " ", "abcacd"}], ")"}]}], ",", 
       "\[IndentingNewLine]", 
       RowBox[{"Symmetry", " ", 
        RowBox[{"assumption", ":", " ", 
@@ -217,10 +214,7 @@ Cell[BoxData[
          RowBox[{
           RowBox[{"(", 
            RowBox[{"n14", ",", " ", "n24"}], ")"}], " ", "in", " ", 
-          "dictionary", " ", "order"}]}]}]}], ",", "\[IndentingNewLine]", 
-      RowBox[{"n12", " ", "\[NotEqual]", " ", "0"}], ",", " ", 
-      RowBox[{"n13", " ", "\[NotEqual]", " ", "0"}], ",", " ", 
-      RowBox[{"n14", " ", "\[NotEqual]", " ", "0"}]}], "\[IndentingNewLine]", 
+          "dictionary", " ", "order"}]}]}]}], ","}], "\[IndentingNewLine]", 
      "*)"}], "\[IndentingNewLine]", 
     RowBox[{
      RowBox[{"For", "[", 
@@ -230,16 +224,10 @@ Cell[BoxData[
        RowBox[{"n12", "+=", "2"}], ",", "\[IndentingNewLine]", 
        RowBox[{"For", "[", 
         RowBox[{
-         RowBox[{"n23", "=", "0"}], ",", 
+         RowBox[{"n23", "=", "2"}], ",", 
          RowBox[{"n23", "\[LessEqual]", "9"}], ",", 
          RowBox[{"n23", "+=", "2"}], ",", "\[IndentingNewLine]", 
          RowBox[{
-          RowBox[{"If", "[", 
-           RowBox[{
-            RowBox[{
-             RowBox[{"n12", "+", "n23"}], "\[LessEqual]", "2"}], ",", 
-            RowBox[{"Continue", "[", "]"}]}], "]"}], ";", 
-          "\[IndentingNewLine]", 
           RowBox[{"If", "[", 
            RowBox[{
             RowBox[{
@@ -253,16 +241,10 @@ Cell[BoxData[
             RowBox[{"n13", "+=", "2"}], ",", "\[IndentingNewLine]", 
             RowBox[{"For", "[", 
              RowBox[{
-              RowBox[{"n34", "=", "0"}], ",", 
+              RowBox[{"n34", "=", "2"}], ",", 
               RowBox[{"n34", "\[LessEqual]", "9"}], ",", 
               RowBox[{"n34", "+=", "2"}], ",", "\[IndentingNewLine]", 
               RowBox[{
-               RowBox[{"If", "[", 
-                RowBox[{
-                 RowBox[{
-                  RowBox[{"n13", "+", "n34"}], "\[LessEqual]", "2"}], ",", 
-                 RowBox[{"Continue", "[", "]"}]}], "]"}], ";", 
-               "\[IndentingNewLine]", 
                RowBox[{"If", "[", 
                 RowBox[{
                  RowBox[{
@@ -276,17 +258,10 @@ Cell[BoxData[
                  RowBox[{"n14", "+=", "2"}], ",", "\[IndentingNewLine]", 
                  RowBox[{"For", "[", 
                   RowBox[{
-                   RowBox[{"n24", "=", "0"}], ",", 
+                   RowBox[{"n24", "=", "2"}], ",", 
                    RowBox[{"n24", "\[LessEqual]", "9"}], ",", 
                    RowBox[{"n24", "+=", "2"}], ",", "\[IndentingNewLine]", 
                    RowBox[{
-                    RowBox[{"If", "[", 
-                    RowBox[{
-                    RowBox[{
-                    RowBox[{"n14", "+", "n24"}], "\[LessEqual]", "2"}], ",", 
-                    " ", 
-                    RowBox[{"Continue", "[", "]"}]}], "]"}], ";", 
-                    "\[IndentingNewLine]", 
                     RowBox[{"If", "[", 
                     RowBox[{
                     RowBox[{
@@ -627,7 +602,10 @@ Cell[BoxData[
    3.708814315861313*^9, 3.708814315979562*^9}, {3.708814632472476*^9, 
    3.7088146484945374`*^9}, {3.708867743881556*^9, 3.708867760471043*^9}, {
    3.7088678286724854`*^9, 3.708867907678502*^9}, {3.708876607681086*^9, 
-   3.708876607830349*^9}, {3.708878495969369*^9, 3.708878496310999*^9}}],
+   3.708876607830349*^9}, {3.708878495969369*^9, 3.708878496310999*^9}, {
+   3.7088917569636307`*^9, 3.708891804287395*^9}, {3.708891936031983*^9, 
+   3.708892025018496*^9}, {3.7088922184588737`*^9, 3.708892218528475*^9}, {
+   3.708892264911894*^9, 3.708892285637053*^9}}],
 
 Cell[BoxData[
  RowBox[{
@@ -659,7 +637,7 @@ Cell[BoxData[
   3.708815044312215*^9}}]
 },
 WindowSize->{1700, 955},
-WindowMargins->{{-34, Automatic}, {Automatic, 0}},
+WindowMargins->{{36, Automatic}, {Automatic, 29}},
 FrontEndVersion->"10.4 for Mac OS X x86 (32-bit, 64-bit Kernel) (April 11, \
 2016)",
 StyleDefinitions->"Default.nb"
@@ -679,9 +657,9 @@ Cell[558, 20, 69, 1, 28, "Input"],
 Cell[630, 23, 980, 25, 46, "Input"],
 Cell[1613, 50, 1403, 37, 97, "Input"],
 Cell[3019, 89, 2910, 65, 182, "Input"],
-Cell[5932, 156, 24293, 473, 1525, "Input"],
-Cell[30228, 631, 574, 13, 46, "Input"],
-Cell[30805, 646, 552, 12, 46, "Input"]
+Cell[5932, 156, 23425, 451, 1457, "Input"],
+Cell[29360, 609, 574, 13, 104, "Input"],
+Cell[29937, 624, 552, 12, 46, "Input"]
 }
 ]
 *)
