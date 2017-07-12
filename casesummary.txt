@@ -1,2 +1,3 @@
 aaabcd: 224 cases -> 7 cases -> 4 cases
+abaacb: 1116 cases -> 7 cases -> 
 abaacd: 315 cases -> 13 cases -> 10 cases
