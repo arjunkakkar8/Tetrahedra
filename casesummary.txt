@@ -4,5 +4,5 @@ abaacd: 315 cases -> 8 cases -> 2 cases
 abcaaa: 435 cases -> 0 case
 abcacb: 91 cases -> 0 case
 abcacd: 324 cases -> 6 cases -> 1 case
-abcade: 258 cases -> 5 cases -> 0 case
+abcade: 144 cases -> 5 cases -> 0 case
 abcddd: 67 cases -> 0 cases

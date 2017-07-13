@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     37455,       1013]
-NotebookOptionsPosition[     37120,        997]
-NotebookOutlinePosition[     37476,       1013]
-CellTagsIndexPosition[     37433,       1010]
+NotebookDataLength[     37304,       1012]
+NotebookOptionsPosition[     36969,        996]
+NotebookOutlinePosition[     37325,       1012]
+CellTagsIndexPosition[     37282,       1009]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -31,8 +31,8 @@ Cell[BoxData[
        "\[Infinity]", ",", 
        RowBox[{"{", 
         RowBox[{
-         RowBox[{"\[Theta]23$11681", "\[Rule]", "Indeterminate"}], ",", 
-         RowBox[{"\[Theta]24$11681", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
+         RowBox[{"\[Theta]23$1254", "\[Rule]", "Indeterminate"}], ",", 
+         RowBox[{"\[Theta]24$1254", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
       "}"}], ",", 
      RowBox[{"{", 
       RowBox[{
@@ -44,11 +44,11 @@ Cell[BoxData[
        RowBox[{"{", 
         RowBox[{
          RowBox[{
-         "\[Theta]23$11681", "\[Rule]", 
+         "\[Theta]23$1254", "\[Rule]", 
           "0.7966609397546773226750951527391779189413843388061849669043`30."}]\
 , ",", 
          RowBox[{
-         "\[Theta]24$11681", "\[Rule]", 
+         "\[Theta]24$1254", "\[Rule]", 
           "1.0200269582615700201024756404178696057494549372990123119547`30."}]\
 }], "}"}]}], "}"}], ",", 
      RowBox[{"{", 
@@ -61,11 +61,11 @@ Cell[BoxData[
        RowBox[{"{", 
         RowBox[{
          RowBox[{
-         "\[Theta]23$11681", "\[Rule]", 
+         "\[Theta]23$1254", "\[Rule]", 
           "1.0862896167567400890305820087538620499021694030469604641262`30."}]\
 , ",", 
          RowBox[{
-         "\[Theta]24$11681", "\[Rule]", 
+         "\[Theta]24$1254", "\[Rule]", 
           "1.0727106772955791061905040526459816639416386355554839743998`30."}]\
 }], "}"}]}], "}"}], ",", 
      RowBox[{"{", 
@@ -76,8 +76,8 @@ Cell[BoxData[
        "\[Infinity]", ",", 
        RowBox[{"{", 
         RowBox[{
-         RowBox[{"\[Theta]23$11681", "\[Rule]", "Indeterminate"}], ",", 
-         RowBox[{"\[Theta]24$11681", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
+         RowBox[{"\[Theta]23$1254", "\[Rule]", "Indeterminate"}], ",", 
+         RowBox[{"\[Theta]24$1254", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
       "}"}], ",", 
      RowBox[{"{", 
       RowBox[{
@@ -89,11 +89,11 @@ Cell[BoxData[
        RowBox[{"{", 
         RowBox[{
          RowBox[{
-         "\[Theta]23$11681", "\[Rule]", 
+         "\[Theta]23$1254", "\[Rule]", 
           "1.0471975511965973929960848542108025105530909270539697827428`30."}]\
 , ",", 
          RowBox[{
-         "\[Theta]24$11681", "\[Rule]", 
+         "\[Theta]24$1254", "\[Rule]", 
           "1.0471975511965975431463100122052490626380515179611754044029`30."}]\
 }], "}"}]}], "}"}], ",", 
      RowBox[{"{", 
@@ -106,11 +106,11 @@ Cell[BoxData[
        RowBox[{"{", 
         RowBox[{
          RowBox[{
-         "\[Theta]23$11681", "\[Rule]", 
+         "\[Theta]23$1254", "\[Rule]", 
           "0.9337511498169662743204325095931269087505789921002436055019`30."}]\
 , ",", 
          RowBox[{
-         "\[Theta]24$11681", "\[Rule]", 
+         "\[Theta]24$1254", "\[Rule]", 
           "0.9337511498169662743204325095931269087505789921002436055054`30."}]\
 }], "}"}]}], "}"}], ",", 
      RowBox[{"{", 
@@ -121,8 +121,8 @@ Cell[BoxData[
        "\[Infinity]", ",", 
        RowBox[{"{", 
         RowBox[{
-         RowBox[{"\[Theta]23$11681", "\[Rule]", "Indeterminate"}], ",", 
-         RowBox[{"\[Theta]24$11681", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
+         RowBox[{"\[Theta]23$1254", "\[Rule]", "Indeterminate"}], ",", 
+         RowBox[{"\[Theta]24$1254", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
       "}"}], ",", 
      RowBox[{"{", 
       RowBox[{
@@ -134,11 +134,11 @@ Cell[BoxData[
        RowBox[{"{", 
         RowBox[{
          RowBox[{
-         "\[Theta]23$11681", "\[Rule]", 
+         "\[Theta]23$1254", "\[Rule]", 
           "0.9105301053796036381160100648146935633661984412083051108856`30."}]\
 , ",", 
          RowBox[{
-         "\[Theta]24$11681", "\[Rule]", 
+         "\[Theta]24$1254", "\[Rule]", 
           "1.3785111127621377845186988676966531433258447786054660813287`30."}]\
 }], "}"}]}], "}"}], ",", 
      RowBox[{"{", 
@@ -149,8 +149,8 @@ Cell[BoxData[
        "\[Infinity]", ",", 
        RowBox[{"{", 
         RowBox[{
-         RowBox[{"\[Theta]23$11681", "\[Rule]", "Indeterminate"}], ",", 
-         RowBox[{"\[Theta]24$11681", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
+         RowBox[{"\[Theta]23$1254", "\[Rule]", "Indeterminate"}], ",", 
+         RowBox[{"\[Theta]24$1254", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
       "}"}], ",", 
      RowBox[{"{", 
       RowBox[{
@@ -160,8 +160,8 @@ Cell[BoxData[
        "\[Infinity]", ",", 
        RowBox[{"{", 
         RowBox[{
-         RowBox[{"\[Theta]23$11681", "\[Rule]", "Indeterminate"}], ",", 
-         RowBox[{"\[Theta]24$11681", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
+         RowBox[{"\[Theta]23$1254", "\[Rule]", "Indeterminate"}], ",", 
+         RowBox[{"\[Theta]24$1254", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
       "}"}], ",", 
      RowBox[{"{", 
       RowBox[{
@@ -173,11 +173,11 @@ Cell[BoxData[
        RowBox[{"{", 
         RowBox[{
          RowBox[{
-         "\[Theta]23$11681", "\[Rule]", 
+         "\[Theta]23$1254", "\[Rule]", 
           "0.6370451769779302955771471304983436404066482393177297914757`29.\
 69897000433602"}], ",", 
          RowBox[{
-         "\[Theta]24$11681", "\[Rule]", 
+         "\[Theta]24$1254", "\[Rule]", 
           "1.2522737383179918305556002453623107837239721855022303412229`30."}]\
 }], "}"}]}], "}"}], ",", 
      RowBox[{"{", 
@@ -188,8 +188,8 @@ Cell[BoxData[
        "\[Infinity]", ",", 
        RowBox[{"{", 
         RowBox[{
-         RowBox[{"\[Theta]23$11681", "\[Rule]", "Indeterminate"}], ",", 
-         RowBox[{"\[Theta]24$11681", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
+         RowBox[{"\[Theta]23$1254", "\[Rule]", "Indeterminate"}], ",", 
+         RowBox[{"\[Theta]24$1254", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
       "}"}], ",", 
      RowBox[{"{", 
       RowBox[{
@@ -199,8 +199,8 @@ Cell[BoxData[
        "\[Infinity]", ",", 
        RowBox[{"{", 
         RowBox[{
-         RowBox[{"\[Theta]23$11681", "\[Rule]", "Indeterminate"}], ",", 
-         RowBox[{"\[Theta]24$11681", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
+         RowBox[{"\[Theta]23$1254", "\[Rule]", "Indeterminate"}], ",", 
+         RowBox[{"\[Theta]24$1254", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
       "}"}], ",", 
      RowBox[{"{", 
       RowBox[{
@@ -212,11 +212,11 @@ Cell[BoxData[
        RowBox[{"{", 
         RowBox[{
          RowBox[{
-         "\[Theta]23$11681", "\[Rule]", 
+         "\[Theta]23$1254", "\[Rule]", 
           "0.9954639292650764929212663829729705031239533702770907968748`30."}]\
 , ",", 
          RowBox[{
-         "\[Theta]24$11681", "\[Rule]", 
+         "\[Theta]24$1254", "\[Rule]", 
           "1.8675022996339326473083491222828156033838729207396462380236`29.\
 69897000433602"}]}], "}"}]}], "}"}], ",", 
      RowBox[{"{", 
@@ -227,8 +227,8 @@ Cell[BoxData[
        "\[Infinity]", ",", 
        RowBox[{"{", 
         RowBox[{
-         RowBox[{"\[Theta]23$11681", "\[Rule]", "Indeterminate"}], ",", 
-         RowBox[{"\[Theta]24$11681", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
+         RowBox[{"\[Theta]23$1254", "\[Rule]", "Indeterminate"}], ",", 
+         RowBox[{"\[Theta]24$1254", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
       "}"}], ",", 
      RowBox[{"{", 
       RowBox[{
@@ -238,8 +238,8 @@ Cell[BoxData[
        "\[Infinity]", ",", 
        RowBox[{"{", 
         RowBox[{
-         RowBox[{"\[Theta]23$11681", "\[Rule]", "Indeterminate"}], ",", 
-         RowBox[{"\[Theta]24$11681", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
+         RowBox[{"\[Theta]23$1254", "\[Rule]", "Indeterminate"}], ",", 
+         RowBox[{"\[Theta]24$1254", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
       "}"}], ",", 
      RowBox[{"{", 
       RowBox[{
@@ -251,11 +251,11 @@ Cell[BoxData[
        RowBox[{"{", 
         RowBox[{
          RowBox[{
-         "\[Theta]23$11681", "\[Rule]", 
+         "\[Theta]23$1254", "\[Rule]", 
           "0.6370451769779302955771471304983436360202755333596518868653`30."}]\
 , ",", 
          RowBox[{
-         "\[Theta]24$11681", "\[Rule]", 
+         "\[Theta]24$1254", "\[Rule]", 
           "1.2522737383059314714427481263905796257836153014341827753549`30."}]\
 }], "}"}]}], "}"}], ",", 
      RowBox[{"{", 
@@ -266,8 +266,8 @@ Cell[BoxData[
        "\[Infinity]", ",", 
        RowBox[{"{", 
         RowBox[{
-         RowBox[{"\[Theta]23$11681", "\[Rule]", "Indeterminate"}], ",", 
-         RowBox[{"\[Theta]24$11681", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
+         RowBox[{"\[Theta]23$1254", "\[Rule]", "Indeterminate"}], ",", 
+         RowBox[{"\[Theta]24$1254", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
       "}"}], ",", 
      RowBox[{"{", 
       RowBox[{
@@ -279,12 +279,11 @@ Cell[BoxData[
        RowBox[{"{", 
         RowBox[{
          RowBox[{
-         "\[Theta]23$11681", "\[Rule]", 
+         "\[Theta]23$1254", "\[Rule]", 
           "0.6370451769779302955771471304983436404066482393177297914757`29.\
 69897000433602"}], ",", 
          RowBox[{
-         "\[Theta]24$11681", "\[Rule]", 
-          
+         "\[Theta]24$1254", "\[Rule]", 
           "1.2151554999408525355537483960083325550354811658258313534718`30."}]\
 }], "}"}]}], "}"}], ",", 
      RowBox[{"{", 
@@ -297,11 +296,11 @@ Cell[BoxData[
        RowBox[{"{", 
         RowBox[{
          RowBox[{
-         "\[Theta]23$11681", "\[Rule]", 
+         "\[Theta]23$1254", "\[Rule]", 
           "1.2923009786711120322405907213167051638014374603012366465064`30."}]\
 , ",", 
          RowBox[{
-         "\[Theta]24$11681", "\[Rule]", 
+         "\[Theta]24$1254", "\[Rule]", 
           "0.6370451769779302955771471304983436404066482393177297914757`29.\
 69897000433602"}]}], "}"}]}], "}"}], ",", 
      RowBox[{"{", 
@@ -314,11 +313,11 @@ Cell[BoxData[
        RowBox[{"{", 
         RowBox[{
          RowBox[{
-         "\[Theta]23$11681", "\[Rule]", 
+         "\[Theta]23$1254", "\[Rule]", 
           "1.4980465448475036097032609480967576159899664390878834972751`30."}]\
 , ",", 
          RowBox[{
-         "\[Theta]24$11681", "\[Rule]", 
+         "\[Theta]24$1254", "\[Rule]", 
           "1.0136844333355289518638451173703878844393799518645101513986`30."}]\
 }], "}"}]}], "}"}], ",", 
      RowBox[{"{", 
@@ -329,8 +328,8 @@ Cell[BoxData[
        "\[Infinity]", ",", 
        RowBox[{"{", 
         RowBox[{
-         RowBox[{"\[Theta]23$11681", "\[Rule]", "Indeterminate"}], ",", 
-         RowBox[{"\[Theta]24$11681", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
+         RowBox[{"\[Theta]23$1254", "\[Rule]", "Indeterminate"}], ",", 
+         RowBox[{"\[Theta]24$1254", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
       "}"}], ",", 
      RowBox[{"{", 
       RowBox[{
@@ -342,11 +341,11 @@ Cell[BoxData[
        RowBox[{"{", 
         RowBox[{
          RowBox[{
-         "\[Theta]23$11681", "\[Rule]", 
+         "\[Theta]23$1254", "\[Rule]", 
           "0.6370451769779302955771471304983436404066482393177297914757`29.\
 69897000433602"}], ",", 
          RowBox[{
-         "\[Theta]24$11681", "\[Rule]", 
+         "\[Theta]24$1254", "\[Rule]", 
           "1.2565689802611265094788553644771355820499532152604181766008`30."}]\
 }], "}"}]}], "}"}], ",", 
      RowBox[{"{", 
@@ -359,11 +358,11 @@ Cell[BoxData[
        RowBox[{"{", 
         RowBox[{
          RowBox[{
-         "\[Theta]23$11681", "\[Rule]", 
+         "\[Theta]23$1254", "\[Rule]", 
           "2.5132741228718303045702641547226754859873988395825580464875`30."}]\
 , ",", 
          RowBox[{
-         "\[Theta]24$11681", "\[Rule]", 
+         "\[Theta]24$1254", "\[Rule]", 
           "1.6755160819145605197857998825027795462277283021947139078135`30."}]\
 }], "}"}]}], "}"}], ",", 
      RowBox[{"{", 
@@ -374,8 +373,8 @@ Cell[BoxData[
        "\[Infinity]", ",", 
        RowBox[{"{", 
         RowBox[{
-         RowBox[{"\[Theta]23$11681", "\[Rule]", "Indeterminate"}], ",", 
-         RowBox[{"\[Theta]24$11681", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
+         RowBox[{"\[Theta]23$1254", "\[Rule]", "Indeterminate"}], ",", 
+         RowBox[{"\[Theta]24$1254", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
       "}"}], ",", 
      RowBox[{"{", 
       RowBox[{
@@ -385,8 +384,8 @@ Cell[BoxData[
        "\[Infinity]", ",", 
        RowBox[{"{", 
         RowBox[{
-         RowBox[{"\[Theta]23$11681", "\[Rule]", "Indeterminate"}], ",", 
-         RowBox[{"\[Theta]24$11681", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
+         RowBox[{"\[Theta]23$1254", "\[Rule]", "Indeterminate"}], ",", 
+         RowBox[{"\[Theta]24$1254", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
       "}"}], ",", 
      RowBox[{"{", 
       RowBox[{
@@ -398,11 +397,11 @@ Cell[BoxData[
        RowBox[{"{", 
         RowBox[{
          RowBox[{
-         "\[Theta]23$11681", "\[Rule]", 
+         "\[Theta]23$1254", "\[Rule]", 
           "0.6370451769779320502677844363007376860388016715033629625096`30."}]\
 , ",", 
          RowBox[{
-         "\[Theta]24$11681", "\[Rule]", 
+         "\[Theta]24$1254", "\[Rule]", 
           "0.9337511498169641081308930445654768833369362428782267682775`30."}]\
 }], "}"}]}], "}"}], ",", 
      RowBox[{"{", 
@@ -413,8 +412,8 @@ Cell[BoxData[
        "\[Infinity]", ",", 
        RowBox[{"{", 
         RowBox[{
-         RowBox[{"\[Theta]23$11681", "\[Rule]", "Indeterminate"}], ",", 
-         RowBox[{"\[Theta]24$11681", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
+         RowBox[{"\[Theta]23$1254", "\[Rule]", "Indeterminate"}], ",", 
+         RowBox[{"\[Theta]24$1254", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
       "}"}], ",", 
      RowBox[{"{", 
       RowBox[{
@@ -426,11 +425,11 @@ Cell[BoxData[
        RowBox[{"{", 
         RowBox[{
          RowBox[{
-         "\[Theta]23$11681", "\[Rule]", 
+         "\[Theta]23$1254", "\[Rule]", 
           "0.6763376260264487083734266815846052026604464646718421262927`30."}]\
 , ",", 
          RowBox[{
-         "\[Theta]24$11681", "\[Rule]", 
+         "\[Theta]24$1254", "\[Rule]", 
           "1.2240171024648629508266575030328934236289101284853756939857`30."}]\
 }], "}"}]}], "}"}], ",", 
      RowBox[{"{", 
@@ -443,11 +442,11 @@ Cell[BoxData[
        RowBox[{"{", 
         RowBox[{
          RowBox[{
-         "\[Theta]23$11681", "\[Rule]", 
+         "\[Theta]23$1254", "\[Rule]", 
           "2.5132741228718345907701147066236023073577355195000846567801`29.\
 69897000433602"}], ",", 
          RowBox[{
-         "\[Theta]24$11681", "\[Rule]", 
+         "\[Theta]24$1254", "\[Rule]", 
           "1.8675022996339326473083491222828156033838729207396462380236`29.\
 69897000433602"}]}], "}"}]}], "}"}], ",", 
      RowBox[{"{", 
@@ -458,8 +457,8 @@ Cell[BoxData[
        "\[Infinity]", ",", 
        RowBox[{"{", 
         RowBox[{
-         RowBox[{"\[Theta]23$11681", "\[Rule]", "Indeterminate"}], ",", 
-         RowBox[{"\[Theta]24$11681", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
+         RowBox[{"\[Theta]23$1254", "\[Rule]", "Indeterminate"}], ",", 
+         RowBox[{"\[Theta]24$1254", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
       "}"}], ",", 
      RowBox[{"{", 
       RowBox[{
@@ -469,8 +468,8 @@ Cell[BoxData[
        "\[Infinity]", ",", 
        RowBox[{"{", 
         RowBox[{
-         RowBox[{"\[Theta]23$11681", "\[Rule]", "Indeterminate"}], ",", 
-         RowBox[{"\[Theta]24$11681", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
+         RowBox[{"\[Theta]23$1254", "\[Rule]", "Indeterminate"}], ",", 
+         RowBox[{"\[Theta]24$1254", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
       "}"}], ",", 
      RowBox[{"{", 
       RowBox[{
@@ -482,11 +481,11 @@ Cell[BoxData[
        RowBox[{"{", 
         RowBox[{
          RowBox[{
-         "\[Theta]23$11681", "\[Rule]", 
+         "\[Theta]23$1254", "\[Rule]", 
           "0.6370451769779302955771471304983436404066482393177297914757`29.\
 69897000433602"}], ",", 
          RowBox[{
-         "\[Theta]24$11681", "\[Rule]", 
+         "\[Theta]24$1254", "\[Rule]", 
           "0.9337511498169659976602926834663985414178843375785726149261`30."}]\
 }], "}"}]}], "}"}], ",", 
      RowBox[{"{", 
@@ -497,8 +496,8 @@ Cell[BoxData[
        "\[Infinity]", ",", 
        RowBox[{"{", 
         RowBox[{
-         RowBox[{"\[Theta]23$11681", "\[Rule]", "Indeterminate"}], ",", 
-         RowBox[{"\[Theta]24$11681", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
+         RowBox[{"\[Theta]23$1254", "\[Rule]", "Indeterminate"}], ",", 
+         RowBox[{"\[Theta]24$1254", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
       "}"}], ",", 
      RowBox[{"{", 
       RowBox[{
@@ -510,11 +509,11 @@ Cell[BoxData[
        RowBox[{"{", 
         RowBox[{
          RowBox[{
-         "\[Theta]23$11681", "\[Rule]", 
+         "\[Theta]23$1254", "\[Rule]", 
           "0.6370451769779302955771471304983436404066482393177297914757`29.\
 69897000433602"}], ",", 
          RowBox[{
-         "\[Theta]24$11681", "\[Rule]", 
+         "\[Theta]24$1254", "\[Rule]", 
           "1.1400901605680515660730026399499513441465116933178542344494`30."}]\
 }], "}"}]}], "}"}], ",", 
      RowBox[{"{", 
@@ -527,11 +526,11 @@ Cell[BoxData[
        RowBox[{"{", 
         RowBox[{
          RowBox[{
-         "\[Theta]23$11681", "\[Rule]", 
+         "\[Theta]23$1254", "\[Rule]", 
           "1.403752039029451861221206247937078141264315400185291984126`30."}],
           ",", 
          RowBox[{
-         "\[Theta]24$11681", "\[Rule]", 
+         "\[Theta]24$1254", "\[Rule]", 
           "0.6370451769779302955771471304983436404066482393177297914757`29.\
 69897000433602"}]}], "}"}]}], "}"}], ",", 
      RowBox[{"{", 
@@ -544,11 +543,11 @@ Cell[BoxData[
        RowBox[{"{", 
         RowBox[{
          RowBox[{
-         "\[Theta]23$11681", "\[Rule]", 
+         "\[Theta]23$1254", "\[Rule]", 
           "1.6843340552631334705765392684409080676405514045344920789685`30."}]\
 , ",", 
          RowBox[{
-         "\[Theta]24$11681", "\[Rule]", 
+         "\[Theta]24$1254", "\[Rule]", 
           "1.0123737221217321359603959438475446571613774030428010242809`30."}]\
 }], "}"}]}], "}"}], ",", 
      RowBox[{"{", 
@@ -559,8 +558,8 @@ Cell[BoxData[
        "\[Infinity]", ",", 
        RowBox[{"{", 
         RowBox[{
-         RowBox[{"\[Theta]23$11681", "\[Rule]", "Indeterminate"}], ",", 
-         RowBox[{"\[Theta]24$11681", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
+         RowBox[{"\[Theta]23$1254", "\[Rule]", "Indeterminate"}], ",", 
+         RowBox[{"\[Theta]24$1254", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
       "}"}], ",", 
      RowBox[{"{", 
       RowBox[{
@@ -572,11 +571,11 @@ Cell[BoxData[
        RowBox[{"{", 
         RowBox[{
          RowBox[{
-         "\[Theta]23$11681", "\[Rule]", 
+         "\[Theta]23$1254", "\[Rule]", 
           "0.7426986076023663716734980560311078722183607282061263987566`30."}]\
 , ",", 
          RowBox[{
-         "\[Theta]24$11681", "\[Rule]", 
+         "\[Theta]24$1254", "\[Rule]", 
           "1.097798693449937836256228868974552051397750861872526586819`30."}]}\
 ], "}"}]}], "}"}], ",", 
      RowBox[{"{", 
@@ -589,11 +588,11 @@ Cell[BoxData[
        RowBox[{"{", 
         RowBox[{
          RowBox[{
-         "\[Theta]23$11681", "\[Rule]", 
+         "\[Theta]23$1254", "\[Rule]", 
           "2.5132741228718345907701147066236023073577355195000846567801`29.\
 69897000433602"}], ",", 
          RowBox[{
-         "\[Theta]24$11681", "\[Rule]", 
+         "\[Theta]24$1254", "\[Rule]", 
           "1.8675022996339326473083491222828156033838729207396462380236`29.\
 69897000433602"}]}], "}"}]}], "}"}], ",", 
      RowBox[{"{", 
@@ -604,8 +603,8 @@ Cell[BoxData[
        "\[Infinity]", ",", 
        RowBox[{"{", 
         RowBox[{
-         RowBox[{"\[Theta]23$11681", "\[Rule]", "Indeterminate"}], ",", 
-         RowBox[{"\[Theta]24$11681", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
+         RowBox[{"\[Theta]23$1254", "\[Rule]", "Indeterminate"}], ",", 
+         RowBox[{"\[Theta]24$1254", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
       "}"}], ",", 
      RowBox[{"{", 
       RowBox[{
@@ -615,8 +614,8 @@ Cell[BoxData[
        "\[Infinity]", ",", 
        RowBox[{"{", 
         RowBox[{
-         RowBox[{"\[Theta]23$11681", "\[Rule]", "Indeterminate"}], ",", 
-         RowBox[{"\[Theta]24$11681", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
+         RowBox[{"\[Theta]23$1254", "\[Rule]", "Indeterminate"}], ",", 
+         RowBox[{"\[Theta]24$1254", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
       "}"}], ",", 
      RowBox[{"{", 
       RowBox[{
@@ -628,11 +627,11 @@ Cell[BoxData[
        RowBox[{"{", 
         RowBox[{
          RowBox[{
-         "\[Theta]23$11681", "\[Rule]", 
+         "\[Theta]23$1254", "\[Rule]", 
           "1.0005909975844352894357454676943207215214495134817346481794`30."}]\
 , ",", 
          RowBox[{
-         "\[Theta]24$11681", "\[Rule]", 
+         "\[Theta]24$1254", "\[Rule]", 
           "1.3400953051082108043400807312325375953727795883049521791818`30."}]\
 }], "}"}]}], "}"}], ",", 
      RowBox[{"{", 
@@ -645,11 +644,11 @@ Cell[BoxData[
        RowBox[{"{", 
         RowBox[{
          RowBox[{
-         "\[Theta]23$11681", "\[Rule]", 
+         "\[Theta]23$1254", "\[Rule]", 
           "1.3049249902437352052448800792160271423508364463110177415742`30."}]\
 , ",", 
          RowBox[{
-         "\[Theta]24$11681", "\[Rule]", 
+         "\[Theta]24$1254", "\[Rule]", 
           "1.2304571226560023517312019917844719629772246814219164465478`29.\
 507745002151278"}]}], "}"}]}], "}"}], ",", 
      RowBox[{"{", 
@@ -660,8 +659,8 @@ Cell[BoxData[
        "\[Infinity]", ",", 
        RowBox[{"{", 
         RowBox[{
-         RowBox[{"\[Theta]23$11681", "\[Rule]", "Indeterminate"}], ",", 
-         RowBox[{"\[Theta]24$11681", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
+         RowBox[{"\[Theta]23$1254", "\[Rule]", "Indeterminate"}], ",", 
+         RowBox[{"\[Theta]24$1254", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
       "}"}], ",", 
      RowBox[{"{", 
       RowBox[{
@@ -673,11 +672,11 @@ Cell[BoxData[
        RowBox[{"{", 
         RowBox[{
          RowBox[{
-         "\[Theta]23$11681", "\[Rule]", 
+         "\[Theta]23$1254", "\[Rule]", 
           "1.1809635238869351056348408306531787932470781611033803884892`30."}]\
 , ",", 
          RowBox[{
-         "\[Theta]24$11681", "\[Rule]", 
+         "\[Theta]24$1254", "\[Rule]", 
           "1.8023975086529629328135996379419722609768861277736567983576`30."}]\
 }], "}"}]}], "}"}], ",", 
      RowBox[{"{", 
@@ -688,8 +687,8 @@ Cell[BoxData[
        "\[Infinity]", ",", 
        RowBox[{"{", 
         RowBox[{
-         RowBox[{"\[Theta]23$11681", "\[Rule]", "Indeterminate"}], ",", 
-         RowBox[{"\[Theta]24$11681", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
+         RowBox[{"\[Theta]23$1254", "\[Rule]", "Indeterminate"}], ",", 
+         RowBox[{"\[Theta]24$1254", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
       "}"}], ",", 
      RowBox[{"{", 
       RowBox[{
@@ -699,8 +698,8 @@ Cell[BoxData[
        "\[Infinity]", ",", 
        RowBox[{"{", 
         RowBox[{
-         RowBox[{"\[Theta]23$11681", "\[Rule]", "Indeterminate"}], ",", 
-         RowBox[{"\[Theta]24$11681", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
+         RowBox[{"\[Theta]23$1254", "\[Rule]", "Indeterminate"}], ",", 
+         RowBox[{"\[Theta]24$1254", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
       "}"}], ",", 
      RowBox[{"{", 
       RowBox[{
@@ -712,11 +711,11 @@ Cell[BoxData[
        RowBox[{"{", 
         RowBox[{
          RowBox[{
-         "\[Theta]23$11681", "\[Rule]", 
+         "\[Theta]23$1254", "\[Rule]", 
           "1.2292858234321973685972494690249311140526706190853821659347`30."}]\
 , ",", 
          RowBox[{
-         "\[Theta]24$11681", "\[Rule]", 
+         "\[Theta]24$1254", "\[Rule]", 
           "1.8675022996339326473083491222828156033838729207396462380236`29.\
 69897000433602"}]}], "}"}]}], "}"}], ",", 
      RowBox[{"{", 
@@ -727,8 +726,8 @@ Cell[BoxData[
        "\[Infinity]", ",", 
        RowBox[{"{", 
         RowBox[{
-         RowBox[{"\[Theta]23$11681", "\[Rule]", "Indeterminate"}], ",", 
-         RowBox[{"\[Theta]24$11681", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
+         RowBox[{"\[Theta]23$1254", "\[Rule]", "Indeterminate"}], ",", 
+         RowBox[{"\[Theta]24$1254", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
       "}"}], ",", 
      RowBox[{"{", 
       RowBox[{
@@ -738,8 +737,8 @@ Cell[BoxData[
        "\[Infinity]", ",", 
        RowBox[{"{", 
         RowBox[{
-         RowBox[{"\[Theta]23$11681", "\[Rule]", "Indeterminate"}], ",", 
-         RowBox[{"\[Theta]24$11681", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
+         RowBox[{"\[Theta]23$1254", "\[Rule]", "Indeterminate"}], ",", 
+         RowBox[{"\[Theta]24$1254", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
       "}"}], ",", 
      RowBox[{"{", 
       RowBox[{
@@ -751,11 +750,11 @@ Cell[BoxData[
        RowBox[{"{", 
         RowBox[{
          RowBox[{
-         "\[Theta]23$11681", "\[Rule]", 
+         "\[Theta]23$1254", "\[Rule]", 
           "0.6370451769779302955771471304983436404066482393177297914757`29.\
 69897000433602"}], ",", 
          RowBox[{
-         "\[Theta]24$11681", "\[Rule]", 
+         "\[Theta]24$1254", "\[Rule]", 
           "1.5707963267948958350014801166119771349638057791631651671099`30."}]\
 }], "}"}]}], "}"}], ",", 
      RowBox[{"{", 
@@ -768,11 +767,11 @@ Cell[BoxData[
        RowBox[{"{", 
         RowBox[{
          RowBox[{
-         "\[Theta]23$11681", "\[Rule]", 
+         "\[Theta]23$1254", "\[Rule]", 
           "1.7986978897343763198765756735756262630784897453120192080833`30."}]\
 , ",", 
          RowBox[{
-         "\[Theta]24$11681", "\[Rule]", 
+         "\[Theta]24$1254", "\[Rule]", 
           "0.6370451769779302955771471304983436404066482393177297914757`29.\
 69897000433602"}]}], "}"}]}], "}"}], ",", 
      RowBox[{"{", 
@@ -785,11 +784,11 @@ Cell[BoxData[
        RowBox[{"{", 
         RowBox[{
          RowBox[{
-         "\[Theta]23$11681", "\[Rule]", 
+         "\[Theta]23$1254", "\[Rule]", 
           "1.8095616370579761392008138835231176512546854674959850529372`30."}]\
 , ",", 
          RowBox[{
-         "\[Theta]24$11681", "\[Rule]", 
+         "\[Theta]24$1254", "\[Rule]", 
           "1.1950301018563364788389295504574644579260054302265299129763`30."}]\
 }], "}"}]}], "}"}], ",", 
      RowBox[{"{", 
@@ -800,8 +799,8 @@ Cell[BoxData[
        "\[Infinity]", ",", 
        RowBox[{"{", 
         RowBox[{
-         RowBox[{"\[Theta]23$11681", "\[Rule]", "Indeterminate"}], ",", 
-         RowBox[{"\[Theta]24$11681", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
+         RowBox[{"\[Theta]23$1254", "\[Rule]", "Indeterminate"}], ",", 
+         RowBox[{"\[Theta]24$1254", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
       "}"}], ",", 
      RowBox[{"{", 
       RowBox[{
@@ -812,11 +811,11 @@ Cell[BoxData[
        RowBox[{"{", 
         RowBox[{
          RowBox[{
-         "\[Theta]23$11681", "\[Rule]", 
+         "\[Theta]23$1254", "\[Rule]", 
           "2.2252947962927700826551662540584352252647754308732308008131`30."}]\
 , ",", 
          RowBox[{
-         "\[Theta]24$11681", "\[Rule]", 
+         "\[Theta]24$1254", "\[Rule]", 
           "1.7016960206944704620630532401971149409539108965740069333557`30."}]\
 }], "}"}]}], "}"}], ",", 
      RowBox[{"{", 
@@ -829,11 +828,11 @@ Cell[BoxData[
        RowBox[{"{", 
         RowBox[{
          RowBox[{
-         "\[Theta]23$11681", "\[Rule]", 
+         "\[Theta]23$1254", "\[Rule]", 
           "1.9387826008307068743141371449299915403473354440623168213905`30."}]\
 , ",", 
          RowBox[{
-         "\[Theta]24$11681", "\[Rule]", 
+         "\[Theta]24$1254", "\[Rule]", 
           "0.6370451769779302955771471304983436404066482393177297914757`29.\
 69897000433602"}]}], "}"}]}], "}"}], ",", 
      RowBox[{"{", 
@@ -846,11 +845,11 @@ Cell[BoxData[
        RowBox[{"{", 
         RowBox[{
          RowBox[{
-         "\[Theta]23$11681", "\[Rule]", 
+         "\[Theta]23$1254", "\[Rule]", 
           "2.109282380602906683491969558349944863399088409216823840241`30."}],
           ",", 
          RowBox[{
-         "\[Theta]24$11681", "\[Rule]", 
+         "\[Theta]24$1254", "\[Rule]", 
           "1.1907262615388861298723644006251293242397417857049838963789`30."}]\
 }], "}"}]}], "}"}], ",", 
      RowBox[{"{", 
@@ -861,8 +860,8 @@ Cell[BoxData[
        "\[Infinity]", ",", 
        RowBox[{"{", 
         RowBox[{
-         RowBox[{"\[Theta]23$11681", "\[Rule]", "Indeterminate"}], ",", 
-         RowBox[{"\[Theta]24$11681", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
+         RowBox[{"\[Theta]23$1254", "\[Rule]", "Indeterminate"}], ",", 
+         RowBox[{"\[Theta]24$1254", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
       "}"}], ",", 
      RowBox[{"{", 
       RowBox[{
@@ -873,11 +872,11 @@ Cell[BoxData[
        RowBox[{"{", 
         RowBox[{
          RowBox[{
-         "\[Theta]23$11681", "\[Rule]", 
+         "\[Theta]23$1254", "\[Rule]", 
           "1.084771867540776000099794597821263507091789892509353792929`30."}],
           ",", 
          RowBox[{
-         "\[Theta]24$11681", "\[Rule]", 
+         "\[Theta]24$1254", "\[Rule]", 
           "1.4677764891669891731920661978768712331561104155311004379959`30."}]\
 }], "}"}]}], "}"}], ",", 
      RowBox[{"{", 
@@ -889,11 +888,11 @@ Cell[BoxData[
        RowBox[{"{", 
         RowBox[{
          RowBox[{
-         "\[Theta]23$11681", "\[Rule]", 
+         "\[Theta]23$1254", "\[Rule]", 
           "1.4164443994620898066123402300413066698999892745848149557884`30."}]\
 , ",", 
          RowBox[{
-         "\[Theta]24$11681", "\[Rule]", 
+         "\[Theta]24$1254", "\[Rule]", 
           "1.2304571226560023517312019917844719629772246814219164466195`30."}]\
 }], "}"}]}], "}"}], ",", 
      RowBox[{"{", 
@@ -904,8 +903,8 @@ Cell[BoxData[
        "\[Infinity]", ",", 
        RowBox[{"{", 
         RowBox[{
-         RowBox[{"\[Theta]23$11681", "\[Rule]", "Indeterminate"}], ",", 
-         RowBox[{"\[Theta]24$11681", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
+         RowBox[{"\[Theta]23$1254", "\[Rule]", "Indeterminate"}], ",", 
+         RowBox[{"\[Theta]24$1254", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
       "}"}], ",", 
      RowBox[{"{", 
       RowBox[{
@@ -917,11 +916,11 @@ Cell[BoxData[
        RowBox[{"{", 
         RowBox[{
          RowBox[{
-         "\[Theta]23$11681", "\[Rule]", 
+         "\[Theta]23$1254", "\[Rule]", 
           "1.2855458447282203823244090627815760368988857809722159857744`30."}]\
 , ",", 
          RowBox[{
-         "\[Theta]24$11681", "\[Rule]", 
+         "\[Theta]24$1254", "\[Rule]", 
           "1.8675022996339326473083491222828156033838729207396462380236`29.\
 69897000433602"}]}], "}"}]}], "}"}], ",", 
      RowBox[{"{", 
@@ -932,8 +931,8 @@ Cell[BoxData[
        "\[Infinity]", ",", 
        RowBox[{"{", 
         RowBox[{
-         RowBox[{"\[Theta]23$11681", "\[Rule]", "Indeterminate"}], ",", 
-         RowBox[{"\[Theta]24$11681", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
+         RowBox[{"\[Theta]23$1254", "\[Rule]", "Indeterminate"}], ",", 
+         RowBox[{"\[Theta]24$1254", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
       "}"}], ",", 
      RowBox[{"{", 
       RowBox[{
@@ -943,8 +942,8 @@ Cell[BoxData[
        "\[Infinity]", ",", 
        RowBox[{"{", 
         RowBox[{
-         RowBox[{"\[Theta]23$11681", "\[Rule]", "Indeterminate"}], ",", 
-         RowBox[{"\[Theta]24$11681", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
+         RowBox[{"\[Theta]23$1254", "\[Rule]", "Indeterminate"}], ",", 
+         RowBox[{"\[Theta]24$1254", "\[Rule]", "Indeterminate"}]}], "}"}]}], 
       "}"}], ",", 
      RowBox[{"{", 
       RowBox[{
@@ -956,11 +955,11 @@ Cell[BoxData[
        RowBox[{"{", 
         RowBox[{
          RowBox[{
-         "\[Theta]23$11681", "\[Rule]", 
+         "\[Theta]23$1254", "\[Rule]", 
           "2.1124104605768072363809149228507181788225755265946457714014`30."}]\
 , ",", 
          RowBox[{
-         "\[Theta]24$11681", "\[Rule]", 
+         "\[Theta]24$1254", "\[Rule]", 
           "0.6370451769779302955771471304983436404066482393177297914757`29.\
 69897000433602"}]}], "}"}]}], "}"}], ",", 
      RowBox[{"{", 
@@ -972,20 +971,20 @@ Cell[BoxData[
        RowBox[{"{", 
         RowBox[{
          RowBox[{
-         "\[Theta]23$11681", "\[Rule]", 
+         "\[Theta]23$1254", "\[Rule]", 
           "1.9468521423755502495553584222264457203906764162883747457196`30."}]\
 , ",", 
          RowBox[{
-         "\[Theta]24$11681", "\[Rule]", 
+         "\[Theta]24$1254", "\[Rule]", 
           "1.2304571226560023517312019917844719629772246814219164465478`29.\
 507745002151278"}]}], "}"}]}], "}"}]}], "}"}]}], ";"}]], "Input",
- CellChangeTimes->{{3.7089579507920103`*^9, 3.7089579566726007`*^9}}],
+ CellChangeTimes->{{3.708958824109342*^9, 3.7089588313905478`*^9}}],
 
 Cell[BoxData[
  RowBox[{
   RowBox[{"cases", "=", 
    RowBox[{"{", "}"}]}], ";"}]], "Input",
- CellChangeTimes->{{3.70895795777188*^9, 3.708957963826642*^9}}],
+ CellChangeTimes->{{3.708958832049748*^9, 3.7089588372646*^9}}],
 
 Cell[BoxData[
  RowBox[{
@@ -993,7 +992,7 @@ Cell[BoxData[
   "generatemsg", "=", 
    "\"\<Examined 67 cases.\\nSmallest nonzero minimum is \
 0.000455610549534460913586296709913.\\n0 cases remain.\>\""}], ";"}]], "Input",
- CellChangeTimes->{{3.7089579649798727`*^9, 3.7089579755145693`*^9}}]
+ CellChangeTimes->{{3.70895883855405*^9, 3.7089588482650967`*^9}}]
 },
 WindowSize->{1297, 799},
 WindowMargins->{{Automatic, 47}, {Automatic, 36}},
@@ -1012,9 +1011,9 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[558, 20, 36131, 961, 4027, "Input"],
-Cell[36692, 983, 155, 4, 28, "Input"],
-Cell[36850, 989, 266, 6, 86, "Input"]
+Cell[558, 20, 35984, 960, 3707, "Input"],
+Cell[36545, 982, 154, 4, 28, "Input"],
+Cell[36702, 988, 263, 6, 86, "Input"]
 }
 ]
 *)

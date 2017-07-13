@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     43862,        973]
-NotebookOptionsPosition[     43205,        949]
-NotebookOutlinePosition[     43562,        965]
-CellTagsIndexPosition[     43519,        962]
+NotebookDataLength[     44545,        988]
+NotebookOptionsPosition[     43887,        964]
+NotebookOutlinePosition[     44245,        980]
+CellTagsIndexPosition[     44202,        977]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -181,8 +181,12 @@ Cell[BoxData[
        RowBox[{"assumption", ":", " ", "\[Theta]13"}]}], ",", " ", 
       "\[Theta]14", ",", " ", 
       RowBox[{"\[Theta]34", " ", "cannot", " ", "all", " ", "be", " ", 
-       RowBox[{"Pi", "/", "2"}]}]}], "\[IndentingNewLine]", "*)"}], 
-    "\[IndentingNewLine]", 
+       RowBox[{"Pi", "/", "2"}]}], ",", "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{
+       "\[Theta]14", " ", "+", " ", "\[Theta]24", " ", "+", " ", 
+        "\[Theta]34"}], " ", ">", " ", "Pi"}]}], "\[IndentingNewLine]", 
+     "*)"}], "\[IndentingNewLine]", 
     RowBox[{
      RowBox[{"Do", "[", " ", "\[IndentingNewLine]", 
       RowBox[{
@@ -199,8 +203,14 @@ Cell[BoxData[
                 "\[Theta]13", "\[Equal]", "\[Theta]14", "\[Equal]", 
                  "\[Theta]34", "\[Equal]", 
                  RowBox[{"Pi", "/", "2"}]}], ",", 
+                RowBox[{"Continue", "[", "]"}]}], "]"}], ";", 
+              "\[IndentingNewLine]", 
+              RowBox[{"If", "[", 
+               RowBox[{
                 RowBox[{
-                 RowBox[{"Continue", "[", "]"}], ";"}]}], "]"}], ";", 
+                 RowBox[{"\[Theta]14", "+", "\[Theta]24", "+", "\[Theta]34"}],
+                  "\[LessEqual]", "Pi"}], ",", 
+                RowBox[{"Continue", "[", "]"}]}], "]"}], ";", 
               "\[IndentingNewLine]", 
               RowBox[{"(*", "\[IndentingNewLine]", 
                RowBox[{
@@ -512,7 +522,9 @@ Cell[BoxData[
    3.708899344413081*^9, 3.708899393209478*^9}, {3.708899442585917*^9, 
    3.708899448994025*^9}, {3.708899580568495*^9, 3.708899594565907*^9}, {
    3.708899656757929*^9, 3.7088996628125553`*^9}, {3.708899695318328*^9, 
-   3.708899695435811*^9}, {3.7088997260456257`*^9, 3.7088997261148148`*^9}}],
+   3.708899695435811*^9}, {3.7088997260456257`*^9, 3.7088997261148148`*^9}, {
+   3.7089581085717154`*^9, 3.708958209752864*^9}, {3.7089588659252357`*^9, 
+   3.708958914338689*^9}}],
 
 Cell[BoxData[
  RowBox[{
@@ -542,7 +554,7 @@ Cell[BoxData[
         FractionBox["\[Pi]", "3"], ",", "2", ",", "4", ",", "0", ",", 
         RowBox[{"{", 
          RowBox[{
-         "\[Theta]12$69011", "\[Rule]", 
+         "\[Theta]12$11817", "\[Rule]", 
           "1.0471975511965977461542144610931676280657231331250363528405`30."}]\
 , "}"}]}], "}"}], ",", 
       RowBox[{"{", 
@@ -553,7 +565,7 @@ Cell[BoxData[
         FractionBox["\[Pi]", "3"], ",", "2", ",", "4", ",", "0", ",", 
         RowBox[{"{", 
          RowBox[{
-         "\[Theta]12$69011", "\[Rule]", 
+         "\[Theta]12$11817", "\[Rule]", 
           "1.5707963267948966192313216916397514416775877831221250531757`30."}]\
 , "}"}]}], "}"}], ",", 
       RowBox[{"{", 
@@ -564,7 +576,7 @@ Cell[BoxData[
         FractionBox["\[Pi]", "2"], ",", "2", ",", "4", ",", "0", ",", 
         RowBox[{"{", 
          RowBox[{
-         "\[Theta]12$69011", "\[Rule]", 
+         "\[Theta]12$11817", "\[Rule]", 
           "1.0471975511965977461542144610931676280656230947491316231437`30."}]\
 , "}"}]}], "}"}], ",", 
       RowBox[{"{", 
@@ -575,7 +587,7 @@ Cell[BoxData[
         FractionBox["\[Pi]", "4"], ",", "2", ",", "2", ",", "0", ",", 
         RowBox[{"{", 
          RowBox[{
-         "\[Theta]12$69011", "\[Rule]", 
+         "\[Theta]12$11817", "\[Rule]", 
           "1.0471975511965977461542144610931676280657231348824077280855`30."}]\
 , "}"}]}], "}"}], ",", 
       RowBox[{"{", 
@@ -588,10 +600,11 @@ Cell[BoxData[
 30.*^-31", ",", 
         RowBox[{"{", 
          RowBox[{
-         "\[Theta]12$69011", "\[Rule]", 
+         "\[Theta]12$11817", "\[Rule]", 
           "1.5707963267948958338331557457413162180267437160728151455399`30."}]\
 , "}"}]}], "}"}]}], "}"}]}], ";"}]}]], "Input",
- CellChangeTimes->{{3.708899874573735*^9, 3.7088998972060947`*^9}}],
+ CellChangeTimes->{{3.708899874573735*^9, 3.7088998972060947`*^9}, 
+   3.708958988866037*^9}],
 
 Cell[BoxData[
  RowBox[{
@@ -935,7 +948,8 @@ Cell[BoxData[
            FractionBox["\[Pi]", "2"]}], "}"}], "}"}], ",", 
         "\"\<Eliminated because all dihedral angles are of the form \
 2pi/n.\>\""}], "}"}]}], "}"}]}], ";"}]}]], "Input",
- CellChangeTimes->{{3.7089005801400213`*^9, 3.7089006106394253`*^9}}],
+ CellChangeTimes->{{3.7089005801400213`*^9, 3.7089006106394253`*^9}, {
+  3.708959007729259*^9, 3.708959016660577*^9}}],
 
 Cell[BoxData[
  RowBox[{
@@ -945,10 +959,11 @@ Cell[BoxData[
   RowBox[{
    RowBox[{"remainedcases", "=", 
     RowBox[{"{", "}"}]}], ";"}]}]], "Input",
- CellChangeTimes->{{3.708900592720008*^9, 3.70890059319845*^9}}]
+ CellChangeTimes->{{3.708900592720008*^9, 3.70890059319845*^9}, {
+  3.708959028788813*^9, 3.7089590290281353`*^9}}]
 },
 WindowSize->{1436, 914},
-WindowMargins->{{Automatic, 221}, {-8, Automatic}},
+WindowMargins->{{149, Automatic}, {-23, Automatic}},
 FrontEndVersion->"10.4 for Mac OS X x86 (32-bit, 64-bit Kernel) (April 11, \
 2016)",
 StyleDefinitions->"Default.nb"
@@ -968,13 +983,13 @@ Cell[558, 20, 69, 1, 28, "Input"],
 Cell[630, 23, 980, 25, 46, "Input"],
 Cell[1613, 50, 1403, 37, 97, "Input"],
 Cell[3019, 89, 2243, 51, 165, "Input"],
-Cell[5265, 142, 19170, 372, 1253, "Input"],
-Cell[24438, 516, 311, 9, 46, "Input"],
-Cell[24752, 527, 2476, 66, 235, "Input"],
-Cell[27231, 595, 12726, 261, 1168, "Input"],
-Cell[39960, 858, 298, 8, 46, "Input"],
-Cell[40261, 868, 2645, 69, 208, "Input"],
-Cell[42909, 939, 292, 8, 46, "Input"]
+Cell[5265, 142, 19726, 384, 1287, "Input"],
+Cell[24994, 528, 311, 9, 46, "Input"],
+Cell[25308, 539, 2502, 67, 235, "Input"],
+Cell[27813, 608, 12726, 261, 1168, "Input"],
+Cell[40542, 871, 298, 8, 46, "Input"],
+Cell[40843, 881, 2694, 70, 208, "Input"],
+Cell[43540, 953, 343, 9, 46, "Input"]
 }
 ]
 *)
