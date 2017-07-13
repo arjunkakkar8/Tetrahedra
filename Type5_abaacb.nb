@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     45416,       1012]
-NotebookOptionsPosition[     44795,        989]
-NotebookOutlinePosition[     45151,       1005]
-CellTagsIndexPosition[     45108,       1002]
+NotebookDataLength[     45446,       1013]
+NotebookOptionsPosition[     44826,        990]
+NotebookOutlinePosition[     45181,       1006]
+CellTagsIndexPosition[     45138,       1003]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -966,7 +966,7 @@ Cell[BoxData[
        RowBox[{"{", 
         RowBox[{"{", 
          RowBox[{
-          RowBox[{"\[Theta]12$58579", "\[Rule]", 
+          RowBox[{"\[Theta]12", "\[Rule]", 
            RowBox[{"2", " ", 
             RowBox[{"ArcTan", "[", 
              SqrtBox[
@@ -976,19 +976,20 @@ Cell[BoxData[
                 RowBox[{"11", "-", 
                  RowBox[{"4", " ", 
                   SqrtBox["7"]}]}], ")"}]}]], "]"}]}]}], ",", 
-          RowBox[{"\[Theta]13$58579", "\[Rule]", 
+          RowBox[{"\[Theta]13", "\[Rule]", 
            RowBox[{"ArcCos", "[", 
             RowBox[{"-", 
              FractionBox["1", 
               SqrtBox["3"]]}], "]"}]}], ",", 
-          RowBox[{"\[Theta]23$58579", "\[Rule]", 
+          RowBox[{"\[Theta]23", "\[Rule]", 
            FractionBox["\[Pi]", "3"]}]}], "}"}], "}"}]}], "}"}], "}"}]}], 
    ";"}]}]], "Input",
  CellChangeTimes->{{3.708880142963973*^9, 3.7088801857343483`*^9}, {
-  3.708891517316778*^9, 3.7088915215130053`*^9}}]
+  3.708891517316778*^9, 3.7088915215130053`*^9}, {3.708897624715074*^9, 
+  3.708897630664318*^9}}]
 },
 WindowSize->{1327, 855},
-WindowMargins->{{49, Automatic}, {48, Automatic}},
+WindowMargins->{{16, Automatic}, {Automatic, 0}},
 FrontEndVersion->"10.4 for Mac OS X x86 (32-bit, 64-bit Kernel) (April 11, \
 2016)",
 StyleDefinitions->"Default.nb"
@@ -1013,7 +1014,7 @@ Cell[28416, 606, 1150, 30, 107, "Input"],
 Cell[29569, 638, 13336, 292, 1559, "Input"],
 Cell[42908, 932, 364, 9, 46, "Input"],
 Cell[43275, 943, 297, 8, 46, "Input"],
-Cell[43575, 953, 1216, 34, 79, "Input"]
+Cell[43575, 953, 1247, 35, 79, "Input"]
 }
 ]
 *)

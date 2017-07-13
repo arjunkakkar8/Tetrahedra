@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     50750,       1200]
-NotebookOptionsPosition[     50123,       1177]
-NotebookOutlinePosition[     50478,       1193]
-CellTagsIndexPosition[     50435,       1190]
+NotebookDataLength[     50767,       1200]
+NotebookOptionsPosition[     50140,       1177]
+NotebookOutlinePosition[     50495,       1193]
+CellTagsIndexPosition[     50452,       1190]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -848,8 +848,8 @@ Cell[BoxData[
            RowBox[{"mat", "[", 
             RowBox[{"[", 
              RowBox[{"{", 
-              RowBox[{"1", ",", "4"}], "}"}], "]"}], "]"}], "//", "Det"}], 
-          " ", "//", "FullSimplify"}]}], ";", "\[IndentingNewLine]", 
+              RowBox[{"1", ",", "4"}], "}"}], "]"}], "]"}], "//", "Det"}], "//",
+           "FullSimplify"}]}], ";", "\[IndentingNewLine]", 
         "\[IndentingNewLine]", 
         RowBox[{"expr", "=", 
          RowBox[{
@@ -1032,7 +1032,7 @@ Cell[BoxData[
    3.708734249556766*^9, 3.708734251651144*^9}, {3.708785411995022*^9, 
    3.708785455323132*^9}, {3.708785493674098*^9, 3.708785642604645*^9}, {
    3.7087856855689087`*^9, 3.708785687799644*^9}, {3.708811810865807*^9, 
-   3.708811811592889*^9}}],
+   3.708811811592889*^9}, 3.708894369399181*^9}],
 
 Cell[BoxData[
  RowBox[{
@@ -1198,10 +1198,10 @@ Cell[2867, 84, 1797, 47, 148, "Input"],
 Cell[4667, 133, 19433, 395, 1389, "Input"],
 Cell[24103, 530, 450, 11, 46, "Input"],
 Cell[24556, 543, 8663, 230, 850, "Input"],
-Cell[33222, 775, 11593, 259, 1287, "Input"],
-Cell[44818, 1036, 298, 8, 46, "Input"],
-Cell[45119, 1046, 1303, 33, 97, "Input"],
-Cell[46425, 1081, 3694, 94, 139, "Input"]
+Cell[33222, 775, 11610, 259, 1287, "Input"],
+Cell[44835, 1036, 298, 8, 46, "Input"],
+Cell[45136, 1046, 1303, 33, 97, "Input"],
+Cell[46442, 1081, 3694, 94, 139, "Input"]
 }
 ]
 *)
