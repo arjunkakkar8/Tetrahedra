@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     45446,       1013]
-NotebookOptionsPosition[     44826,        990]
-NotebookOutlinePosition[     45181,       1006]
-CellTagsIndexPosition[     45138,       1003]
+NotebookDataLength[     45939,       1021]
+NotebookOptionsPosition[     45319,        998]
+NotebookOutlinePosition[     45673,       1014]
+CellTagsIndexPosition[     45630,       1011]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -662,7 +662,10 @@ Cell[BoxData[
          RowBox[{"{", 
           RowBox[{
           "\[Theta]24", ",", "n12", ",", "n14", ",", "n23", ",", "n13", ",", 
-           "n34", ",", "_", ",", "_"}], "}"}], "=", "case"}], ";", 
+           "n34"}], "}"}], "=", 
+         RowBox[{"case", "[", 
+          RowBox[{"[", 
+           RowBox[{"1", ";;", "6"}], "]"}], "]"}]}], ";", 
         "\[IndentingNewLine]", 
         RowBox[{"Print", "[", 
          RowBox[{
@@ -789,59 +792,64 @@ Cell[BoxData[
           RowBox[{"det2", "\[Equal]", "0"}], "&&", "\[IndentingNewLine]", 
           RowBox[{"det3", "\[Equal]", "0"}], "&&", "\[IndentingNewLine]", 
           RowBox[{"det4", "\[Equal]", "0"}], "&&", "\[IndentingNewLine]", 
-          RowBox[{
-           RowBox[{"Pi", "/", "5"}], "<", "\[Theta]12", "<", 
-           RowBox[{"4", 
-            RowBox[{"Pi", "/", "5"}]}]}], "&&", "\[IndentingNewLine]", 
-          RowBox[{
-           RowBox[{"Pi", "/", "5"}], "<", "\[Theta]14", "<", 
-           RowBox[{"4", 
-            RowBox[{"Pi", "/", "5"}]}]}], "&&", "\[IndentingNewLine]", 
-          RowBox[{
-           RowBox[{"Pi", "/", "5"}], "<", "\[Theta]23", "<", 
-           RowBox[{"4", 
-            RowBox[{"Pi", "/", "5"}]}]}], "&&", "\[IndentingNewLine]", 
-          RowBox[{
-           RowBox[{"Pi", "/", "5"}], "<", "\[Theta]13", "<", 
-           RowBox[{"4", 
-            RowBox[{"Pi", "/", "5"}]}]}], "&&", "\[IndentingNewLine]", 
-          RowBox[{
-           RowBox[{"Pi", "/", "5"}], "<", "\[Theta]34", "<", 
-           RowBox[{"4", 
-            RowBox[{"Pi", "/", "5"}]}]}], "&&", "\[IndentingNewLine]", 
-          RowBox[{
-           RowBox[{"\[Theta]12", "+", "\[Theta]13", "+", "\[Theta]14"}], ">", 
-           "Pi"}], "&&", "\[IndentingNewLine]", 
-          RowBox[{
-           RowBox[{"\[Theta]12", "+", "\[Theta]23", "+", "\[Theta]24"}], ">", 
-           "Pi"}], "&&", "\[IndentingNewLine]", 
-          RowBox[{
-           RowBox[{"\[Theta]13", "+", "\[Theta]23", "+", "\[Theta]34"}], ">", 
-           "Pi"}], "&&", "\[IndentingNewLine]", 
-          RowBox[{
-           RowBox[{"\[Theta]14", "+", "\[Theta]24", "+", "\[Theta]34"}], ">", 
-           "Pi"}], "&&", "\[IndentingNewLine]", 
-          RowBox[{
+          RowBox[{"Reduce", "[", 
            RowBox[{
-           "\[Theta]12", "+", "\[Theta]34", "+", "\[Theta]13", "+", 
-            "\[Theta]24"}], "<", 
-           RowBox[{"2", "Pi"}]}], "&&", "\[IndentingNewLine]", 
-          RowBox[{
-           RowBox[{
-           "\[Theta]12", "+", "\[Theta]34", "+", "\[Theta]14", "+", 
-            "\[Theta]23"}], "<", 
-           RowBox[{"2", "Pi"}]}], "&&", "\[IndentingNewLine]", 
-          RowBox[{
-           RowBox[{
-           "\[Theta]13", "+", "\[Theta]24", "+", "\[Theta]14", "+", 
-            "\[Theta]23"}], "<", 
-           RowBox[{"2", "Pi"}]}]}]}], ";", "\[IndentingNewLine]", 
+            RowBox[{
+             RowBox[{"Pi", "/", "5"}], "<", "\[Theta]12", "<", 
+             RowBox[{"4", 
+              RowBox[{"Pi", "/", "5"}]}]}], "&&", "\[IndentingNewLine]", 
+            RowBox[{
+             RowBox[{"Pi", "/", "5"}], "<", "\[Theta]14", "<", 
+             RowBox[{"4", 
+              RowBox[{"Pi", "/", "5"}]}]}], "&&", "\[IndentingNewLine]", 
+            RowBox[{
+             RowBox[{"Pi", "/", "5"}], "<", "\[Theta]23", "<", 
+             RowBox[{"4", 
+              RowBox[{"Pi", "/", "5"}]}]}], "&&", "\[IndentingNewLine]", 
+            RowBox[{
+             RowBox[{"Pi", "/", "5"}], "<", "\[Theta]13", "<", 
+             RowBox[{"4", 
+              RowBox[{"Pi", "/", "5"}]}]}], "&&", "\[IndentingNewLine]", 
+            RowBox[{
+             RowBox[{"Pi", "/", "5"}], "<", "\[Theta]34", "<", 
+             RowBox[{"4", 
+              RowBox[{"Pi", "/", "5"}]}]}], "&&", "\[IndentingNewLine]", 
+            RowBox[{
+             RowBox[{"\[Theta]12", "+", "\[Theta]13", "+", "\[Theta]14"}], 
+             ">", "Pi"}], "&&", "\[IndentingNewLine]", 
+            RowBox[{
+             RowBox[{"\[Theta]12", "+", "\[Theta]23", "+", "\[Theta]24"}], 
+             ">", "Pi"}], "&&", "\[IndentingNewLine]", 
+            RowBox[{
+             RowBox[{"\[Theta]13", "+", "\[Theta]23", "+", "\[Theta]34"}], 
+             ">", "Pi"}], "&&", "\[IndentingNewLine]", 
+            RowBox[{
+             RowBox[{"\[Theta]14", "+", "\[Theta]24", "+", "\[Theta]34"}], 
+             ">", "Pi"}], "&&", "\[IndentingNewLine]", 
+            RowBox[{
+             RowBox[{
+             "\[Theta]12", "+", "\[Theta]34", "+", "\[Theta]13", "+", 
+              "\[Theta]24"}], "<", 
+             RowBox[{"2", "Pi"}]}], "&&", "\[IndentingNewLine]", 
+            RowBox[{
+             RowBox[{
+             "\[Theta]12", "+", "\[Theta]34", "+", "\[Theta]14", "+", 
+              "\[Theta]23"}], "<", 
+             RowBox[{"2", "Pi"}]}], "&&", "\[IndentingNewLine]", 
+            RowBox[{
+             RowBox[{
+             "\[Theta]13", "+", "\[Theta]24", "+", "\[Theta]14", "+", 
+              "\[Theta]23"}], "<", 
+             RowBox[{"2", "Pi"}]}]}], "]"}]}]}], ";", "\[IndentingNewLine]", 
         "\[IndentingNewLine]", 
         RowBox[{"solution", "=", 
-         RowBox[{"Solve", "[", 
-          RowBox[{"Reduce", "[", 
-           RowBox[{"expr", ",", "vars"}], "]"}], "]"}]}], ";", 
-        "\[IndentingNewLine]", "\[IndentingNewLine]", 
+         RowBox[{"TimeConstrained", "[", 
+          RowBox[{
+           RowBox[{"Solve", "[", 
+            RowBox[{"expr", ",", "vars", ",", 
+             RowBox[{"Method", "\[Rule]", "Reduce"}]}], "]"}], ",", 
+           "\[IndentingNewLine]", "300", ",", "\"\<Timeout\>\""}], "]"}]}], 
+        ";", "\[IndentingNewLine]", "\[IndentingNewLine]", 
         RowBox[{"Clear", "[", 
          RowBox[{
          "\[Theta]12", ",", "\[Theta]14", ",", "\[Theta]23", ",", 
@@ -928,7 +936,7 @@ Cell[BoxData[
    3.7088068501423893`*^9, 3.708806851446168*^9}, {3.708807201296163*^9, 
    3.708807206582707*^9}, {3.7088116010137243`*^9, 3.7088116093005943`*^9}, {
    3.708878899804523*^9, 3.708878924246372*^9}, {3.708879480263321*^9, 
-   3.708879501416108*^9}}],
+   3.708879501416108*^9}, {3.708992720782237*^9, 3.708992761344136*^9}}],
 
 Cell[BoxData[
  RowBox[{
@@ -976,21 +984,21 @@ Cell[BoxData[
                 RowBox[{"11", "-", 
                  RowBox[{"4", " ", 
                   SqrtBox["7"]}]}], ")"}]}]], "]"}]}]}], ",", 
+          RowBox[{"\[Theta]23", "\[Rule]", 
+           FractionBox["\[Pi]", "3"]}], ",", 
           RowBox[{"\[Theta]13", "\[Rule]", 
            RowBox[{"ArcCos", "[", 
             RowBox[{"-", 
              FractionBox["1", 
-              SqrtBox["3"]]}], "]"}]}], ",", 
-          RowBox[{"\[Theta]23", "\[Rule]", 
-           FractionBox["\[Pi]", "3"]}]}], "}"}], "}"}]}], "}"}], "}"}]}], 
+              SqrtBox["3"]]}], "]"}]}]}], "}"}], "}"}]}], "}"}], "}"}]}], 
    ";"}]}]], "Input",
  CellChangeTimes->{{3.708880142963973*^9, 3.7088801857343483`*^9}, {
   3.708891517316778*^9, 3.7088915215130053`*^9}, {3.708897624715074*^9, 
-  3.708897630664318*^9}}]
+  3.708897630664318*^9}, {3.7089931400008373`*^9, 3.708993147205413*^9}}]
 },
 WindowSize->{1327, 855},
-WindowMargins->{{16, Automatic}, {Automatic, 0}},
-FrontEndVersion->"10.4 for Mac OS X x86 (32-bit, 64-bit Kernel) (April 11, \
+WindowMargins->{{18, Automatic}, {Automatic, 0}},
+FrontEndVersion->"11.0 for Mac OS X x86 (32-bit, 64-bit Kernel) (July 28, \
 2016)",
 StyleDefinitions->"Default.nb"
 ]
@@ -1005,16 +1013,16 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[558, 20, 965, 24, 46, "Input"],
-Cell[1526, 46, 1338, 36, 97, "Input"],
-Cell[2867, 84, 2268, 56, 182, "Input"],
-Cell[5138, 142, 22822, 449, 1729, "Input"],
-Cell[27963, 593, 450, 11, 46, "Input"],
-Cell[28416, 606, 1150, 30, 107, "Input"],
-Cell[29569, 638, 13336, 292, 1559, "Input"],
-Cell[42908, 932, 364, 9, 46, "Input"],
-Cell[43275, 943, 297, 8, 46, "Input"],
-Cell[43575, 953, 1247, 35, 79, "Input"]
+Cell[558, 20, 965, 24, 54, "Input"],
+Cell[1526, 46, 1338, 36, 117, "Input"],
+Cell[2867, 84, 2268, 56, 222, "Input"],
+Cell[5138, 142, 22822, 449, 2133, "Input"],
+Cell[27963, 593, 450, 11, 54, "Input"],
+Cell[28416, 606, 1150, 30, 116, "Input"],
+Cell[29569, 638, 13781, 300, 1944, "Input"],
+Cell[43353, 940, 364, 9, 54, "Input"],
+Cell[43720, 951, 297, 8, 54, "Input"],
+Cell[44020, 961, 1295, 35, 93, "Input"]
 }
 ]
 *)
