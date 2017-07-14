@@ -1,0 +1,112 @@
+Type aaabcd
+-----------
+
+What the code searches for:
+1. theta23, theta24, theta34 are of the form 2pi/(2n)
+2. d12 = d13 = d14
+3. n12, n13, n14 have the same parity and at most one is zero
+
+Justification for the remaining possibilities:
+Otherwise theta12, theta13, theta14 are of the form 2pi/(2n).
+So we can reduce to the 2pi/n case.
+
+Type aabbcd
+-----------
+
+There is no code for this type.
+
+Justification for the remaining possibilities:
+We have theta14, theta23 are of the form 2pi/(2n).
+The code for Type abcade covers this. [VERIFY LATER]
+
+Type abaacb
+-----------
+
+What the code searches for:
+1. theta24 is of the form 2pi/(2n)
+2. d12 = d14 = d23
+3. d13 = d34
+4. n12, n14, n23 are even and at most one is zero
+5. n13, n34 are even and nonzero
+
+Justification for the remaining possibilities:
+Otherwise, either
+I. theta12, theta14, theta23 are of the form 2pi/(2n) (breaks 4.)
+II. theta13, theta34 are of the form 2pi/(2n) (breaks 5.)
+or both.
+
+If only I is true, then the code for Type abcade covers this. [VERIFY LATER]
+If only II is true, then the code for Type abaacd covers this.
+If both are true, then we can reduce to the 2pi/n case.
+
+Type abaacd
+-----------
+
+What the code searches for:
+[This code also covers part of abaacb]
+1. theta13, theta24, theta34 are of the form 2pi/(2n)
+2. d12 = d14 = d23
+3. n12, n14, n23 are even and at most one is zero
+
+Justification for the remaining possibilities:
+Otherwise theta12, theta14, theta23 are of the form 2pi/(2n).
+So we can reduce to the 2pi/n case.
+
+Type abcaaa
+-----------
+
+What the code searches for:
+1. theta13, theta14 are of the form 2pi/(2n)
+2. d12 = d23 = d24 = d34
+3. n23, n24, n34 have the same parity
+4. n12 is even
+5. at most two of n12, n23, n24, n34 are zero
+
+Justification for the remaining possibilities:
+Otherwise theta12, theta23, theta24, theta34 are of the form 2pi/(2n).
+So we can reduce to the 2pi/n case.
+
+Type abcacb
+-----------
+
+What the code searches for:
+1. d12 = d23
+2. d13 = d34
+3. d14 = d24
+4. n12, n23 are even and nonzero
+5. n13, n34 are even and nonzero
+6. n14, n24 are even and nonzero
+
+Justification for the remaining possibilities:
+Otherwise, at least one of the following is true
+I. theta12, theta23 are of the form 2pi/(2n) (breaks 4.)
+II. theta13, theta34 are of the form 2pi/(2n) (breaks 5.)
+III. theta14, theta24 are of the form 2pi/(2n) (breaks 6.)
+
+???
+
+Type abcacd
+-----------
+
+What the code searches for:
+[This code also covers part of abcacb]
+
+???
+
+Type abcade
+-----------
+
+What the code searches for:
+[This code also covers aabbcd and part of abaacb]
+
+???
+
+Type abccbb
+-----------
+
+???
+
+Type abcddd
+-----------
+
+???
