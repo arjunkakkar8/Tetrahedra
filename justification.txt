@@ -16,8 +16,16 @@ Type aabbcd
 There is no code for this type.
 
 Justification for the remaining possibilities:
-We have theta14, theta23 are of the form 2pi/(2n).
-The code for Type abcade covers this. [VERIFY LATER]
+We have
+1. theta14, theta23, theta24, theta34 are of the form 2pi/(2n)
+2. d12 = d13
+3. d14 = d23
+4. at least one of these is true
+   4a. n12, n13 are even and nonzero
+   4b. theta12, theta13 are of the form 2pi/(2n)
+
+If 4a is true, then the code for Type abcade covers this (with some permutation).
+If 4b is true, then we can reduce to the 2pi/n case.
 
 Type abaacb
 -----------
@@ -30,12 +38,11 @@ What the code searches for:
 5. n13, n34 are even and nonzero
 
 Justification for the remaining possibilities:
-Otherwise, either
+Otherwise, at least one of the following is true
 I. theta12, theta14, theta23 are of the form 2pi/(2n) (breaks 4.)
 II. theta13, theta34 are of the form 2pi/(2n) (breaks 5.)
-or both.
 
-If only I is true, then the code for Type abcade covers this. [VERIFY LATER]
+If only I is true, then the code for Type abcade covers this (with some permutation).
 If only II is true, then the code for Type abaacd covers this.
 If both are true, then we can reduce to the 2pi/n case.
 
@@ -83,30 +90,66 @@ I. theta12, theta23 are of the form 2pi/(2n) (breaks 4.)
 II. theta13, theta34 are of the form 2pi/(2n) (breaks 5.)
 III. theta14, theta24 are of the form 2pi/(2n) (breaks 6.)
 
-???
+Note the cyclic symmetry in I, II, and III.
+If only II is true, then the code for Type abcacd covers this.
+If only II and III are true, then the code for Type abcade covers this.
+If all are true, then we can reduce to the 2pi/n case.
 
 Type abcacd
 -----------
 
 What the code searches for:
 [This code also covers part of abcacb]
+1. theta13, theta34 are of the form 2pi/(2n)
+2. d12 = d23
+3. d14 = d24
+4. n12, n23 are even and nonzero
+5. n14, n24 are even and nonzero
 
-???
+Justification for the remaining possibilities:
+Otherwise, at least one of the following is true
+I. theta12, theta23 are of the form 2pi/(2n) (breaks 4.)
+II. theta14, theta24 are of the form 2pi/(2n) (breaks 5.)
+
+If only I is true, then the code for Type abcade covers this (with some permutation).
+If only II is true, then the code for Type abcade covers this.
+If both are true, then we can reduce to the 2pi/n case.
 
 Type abcade
 -----------
 
 What the code searches for:
-[This code also covers aabbcd and part of abaacb]
+[This code also covers part of aabbcd, abaacb, abcacb, and abcacd]
+1. theta13, theta14, theta24, theta34 are of the form 2pi/(2n)
+2. d12 = d23
+3. n12, n23 are even and nonzero
 
-???
+Justification for the remaining possibilities:
+Otherwise theta12, theta23 are of the form 2pi/(2n).
+So we can reduce to the 2pi/n case.
 
 Type abccbb
 -----------
 
-???
+What the code searches for:
+1. theta12, theta14 = theta23 are of the form 2pi/(2n)
+2. d14 = d23
+3. d13 = d24 = d34
+4. theta13 = theta24
+5. n13, n34 are even and nonzero
+
+Justification for the remaining possibilities:
+Otherwise theta13 = theta24, theta34 are of the form 2pi/(2n).
+So we can reduce to the 2pi/n case.
 
 Type abcddd
 -----------
 
-???
+What the code searches for:
+1. theta12, theta13, theta14 are of the form 2pi/(2n)
+2. d23 = d24 = d34
+3. n23, n24, n34 are even and at most one is zero
+
+Justification for the remaining possibilities:
+Otherwise theta23, theta24, theta34 are of the form 2pi/(2n).
+So we can reduce to the 2pi/n case.
