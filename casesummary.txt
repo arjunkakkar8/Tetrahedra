@@ -1,4 +1,4 @@
-aaabcd: 224 cases -> 7 cases -> 5 cases		Has been verified by proof.
+aaabcd: 224 cases -> 7 cases -> 2 cases		Has been verified by proof.
 abaacb: 396 cases -> 1 case -> 1 case			Has been verified by proof.
 abaacd: 315 cases -> 8 cases -> 2 cases
 abcaaa: 435 cases -> 0 cases

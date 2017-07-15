@@ -5,6 +5,9 @@ What the code searches for:
 1. theta23, theta24, theta34 are of the form 2pi/(2n)
 2. d12 = d13 = d14
 3. n12, n13, n14 have the same parity and at most one is zero
+4. d12 != d23, d12 != d24, d12 != d34
+
+Note that it is okay to enforce 4. because no other type shares this code.
 
 Justification for the remaining possibilities:
 Otherwise theta12, theta13, theta14 are of the form 2pi/(2n).
