@@ -3,7 +3,7 @@ abaacb: 396 cases -> 1 case -> 1 case								Has been verified by proof.
 abaacd: 315 cases -> 8 cases -> 2 cases [both belong to 1st Goldberg family]		Has been verified by proof.
 abcaaa: 435 cases -> 0 cases
 abcacb: 91 cases -> 0 cases
-abcacd: 324 cases -> 6 cases -> 1 case
+abcacd: 324 cases -> 6 cases -> 1 case							Has been verified by proof.
 abcade: 144 cases -> 5 cases -> 0 cases
 abccbb: 54 cases -> 2 cases -> 1 case [belongs to 1st Goldberg family]
 abcddd: 67 cases -> 0 cases

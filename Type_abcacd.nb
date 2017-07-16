@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     48681,       1088]
+NotebookDataLength[     48682,       1088]
 NotebookOptionsPosition[     48021,       1064]
-NotebookOutlinePosition[     48375,       1080]
-CellTagsIndexPosition[     48332,       1077]
+NotebookOutlinePosition[     48377,       1080]
+CellTagsIndexPosition[     48334,       1077]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -1062,9 +1062,9 @@ Cell[BoxData[
    3.708897428603394*^9, 3.7088974316286497`*^9}, 3.708897559052189*^9, 
    3.708994973478491*^9}]
 },
-WindowSize->{1239, 978},
-WindowMargins->{{19, Automatic}, {Automatic, 0}},
-FrontEndVersion->"11.0 for Mac OS X x86 (32-bit, 64-bit Kernel) (July 28, \
+WindowSize->{1239, 938},
+WindowMargins->{{Automatic, -97}, {Automatic, 0}},
+FrontEndVersion->"10.4 for Mac OS X x86 (32-bit, 64-bit Kernel) (April 11, \
 2016)",
 StyleDefinitions->"Default.nb"
 ]
@@ -1079,14 +1079,14 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[558, 20, 69, 1, 32, "Input"],
-Cell[630, 23, 980, 25, 54, "Input"],
-Cell[1613, 50, 1403, 37, 117, "Input"],
-Cell[3019, 89, 2399, 55, 180, "Input"],
-Cell[5421, 146, 18010, 355, 1545, "Input"],
-Cell[23434, 503, 525, 12, 54, "Input"],
-Cell[23962, 517, 4098, 107, 541, "Input"],
-Cell[28063, 626, 15813, 331, 1797, "Input"],
+Cell[558, 20, 69, 1, 28, "Input"],
+Cell[630, 23, 980, 25, 46, "Input"],
+Cell[1613, 50, 1403, 37, 97, "Input"],
+Cell[3019, 89, 2399, 55, 148, "Input"],
+Cell[5421, 146, 18010, 355, 1253, "Input"],
+Cell[23434, 503, 525, 12, 46, "Input"],
+Cell[23962, 517, 4098, 107, 507, "Input"],
+Cell[28063, 626, 15813, 331, 1457, "Input"],
 Cell[43879, 959, 639, 13, 54, "Input"],
 Cell[44521, 974, 2760, 69, 219, "Input"],
 Cell[47284, 1045, 733, 17, 68, "Input"]
