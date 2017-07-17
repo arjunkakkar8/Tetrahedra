@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[    120366,       2546]
-NotebookOptionsPosition[    116676,       2446]
-NotebookOutlinePosition[    117031,       2462]
-CellTagsIndexPosition[    116988,       2459]
+NotebookDataLength[    248157,       5249]
+NotebookOptionsPosition[    239156,       5022]
+NotebookOutlinePosition[    239511,       5038]
+CellTagsIndexPosition[    239468,       5035]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -2429,8 +2429,2584 @@ Cell[BoxData[
    " \[Theta]14=", Rational[1, 4] Pi, " n12=", 0, " n23=", 0, " n24=", 2, 
    " n34=", 2, " with minimum ", 0.000722188057786978, "."],
   Editable->False]], "Print",
- CellChangeTimes->{3.709239940745454*^9}]
+ CellChangeTimes->{3.709239940745454*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "127", "\[InvisibleSpace]", "\<\": The determinant is not zero for \
+\[Theta]13=\"\>", "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "2"], "\[InvisibleSpace]", "\<\" \[Theta]14=\"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "4"], "\[InvisibleSpace]", "\<\" n12=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" n23=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" n24=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n34=\"\>", 
+   "\[InvisibleSpace]", "4", "\[InvisibleSpace]", "\<\" with minimum \"\>", 
+   "\[InvisibleSpace]", "0.0077384618085740865`", 
+   "\[InvisibleSpace]", "\<\".\"\>"}],
+  SequenceForm[
+  127, ": The determinant is not zero for \[Theta]13=", Rational[1, 2] Pi, 
+   " \[Theta]14=", Rational[1, 4] Pi, " n12=", 0, " n23=", 0, " n24=", 2, 
+   " n34=", 4, " with minimum ", 0.0077384618085740865`, "."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.70923994884593*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "130", "\[InvisibleSpace]", "\<\": The determinant is not zero for \
+\[Theta]13=\"\>", "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "2"], "\[InvisibleSpace]", "\<\" \[Theta]14=\"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "4"], "\[InvisibleSpace]", "\<\" n12=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n23=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" n24=\"\>", 
+   "\[InvisibleSpace]", "4", "\[InvisibleSpace]", "\<\" n34=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" with minimum \"\>", 
+   "\[InvisibleSpace]", "4.792205419076424`*^-6", 
+   "\[InvisibleSpace]", "\<\".\"\>"}],
+  SequenceForm[
+  130, ": The determinant is not zero for \[Theta]13=", Rational[1, 2] Pi, 
+   " \[Theta]14=", Rational[1, 4] Pi, " n12=", 2, " n23=", 0, " n24=", 4, 
+   " n34=", 0, " with minimum ", 4.792205419076424*^-6, "."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.709239956505775*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "131", "\[InvisibleSpace]", "\<\": The determinant is not zero for \
+\[Theta]13=\"\>", "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "2"], "\[InvisibleSpace]", "\<\" \[Theta]14=\"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "4"], "\[InvisibleSpace]", "\<\" n12=\"\>", 
+   "\[InvisibleSpace]", "4", "\[InvisibleSpace]", "\<\" n23=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" n24=\"\>", 
+   "\[InvisibleSpace]", "4", "\[InvisibleSpace]", "\<\" n34=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" with minimum \"\>", 
+   "\[InvisibleSpace]", "0.011270461641177839`", 
+   "\[InvisibleSpace]", "\<\".\"\>"}],
+  SequenceForm[
+  131, ": The determinant is not zero for \[Theta]13=", Rational[1, 2] Pi, 
+   " \[Theta]14=", Rational[1, 4] Pi, " n12=", 4, " n23=", 0, " n24=", 4, 
+   " n34=", 0, " with minimum ", 0.011270461641177839`, "."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.7092399588386602`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "132", "\[InvisibleSpace]", "\<\": The determinant is not zero for \
+\[Theta]13=\"\>", "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "2"], "\[InvisibleSpace]", "\<\" \[Theta]14=\"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "4"], "\[InvisibleSpace]", "\<\" n12=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" n23=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" n24=\"\>", 
+   "\[InvisibleSpace]", "4", "\[InvisibleSpace]", "\<\" n34=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" with minimum \"\>", 
+   "\[InvisibleSpace]", "0.004566225664986953`", 
+   "\[InvisibleSpace]", "\<\".\"\>"}],
+  SequenceForm[
+  132, ": The determinant is not zero for \[Theta]13=", Rational[1, 2] Pi, 
+   " \[Theta]14=", Rational[1, 4] Pi, " n12=", 0, " n23=", 0, " n24=", 4, 
+   " n34=", 2, " with minimum ", 0.004566225664986953, "."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.7092399690256433`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "135", "\[InvisibleSpace]", "\<\": The determinant is not zero for \
+\[Theta]13=\"\>", "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "2"], "\[InvisibleSpace]", "\<\" \[Theta]14=\"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "4"], "\[InvisibleSpace]", "\<\" n12=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n23=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" n24=\"\>", 
+   "\[InvisibleSpace]", "6", "\[InvisibleSpace]", "\<\" n34=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" with minimum \"\>", 
+   "\[InvisibleSpace]", "0.005104442763451948`", 
+   "\[InvisibleSpace]", "\<\".\"\>"}],
+  SequenceForm[
+  135, ": The determinant is not zero for \[Theta]13=", Rational[1, 2] Pi, 
+   " \[Theta]14=", Rational[1, 4] Pi, " n12=", 2, " n23=", 0, " n24=", 6, 
+   " n34=", 0, " with minimum ", 0.005104442763451948, "."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.709239972891941*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "138", "\[InvisibleSpace]", "\<\": The determinant is not zero for \
+\[Theta]13=\"\>", "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "2"], "\[InvisibleSpace]", "\<\" \[Theta]14=\"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "4"], "\[InvisibleSpace]", "\<\" n12=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n23=\"\>", 
+   "\[InvisibleSpace]", "1", "\[InvisibleSpace]", "\<\" n24=\"\>", 
+   "\[InvisibleSpace]", "1", "\[InvisibleSpace]", "\<\" n34=\"\>", 
+   "\[InvisibleSpace]", "1", "\[InvisibleSpace]", "\<\" with minimum \"\>", 
+   "\[InvisibleSpace]", "0.0000694115191760595`", 
+   "\[InvisibleSpace]", "\<\".\"\>"}],
+  SequenceForm[
+  138, ": The determinant is not zero for \[Theta]13=", Rational[1, 2] Pi, 
+   " \[Theta]14=", Rational[1, 4] Pi, " n12=", 2, " n23=", 1, " n24=", 1, 
+   " n34=", 1, " with minimum ", 0.0000694115191760595, "."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.70924046481214*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "141", "\[InvisibleSpace]", "\<\": The determinant is not zero for \
+\[Theta]13=\"\>", "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "2"], "\[InvisibleSpace]", "\<\" \[Theta]14=\"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "4"], "\[InvisibleSpace]", "\<\" n12=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" n23=\"\>", 
+   "\[InvisibleSpace]", "1", "\[InvisibleSpace]", "\<\" n24=\"\>", 
+   "\[InvisibleSpace]", "1", "\[InvisibleSpace]", "\<\" n34=\"\>", 
+   "\[InvisibleSpace]", "3", "\[InvisibleSpace]", "\<\" with minimum \"\>", 
+   "\[InvisibleSpace]", "0.0013168807117083059`", 
+   "\[InvisibleSpace]", "\<\".\"\>"}],
+  SequenceForm[
+  141, ": The determinant is not zero for \[Theta]13=", Rational[1, 2] Pi, 
+   " \[Theta]14=", Rational[1, 4] Pi, " n12=", 0, " n23=", 1, " n24=", 1, 
+   " n34=", 3, " with minimum ", 0.0013168807117083059`, "."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.709240513269279*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "142", "\[InvisibleSpace]", "\<\": The determinant is not zero for \
+\[Theta]13=\"\>", "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "2"], "\[InvisibleSpace]", "\<\" \[Theta]14=\"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "4"], "\[InvisibleSpace]", "\<\" n12=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n23=\"\>", 
+   "\[InvisibleSpace]", "1", "\[InvisibleSpace]", "\<\" n24=\"\>", 
+   "\[InvisibleSpace]", "1", "\[InvisibleSpace]", "\<\" n34=\"\>", 
+   "\[InvisibleSpace]", "3", "\[InvisibleSpace]", "\<\" with minimum \"\>", 
+   "\[InvisibleSpace]", "0.056281442042769046`", 
+   "\[InvisibleSpace]", "\<\".\"\>"}],
+  SequenceForm[
+  142, ": The determinant is not zero for \[Theta]13=", Rational[1, 2] Pi, 
+   " \[Theta]14=", Rational[1, 4] Pi, " n12=", 2, " n23=", 1, " n24=", 1, 
+   " n34=", 3, " with minimum ", 0.056281442042769046`, "."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.709240525286455*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "144", "\[InvisibleSpace]", "\<\": The determinant is not zero for \
+\[Theta]13=\"\>", "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "2"], "\[InvisibleSpace]", "\<\" \[Theta]14=\"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "4"], "\[InvisibleSpace]", "\<\" n12=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" n23=\"\>", 
+   "\[InvisibleSpace]", "1", "\[InvisibleSpace]", "\<\" n24=\"\>", 
+   "\[InvisibleSpace]", "1", "\[InvisibleSpace]", "\<\" n34=\"\>", 
+   "\[InvisibleSpace]", "5", "\[InvisibleSpace]", "\<\" with minimum \"\>", 
+   "\[InvisibleSpace]", "0.0001601064276911944`", 
+   "\[InvisibleSpace]", "\<\".\"\>"}],
+  SequenceForm[
+  144, ": The determinant is not zero for \[Theta]13=", Rational[1, 2] Pi, 
+   " \[Theta]14=", Rational[1, 4] Pi, " n12=", 0, " n23=", 1, " n24=", 1, 
+   " n34=", 5, " with minimum ", 0.0001601064276911944, "."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.709240552087595*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "147", "\[InvisibleSpace]", "\<\": The determinant is not zero for \
+\[Theta]13=\"\>", "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "2"], "\[InvisibleSpace]", "\<\" \[Theta]14=\"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "4"], "\[InvisibleSpace]", "\<\" n12=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" n23=\"\>", 
+   "\[InvisibleSpace]", "1", "\[InvisibleSpace]", "\<\" n24=\"\>", 
+   "\[InvisibleSpace]", "3", "\[InvisibleSpace]", "\<\" n34=\"\>", 
+   "\[InvisibleSpace]", "1", "\[InvisibleSpace]", "\<\" with minimum \"\>", 
+   "\[InvisibleSpace]", "0.0005309794246268591`", 
+   "\[InvisibleSpace]", "\<\".\"\>"}],
+  SequenceForm[
+  147, ": The determinant is not zero for \[Theta]13=", Rational[1, 2] Pi, 
+   " \[Theta]14=", Rational[1, 4] Pi, " n12=", 0, " n23=", 1, " n24=", 3, 
+   " n34=", 1, " with minimum ", 0.0005309794246268591, "."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.7092406029833117`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "153", "\[InvisibleSpace]", "\<\": The determinant is not zero for \
+\[Theta]13=\"\>", "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "2"], "\[InvisibleSpace]", "\<\" \[Theta]14=\"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "4"], "\[InvisibleSpace]", "\<\" n12=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" n23=\"\>", 
+   "\[InvisibleSpace]", "1", "\[InvisibleSpace]", "\<\" n24=\"\>", 
+   "\[InvisibleSpace]", "5", "\[InvisibleSpace]", "\<\" n34=\"\>", 
+   "\[InvisibleSpace]", "1", "\[InvisibleSpace]", "\<\" with minimum \"\>", 
+   "\[InvisibleSpace]", "0.0020315996018695553`", 
+   "\[InvisibleSpace]", "\<\".\"\>"}],
+  SequenceForm[
+  153, ": The determinant is not zero for \[Theta]13=", Rational[1, 2] Pi, 
+   " \[Theta]14=", Rational[1, 4] Pi, " n12=", 0, " n23=", 1, " n24=", 5, 
+   " n34=", 1, " with minimum ", 0.0020315996018695553`, "."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.709240615005289*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "157", "\[InvisibleSpace]", "\<\": The determinant is not zero for \
+\[Theta]13=\"\>", "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "2"], "\[InvisibleSpace]", "\<\" \[Theta]14=\"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "4"], "\[InvisibleSpace]", "\<\" n12=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" n23=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n24=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n34=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" with minimum \"\>", 
+   "\[InvisibleSpace]", "6.6169115434620575`*^-6", 
+   "\[InvisibleSpace]", "\<\".\"\>"}],
+  SequenceForm[
+  157, ": The determinant is not zero for \[Theta]13=", Rational[1, 2] Pi, 
+   " \[Theta]14=", Rational[1, 4] Pi, " n12=", 0, " n23=", 2, " n24=", 2, 
+   " n34=", 0, " with minimum ", 6.6169115434620575`*^-6, "."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.7092406260129757`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "160", "\[InvisibleSpace]", "\<\": The determinant is not zero for \
+\[Theta]13=\"\>", "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "2"], "\[InvisibleSpace]", "\<\" \[Theta]14=\"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "4"], "\[InvisibleSpace]", "\<\" n12=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" n23=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n24=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n34=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" with minimum \"\>", 
+   "\[InvisibleSpace]", "0.010655088654434609`", 
+   "\[InvisibleSpace]", "\<\".\"\>"}],
+  SequenceForm[
+  160, ": The determinant is not zero for \[Theta]13=", Rational[1, 2] Pi, 
+   " \[Theta]14=", Rational[1, 4] Pi, " n12=", 0, " n23=", 2, " n24=", 2, 
+   " n34=", 2, " with minimum ", 0.010655088654434609`, "."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.709240636878793*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "163", "\[InvisibleSpace]", "\<\": The determinant is not zero for \
+\[Theta]13=\"\>", "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "2"], "\[InvisibleSpace]", "\<\" \[Theta]14=\"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "4"], "\[InvisibleSpace]", "\<\" n12=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" n23=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n24=\"\>", 
+   "\[InvisibleSpace]", "4", "\[InvisibleSpace]", "\<\" n34=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" with minimum \"\>", 
+   "\[InvisibleSpace]", "0.004868729557808978`", 
+   "\[InvisibleSpace]", "\<\".\"\>"}],
+  SequenceForm[
+  163, ": The determinant is not zero for \[Theta]13=", Rational[1, 2] Pi, 
+   " \[Theta]14=", Rational[1, 4] Pi, " n12=", 0, " n23=", 2, " n24=", 4, 
+   " n34=", 0, " with minimum ", 0.004868729557808978, "."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.7092406459049473`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "166", "\[InvisibleSpace]", "\<\": The determinant is not zero for \
+\[Theta]13=\"\>", "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "2"], "\[InvisibleSpace]", "\<\" \[Theta]14=\"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "4"], "\[InvisibleSpace]", "\<\" n12=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" n23=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n24=\"\>", 
+   "\[InvisibleSpace]", "6", "\[InvisibleSpace]", "\<\" n34=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" with minimum \"\>", 
+   "\[InvisibleSpace]", "0.0004111621775230122`", 
+   "\[InvisibleSpace]", "\<\".\"\>"}],
+  SequenceForm[
+  166, ": The determinant is not zero for \[Theta]13=", Rational[1, 2] Pi, 
+   " \[Theta]14=", Rational[1, 4] Pi, " n12=", 0, " n23=", 2, " n24=", 6, 
+   " n34=", 0, " with minimum ", 0.0004111621775230122, "."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.709240651264989*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "167", "\[InvisibleSpace]", "\<\": The determinant is not zero for \
+\[Theta]13=\"\>", "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "2"], "\[InvisibleSpace]", "\<\" \[Theta]14=\"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "4"], "\[InvisibleSpace]", "\<\" n12=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" n23=\"\>", 
+   "\[InvisibleSpace]", "3", "\[InvisibleSpace]", "\<\" n24=\"\>", 
+   "\[InvisibleSpace]", "3", "\[InvisibleSpace]", "\<\" n34=\"\>", 
+   "\[InvisibleSpace]", "1", "\[InvisibleSpace]", "\<\" with minimum \"\>", 
+   "\[InvisibleSpace]", "0.004491505717130268`", 
+   "\[InvisibleSpace]", "\<\".\"\>"}],
+  SequenceForm[
+  167, ": The determinant is not zero for \[Theta]13=", Rational[1, 2] Pi, 
+   " \[Theta]14=", Rational[1, 4] Pi, " n12=", 0, " n23=", 3, " n24=", 3, 
+   " n34=", 1, " with minimum ", 0.004491505717130268, "."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.709240667394967*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "171", "\[InvisibleSpace]", "\<\": The determinant is not zero for \
+\[Theta]13=\"\>", "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "2"], "\[InvisibleSpace]", "\<\" \[Theta]14=\"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "4"], "\[InvisibleSpace]", "\<\" n12=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" n23=\"\>", 
+   "\[InvisibleSpace]", "4", "\[InvisibleSpace]", "\<\" n24=\"\>", 
+   "\[InvisibleSpace]", "4", "\[InvisibleSpace]", "\<\" n34=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" with minimum \"\>", 
+   "\[InvisibleSpace]", "0.0025647136490064477`", 
+   "\[InvisibleSpace]", "\<\".\"\>"}],
+  SequenceForm[
+  171, ": The determinant is not zero for \[Theta]13=", Rational[1, 2] Pi, 
+   " \[Theta]14=", Rational[1, 4] Pi, " n12=", 0, " n23=", 4, " n24=", 4, 
+   " n34=", 0, " with minimum ", 0.0025647136490064477`, "."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.7092406746557817`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "172", "\[InvisibleSpace]", "\<\": The determinant is not zero for \
+\[Theta]13=\"\>", "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "3"], "\[InvisibleSpace]", "\<\" \[Theta]14=\"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "2"], "\[InvisibleSpace]", "\<\" n12=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n23=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" n24=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n34=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" with minimum \"\>", 
+   "\[InvisibleSpace]", "0.12518445106925108`", 
+   "\[InvisibleSpace]", "\<\".\"\>"}],
+  SequenceForm[
+  172, ": The determinant is not zero for \[Theta]13=", Rational[1, 3] Pi, 
+   " \[Theta]14=", Rational[1, 2] Pi, " n12=", 2, " n23=", 0, " n24=", 2, 
+   " n34=", 0, " with minimum ", 0.12518445106925108`, "."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.709240678465395*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "173", "\[InvisibleSpace]", "\<\": The determinant is not zero for \
+\[Theta]13=\"\>", "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "3"], "\[InvisibleSpace]", "\<\" \[Theta]14=\"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "2"], "\[InvisibleSpace]", "\<\" n12=\"\>", 
+   "\[InvisibleSpace]", "4", "\[InvisibleSpace]", "\<\" n23=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" n24=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n34=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" with minimum \"\>", 
+   "\[InvisibleSpace]", "0.0005383548993246019`", 
+   "\[InvisibleSpace]", "\<\".\"\>"}],
+  SequenceForm[
+  173, ": The determinant is not zero for \[Theta]13=", Rational[1, 3] Pi, 
+   " \[Theta]14=", Rational[1, 2] Pi, " n12=", 4, " n23=", 0, " n24=", 2, 
+   " n34=", 0, " with minimum ", 0.0005383548993246019, "."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.709240712764719*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "174", "\[InvisibleSpace]", "\<\": The determinant is not zero for \
+\[Theta]13=\"\>", "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "3"], "\[InvisibleSpace]", "\<\" \[Theta]14=\"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "2"], "\[InvisibleSpace]", "\<\" n12=\"\>", 
+   "\[InvisibleSpace]", "6", "\[InvisibleSpace]", "\<\" n23=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" n24=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n34=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" with minimum \"\>", 
+   "\[InvisibleSpace]", "0.0002939757663306742`", 
+   "\[InvisibleSpace]", "\<\".\"\>"}],
+  SequenceForm[
+  174, ": The determinant is not zero for \[Theta]13=", Rational[1, 3] Pi, 
+   " \[Theta]14=", Rational[1, 2] Pi, " n12=", 6, " n23=", 0, " n24=", 2, 
+   " n34=", 0, " with minimum ", 0.0002939757663306742, "."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.709240732153187*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "175", "\[InvisibleSpace]", "\<\": The determinant is not zero for \
+\[Theta]13=\"\>", "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "3"], "\[InvisibleSpace]", "\<\" \[Theta]14=\"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "2"], "\[InvisibleSpace]", "\<\" n12=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" n23=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" n24=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n34=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" with minimum \"\>", 
+   "\[InvisibleSpace]", "0.002795392966683182`", 
+   "\[InvisibleSpace]", "\<\".\"\>"}],
+  SequenceForm[
+  175, ": The determinant is not zero for \[Theta]13=", Rational[1, 3] Pi, 
+   " \[Theta]14=", Rational[1, 2] Pi, " n12=", 0, " n23=", 0, " n24=", 2, 
+   " n34=", 2, " with minimum ", 0.002795392966683182, "."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.709240738195472*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "176", "\[InvisibleSpace]", "\<\": The determinant is not zero for \
+\[Theta]13=\"\>", "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "3"], "\[InvisibleSpace]", "\<\" \[Theta]14=\"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "2"], "\[InvisibleSpace]", "\<\" n12=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n23=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" n24=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n34=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" with minimum \"\>", 
+   "\[InvisibleSpace]", "0.00045276714586935313`", 
+   "\[InvisibleSpace]", "\<\".\"\>"}],
+  SequenceForm[
+  176, ": The determinant is not zero for \[Theta]13=", Rational[1, 3] Pi, 
+   " \[Theta]14=", Rational[1, 2] Pi, " n12=", 2, " n23=", 0, " n24=", 2, 
+   " n34=", 2, " with minimum ", 0.00045276714586935313`, "."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.7092407975528297`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "177", "\[InvisibleSpace]", "\<\": The determinant is not zero for \
+\[Theta]13=\"\>", "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "3"], "\[InvisibleSpace]", "\<\" \[Theta]14=\"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "2"], "\[InvisibleSpace]", "\<\" n12=\"\>", 
+   "\[InvisibleSpace]", "4", "\[InvisibleSpace]", "\<\" n23=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" n24=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n34=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" with minimum \"\>", 
+   "\[InvisibleSpace]", "0.0003489508862127359`", 
+   "\[InvisibleSpace]", "\<\".\"\>"}],
+  SequenceForm[
+  177, ": The determinant is not zero for \[Theta]13=", Rational[1, 3] Pi, 
+   " \[Theta]14=", Rational[1, 2] Pi, " n12=", 4, " n23=", 0, " n24=", 2, 
+   " n34=", 2, " with minimum ", 0.0003489508862127359, "."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.709240811008079*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "178", "\[InvisibleSpace]", "\<\": The determinant is not zero for \
+\[Theta]13=\"\>", "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "3"], "\[InvisibleSpace]", "\<\" \[Theta]14=\"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "2"], "\[InvisibleSpace]", "\<\" n12=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" n23=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" n24=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n34=\"\>", 
+   "\[InvisibleSpace]", "4", "\[InvisibleSpace]", "\<\" with minimum \"\>", 
+   "\[InvisibleSpace]", "0.00018599958247601233`", 
+   "\[InvisibleSpace]", "\<\".\"\>"}],
+  SequenceForm[
+  178, ": The determinant is not zero for \[Theta]13=", Rational[1, 3] Pi, 
+   " \[Theta]14=", Rational[1, 2] Pi, " n12=", 0, " n23=", 0, " n24=", 2, 
+   " n34=", 4, " with minimum ", 0.00018599958247601233`, "."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.7092408424623413`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "179", "\[InvisibleSpace]", "\<\": The determinant is not zero for \
+\[Theta]13=\"\>", "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "3"], "\[InvisibleSpace]", "\<\" \[Theta]14=\"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "2"], "\[InvisibleSpace]", "\<\" n12=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n23=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" n24=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n34=\"\>", 
+   "\[InvisibleSpace]", "4", "\[InvisibleSpace]", "\<\" with minimum \"\>", 
+   "\[InvisibleSpace]", "0.0017192814986490023`", 
+   "\[InvisibleSpace]", "\<\".\"\>"}],
+  SequenceForm[
+  179, ": The determinant is not zero for \[Theta]13=", Rational[1, 3] Pi, 
+   " \[Theta]14=", Rational[1, 2] Pi, " n12=", 2, " n23=", 0, " n24=", 2, 
+   " n34=", 4, " with minimum ", 0.0017192814986490023`, "."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.709240863968384*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "180", "\[InvisibleSpace]", "\<\": The determinant is not zero for \
+\[Theta]13=\"\>", "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "3"], "\[InvisibleSpace]", "\<\" \[Theta]14=\"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "2"], "\[InvisibleSpace]", "\<\" n12=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" n23=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" n24=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n34=\"\>", 
+   "\[InvisibleSpace]", "6", "\[InvisibleSpace]", "\<\" with minimum \"\>", 
+   "\[InvisibleSpace]", "0.0004600033053511507`", 
+   "\[InvisibleSpace]", "\<\".\"\>"}],
+  SequenceForm[
+  180, ": The determinant is not zero for \[Theta]13=", Rational[1, 3] Pi, 
+   " \[Theta]14=", Rational[1, 2] Pi, " n12=", 0, " n23=", 0, " n24=", 2, 
+   " n34=", 6, " with minimum ", 0.0004600033053511507, "."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.709240880991585*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "181", "\[InvisibleSpace]", "\<\": The determinant is not zero for \
+\[Theta]13=\"\>", "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "3"], "\[InvisibleSpace]", "\<\" \[Theta]14=\"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "2"], "\[InvisibleSpace]", "\<\" n12=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n23=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" n24=\"\>", 
+   "\[InvisibleSpace]", "4", "\[InvisibleSpace]", "\<\" n34=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" with minimum \"\>", 
+   "\[InvisibleSpace]", "0.00033894213043014765`", 
+   "\[InvisibleSpace]", "\<\".\"\>"}],
+  SequenceForm[
+  181, ": The determinant is not zero for \[Theta]13=", Rational[1, 3] Pi, 
+   " \[Theta]14=", Rational[1, 2] Pi, " n12=", 2, " n23=", 0, " n24=", 4, 
+   " n34=", 0, " with minimum ", 0.00033894213043014765`, "."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.709240906094273*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "182", "\[InvisibleSpace]", "\<\": The determinant is not zero for \
+\[Theta]13=\"\>", "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "3"], "\[InvisibleSpace]", "\<\" \[Theta]14=\"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "2"], "\[InvisibleSpace]", "\<\" n12=\"\>", 
+   "\[InvisibleSpace]", "4", "\[InvisibleSpace]", "\<\" n23=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" n24=\"\>", 
+   "\[InvisibleSpace]", "4", "\[InvisibleSpace]", "\<\" n34=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" with minimum \"\>", 
+   "\[InvisibleSpace]", "0.00004684067518274237`", 
+   "\[InvisibleSpace]", "\<\".\"\>"}],
+  SequenceForm[
+  182, ": The determinant is not zero for \[Theta]13=", Rational[1, 3] Pi, 
+   " \[Theta]14=", Rational[1, 2] Pi, " n12=", 4, " n23=", 0, " n24=", 4, 
+   " n34=", 0, " with minimum ", 0.00004684067518274237, "."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.709240923688467*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "183", "\[InvisibleSpace]", "\<\": The determinant is not zero for \
+\[Theta]13=\"\>", "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "3"], "\[InvisibleSpace]", "\<\" \[Theta]14=\"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "2"], "\[InvisibleSpace]", "\<\" n12=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" n23=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" n24=\"\>", 
+   "\[InvisibleSpace]", "4", "\[InvisibleSpace]", "\<\" n34=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" with minimum \"\>", 
+   "\[InvisibleSpace]", "0.0022922724841674584`", 
+   "\[InvisibleSpace]", "\<\".\"\>"}],
+  SequenceForm[
+  183, ": The determinant is not zero for \[Theta]13=", Rational[1, 3] Pi, 
+   " \[Theta]14=", Rational[1, 2] Pi, " n12=", 0, " n23=", 0, " n24=", 4, 
+   " n34=", 2, " with minimum ", 0.0022922724841674584`, "."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.709240948714136*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "184", "\[InvisibleSpace]", "\<\": The determinant is not zero for \
+\[Theta]13=\"\>", "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "3"], "\[InvisibleSpace]", "\<\" \[Theta]14=\"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "2"], "\[InvisibleSpace]", "\<\" n12=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n23=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" n24=\"\>", 
+   "\[InvisibleSpace]", "4", "\[InvisibleSpace]", "\<\" n34=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" with minimum \"\>", 
+   "\[InvisibleSpace]", "0.000406143888457788`", 
+   "\[InvisibleSpace]", "\<\".\"\>"}],
+  SequenceForm[
+  184, ": The determinant is not zero for \[Theta]13=", Rational[1, 3] Pi, 
+   " \[Theta]14=", Rational[1, 2] Pi, " n12=", 2, " n23=", 0, " n24=", 4, 
+   " n34=", 2, " with minimum ", 0.000406143888457788, "."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.709240963160825*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "186", "\[InvisibleSpace]", "\<\": The determinant is not zero for \
+\[Theta]13=\"\>", "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "3"], "\[InvisibleSpace]", "\<\" \[Theta]14=\"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "2"], "\[InvisibleSpace]", "\<\" n12=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n23=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" n24=\"\>", 
+   "\[InvisibleSpace]", "6", "\[InvisibleSpace]", "\<\" n34=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" with minimum \"\>", 
+   "\[InvisibleSpace]", "1.3090632813568035`*^-6", 
+   "\[InvisibleSpace]", "\<\".\"\>"}],
+  SequenceForm[
+  186, ": The determinant is not zero for \[Theta]13=", Rational[1, 3] Pi, 
+   " \[Theta]14=", Rational[1, 2] Pi, " n12=", 2, " n23=", 0, " n24=", 6, 
+   " n34=", 0, " with minimum ", 1.3090632813568035`*^-6, "."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.709241006123765*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "187", "\[InvisibleSpace]", "\<\": The determinant is not zero for \
+\[Theta]13=\"\>", "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "3"], "\[InvisibleSpace]", "\<\" \[Theta]14=\"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "2"], "\[InvisibleSpace]", "\<\" n12=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" n23=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" n24=\"\>", 
+   "\[InvisibleSpace]", "6", "\[InvisibleSpace]", "\<\" n34=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" with minimum \"\>", 
+   "\[InvisibleSpace]", "3.2675896134032514`*^-6", 
+   "\[InvisibleSpace]", "\<\".\"\>"}],
+  SequenceForm[
+  187, ": The determinant is not zero for \[Theta]13=", Rational[1, 3] Pi, 
+   " \[Theta]14=", Rational[1, 2] Pi, " n12=", 0, " n23=", 0, " n24=", 6, 
+   " n34=", 2, " with minimum ", 3.2675896134032514`*^-6, "."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.709241047355048*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "188", "\[InvisibleSpace]", "\<\": The determinant is not zero for \
+\[Theta]13=\"\>", "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "3"], "\[InvisibleSpace]", "\<\" \[Theta]14=\"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "2"], "\[InvisibleSpace]", "\<\" n12=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" n23=\"\>", 
+   "\[InvisibleSpace]", "1", "\[InvisibleSpace]", "\<\" n24=\"\>", 
+   "\[InvisibleSpace]", "3", "\[InvisibleSpace]", "\<\" n34=\"\>", 
+   "\[InvisibleSpace]", "1", "\[InvisibleSpace]", "\<\" with minimum \"\>", 
+   "\[InvisibleSpace]", "0.002793416189432372`", 
+   "\[InvisibleSpace]", "\<\".\"\>"}],
+  SequenceForm[
+  188, ": The determinant is not zero for \[Theta]13=", Rational[1, 3] Pi, 
+   " \[Theta]14=", Rational[1, 2] Pi, " n12=", 0, " n23=", 1, " n24=", 3, 
+   " n34=", 1, " with minimum ", 0.002793416189432372, "."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.709241132772036*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "189", "\[InvisibleSpace]", "\<\": The determinant is not zero for \
+\[Theta]13=\"\>", "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "3"], "\[InvisibleSpace]", "\<\" \[Theta]14=\"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "2"], "\[InvisibleSpace]", "\<\" n12=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n23=\"\>", 
+   "\[InvisibleSpace]", "1", "\[InvisibleSpace]", "\<\" n24=\"\>", 
+   "\[InvisibleSpace]", "3", "\[InvisibleSpace]", "\<\" n34=\"\>", 
+   "\[InvisibleSpace]", "1", "\[InvisibleSpace]", "\<\" with minimum \"\>", 
+   "\[InvisibleSpace]", "0.0039301460615787575`", 
+   "\[InvisibleSpace]", "\<\".\"\>"}],
+  SequenceForm[
+  189, ": The determinant is not zero for \[Theta]13=", Rational[1, 3] Pi, 
+   " \[Theta]14=", Rational[1, 2] Pi, " n12=", 2, " n23=", 1, " n24=", 3, 
+   " n34=", 1, " with minimum ", 0.0039301460615787575`, "."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.709241161061908*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "191", "\[InvisibleSpace]", "\<\": The determinant is not zero for \
+\[Theta]13=\"\>", "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "3"], "\[InvisibleSpace]", "\<\" \[Theta]14=\"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "2"], "\[InvisibleSpace]", "\<\" n12=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" n23=\"\>", 
+   "\[InvisibleSpace]", "1", "\[InvisibleSpace]", "\<\" n24=\"\>", 
+   "\[InvisibleSpace]", "3", "\[InvisibleSpace]", "\<\" n34=\"\>", 
+   "\[InvisibleSpace]", "3", "\[InvisibleSpace]", "\<\" with minimum \"\>", 
+   "\[InvisibleSpace]", "0.0013138407523744992`", 
+   "\[InvisibleSpace]", "\<\".\"\>"}],
+  SequenceForm[
+  191, ": The determinant is not zero for \[Theta]13=", Rational[1, 3] Pi, 
+   " \[Theta]14=", Rational[1, 2] Pi, " n12=", 0, " n23=", 1, " n24=", 3, 
+   " n34=", 3, " with minimum ", 0.0013138407523744992`, "."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.709241172562873*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "194", "\[InvisibleSpace]", "\<\": The determinant is not zero for \
+\[Theta]13=\"\>", "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "3"], "\[InvisibleSpace]", "\<\" \[Theta]14=\"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "2"], "\[InvisibleSpace]", "\<\" n12=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" n23=\"\>", 
+   "\[InvisibleSpace]", "1", "\[InvisibleSpace]", "\<\" n24=\"\>", 
+   "\[InvisibleSpace]", "5", "\[InvisibleSpace]", "\<\" n34=\"\>", 
+   "\[InvisibleSpace]", "1", "\[InvisibleSpace]", "\<\" with minimum \"\>", 
+   "\[InvisibleSpace]", "1.5333629221510797`*^-6", 
+   "\[InvisibleSpace]", "\<\".\"\>"}],
+  SequenceForm[
+  194, ": The determinant is not zero for \[Theta]13=", Rational[1, 3] Pi, 
+   " \[Theta]14=", Rational[1, 2] Pi, " n12=", 0, " n23=", 1, " n24=", 5, 
+   " n34=", 1, " with minimum ", 1.5333629221510797`*^-6, "."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.70924130012376*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "198", "\[InvisibleSpace]", "\<\": The determinant is not zero for \
+\[Theta]13=\"\>", "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "3"], "\[InvisibleSpace]", "\<\" \[Theta]14=\"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "2"], "\[InvisibleSpace]", "\<\" n12=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" n23=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n24=\"\>", 
+   "\[InvisibleSpace]", "4", "\[InvisibleSpace]", "\<\" n34=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" with minimum \"\>", 
+   "\[InvisibleSpace]", "9.542277013349982`*^-6", 
+   "\[InvisibleSpace]", "\<\".\"\>"}],
+  SequenceForm[
+  198, ": The determinant is not zero for \[Theta]13=", Rational[1, 3] Pi, 
+   " \[Theta]14=", Rational[1, 2] Pi, " n12=", 0, " n23=", 2, " n24=", 4, 
+   " n34=", 0, " with minimum ", 9.542277013349982*^-6, "."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.70924134463836*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "201", "\[InvisibleSpace]", "\<\": The determinant is not zero for \
+\[Theta]13=\"\>", "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "3"], "\[InvisibleSpace]", "\<\" \[Theta]14=\"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "2"], "\[InvisibleSpace]", "\<\" n12=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" n23=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n24=\"\>", 
+   "\[InvisibleSpace]", "6", "\[InvisibleSpace]", "\<\" n34=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" with minimum \"\>", 
+   "\[InvisibleSpace]", "0.004386167237196648`", 
+   "\[InvisibleSpace]", "\<\".\"\>"}],
+  SequenceForm[
+  201, ": The determinant is not zero for \[Theta]13=", Rational[1, 3] Pi, 
+   " \[Theta]14=", Rational[1, 2] Pi, " n12=", 0, " n23=", 2, " n24=", 6, 
+   " n34=", 0, " with minimum ", 0.004386167237196648, "."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.7092413536293077`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "203", "\[InvisibleSpace]", "\<\": The determinant is not zero for \
+\[Theta]13=\"\>", "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "3"], "\[InvisibleSpace]", "\<\" \[Theta]14=\"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "3"], "\[InvisibleSpace]", "\<\" n12=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n23=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" n24=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" n34=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" with minimum \"\>", 
+   "\[InvisibleSpace]", "0.005696317196972167`", 
+   "\[InvisibleSpace]", "\<\".\"\>"}],
+  SequenceForm[
+  203, ": The determinant is not zero for \[Theta]13=", Rational[1, 3] Pi, 
+   " \[Theta]14=", Rational[1, 3] Pi, " n12=", 2, " n23=", 0, " n24=", 0, 
+   " n34=", 2, " with minimum ", 0.005696317196972167, "."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.709241382666794*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "204", "\[InvisibleSpace]", "\<\": The determinant is not zero for \
+\[Theta]13=\"\>", "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "3"], "\[InvisibleSpace]", "\<\" \[Theta]14=\"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "3"], "\[InvisibleSpace]", "\<\" n12=\"\>", 
+   "\[InvisibleSpace]", "4", "\[InvisibleSpace]", "\<\" n23=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" n24=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" n34=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" with minimum \"\>", 
+   "\[InvisibleSpace]", "0.00022390222208471558`", 
+   "\[InvisibleSpace]", "\<\".\"\>"}],
+  SequenceForm[
+  204, ": The determinant is not zero for \[Theta]13=", Rational[1, 3] Pi, 
+   " \[Theta]14=", Rational[1, 3] Pi, " n12=", 4, " n23=", 0, " n24=", 0, 
+   " n34=", 2, " with minimum ", 0.00022390222208471558`, "."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.709241387470667*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "206", "\[InvisibleSpace]", "\<\": The determinant is not zero for \
+\[Theta]13=\"\>", "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "3"], "\[InvisibleSpace]", "\<\" \[Theta]14=\"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "3"], "\[InvisibleSpace]", "\<\" n12=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n23=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" n24=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" n34=\"\>", 
+   "\[InvisibleSpace]", "4", "\[InvisibleSpace]", "\<\" with minimum \"\>", 
+   "\[InvisibleSpace]", "0.01954887180073988`", 
+   "\[InvisibleSpace]", "\<\".\"\>"}],
+  SequenceForm[
+  206, ": The determinant is not zero for \[Theta]13=", Rational[1, 3] Pi, 
+   " \[Theta]14=", Rational[1, 3] Pi, " n12=", 2, " n23=", 0, " n24=", 0, 
+   " n34=", 4, " with minimum ", 0.01954887180073988, "."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.709241391631732*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "208", "\[InvisibleSpace]", "\<\": The determinant is not zero for \
+\[Theta]13=\"\>", "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "3"], "\[InvisibleSpace]", "\<\" \[Theta]14=\"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "3"], "\[InvisibleSpace]", "\<\" n12=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n23=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" n24=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" n34=\"\>", 
+   "\[InvisibleSpace]", "6", "\[InvisibleSpace]", "\<\" with minimum \"\>", 
+   "\[InvisibleSpace]", "0.0010558533292152233`", 
+   "\[InvisibleSpace]", "\<\".\"\>"}],
+  SequenceForm[
+  208, ": The determinant is not zero for \[Theta]13=", Rational[1, 3] Pi, 
+   " \[Theta]14=", Rational[1, 3] Pi, " n12=", 2, " n23=", 0, " n24=", 0, 
+   " n34=", 6, " with minimum ", 0.0010558533292152233`, "."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.7092413971982603`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "209", "\[InvisibleSpace]", "\<\": The determinant is not zero for \
+\[Theta]13=\"\>", "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "3"], "\[InvisibleSpace]", "\<\" \[Theta]14=\"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "3"], "\[InvisibleSpace]", "\<\" n12=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n23=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" n24=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n34=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" with minimum \"\>", 
+   "\[InvisibleSpace]", "0.00025648904653937835`", 
+   "\[InvisibleSpace]", "\<\".\"\>"}],
+  SequenceForm[
+  209, ": The determinant is not zero for \[Theta]13=", Rational[1, 3] Pi, 
+   " \[Theta]14=", Rational[1, 3] Pi, " n12=", 2, " n23=", 0, " n24=", 2, 
+   " n34=", 0, " with minimum ", 0.00025648904653937835`, "."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.709241402023097*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "210", "\[InvisibleSpace]", "\<\": The determinant is not zero for \
+\[Theta]13=\"\>", "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "3"], "\[InvisibleSpace]", "\<\" \[Theta]14=\"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "3"], "\[InvisibleSpace]", "\<\" n12=\"\>", 
+   "\[InvisibleSpace]", "4", "\[InvisibleSpace]", "\<\" n23=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" n24=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n34=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" with minimum \"\>", 
+   "\[InvisibleSpace]", "0.0006437486811408482`", 
+   "\[InvisibleSpace]", "\<\".\"\>"}],
+  SequenceForm[
+  210, ": The determinant is not zero for \[Theta]13=", Rational[1, 3] Pi, 
+   " \[Theta]14=", Rational[1, 3] Pi, " n12=", 4, " n23=", 0, " n24=", 2, 
+   " n34=", 0, " with minimum ", 0.0006437486811408482, "."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.709241406629506*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "212", "\[InvisibleSpace]", "\<\": The determinant is not zero for \
+\[Theta]13=\"\>", "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "3"], "\[InvisibleSpace]", "\<\" \[Theta]14=\"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "3"], "\[InvisibleSpace]", "\<\" n12=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" n23=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" n24=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n34=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" with minimum \"\>", 
+   "\[InvisibleSpace]", "0.0043130402714559035`", 
+   "\[InvisibleSpace]", "\<\".\"\>"}],
+  SequenceForm[
+  212, ": The determinant is not zero for \[Theta]13=", Rational[1, 3] Pi, 
+   " \[Theta]14=", Rational[1, 3] Pi, " n12=", 0, " n23=", 0, " n24=", 2, 
+   " n34=", 2, " with minimum ", 0.0043130402714559035`, "."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.7092414121788797`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "215", "\[InvisibleSpace]", "\<\": The determinant is not zero for \
+\[Theta]13=\"\>", "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "3"], "\[InvisibleSpace]", "\<\" \[Theta]14=\"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "3"], "\[InvisibleSpace]", "\<\" n12=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" n23=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" n24=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n34=\"\>", 
+   "\[InvisibleSpace]", "4", "\[InvisibleSpace]", "\<\" with minimum \"\>", 
+   "\[InvisibleSpace]", "0.0003284403156363236`", 
+   "\[InvisibleSpace]", "\<\".\"\>"}],
+  SequenceForm[
+  215, ": The determinant is not zero for \[Theta]13=", Rational[1, 3] Pi, 
+   " \[Theta]14=", Rational[1, 3] Pi, " n12=", 0, " n23=", 0, " n24=", 2, 
+   " n34=", 4, " with minimum ", 0.0003284403156363236, "."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.709241425937759*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "218", "\[InvisibleSpace]", "\<\": The determinant is not zero for \
+\[Theta]13=\"\>", "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "3"], "\[InvisibleSpace]", "\<\" \[Theta]14=\"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "3"], "\[InvisibleSpace]", "\<\" n12=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n23=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" n24=\"\>", 
+   "\[InvisibleSpace]", "4", "\[InvisibleSpace]", "\<\" n34=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" with minimum \"\>", 
+   "\[InvisibleSpace]", "0.0006523453240357766`", 
+   "\[InvisibleSpace]", "\<\".\"\>"}],
+  SequenceForm[
+  218, ": The determinant is not zero for \[Theta]13=", Rational[1, 3] Pi, 
+   " \[Theta]14=", Rational[1, 3] Pi, " n12=", 2, " n23=", 0, " n24=", 4, 
+   " n34=", 0, " with minimum ", 0.0006523453240357766, "."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.7092414420816298`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "220", "\[InvisibleSpace]", "\<\": The determinant is not zero for \
+\[Theta]13=\"\>", "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "3"], "\[InvisibleSpace]", "\<\" \[Theta]14=\"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "3"], "\[InvisibleSpace]", "\<\" n12=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" n23=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" n24=\"\>", 
+   "\[InvisibleSpace]", "4", "\[InvisibleSpace]", "\<\" n34=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" with minimum \"\>", 
+   "\[InvisibleSpace]", "3.6654073837743184`*^-6", 
+   "\[InvisibleSpace]", "\<\".\"\>"}],
+  SequenceForm[
+  220, ": The determinant is not zero for \[Theta]13=", Rational[1, 3] Pi, 
+   " \[Theta]14=", Rational[1, 3] Pi, " n12=", 0, " n23=", 0, " n24=", 4, 
+   " n34=", 2, " with minimum ", 3.6654073837743184`*^-6, "."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.709241485213778*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "223", "\[InvisibleSpace]", "\<\": The determinant is not zero for \
+\[Theta]13=\"\>", "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "3"], "\[InvisibleSpace]", "\<\" \[Theta]14=\"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "3"], "\[InvisibleSpace]", "\<\" n12=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n23=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" n24=\"\>", 
+   "\[InvisibleSpace]", "6", "\[InvisibleSpace]", "\<\" n34=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" with minimum \"\>", 
+   "\[InvisibleSpace]", "0.0001808506910077363`", 
+   "\[InvisibleSpace]", "\<\".\"\>"}],
+  SequenceForm[
+  223, ": The determinant is not zero for \[Theta]13=", Rational[1, 3] Pi, 
+   " \[Theta]14=", Rational[1, 3] Pi, " n12=", 2, " n23=", 0, " n24=", 6, 
+   " n34=", 0, " with minimum ", 0.0001808506910077363, "."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.70924148970477*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "226", "\[InvisibleSpace]", "\<\": The determinant is not zero for \
+\[Theta]13=\"\>", "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "3"], "\[InvisibleSpace]", "\<\" \[Theta]14=\"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "3"], "\[InvisibleSpace]", "\<\" n12=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n23=\"\>", 
+   "\[InvisibleSpace]", "1", "\[InvisibleSpace]", "\<\" n24=\"\>", 
+   "\[InvisibleSpace]", "1", "\[InvisibleSpace]", "\<\" n34=\"\>", 
+   "\[InvisibleSpace]", "1", "\[InvisibleSpace]", "\<\" with minimum \"\>", 
+   "\[InvisibleSpace]", "0.000991571807409471`", 
+   "\[InvisibleSpace]", "\<\".\"\>"}],
+  SequenceForm[
+  226, ": The determinant is not zero for \[Theta]13=", Rational[1, 3] Pi, 
+   " \[Theta]14=", Rational[1, 3] Pi, " n12=", 2, " n23=", 1, " n24=", 1, 
+   " n34=", 1, " with minimum ", 0.000991571807409471, "."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.709241778176003*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "229", "\[InvisibleSpace]", "\<\": The determinant is not zero for \
+\[Theta]13=\"\>", "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "3"], "\[InvisibleSpace]", "\<\" \[Theta]14=\"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "3"], "\[InvisibleSpace]", "\<\" n12=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" n23=\"\>", 
+   "\[InvisibleSpace]", "1", "\[InvisibleSpace]", "\<\" n24=\"\>", 
+   "\[InvisibleSpace]", "1", "\[InvisibleSpace]", "\<\" n34=\"\>", 
+   "\[InvisibleSpace]", "3", "\[InvisibleSpace]", "\<\" with minimum \"\>", 
+   "\[InvisibleSpace]", "0.0006981369220201164`", 
+   "\[InvisibleSpace]", "\<\".\"\>"}],
+  SequenceForm[
+  229, ": The determinant is not zero for \[Theta]13=", Rational[1, 3] Pi, 
+   " \[Theta]14=", Rational[1, 3] Pi, " n12=", 0, " n23=", 1, " n24=", 1, 
+   " n34=", 3, " with minimum ", 0.0006981369220201164, "."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.7092418008285913`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "232", "\[InvisibleSpace]", "\<\": The determinant is not zero for \
+\[Theta]13=\"\>", "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "3"], "\[InvisibleSpace]", "\<\" \[Theta]14=\"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "3"], "\[InvisibleSpace]", "\<\" n12=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" n23=\"\>", 
+   "\[InvisibleSpace]", "1", "\[InvisibleSpace]", "\<\" n24=\"\>", 
+   "\[InvisibleSpace]", "1", "\[InvisibleSpace]", "\<\" n34=\"\>", 
+   "\[InvisibleSpace]", "5", "\[InvisibleSpace]", "\<\" with minimum \"\>", 
+   "\[InvisibleSpace]", "0.010754833093664146`", 
+   "\[InvisibleSpace]", "\<\".\"\>"}],
+  SequenceForm[
+  232, ": The determinant is not zero for \[Theta]13=", Rational[1, 3] Pi, 
+   " \[Theta]14=", Rational[1, 3] Pi, " n12=", 0, " n23=", 1, " n24=", 1, 
+   " n34=", 5, " with minimum ", 0.010754833093664146`, "."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.709241814914166*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "235", "\[InvisibleSpace]", "\<\": The determinant is not zero for \
+\[Theta]13=\"\>", "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "3"], "\[InvisibleSpace]", "\<\" \[Theta]14=\"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "3"], "\[InvisibleSpace]", "\<\" n12=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" n23=\"\>", 
+   "\[InvisibleSpace]", "1", "\[InvisibleSpace]", "\<\" n24=\"\>", 
+   "\[InvisibleSpace]", "3", "\[InvisibleSpace]", "\<\" n34=\"\>", 
+   "\[InvisibleSpace]", "1", "\[InvisibleSpace]", "\<\" with minimum \"\>", 
+   "\[InvisibleSpace]", "0.005402147947124979`", 
+   "\[InvisibleSpace]", "\<\".\"\>"}],
+  SequenceForm[
+  235, ": The determinant is not zero for \[Theta]13=", Rational[1, 3] Pi, 
+   " \[Theta]14=", Rational[1, 3] Pi, " n12=", 0, " n23=", 1, " n24=", 3, 
+   " n34=", 1, " with minimum ", 0.005402147947124979, "."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.709241886107707*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "241", "\[InvisibleSpace]", "\<\": The determinant is not zero for \
+\[Theta]13=\"\>", "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "3"], "\[InvisibleSpace]", "\<\" \[Theta]14=\"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "3"], "\[InvisibleSpace]", "\<\" n12=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" n23=\"\>", 
+   "\[InvisibleSpace]", "1", "\[InvisibleSpace]", "\<\" n24=\"\>", 
+   "\[InvisibleSpace]", "5", "\[InvisibleSpace]", "\<\" n34=\"\>", 
+   "\[InvisibleSpace]", "1", "\[InvisibleSpace]", "\<\" with minimum \"\>", 
+   "\[InvisibleSpace]", "0.000049542023397795455`", 
+   "\[InvisibleSpace]", "\<\".\"\>"}],
+  SequenceForm[
+  241, ": The determinant is not zero for \[Theta]13=", Rational[1, 3] Pi, 
+   " \[Theta]14=", Rational[1, 3] Pi, " n12=", 0, " n23=", 1, " n24=", 5, 
+   " n34=", 1, " with minimum ", 0.000049542023397795455`, "."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.70924193398131*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "245", "\[InvisibleSpace]", "\<\": The determinant is not zero for \
+\[Theta]13=\"\>", "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "3"], "\[InvisibleSpace]", "\<\" \[Theta]14=\"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "3"], "\[InvisibleSpace]", "\<\" n12=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" n23=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n24=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n34=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" with minimum \"\>", 
+   "\[InvisibleSpace]", "0.0003328491405575518`", 
+   "\[InvisibleSpace]", "\<\".\"\>"}],
+  SequenceForm[
+  245, ": The determinant is not zero for \[Theta]13=", Rational[1, 3] Pi, 
+   " \[Theta]14=", Rational[1, 3] Pi, " n12=", 0, " n23=", 2, " n24=", 2, 
+   " n34=", 0, " with minimum ", 0.0003328491405575518, "."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.7092419403965597`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "248", "\[InvisibleSpace]", "\<\": The determinant is not zero for \
+\[Theta]13=\"\>", "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "3"], "\[InvisibleSpace]", "\<\" \[Theta]14=\"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "3"], "\[InvisibleSpace]", "\<\" n12=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" n23=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n24=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n34=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" with minimum \"\>", 
+   "\[InvisibleSpace]", "1.8711587120918757`*^-6", 
+   "\[InvisibleSpace]", "\<\".\"\>"}],
+  SequenceForm[
+  248, ": The determinant is not zero for \[Theta]13=", Rational[1, 3] Pi, 
+   " \[Theta]14=", Rational[1, 3] Pi, " n12=", 0, " n23=", 2, " n24=", 2, 
+   " n34=", 2, " with minimum ", 1.8711587120918757`*^-6, "."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.7092419622436647`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "251", "\[InvisibleSpace]", "\<\": The determinant is not zero for \
+\[Theta]13=\"\>", "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "3"], "\[InvisibleSpace]", "\<\" \[Theta]14=\"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "3"], "\[InvisibleSpace]", "\<\" n12=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" n23=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n24=\"\>", 
+   "\[InvisibleSpace]", "4", "\[InvisibleSpace]", "\<\" n34=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" with minimum \"\>", 
+   "\[InvisibleSpace]", "0.0004138595744619873`", 
+   "\[InvisibleSpace]", "\<\".\"\>"}],
+  SequenceForm[
+  251, ": The determinant is not zero for \[Theta]13=", Rational[1, 3] Pi, 
+   " \[Theta]14=", Rational[1, 3] Pi, " n12=", 0, " n23=", 2, " n24=", 4, 
+   " n34=", 0, " with minimum ", 0.0004138595744619873, "."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.709241976018805*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "254", "\[InvisibleSpace]", "\<\": The determinant is not zero for \
+\[Theta]13=\"\>", "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "3"], "\[InvisibleSpace]", "\<\" \[Theta]14=\"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "3"], "\[InvisibleSpace]", "\<\" n12=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" n23=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n24=\"\>", 
+   "\[InvisibleSpace]", "6", "\[InvisibleSpace]", "\<\" n34=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" with minimum \"\>", 
+   "\[InvisibleSpace]", "0.00019816527617606795`", 
+   "\[InvisibleSpace]", "\<\".\"\>"}],
+  SequenceForm[
+  254, ": The determinant is not zero for \[Theta]13=", Rational[1, 3] Pi, 
+   " \[Theta]14=", Rational[1, 3] Pi, " n12=", 0, " n23=", 2, " n24=", 6, 
+   " n34=", 0, " with minimum ", 0.00019816527617606795`, "."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.709241995365567*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "255", "\[InvisibleSpace]", "\<\": The determinant is not zero for \
+\[Theta]13=\"\>", "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "3"], "\[InvisibleSpace]", "\<\" \[Theta]14=\"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "3"], "\[InvisibleSpace]", "\<\" n12=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" n23=\"\>", 
+   "\[InvisibleSpace]", "3", "\[InvisibleSpace]", "\<\" n24=\"\>", 
+   "\[InvisibleSpace]", "3", "\[InvisibleSpace]", "\<\" n34=\"\>", 
+   "\[InvisibleSpace]", "1", "\[InvisibleSpace]", "\<\" with minimum \"\>", 
+   "\[InvisibleSpace]", "0.00001658894854493858`", 
+   "\[InvisibleSpace]", "\<\".\"\>"}],
+  SequenceForm[
+  255, ": The determinant is not zero for \[Theta]13=", Rational[1, 3] Pi, 
+   " \[Theta]14=", Rational[1, 3] Pi, " n12=", 0, " n23=", 3, " n24=", 3, 
+   " n34=", 1, " with minimum ", 0.00001658894854493858, "."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.709242041632856*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "259", "\[InvisibleSpace]", "\<\": The determinant is not zero for \
+\[Theta]13=\"\>", "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "3"], "\[InvisibleSpace]", "\<\" \[Theta]14=\"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "3"], "\[InvisibleSpace]", "\<\" n12=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" n23=\"\>", 
+   "\[InvisibleSpace]", "4", "\[InvisibleSpace]", "\<\" n24=\"\>", 
+   "\[InvisibleSpace]", "4", "\[InvisibleSpace]", "\<\" n34=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" with minimum \"\>", 
+   "\[InvisibleSpace]", "0.00009553323564480069`", 
+   "\[InvisibleSpace]", "\<\".\"\>"}],
+  SequenceForm[
+  259, ": The determinant is not zero for \[Theta]13=", Rational[1, 3] Pi, 
+   " \[Theta]14=", Rational[1, 3] Pi, " n12=", 0, " n23=", 4, " n24=", 4, 
+   " n34=", 0, " with minimum ", 0.00009553323564480069, "."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.7092420594257183`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "260", "\[InvisibleSpace]", "\<\": The determinant is not zero for \
+\[Theta]13=\"\>", "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "3"], "\[InvisibleSpace]", "\<\" \[Theta]14=\"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "4"], "\[InvisibleSpace]", "\<\" n12=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n23=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" n24=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" n34=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" with minimum \"\>", 
+   "\[InvisibleSpace]", "0.012412386376563521`", 
+   "\[InvisibleSpace]", "\<\".\"\>"}],
+  SequenceForm[
+  260, ": The determinant is not zero for \[Theta]13=", Rational[1, 3] Pi, 
+   " \[Theta]14=", Rational[1, 4] Pi, " n12=", 2, " n23=", 0, " n24=", 0, 
+   " n34=", 2, " with minimum ", 0.012412386376563521`, "."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.70924206824722*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "263", "\[InvisibleSpace]", "\<\": The determinant is not zero for \
+\[Theta]13=\"\>", "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "3"], "\[InvisibleSpace]", "\<\" \[Theta]14=\"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "4"], "\[InvisibleSpace]", "\<\" n12=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n23=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" n24=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" n34=\"\>", 
+   "\[InvisibleSpace]", "4", "\[InvisibleSpace]", "\<\" with minimum \"\>", 
+   "\[InvisibleSpace]", "0.004565065106639117`", 
+   "\[InvisibleSpace]", "\<\".\"\>"}],
+  SequenceForm[
+  263, ": The determinant is not zero for \[Theta]13=", Rational[1, 3] Pi, 
+   " \[Theta]14=", Rational[1, 4] Pi, " n12=", 2, " n23=", 0, " n24=", 0, 
+   " n34=", 4, " with minimum ", 0.004565065106639117, "."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.7092420722412024`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "266", "\[InvisibleSpace]", "\<\": The determinant is not zero for \
+\[Theta]13=\"\>", "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "3"], "\[InvisibleSpace]", "\<\" \[Theta]14=\"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "4"], "\[InvisibleSpace]", "\<\" n12=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n23=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" n24=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n34=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" with minimum \"\>", 
+   "\[InvisibleSpace]", "0.000017727493254746155`", 
+   "\[InvisibleSpace]", "\<\".\"\>"}],
+  SequenceForm[
+  266, ": The determinant is not zero for \[Theta]13=", Rational[1, 3] Pi, 
+   " \[Theta]14=", Rational[1, 4] Pi, " n12=", 2, " n23=", 0, " n24=", 2, 
+   " n34=", 0, " with minimum ", 0.000017727493254746155`, "."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.709242077190699*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "269", "\[InvisibleSpace]", "\<\": The determinant is not zero for \
+\[Theta]13=\"\>", "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "3"], "\[InvisibleSpace]", "\<\" \[Theta]14=\"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "4"], "\[InvisibleSpace]", "\<\" n12=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" n23=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" n24=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n34=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" with minimum \"\>", 
+   "\[InvisibleSpace]", "0.0001562598678093443`", 
+   "\[InvisibleSpace]", "\<\".\"\>"}],
+  SequenceForm[
+  269, ": The determinant is not zero for \[Theta]13=", Rational[1, 3] Pi, 
+   " \[Theta]14=", Rational[1, 4] Pi, " n12=", 0, " n23=", 0, " n24=", 2, 
+   " n34=", 2, " with minimum ", 0.0001562598678093443, "."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.709242083004765*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "272", "\[InvisibleSpace]", "\<\": The determinant is not zero for \
+\[Theta]13=\"\>", "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "3"], "\[InvisibleSpace]", "\<\" \[Theta]14=\"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "4"], "\[InvisibleSpace]", "\<\" n12=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" n23=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" n24=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n34=\"\>", 
+   "\[InvisibleSpace]", "4", "\[InvisibleSpace]", "\<\" with minimum \"\>", 
+   "\[InvisibleSpace]", "0.013606830474759374`", 
+   "\[InvisibleSpace]", "\<\".\"\>"}],
+  SequenceForm[
+  272, ": The determinant is not zero for \[Theta]13=", Rational[1, 3] Pi, 
+   " \[Theta]14=", Rational[1, 4] Pi, " n12=", 0, " n23=", 0, " n24=", 2, 
+   " n34=", 4, " with minimum ", 0.013606830474759374`, "."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.7092420923143473`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "275", "\[InvisibleSpace]", "\<\": The determinant is not zero for \
+\[Theta]13=\"\>", "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "3"], "\[InvisibleSpace]", "\<\" \[Theta]14=\"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "4"], "\[InvisibleSpace]", "\<\" n12=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n23=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" n24=\"\>", 
+   "\[InvisibleSpace]", "4", "\[InvisibleSpace]", "\<\" n34=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" with minimum \"\>", 
+   "\[InvisibleSpace]", "0.0016043689331135475`", 
+   "\[InvisibleSpace]", "\<\".\"\>"}],
+  SequenceForm[
+  275, ": The determinant is not zero for \[Theta]13=", Rational[1, 3] Pi, 
+   " \[Theta]14=", Rational[1, 4] Pi, " n12=", 2, " n23=", 0, " n24=", 4, 
+   " n34=", 0, " with minimum ", 0.0016043689331135475`, "."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.709242104309269*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "277", "\[InvisibleSpace]", "\<\": The determinant is not zero for \
+\[Theta]13=\"\>", "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "3"], "\[InvisibleSpace]", "\<\" \[Theta]14=\"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "4"], "\[InvisibleSpace]", "\<\" n12=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" n23=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" n24=\"\>", 
+   "\[InvisibleSpace]", "4", "\[InvisibleSpace]", "\<\" n34=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" with minimum \"\>", 
+   "\[InvisibleSpace]", "0.0002899280744565628`", 
+   "\[InvisibleSpace]", "\<\".\"\>"}],
+  SequenceForm[
+  277, ": The determinant is not zero for \[Theta]13=", Rational[1, 3] Pi, 
+   " \[Theta]14=", Rational[1, 4] Pi, " n12=", 0, " n23=", 0, " n24=", 4, 
+   " n34=", 2, " with minimum ", 0.0002899280744565628, "."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.709242116818284*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "283", "\[InvisibleSpace]", "\<\": The determinant is not zero for \
+\[Theta]13=\"\>", "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "3"], "\[InvisibleSpace]", "\<\" \[Theta]14=\"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "4"], "\[InvisibleSpace]", "\<\" n12=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n23=\"\>", 
+   "\[InvisibleSpace]", "1", "\[InvisibleSpace]", "\<\" n24=\"\>", 
+   "\[InvisibleSpace]", "1", "\[InvisibleSpace]", "\<\" n34=\"\>", 
+   "\[InvisibleSpace]", "1", "\[InvisibleSpace]", "\<\" with minimum \"\>", 
+   "\[InvisibleSpace]", "0.0027263451561766803`", 
+   "\[InvisibleSpace]", "\<\".\"\>"}],
+  SequenceForm[
+  283, ": The determinant is not zero for \[Theta]13=", Rational[1, 3] Pi, 
+   " \[Theta]14=", Rational[1, 4] Pi, " n12=", 2, " n23=", 1, " n24=", 1, 
+   " n34=", 1, " with minimum ", 0.0027263451561766803`, "."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.709242124042575*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "286", "\[InvisibleSpace]", "\<\": The determinant is not zero for \
+\[Theta]13=\"\>", "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "3"], "\[InvisibleSpace]", "\<\" \[Theta]14=\"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "4"], "\[InvisibleSpace]", "\<\" n12=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" n23=\"\>", 
+   "\[InvisibleSpace]", "1", "\[InvisibleSpace]", "\<\" n24=\"\>", 
+   "\[InvisibleSpace]", "1", "\[InvisibleSpace]", "\<\" n34=\"\>", 
+   "\[InvisibleSpace]", "3", "\[InvisibleSpace]", "\<\" with minimum \"\>", 
+   "\[InvisibleSpace]", "0.0029302414098032487`", 
+   "\[InvisibleSpace]", "\<\".\"\>"}],
+  SequenceForm[
+  286, ": The determinant is not zero for \[Theta]13=", Rational[1, 3] Pi, 
+   " \[Theta]14=", Rational[1, 4] Pi, " n12=", 0, " n23=", 1, " n24=", 1, 
+   " n34=", 3, " with minimum ", 0.0029302414098032487`, "."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.7092421404727507`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "292", "\[InvisibleSpace]", "\<\": The determinant is not zero for \
+\[Theta]13=\"\>", "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "3"], "\[InvisibleSpace]", "\<\" \[Theta]14=\"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "4"], "\[InvisibleSpace]", "\<\" n12=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" n23=\"\>", 
+   "\[InvisibleSpace]", "1", "\[InvisibleSpace]", "\<\" n24=\"\>", 
+   "\[InvisibleSpace]", "3", "\[InvisibleSpace]", "\<\" n34=\"\>", 
+   "\[InvisibleSpace]", "1", "\[InvisibleSpace]", "\<\" with minimum \"\>", 
+   "\[InvisibleSpace]", "0.005404538172168418`", 
+   "\[InvisibleSpace]", "\<\".\"\>"}],
+  SequenceForm[
+  292, ": The determinant is not zero for \[Theta]13=", Rational[1, 3] Pi, 
+   " \[Theta]14=", Rational[1, 4] Pi, " n12=", 0, " n23=", 1, " n24=", 3, 
+   " n34=", 1, " with minimum ", 0.005404538172168418, "."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.709242222518364*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "298", "\[InvisibleSpace]", "\<\": The determinant is not zero for \
+\[Theta]13=\"\>", "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "3"], "\[InvisibleSpace]", "\<\" \[Theta]14=\"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "4"], "\[InvisibleSpace]", "\<\" n12=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" n23=\"\>", 
+   "\[InvisibleSpace]", "1", "\[InvisibleSpace]", "\<\" n24=\"\>", 
+   "\[InvisibleSpace]", "5", "\[InvisibleSpace]", "\<\" n34=\"\>", 
+   "\[InvisibleSpace]", "1", "\[InvisibleSpace]", "\<\" with minimum \"\>", 
+   "\[InvisibleSpace]", "0.000647466001561085`", 
+   "\[InvisibleSpace]", "\<\".\"\>"}],
+  SequenceForm[
+  298, ": The determinant is not zero for \[Theta]13=", Rational[1, 3] Pi, 
+   " \[Theta]14=", Rational[1, 4] Pi, " n12=", 0, " n23=", 1, " n24=", 5, 
+   " n34=", 1, " with minimum ", 0.000647466001561085, "."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.709242264542153*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "302", "\[InvisibleSpace]", "\<\": The determinant is not zero for \
+\[Theta]13=\"\>", "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "3"], "\[InvisibleSpace]", "\<\" \[Theta]14=\"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "4"], "\[InvisibleSpace]", "\<\" n12=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" n23=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n24=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n34=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" with minimum \"\>", 
+   "\[InvisibleSpace]", "0.006998419009167134`", 
+   "\[InvisibleSpace]", "\<\".\"\>"}],
+  SequenceForm[
+  302, ": The determinant is not zero for \[Theta]13=", Rational[1, 3] Pi, 
+   " \[Theta]14=", Rational[1, 4] Pi, " n12=", 0, " n23=", 2, " n24=", 2, 
+   " n34=", 0, " with minimum ", 0.006998419009167134, "."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.7092422693145933`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "305", "\[InvisibleSpace]", "\<\": The determinant is not zero for \
+\[Theta]13=\"\>", "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "3"], "\[InvisibleSpace]", "\<\" \[Theta]14=\"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "4"], "\[InvisibleSpace]", "\<\" n12=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" n23=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n24=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n34=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" with minimum \"\>", 
+   "\[InvisibleSpace]", "0.0012001982518581495`", 
+   "\[InvisibleSpace]", "\<\".\"\>"}],
+  SequenceForm[
+  305, ": The determinant is not zero for \[Theta]13=", Rational[1, 3] Pi, 
+   " \[Theta]14=", Rational[1, 4] Pi, " n12=", 0, " n23=", 2, " n24=", 2, 
+   " n34=", 2, " with minimum ", 0.0012001982518581495`, "."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.7092422748407917`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "308", "\[InvisibleSpace]", "\<\": The determinant is not zero for \
+\[Theta]13=\"\>", "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "3"], "\[InvisibleSpace]", "\<\" \[Theta]14=\"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "4"], "\[InvisibleSpace]", "\<\" n12=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" n23=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n24=\"\>", 
+   "\[InvisibleSpace]", "4", "\[InvisibleSpace]", "\<\" n34=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" with minimum \"\>", 
+   "\[InvisibleSpace]", "0.002643115183545276`", 
+   "\[InvisibleSpace]", "\<\".\"\>"}],
+  SequenceForm[
+  308, ": The determinant is not zero for \[Theta]13=", Rational[1, 3] Pi, 
+   " \[Theta]14=", Rational[1, 4] Pi, " n12=", 0, " n23=", 2, " n24=", 4, 
+   " n34=", 0, " with minimum ", 0.002643115183545276, "."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.709242289688046*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "311", "\[InvisibleSpace]", "\<\": The determinant is not zero for \
+\[Theta]13=\"\>", "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "3"], "\[InvisibleSpace]", "\<\" \[Theta]14=\"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "4"], "\[InvisibleSpace]", "\<\" n12=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" n23=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n24=\"\>", 
+   "\[InvisibleSpace]", "6", "\[InvisibleSpace]", "\<\" n34=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" with minimum \"\>", 
+   "\[InvisibleSpace]", "0.0005335300931598888`", 
+   "\[InvisibleSpace]", "\<\".\"\>"}],
+  SequenceForm[
+  311, ": The determinant is not zero for \[Theta]13=", Rational[1, 3] Pi, 
+   " \[Theta]14=", Rational[1, 4] Pi, " n12=", 0, " n23=", 2, " n24=", 6, 
+   " n34=", 0, " with minimum ", 0.0005335300931598888, "."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.7092423049079723`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "312", "\[InvisibleSpace]", "\<\": The determinant is not zero for \
+\[Theta]13=\"\>", "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "3"], "\[InvisibleSpace]", "\<\" \[Theta]14=\"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "4"], "\[InvisibleSpace]", "\<\" n12=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" n23=\"\>", 
+   "\[InvisibleSpace]", "3", "\[InvisibleSpace]", "\<\" n24=\"\>", 
+   "\[InvisibleSpace]", "3", "\[InvisibleSpace]", "\<\" n34=\"\>", 
+   "\[InvisibleSpace]", "1", "\[InvisibleSpace]", "\<\" with minimum \"\>", 
+   "\[InvisibleSpace]", "0.00008568387758681242`", 
+   "\[InvisibleSpace]", "\<\".\"\>"}],
+  SequenceForm[
+  312, ": The determinant is not zero for \[Theta]13=", Rational[1, 3] Pi, 
+   " \[Theta]14=", Rational[1, 4] Pi, " n12=", 0, " n23=", 3, " n24=", 3, 
+   " n34=", 1, " with minimum ", 0.00008568387758681242, "."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.709242340764291*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "316", "\[InvisibleSpace]", "\<\": The determinant is not zero for \
+\[Theta]13=\"\>", "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "3"], "\[InvisibleSpace]", "\<\" \[Theta]14=\"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "4"], "\[InvisibleSpace]", "\<\" n12=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" n23=\"\>", 
+   "\[InvisibleSpace]", "4", "\[InvisibleSpace]", "\<\" n24=\"\>", 
+   "\[InvisibleSpace]", "4", "\[InvisibleSpace]", "\<\" n34=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" with minimum \"\>", 
+   "\[InvisibleSpace]", "0.00010245515473301935`", 
+   "\[InvisibleSpace]", "\<\".\"\>"}],
+  SequenceForm[
+  316, ": The determinant is not zero for \[Theta]13=", Rational[1, 3] Pi, 
+   " \[Theta]14=", Rational[1, 4] Pi, " n12=", 0, " n23=", 4, " n24=", 4, 
+   " n34=", 0, " with minimum ", 0.00010245515473301935`, "."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.7092423570855913`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "317", "\[InvisibleSpace]", "\<\": The determinant is not zero for \
+\[Theta]13=\"\>", "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "4"], "\[InvisibleSpace]", "\<\" \[Theta]14=\"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "2"], "\[InvisibleSpace]", "\<\" n12=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n23=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" n24=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n34=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" with minimum \"\>", 
+   "\[InvisibleSpace]", "0.12518445106925108`", 
+   "\[InvisibleSpace]", "\<\".\"\>"}],
+  SequenceForm[
+  317, ": The determinant is not zero for \[Theta]13=", Rational[1, 4] Pi, 
+   " \[Theta]14=", Rational[1, 2] Pi, " n12=", 2, " n23=", 0, " n24=", 2, 
+   " n34=", 0, " with minimum ", 0.12518445106925108`, "."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.709242360712001*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "318", "\[InvisibleSpace]", "\<\": The determinant is not zero for \
+\[Theta]13=\"\>", "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "4"], "\[InvisibleSpace]", "\<\" \[Theta]14=\"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "2"], "\[InvisibleSpace]", "\<\" n12=\"\>", 
+   "\[InvisibleSpace]", "4", "\[InvisibleSpace]", "\<\" n23=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" n24=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n34=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" with minimum \"\>", 
+   "\[InvisibleSpace]", "0.0000220945262380197`", 
+   "\[InvisibleSpace]", "\<\".\"\>"}],
+  SequenceForm[
+  318, ": The determinant is not zero for \[Theta]13=", Rational[1, 4] Pi, 
+   " \[Theta]14=", Rational[1, 2] Pi, " n12=", 4, " n23=", 0, " n24=", 2, 
+   " n34=", 0, " with minimum ", 0.0000220945262380197, "."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.709242427504921*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "319", "\[InvisibleSpace]", "\<\": The determinant is not zero for \
+\[Theta]13=\"\>", "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "4"], "\[InvisibleSpace]", "\<\" \[Theta]14=\"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "2"], "\[InvisibleSpace]", "\<\" n12=\"\>", 
+   "\[InvisibleSpace]", "6", "\[InvisibleSpace]", "\<\" n23=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" n24=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n34=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" with minimum \"\>", 
+   "\[InvisibleSpace]", "0.002720016904922861`", 
+   "\[InvisibleSpace]", "\<\".\"\>"}],
+  SequenceForm[
+  319, ": The determinant is not zero for \[Theta]13=", Rational[1, 4] Pi, 
+   " \[Theta]14=", Rational[1, 2] Pi, " n12=", 6, " n23=", 0, " n24=", 2, 
+   " n34=", 0, " with minimum ", 0.002720016904922861, "."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.7092424369269953`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "320", "\[InvisibleSpace]", "\<\": The determinant is not zero for \
+\[Theta]13=\"\>", "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "4"], "\[InvisibleSpace]", "\<\" \[Theta]14=\"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "2"], "\[InvisibleSpace]", "\<\" n12=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" n23=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" n24=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n34=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" with minimum \"\>", 
+   "\[InvisibleSpace]", "0.01693872123337025`", 
+   "\[InvisibleSpace]", "\<\".\"\>"}],
+  SequenceForm[
+  320, ": The determinant is not zero for \[Theta]13=", Rational[1, 4] Pi, 
+   " \[Theta]14=", Rational[1, 2] Pi, " n12=", 0, " n23=", 0, " n24=", 2, 
+   " n34=", 2, " with minimum ", 0.01693872123337025, "."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.709242442507786*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "321", "\[InvisibleSpace]", "\<\": The determinant is not zero for \
+\[Theta]13=\"\>", "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "4"], "\[InvisibleSpace]", "\<\" \[Theta]14=\"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "2"], "\[InvisibleSpace]", "\<\" n12=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n23=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" n24=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n34=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" with minimum \"\>", 
+   "\[InvisibleSpace]", "0.00006865704762328302`", 
+   "\[InvisibleSpace]", "\<\".\"\>"}],
+  SequenceForm[
+  321, ": The determinant is not zero for \[Theta]13=", Rational[1, 4] Pi, 
+   " \[Theta]14=", Rational[1, 2] Pi, " n12=", 2, " n23=", 0, " n24=", 2, 
+   " n34=", 2, " with minimum ", 0.00006865704762328302, "."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.709242494457247*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "323", "\[InvisibleSpace]", "\<\": The determinant is not zero for \
+\[Theta]13=\"\>", "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "4"], "\[InvisibleSpace]", "\<\" \[Theta]14=\"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "2"], "\[InvisibleSpace]", "\<\" n12=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" n23=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" n24=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n34=\"\>", 
+   "\[InvisibleSpace]", "4", "\[InvisibleSpace]", "\<\" with minimum \"\>", 
+   "\[InvisibleSpace]", "0.0018332909405439316`", 
+   "\[InvisibleSpace]", "\<\".\"\>"}],
+  SequenceForm[
+  323, ": The determinant is not zero for \[Theta]13=", Rational[1, 4] Pi, 
+   " \[Theta]14=", Rational[1, 2] Pi, " n12=", 0, " n23=", 0, " n24=", 2, 
+   " n34=", 4, " with minimum ", 0.0018332909405439316`, "."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.709242515377617*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "324", "\[InvisibleSpace]", "\<\": The determinant is not zero for \
+\[Theta]13=\"\>", "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "4"], "\[InvisibleSpace]", "\<\" \[Theta]14=\"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "2"], "\[InvisibleSpace]", "\<\" n12=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n23=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" n24=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n34=\"\>", 
+   "\[InvisibleSpace]", "4", "\[InvisibleSpace]", "\<\" with minimum \"\>", 
+   "\[InvisibleSpace]", "0.00010092969264439919`", 
+   "\[InvisibleSpace]", "\<\".\"\>"}],
+  SequenceForm[
+  324, ": The determinant is not zero for \[Theta]13=", Rational[1, 4] Pi, 
+   " \[Theta]14=", Rational[1, 2] Pi, " n12=", 2, " n23=", 0, " n24=", 2, 
+   " n34=", 4, " with minimum ", 0.00010092969264439919`, "."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.709242522522996*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "325", "\[InvisibleSpace]", "\<\": The determinant is not zero for \
+\[Theta]13=\"\>", "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "4"], "\[InvisibleSpace]", "\<\" \[Theta]14=\"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "2"], "\[InvisibleSpace]", "\<\" n12=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" n23=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" n24=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n34=\"\>", 
+   "\[InvisibleSpace]", "6", "\[InvisibleSpace]", "\<\" with minimum \"\>", 
+   "\[InvisibleSpace]", "0.00001764700658945245`", 
+   "\[InvisibleSpace]", "\<\".\"\>"}],
+  SequenceForm[
+  325, ": The determinant is not zero for \[Theta]13=", Rational[1, 4] Pi, 
+   " \[Theta]14=", Rational[1, 2] Pi, " n12=", 0, " n23=", 0, " n24=", 2, 
+   " n34=", 6, " with minimum ", 0.00001764700658945245, "."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.709242558961009*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "326", "\[InvisibleSpace]", "\<\": The determinant is not zero for \
+\[Theta]13=\"\>", "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "4"], "\[InvisibleSpace]", "\<\" \[Theta]14=\"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "2"], "\[InvisibleSpace]", "\<\" n12=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n23=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" n24=\"\>", 
+   "\[InvisibleSpace]", "4", "\[InvisibleSpace]", "\<\" n34=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" with minimum \"\>", 
+   "\[InvisibleSpace]", "0.00046318464405146906`", 
+   "\[InvisibleSpace]", "\<\".\"\>"}],
+  SequenceForm[
+  326, ": The determinant is not zero for \[Theta]13=", Rational[1, 4] Pi, 
+   " \[Theta]14=", Rational[1, 2] Pi, " n12=", 2, " n23=", 0, " n24=", 4, 
+   " n34=", 0, " with minimum ", 0.00046318464405146906`, "."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.709242608235485*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "327", "\[InvisibleSpace]", "\<\": The determinant is not zero for \
+\[Theta]13=\"\>", "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "4"], "\[InvisibleSpace]", "\<\" \[Theta]14=\"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "2"], "\[InvisibleSpace]", "\<\" n12=\"\>", 
+   "\[InvisibleSpace]", "4", "\[InvisibleSpace]", "\<\" n23=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" n24=\"\>", 
+   "\[InvisibleSpace]", "4", "\[InvisibleSpace]", "\<\" n34=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" with minimum \"\>", 
+   "\[InvisibleSpace]", "0.0015219813343735574`", 
+   "\[InvisibleSpace]", "\<\".\"\>"}],
+  SequenceForm[
+  327, ": The determinant is not zero for \[Theta]13=", Rational[1, 4] Pi, 
+   " \[Theta]14=", Rational[1, 2] Pi, " n12=", 4, " n23=", 0, " n24=", 4, 
+   " n34=", 0, " with minimum ", 0.0015219813343735574`, "."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.709242614790188*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "328", "\[InvisibleSpace]", "\<\": The determinant is not zero for \
+\[Theta]13=\"\>", "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "4"], "\[InvisibleSpace]", "\<\" \[Theta]14=\"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "2"], "\[InvisibleSpace]", "\<\" n12=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" n23=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" n24=\"\>", 
+   "\[InvisibleSpace]", "4", "\[InvisibleSpace]", "\<\" n34=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" with minimum \"\>", 
+   "\[InvisibleSpace]", "0.00001904977713875412`", 
+   "\[InvisibleSpace]", "\<\".\"\>"}],
+  SequenceForm[
+  328, ": The determinant is not zero for \[Theta]13=", Rational[1, 4] Pi, 
+   " \[Theta]14=", Rational[1, 2] Pi, " n12=", 0, " n23=", 0, " n24=", 4, 
+   " n34=", 2, " with minimum ", 0.00001904977713875412, "."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.709242655502863*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "329", "\[InvisibleSpace]", "\<\": The determinant is not zero for \
+\[Theta]13=\"\>", "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "4"], "\[InvisibleSpace]", "\<\" \[Theta]14=\"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "2"], "\[InvisibleSpace]", "\<\" n12=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n23=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" n24=\"\>", 
+   "\[InvisibleSpace]", "4", "\[InvisibleSpace]", "\<\" n34=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" with minimum \"\>", 
+   "\[InvisibleSpace]", "0.001529850159563409`", 
+   "\[InvisibleSpace]", "\<\".\"\>"}],
+  SequenceForm[
+  329, ": The determinant is not zero for \[Theta]13=", Rational[1, 4] Pi, 
+   " \[Theta]14=", Rational[1, 2] Pi, " n12=", 2, " n23=", 0, " n24=", 4, 
+   " n34=", 2, " with minimum ", 0.001529850159563409, "."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.709242661329858*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "331", "\[InvisibleSpace]", "\<\": The determinant is not zero for \
+\[Theta]13=\"\>", "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "4"], "\[InvisibleSpace]", "\<\" \[Theta]14=\"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "2"], "\[InvisibleSpace]", "\<\" n12=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n23=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" n24=\"\>", 
+   "\[InvisibleSpace]", "6", "\[InvisibleSpace]", "\<\" n34=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" with minimum \"\>", 
+   "\[InvisibleSpace]", "0.0012127355734399118`", 
+   "\[InvisibleSpace]", "\<\".\"\>"}],
+  SequenceForm[
+  331, ": The determinant is not zero for \[Theta]13=", Rational[1, 4] Pi, 
+   " \[Theta]14=", Rational[1, 2] Pi, " n12=", 2, " n23=", 0, " n24=", 6, 
+   " n34=", 0, " with minimum ", 0.0012127355734399118`, "."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.709242677552368*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "332", "\[InvisibleSpace]", "\<\": The determinant is not zero for \
+\[Theta]13=\"\>", "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "4"], "\[InvisibleSpace]", "\<\" \[Theta]14=\"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "2"], "\[InvisibleSpace]", "\<\" n12=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" n23=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" n24=\"\>", 
+   "\[InvisibleSpace]", "6", "\[InvisibleSpace]", "\<\" n34=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" with minimum \"\>", 
+   "\[InvisibleSpace]", "0.0002238658343406291`", 
+   "\[InvisibleSpace]", "\<\".\"\>"}],
+  SequenceForm[
+  332, ": The determinant is not zero for \[Theta]13=", Rational[1, 4] Pi, 
+   " \[Theta]14=", Rational[1, 2] Pi, " n12=", 0, " n23=", 0, " n24=", 6, 
+   " n34=", 2, " with minimum ", 0.0002238658343406291, "."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.709242688243042*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "333", "\[InvisibleSpace]", "\<\": The determinant is not zero for \
+\[Theta]13=\"\>", "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "4"], "\[InvisibleSpace]", "\<\" \[Theta]14=\"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "2"], "\[InvisibleSpace]", "\<\" n12=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" n23=\"\>", 
+   "\[InvisibleSpace]", "1", "\[InvisibleSpace]", "\<\" n24=\"\>", 
+   "\[InvisibleSpace]", "3", "\[InvisibleSpace]", "\<\" n34=\"\>", 
+   "\[InvisibleSpace]", "1", "\[InvisibleSpace]", "\<\" with minimum \"\>", 
+   "\[InvisibleSpace]", "3.7767145221967265`*^-6", 
+   "\[InvisibleSpace]", "\<\".\"\>"}],
+  SequenceForm[
+  333, ": The determinant is not zero for \[Theta]13=", Rational[1, 4] Pi, 
+   " \[Theta]14=", Rational[1, 2] Pi, " n12=", 0, " n23=", 1, " n24=", 3, 
+   " n34=", 1, " with minimum ", 3.7767145221967265`*^-6, "."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.709242898936736*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "334", "\[InvisibleSpace]", "\<\": The determinant is not zero for \
+\[Theta]13=\"\>", "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "4"], "\[InvisibleSpace]", "\<\" \[Theta]14=\"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "2"], "\[InvisibleSpace]", "\<\" n12=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n23=\"\>", 
+   "\[InvisibleSpace]", "1", "\[InvisibleSpace]", "\<\" n24=\"\>", 
+   "\[InvisibleSpace]", "3", "\[InvisibleSpace]", "\<\" n34=\"\>", 
+   "\[InvisibleSpace]", "1", "\[InvisibleSpace]", "\<\" with minimum \"\>", 
+   "\[InvisibleSpace]", "0.012684607410003969`", 
+   "\[InvisibleSpace]", "\<\".\"\>"}],
+  SequenceForm[
+  334, ": The determinant is not zero for \[Theta]13=", Rational[1, 4] Pi, 
+   " \[Theta]14=", Rational[1, 2] Pi, " n12=", 2, " n23=", 1, " n24=", 3, 
+   " n34=", 1, " with minimum ", 0.012684607410003969`, "."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.709242907288744*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "336", "\[InvisibleSpace]", "\<\": The determinant is not zero for \
+\[Theta]13=\"\>", "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "4"], "\[InvisibleSpace]", "\<\" \[Theta]14=\"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "2"], "\[InvisibleSpace]", "\<\" n12=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" n23=\"\>", 
+   "\[InvisibleSpace]", "1", "\[InvisibleSpace]", "\<\" n24=\"\>", 
+   "\[InvisibleSpace]", "3", "\[InvisibleSpace]", "\<\" n34=\"\>", 
+   "\[InvisibleSpace]", "3", "\[InvisibleSpace]", "\<\" with minimum \"\>", 
+   "\[InvisibleSpace]", "0.006203199051060203`", 
+   "\[InvisibleSpace]", "\<\".\"\>"}],
+  SequenceForm[
+  336, ": The determinant is not zero for \[Theta]13=", Rational[1, 4] Pi, 
+   " \[Theta]14=", Rational[1, 2] Pi, " n12=", 0, " n23=", 1, " n24=", 3, 
+   " n34=", 3, " with minimum ", 0.006203199051060203, "."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.7092429165235558`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "339", "\[InvisibleSpace]", "\<\": The determinant is not zero for \
+\[Theta]13=\"\>", "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "4"], "\[InvisibleSpace]", "\<\" \[Theta]14=\"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "2"], "\[InvisibleSpace]", "\<\" n12=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" n23=\"\>", 
+   "\[InvisibleSpace]", "1", "\[InvisibleSpace]", "\<\" n24=\"\>", 
+   "\[InvisibleSpace]", "5", "\[InvisibleSpace]", "\<\" n34=\"\>", 
+   "\[InvisibleSpace]", "1", "\[InvisibleSpace]", "\<\" with minimum \"\>", 
+   "\[InvisibleSpace]", "0.000020760303402649763`", 
+   "\[InvisibleSpace]", "\<\".\"\>"}],
+  SequenceForm[
+  339, ": The determinant is not zero for \[Theta]13=", Rational[1, 4] Pi, 
+   " \[Theta]14=", Rational[1, 2] Pi, " n12=", 0, " n23=", 1, " n24=", 5, 
+   " n34=", 1, " with minimum ", 0.000020760303402649763`, "."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.7092429817869368`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "343", "\[InvisibleSpace]", "\<\": The determinant is not zero for \
+\[Theta]13=\"\>", "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "4"], "\[InvisibleSpace]", "\<\" \[Theta]14=\"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "2"], "\[InvisibleSpace]", "\<\" n12=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" n23=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n24=\"\>", 
+   "\[InvisibleSpace]", "4", "\[InvisibleSpace]", "\<\" n34=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" with minimum \"\>", 
+   "\[InvisibleSpace]", "0.0005524526052953704`", 
+   "\[InvisibleSpace]", "\<\".\"\>"}],
+  SequenceForm[
+  343, ": The determinant is not zero for \[Theta]13=", Rational[1, 4] Pi, 
+   " \[Theta]14=", Rational[1, 2] Pi, " n12=", 0, " n23=", 2, " n24=", 4, 
+   " n34=", 0, " with minimum ", 0.0005524526052953704, "."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.709243002522723*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "346", "\[InvisibleSpace]", "\<\": The determinant is not zero for \
+\[Theta]13=\"\>", "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "4"], "\[InvisibleSpace]", "\<\" \[Theta]14=\"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "2"], "\[InvisibleSpace]", "\<\" n12=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" n23=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n24=\"\>", 
+   "\[InvisibleSpace]", "6", "\[InvisibleSpace]", "\<\" n34=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" with minimum \"\>", 
+   "\[InvisibleSpace]", "0.00392353441364379`", 
+   "\[InvisibleSpace]", "\<\".\"\>"}],
+  SequenceForm[
+  346, ": The determinant is not zero for \[Theta]13=", Rational[1, 4] Pi, 
+   " \[Theta]14=", Rational[1, 2] Pi, " n12=", 0, " n23=", 2, " n24=", 6, 
+   " n34=", 0, " with minimum ", 0.00392353441364379, "."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.7092430087192373`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "348", "\[InvisibleSpace]", "\<\": The determinant is not zero for \
+\[Theta]13=\"\>", "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "4"], "\[InvisibleSpace]", "\<\" \[Theta]14=\"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "3"], "\[InvisibleSpace]", "\<\" n12=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n23=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" n24=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n34=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" with minimum \"\>", 
+   "\[InvisibleSpace]", "0.003519734681641893`", 
+   "\[InvisibleSpace]", "\<\".\"\>"}],
+  SequenceForm[
+  348, ": The determinant is not zero for \[Theta]13=", Rational[1, 4] Pi, 
+   " \[Theta]14=", Rational[1, 3] Pi, " n12=", 2, " n23=", 0, " n24=", 2, 
+   " n34=", 0, " with minimum ", 0.003519734681641893, "."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.70924302644549*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "351", "\[InvisibleSpace]", "\<\": The determinant is not zero for \
+\[Theta]13=\"\>", "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "4"], "\[InvisibleSpace]", "\<\" \[Theta]14=\"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "3"], "\[InvisibleSpace]", "\<\" n12=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" n23=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" n24=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n34=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" with minimum \"\>", 
+   "\[InvisibleSpace]", "0.0004491553126059647`", 
+   "\[InvisibleSpace]", "\<\".\"\>"}],
+  SequenceForm[
+  351, ": The determinant is not zero for \[Theta]13=", Rational[1, 4] Pi, 
+   " \[Theta]14=", Rational[1, 3] Pi, " n12=", 0, " n23=", 0, " n24=", 2, 
+   " n34=", 2, " with minimum ", 0.0004491553126059647, "."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.709243031921981*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "354", "\[InvisibleSpace]", "\<\": The determinant is not zero for \
+\[Theta]13=\"\>", "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "4"], "\[InvisibleSpace]", "\<\" \[Theta]14=\"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "3"], "\[InvisibleSpace]", "\<\" n12=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" n23=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" n24=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n34=\"\>", 
+   "\[InvisibleSpace]", "4", "\[InvisibleSpace]", "\<\" with minimum \"\>", 
+   "\[InvisibleSpace]", "0.000060222942371387956`", 
+   "\[InvisibleSpace]", "\<\".\"\>"}],
+  SequenceForm[
+  354, ": The determinant is not zero for \[Theta]13=", Rational[1, 4] Pi, 
+   " \[Theta]14=", Rational[1, 3] Pi, " n12=", 0, " n23=", 0, " n24=", 2, 
+   " n34=", 4, " with minimum ", 0.000060222942371387956`, "."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.709243041986228*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "357", "\[InvisibleSpace]", "\<\": The determinant is not zero for \
+\[Theta]13=\"\>", "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "4"], "\[InvisibleSpace]", "\<\" \[Theta]14=\"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "3"], "\[InvisibleSpace]", "\<\" n12=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n23=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" n24=\"\>", 
+   "\[InvisibleSpace]", "4", "\[InvisibleSpace]", "\<\" n34=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" with minimum \"\>", 
+   "\[InvisibleSpace]", "0.002296157122513233`", 
+   "\[InvisibleSpace]", "\<\".\"\>"}],
+  SequenceForm[
+  357, ": The determinant is not zero for \[Theta]13=", Rational[1, 4] Pi, 
+   " \[Theta]14=", Rational[1, 3] Pi, " n12=", 2, " n23=", 0, " n24=", 4, 
+   " n34=", 0, " with minimum ", 0.002296157122513233, "."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.70924305738949*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "359", "\[InvisibleSpace]", "\<\": The determinant is not zero for \
+\[Theta]13=\"\>", "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "4"], "\[InvisibleSpace]", "\<\" \[Theta]14=\"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "3"], "\[InvisibleSpace]", "\<\" n12=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" n23=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" n24=\"\>", 
+   "\[InvisibleSpace]", "4", "\[InvisibleSpace]", "\<\" n34=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" with minimum \"\>", 
+   "\[InvisibleSpace]", "0.00040227694662379267`", 
+   "\[InvisibleSpace]", "\<\".\"\>"}],
+  SequenceForm[
+  359, ": The determinant is not zero for \[Theta]13=", Rational[1, 4] Pi, 
+   " \[Theta]14=", Rational[1, 3] Pi, " n12=", 0, " n23=", 0, " n24=", 4, 
+   " n34=", 2, " with minimum ", 0.00040227694662379267`, "."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.709243074425523*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "364", "\[InvisibleSpace]", "\<\": The determinant is not zero for \
+\[Theta]13=\"\>", "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "4"], "\[InvisibleSpace]", "\<\" \[Theta]14=\"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "3"], "\[InvisibleSpace]", "\<\" n12=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" n23=\"\>", 
+   "\[InvisibleSpace]", "1", "\[InvisibleSpace]", "\<\" n24=\"\>", 
+   "\[InvisibleSpace]", "3", "\[InvisibleSpace]", "\<\" n34=\"\>", 
+   "\[InvisibleSpace]", "1", "\[InvisibleSpace]", "\<\" with minimum \"\>", 
+   "\[InvisibleSpace]", "0.0003088857430763484`", 
+   "\[InvisibleSpace]", "\<\".\"\>"}],
+  SequenceForm[
+  364, ": The determinant is not zero for \[Theta]13=", Rational[1, 4] Pi, 
+   " \[Theta]14=", Rational[1, 3] Pi, " n12=", 0, " n23=", 1, " n24=", 3, 
+   " n34=", 1, " with minimum ", 0.0003088857430763484, "."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.7092431548570538`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "370", "\[InvisibleSpace]", "\<\": The determinant is not zero for \
+\[Theta]13=\"\>", "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "4"], "\[InvisibleSpace]", "\<\" \[Theta]14=\"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "3"], "\[InvisibleSpace]", "\<\" n12=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" n23=\"\>", 
+   "\[InvisibleSpace]", "1", "\[InvisibleSpace]", "\<\" n24=\"\>", 
+   "\[InvisibleSpace]", "5", "\[InvisibleSpace]", "\<\" n34=\"\>", 
+   "\[InvisibleSpace]", "1", "\[InvisibleSpace]", "\<\" with minimum \"\>", 
+   "\[InvisibleSpace]", "0.00150924061831586`", 
+   "\[InvisibleSpace]", "\<\".\"\>"}],
+  SequenceForm[
+  370, ": The determinant is not zero for \[Theta]13=", Rational[1, 4] Pi, 
+   " \[Theta]14=", Rational[1, 3] Pi, " n12=", 0, " n23=", 1, " n24=", 5, 
+   " n34=", 1, " with minimum ", 0.00150924061831586, "."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.709243221049193*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "374", "\[InvisibleSpace]", "\<\": The determinant is not zero for \
+\[Theta]13=\"\>", "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "4"], "\[InvisibleSpace]", "\<\" \[Theta]14=\"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "3"], "\[InvisibleSpace]", "\<\" n12=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" n23=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n24=\"\>", 
+   "\[InvisibleSpace]", "4", "\[InvisibleSpace]", "\<\" n34=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" with minimum \"\>", 
+   "\[InvisibleSpace]", "0.010482274297788217`", 
+   "\[InvisibleSpace]", "\<\".\"\>"}],
+  SequenceForm[
+  374, ": The determinant is not zero for \[Theta]13=", Rational[1, 4] Pi, 
+   " \[Theta]14=", Rational[1, 3] Pi, " n12=", 0, " n23=", 2, " n24=", 4, 
+   " n34=", 0, " with minimum ", 0.010482274297788217`, "."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.709243239156124*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "377", "\[InvisibleSpace]", "\<\": The determinant is not zero for \
+\[Theta]13=\"\>", "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "4"], "\[InvisibleSpace]", "\<\" \[Theta]14=\"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "3"], "\[InvisibleSpace]", "\<\" n12=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" n23=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n24=\"\>", 
+   "\[InvisibleSpace]", "6", "\[InvisibleSpace]", "\<\" n34=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" with minimum \"\>", 
+   "\[InvisibleSpace]", "0.000014228646646828762`", 
+   "\[InvisibleSpace]", "\<\".\"\>"}],
+  SequenceForm[
+  377, ": The determinant is not zero for \[Theta]13=", Rational[1, 4] Pi, 
+   " \[Theta]14=", Rational[1, 3] Pi, " n12=", 0, " n23=", 2, " n24=", 6, 
+   " n34=", 0, " with minimum ", 0.000014228646646828762`, "."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.709243252555965*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "379", "\[InvisibleSpace]", "\<\": The determinant is not zero for \
+\[Theta]13=\"\>", "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "4"], "\[InvisibleSpace]", "\<\" \[Theta]14=\"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "4"], "\[InvisibleSpace]", "\<\" n12=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n23=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" n24=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" n34=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" with minimum \"\>", 
+   "\[InvisibleSpace]", "0.000026952130730249236`", 
+   "\[InvisibleSpace]", "\<\".\"\>"}],
+  SequenceForm[
+  379, ": The determinant is not zero for \[Theta]13=", Rational[1, 4] Pi, 
+   " \[Theta]14=", Rational[1, 4] Pi, " n12=", 2, " n23=", 0, " n24=", 0, 
+   " n34=", 2, " with minimum ", 0.000026952130730249236`, "."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.7092432615303917`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "382", "\[InvisibleSpace]", "\<\": The determinant is not zero for \
+\[Theta]13=\"\>", "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "4"], "\[InvisibleSpace]", "\<\" \[Theta]14=\"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "4"], "\[InvisibleSpace]", "\<\" n12=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n23=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" n24=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" n34=\"\>", 
+   "\[InvisibleSpace]", "4", "\[InvisibleSpace]", "\<\" with minimum \"\>", 
+   "\[InvisibleSpace]", "0.03256131332423759`", 
+   "\[InvisibleSpace]", "\<\".\"\>"}],
+  SequenceForm[
+  382, ": The determinant is not zero for \[Theta]13=", Rational[1, 4] Pi, 
+   " \[Theta]14=", Rational[1, 4] Pi, " n12=", 2, " n23=", 0, " n24=", 0, 
+   " n34=", 4, " with minimum ", 0.03256131332423759, "."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.70924326434346*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "385", "\[InvisibleSpace]", "\<\": The determinant is not zero for \
+\[Theta]13=\"\>", "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "4"], "\[InvisibleSpace]", "\<\" \[Theta]14=\"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "4"], "\[InvisibleSpace]", "\<\" n12=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n23=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" n24=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n34=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" with minimum \"\>", 
+   "\[InvisibleSpace]", "0.0010745898592927805`", 
+   "\[InvisibleSpace]", "\<\".\"\>"}],
+  SequenceForm[
+  385, ": The determinant is not zero for \[Theta]13=", Rational[1, 4] Pi, 
+   " \[Theta]14=", Rational[1, 4] Pi, " n12=", 2, " n23=", 0, " n24=", 2, 
+   " n34=", 0, " with minimum ", 0.0010745898592927805`, "."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.7092432716922283`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "388", "\[InvisibleSpace]", "\<\": The determinant is not zero for \
+\[Theta]13=\"\>", "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "4"], "\[InvisibleSpace]", "\<\" \[Theta]14=\"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "4"], "\[InvisibleSpace]", "\<\" n12=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" n23=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" n24=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n34=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" with minimum \"\>", 
+   "\[InvisibleSpace]", "0.00008134717944482763`", 
+   "\[InvisibleSpace]", "\<\".\"\>"}],
+  SequenceForm[
+  388, ": The determinant is not zero for \[Theta]13=", Rational[1, 4] Pi, 
+   " \[Theta]14=", Rational[1, 4] Pi, " n12=", 0, " n23=", 0, " n24=", 2, 
+   " n34=", 2, " with minimum ", 0.00008134717944482763, "."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.709243279923059*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "391", "\[InvisibleSpace]", "\<\": The determinant is not zero for \
+\[Theta]13=\"\>", "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "4"], "\[InvisibleSpace]", "\<\" \[Theta]14=\"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "4"], "\[InvisibleSpace]", "\<\" n12=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" n23=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" n24=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n34=\"\>", 
+   "\[InvisibleSpace]", "4", "\[InvisibleSpace]", "\<\" with minimum \"\>", 
+   "\[InvisibleSpace]", "0.03467518434858277`", 
+   "\[InvisibleSpace]", "\<\".\"\>"}],
+  SequenceForm[
+  391, ": The determinant is not zero for \[Theta]13=", Rational[1, 4] Pi, 
+   " \[Theta]14=", Rational[1, 4] Pi, " n12=", 0, " n23=", 0, " n24=", 2, 
+   " n34=", 4, " with minimum ", 0.03467518434858277, "."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.70924328745532*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "394", "\[InvisibleSpace]", "\<\": The determinant is not zero for \
+\[Theta]13=\"\>", "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "4"], "\[InvisibleSpace]", "\<\" \[Theta]14=\"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "4"], "\[InvisibleSpace]", "\<\" n12=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n23=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" n24=\"\>", 
+   "\[InvisibleSpace]", "4", "\[InvisibleSpace]", "\<\" n34=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" with minimum \"\>", 
+   "\[InvisibleSpace]", "0.000010150720641435898`", 
+   "\[InvisibleSpace]", "\<\".\"\>"}],
+  SequenceForm[
+  394, ": The determinant is not zero for \[Theta]13=", Rational[1, 4] Pi, 
+   " \[Theta]14=", Rational[1, 4] Pi, " n12=", 2, " n23=", 0, " n24=", 4, 
+   " n34=", 0, " with minimum ", 0.000010150720641435898`, "."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.709243293393291*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "396", "\[InvisibleSpace]", "\<\": The determinant is not zero for \
+\[Theta]13=\"\>", "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "4"], "\[InvisibleSpace]", "\<\" \[Theta]14=\"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "4"], "\[InvisibleSpace]", "\<\" n12=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" n23=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" n24=\"\>", 
+   "\[InvisibleSpace]", "4", "\[InvisibleSpace]", "\<\" n34=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" with minimum \"\>", 
+   "\[InvisibleSpace]", "0.005934103339390413`", 
+   "\[InvisibleSpace]", "\<\".\"\>"}],
+  SequenceForm[
+  396, ": The determinant is not zero for \[Theta]13=", Rational[1, 4] Pi, 
+   " \[Theta]14=", Rational[1, 4] Pi, " n12=", 0, " n23=", 0, " n24=", 4, 
+   " n34=", 2, " with minimum ", 0.005934103339390413, "."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.709243302751515*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "405", "\[InvisibleSpace]", "\<\": The determinant is not zero for \
+\[Theta]13=\"\>", "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "4"], "\[InvisibleSpace]", "\<\" \[Theta]14=\"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "4"], "\[InvisibleSpace]", "\<\" n12=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" n23=\"\>", 
+   "\[InvisibleSpace]", "1", "\[InvisibleSpace]", "\<\" n24=\"\>", 
+   "\[InvisibleSpace]", "1", "\[InvisibleSpace]", "\<\" n34=\"\>", 
+   "\[InvisibleSpace]", "3", "\[InvisibleSpace]", "\<\" with minimum \"\>", 
+   "\[InvisibleSpace]", "0.06573789547539466`", 
+   "\[InvisibleSpace]", "\<\".\"\>"}],
+  SequenceForm[
+  405, ": The determinant is not zero for \[Theta]13=", Rational[1, 4] Pi, 
+   " \[Theta]14=", Rational[1, 4] Pi, " n12=", 0, " n23=", 1, " n24=", 1, 
+   " n34=", 3, " with minimum ", 0.06573789547539466, "."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.709243318930717*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "411", "\[InvisibleSpace]", "\<\": The determinant is not zero for \
+\[Theta]13=\"\>", "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "4"], "\[InvisibleSpace]", "\<\" \[Theta]14=\"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "4"], "\[InvisibleSpace]", "\<\" n12=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" n23=\"\>", 
+   "\[InvisibleSpace]", "1", "\[InvisibleSpace]", "\<\" n24=\"\>", 
+   "\[InvisibleSpace]", "3", "\[InvisibleSpace]", "\<\" n34=\"\>", 
+   "\[InvisibleSpace]", "1", "\[InvisibleSpace]", "\<\" with minimum \"\>", 
+   "\[InvisibleSpace]", "0.014954462621825482`", 
+   "\[InvisibleSpace]", "\<\".\"\>"}],
+  SequenceForm[
+  411, ": The determinant is not zero for \[Theta]13=", Rational[1, 4] Pi, 
+   " \[Theta]14=", Rational[1, 4] Pi, " n12=", 0, " n23=", 1, " n24=", 3, 
+   " n34=", 1, " with minimum ", 0.014954462621825482`, "."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.709243404655034*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "417", "\[InvisibleSpace]", "\<\": The determinant is not zero for \
+\[Theta]13=\"\>", "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "4"], "\[InvisibleSpace]", "\<\" \[Theta]14=\"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "4"], "\[InvisibleSpace]", "\<\" n12=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" n23=\"\>", 
+   "\[InvisibleSpace]", "1", "\[InvisibleSpace]", "\<\" n24=\"\>", 
+   "\[InvisibleSpace]", "5", "\[InvisibleSpace]", "\<\" n34=\"\>", 
+   "\[InvisibleSpace]", "1", "\[InvisibleSpace]", "\<\" with minimum \"\>", 
+   "\[InvisibleSpace]", "0.0009568479321533497`", 
+   "\[InvisibleSpace]", "\<\".\"\>"}],
+  SequenceForm[
+  417, ": The determinant is not zero for \[Theta]13=", Rational[1, 4] Pi, 
+   " \[Theta]14=", Rational[1, 4] Pi, " n12=", 0, " n23=", 1, " n24=", 5, 
+   " n34=", 1, " with minimum ", 0.0009568479321533497, "."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.70924346828398*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "421", "\[InvisibleSpace]", "\<\": The determinant is not zero for \
+\[Theta]13=\"\>", "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "4"], "\[InvisibleSpace]", "\<\" \[Theta]14=\"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "4"], "\[InvisibleSpace]", "\<\" n12=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" n23=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n24=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n34=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" with minimum \"\>", 
+   "\[InvisibleSpace]", "0.03496935040919354`", 
+   "\[InvisibleSpace]", "\<\".\"\>"}],
+  SequenceForm[
+  421, ": The determinant is not zero for \[Theta]13=", Rational[1, 4] Pi, 
+   " \[Theta]14=", Rational[1, 4] Pi, " n12=", 0, " n23=", 2, " n24=", 2, 
+   " n34=", 0, " with minimum ", 0.03496935040919354, "."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.7092434712322683`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "424", "\[InvisibleSpace]", "\<\": The determinant is not zero for \
+\[Theta]13=\"\>", "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "4"], "\[InvisibleSpace]", "\<\" \[Theta]14=\"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "4"], "\[InvisibleSpace]", "\<\" n12=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" n23=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n24=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n34=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" with minimum \"\>", 
+   "\[InvisibleSpace]", "0.007955602211893542`", 
+   "\[InvisibleSpace]", "\<\".\"\>"}],
+  SequenceForm[
+  424, ": The determinant is not zero for \[Theta]13=", Rational[1, 4] Pi, 
+   " \[Theta]14=", Rational[1, 4] Pi, " n12=", 0, " n23=", 2, " n24=", 2, 
+   " n34=", 2, " with minimum ", 0.007955602211893542, "."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.709243475770215*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "427", "\[InvisibleSpace]", "\<\": The determinant is not zero for \
+\[Theta]13=\"\>", "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "4"], "\[InvisibleSpace]", "\<\" \[Theta]14=\"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "4"], "\[InvisibleSpace]", "\<\" n12=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" n23=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n24=\"\>", 
+   "\[InvisibleSpace]", "4", "\[InvisibleSpace]", "\<\" n34=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" with minimum \"\>", 
+   "\[InvisibleSpace]", "0.013360498960926497`", 
+   "\[InvisibleSpace]", "\<\".\"\>"}],
+  SequenceForm[
+  427, ": The determinant is not zero for \[Theta]13=", Rational[1, 4] Pi, 
+   " \[Theta]14=", Rational[1, 4] Pi, " n12=", 0, " n23=", 2, " n24=", 4, 
+   " n34=", 0, " with minimum ", 0.013360498960926497`, "."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.70924349172272*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "430", "\[InvisibleSpace]", "\<\": The determinant is not zero for \
+\[Theta]13=\"\>", "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "4"], "\[InvisibleSpace]", "\<\" \[Theta]14=\"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "4"], "\[InvisibleSpace]", "\<\" n12=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" n23=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n24=\"\>", 
+   "\[InvisibleSpace]", "6", "\[InvisibleSpace]", "\<\" n34=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" with minimum \"\>", 
+   "\[InvisibleSpace]", "0.00003519759963959453`", 
+   "\[InvisibleSpace]", "\<\".\"\>"}],
+  SequenceForm[
+  430, ": The determinant is not zero for \[Theta]13=", Rational[1, 4] Pi, 
+   " \[Theta]14=", Rational[1, 4] Pi, " n12=", 0, " n23=", 2, " n24=", 6, 
+   " n34=", 0, " with minimum ", 0.00003519759963959453, "."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.7092435068115883`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "431", "\[InvisibleSpace]", "\<\": The determinant is not zero for \
+\[Theta]13=\"\>", "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "4"], "\[InvisibleSpace]", "\<\" \[Theta]14=\"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "4"], "\[InvisibleSpace]", "\<\" n12=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" n23=\"\>", 
+   "\[InvisibleSpace]", "3", "\[InvisibleSpace]", "\<\" n24=\"\>", 
+   "\[InvisibleSpace]", "3", "\[InvisibleSpace]", "\<\" n34=\"\>", 
+   "\[InvisibleSpace]", "1", "\[InvisibleSpace]", "\<\" with minimum \"\>", 
+   "\[InvisibleSpace]", "0.0001531520419765433`", 
+   "\[InvisibleSpace]", "\<\".\"\>"}],
+  SequenceForm[
+  431, ": The determinant is not zero for \[Theta]13=", Rational[1, 4] Pi, 
+   " \[Theta]14=", Rational[1, 4] Pi, " n12=", 0, " n23=", 3, " n24=", 3, 
+   " n34=", 1, " with minimum ", 0.0001531520419765433, "."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.709243539789805*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "435", "\[InvisibleSpace]", "\<\": The determinant is not zero for \
+\[Theta]13=\"\>", "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "4"], "\[InvisibleSpace]", "\<\" \[Theta]14=\"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "4"], "\[InvisibleSpace]", "\<\" n12=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" n23=\"\>", 
+   "\[InvisibleSpace]", "4", "\[InvisibleSpace]", "\<\" n24=\"\>", 
+   "\[InvisibleSpace]", "4", "\[InvisibleSpace]", "\<\" n34=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" with minimum \"\>", 
+   "\[InvisibleSpace]", "0.0007320202722150772`", 
+   "\[InvisibleSpace]", "\<\".\"\>"}],
+  SequenceForm[
+  435, ": The determinant is not zero for \[Theta]13=", Rational[1, 4] Pi, 
+   " \[Theta]14=", Rational[1, 4] Pi, " n12=", 0, " n23=", 4, " n24=", 4, 
+   " n34=", 0, " with minimum ", 0.0007320202722150772, "."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.7092435563382587`*^9}],
+
+Cell[BoxData["\<\"Examined 435 cases.\\nSmallest nonzero minimum is           \
+-6\\n1.30906 10.\\n0 cases remain.\"\>"], "Print",
+ CellChangeTimes->{3.709243556712675*^9}]
 }, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData["cases"], "Input",
+ CellChangeTimes->{{3.709246398893515*^9, 3.709246399519124*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", "}"}]], "Output",
+ CellChangeTimes->{3.709246401055439*^9}]
 }, Open  ]],
 
 Cell[BoxData[
@@ -2466,7 +5042,7 @@ Cell[1586, 47, 1403, 37, 97, "Input"],
 Cell[2992, 86, 2852, 63, 182, "Input"],
 Cell[5847, 151, 32995, 645, 2069, "Input"],
 Cell[CellGroupData[{
-Cell[38867, 800, 523, 12, 46, "Input"],
+Cell[38867, 800, 523, 12, 104, "Input"],
 Cell[CellGroupData[{
 Cell[39415, 816, 993, 19, 36, "Print"],
 Cell[40411, 837, 992, 19, 36, "Print"],
@@ -2544,10 +5120,137 @@ Cell[111269, 2328, 999, 19, 36, "Print"],
 Cell[112271, 2349, 1000, 19, 36, "Print"],
 Cell[113274, 2370, 995, 19, 36, "Print"],
 Cell[114272, 2391, 996, 19, 36, "Print"],
-Cell[115271, 2412, 995, 19, 36, "Print"]
+Cell[115271, 2412, 995, 19, 36, "Print"],
+Cell[116269, 2433, 997, 19, 36, "Print"],
+Cell[117269, 2454, 997, 19, 36, "Print"],
+Cell[118269, 2475, 998, 19, 36, "Print"],
+Cell[119270, 2496, 997, 19, 36, "Print"],
+Cell[120270, 2517, 995, 19, 36, "Print"],
+Cell[121268, 2538, 996, 19, 36, "Print"],
+Cell[122267, 2559, 998, 19, 36, "Print"],
+Cell[123268, 2580, 996, 19, 36, "Print"],
+Cell[124267, 2601, 997, 19, 36, "Print"],
+Cell[125267, 2622, 999, 19, 36, "Print"],
+Cell[126269, 2643, 998, 19, 36, "Print"],
+Cell[127270, 2664, 1002, 19, 36, "Print"],
+Cell[128275, 2685, 996, 19, 36, "Print"],
+Cell[129274, 2706, 997, 19, 36, "Print"],
+Cell[130274, 2727, 997, 19, 36, "Print"],
+Cell[131274, 2748, 995, 19, 36, "Print"],
+Cell[132272, 2769, 1000, 19, 36, "Print"],
+Cell[133275, 2790, 994, 19, 37, "Print"],
+Cell[134272, 2811, 997, 19, 37, "Print"],
+Cell[135272, 2832, 997, 19, 37, "Print"],
+Cell[136272, 2853, 995, 19, 37, "Print"],
+Cell[137270, 2874, 1002, 19, 37, "Print"],
+Cell[138275, 2895, 997, 19, 37, "Print"],
+Cell[139275, 2916, 1002, 19, 37, "Print"],
+Cell[140280, 2937, 998, 19, 37, "Print"],
+Cell[141281, 2958, 997, 19, 37, "Print"],
+Cell[142281, 2979, 1000, 19, 37, "Print"],
+Cell[143284, 3000, 999, 19, 37, "Print"],
+Cell[144286, 3021, 998, 19, 37, "Print"],
+Cell[145287, 3042, 995, 19, 37, "Print"],
+Cell[146285, 3063, 1000, 19, 37, "Print"],
+Cell[147288, 3084, 1000, 19, 37, "Print"],
+Cell[148291, 3105, 995, 19, 37, "Print"],
+Cell[149289, 3126, 998, 19, 37, "Print"],
+Cell[150290, 3147, 998, 19, 37, "Print"],
+Cell[151291, 3168, 999, 19, 37, "Print"],
+Cell[152293, 3189, 996, 19, 37, "Print"],
+Cell[153292, 3210, 997, 19, 37, "Print"],
+Cell[154292, 3231, 995, 19, 37, "Print"],
+Cell[155290, 3252, 1000, 19, 37, "Print"],
+Cell[156293, 3273, 993, 19, 37, "Print"],
+Cell[157289, 3294, 1000, 19, 37, "Print"],
+Cell[158292, 3315, 1000, 19, 37, "Print"],
+Cell[159295, 3336, 997, 19, 37, "Print"],
+Cell[160295, 3357, 1000, 19, 37, "Print"],
+Cell[161298, 3378, 997, 19, 37, "Print"],
+Cell[162298, 3399, 999, 19, 37, "Print"],
+Cell[163300, 3420, 1000, 19, 37, "Print"],
+Cell[164303, 3441, 996, 19, 37, "Print"],
+Cell[165302, 3462, 995, 19, 37, "Print"],
+Cell[166300, 3483, 999, 19, 37, "Print"],
+Cell[167302, 3504, 996, 19, 37, "Print"],
+Cell[168301, 3525, 995, 19, 37, "Print"],
+Cell[169299, 3546, 1001, 19, 37, "Print"],
+Cell[170303, 3567, 999, 19, 37, "Print"],
+Cell[171305, 3588, 1002, 19, 37, "Print"],
+Cell[172310, 3609, 997, 19, 37, "Print"],
+Cell[173310, 3630, 1000, 19, 37, "Print"],
+Cell[174313, 3651, 999, 19, 37, "Print"],
+Cell[175315, 3672, 1001, 19, 37, "Print"],
+Cell[176319, 3693, 995, 19, 37, "Print"],
+Cell[177317, 3714, 997, 19, 37, "Print"],
+Cell[178317, 3735, 1002, 19, 37, "Print"],
+Cell[179322, 3756, 997, 19, 37, "Print"],
+Cell[180322, 3777, 998, 19, 37, "Print"],
+Cell[181323, 3798, 998, 19, 37, "Print"],
+Cell[182324, 3819, 997, 19, 37, "Print"],
+Cell[183324, 3840, 998, 19, 37, "Print"],
+Cell[184325, 3861, 1000, 19, 37, "Print"],
+Cell[185328, 3882, 995, 19, 37, "Print"],
+Cell[186326, 3903, 995, 19, 37, "Print"],
+Cell[187324, 3924, 997, 19, 37, "Print"],
+Cell[188324, 3945, 1000, 19, 37, "Print"],
+Cell[189327, 3966, 995, 19, 37, "Print"],
+Cell[190325, 3987, 999, 19, 37, "Print"],
+Cell[191327, 4008, 999, 19, 37, "Print"],
+Cell[192329, 4029, 1002, 19, 37, "Print"],
+Cell[193334, 4050, 994, 19, 36, "Print"],
+Cell[194331, 4071, 997, 19, 36, "Print"],
+Cell[195331, 4092, 997, 19, 36, "Print"],
+Cell[196331, 4113, 993, 19, 36, "Print"],
+Cell[197327, 4134, 999, 19, 36, "Print"],
+Cell[198329, 4155, 998, 19, 36, "Print"],
+Cell[199330, 4176, 1000, 19, 36, "Print"],
+Cell[200333, 4197, 999, 19, 36, "Print"],
+Cell[201335, 4218, 1000, 19, 36, "Print"],
+Cell[202338, 4239, 998, 19, 36, "Print"],
+Cell[203339, 4260, 999, 19, 36, "Print"],
+Cell[204341, 4281, 995, 19, 36, "Print"],
+Cell[205339, 4302, 998, 19, 36, "Print"],
+Cell[206340, 4323, 997, 19, 36, "Print"],
+Cell[207340, 4344, 1000, 19, 36, "Print"],
+Cell[208343, 4365, 996, 19, 36, "Print"],
+Cell[209342, 4386, 997, 19, 36, "Print"],
+Cell[210342, 4407, 1004, 19, 36, "Print"],
+Cell[211349, 4428, 997, 19, 36, "Print"],
+Cell[212349, 4449, 995, 19, 36, "Print"],
+Cell[213347, 4470, 994, 19, 37, "Print"],
+Cell[214344, 4491, 997, 19, 37, "Print"],
+Cell[215344, 4512, 1002, 19, 37, "Print"],
+Cell[216349, 4533, 994, 19, 37, "Print"],
+Cell[217346, 4554, 1000, 19, 37, "Print"],
+Cell[218349, 4575, 999, 19, 37, "Print"],
+Cell[219351, 4596, 993, 19, 37, "Print"],
+Cell[220347, 4617, 996, 19, 37, "Print"],
+Cell[221346, 4638, 1002, 19, 37, "Print"],
+Cell[222351, 4659, 1004, 19, 36, "Print"],
+Cell[223358, 4680, 992, 19, 36, "Print"],
+Cell[224353, 4701, 1000, 19, 36, "Print"],
+Cell[225356, 4722, 999, 19, 36, "Print"],
+Cell[226358, 4743, 992, 19, 36, "Print"],
+Cell[227353, 4764, 1002, 19, 36, "Print"],
+Cell[228358, 4785, 995, 19, 36, "Print"],
+Cell[229356, 4806, 993, 19, 36, "Print"],
+Cell[230352, 4827, 996, 19, 36, "Print"],
+Cell[231351, 4848, 996, 19, 36, "Print"],
+Cell[232350, 4869, 995, 19, 36, "Print"],
+Cell[233348, 4890, 995, 19, 36, "Print"],
+Cell[234346, 4911, 995, 19, 36, "Print"],
+Cell[235344, 4932, 1001, 19, 36, "Print"],
+Cell[236348, 4953, 997, 19, 36, "Print"],
+Cell[237348, 4974, 999, 19, 36, "Print"],
+Cell[238350, 4995, 172, 2, 67, "Print"]
 }, Open  ]]
 }, Open  ]],
-Cell[116293, 2435, 379, 9, 46, "Input"]
+Cell[CellGroupData[{
+Cell[238571, 5003, 97, 1, 28, "Input"],
+Cell[238671, 5006, 87, 2, 62, "Output"]
+}, Open  ]],
+Cell[238773, 5011, 379, 9, 46, "Input"]
 }
 ]
 *)
