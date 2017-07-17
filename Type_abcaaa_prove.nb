@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     34419,        723]
-NotebookOptionsPosition[     33965,        704]
-NotebookOutlinePosition[     34320,        720]
-CellTagsIndexPosition[     34277,        717]
+NotebookDataLength[     48577,       1028]
+NotebookOptionsPosition[     47737,        997]
+NotebookOutlinePosition[     48092,       1013]
+CellTagsIndexPosition[     48049,       1010]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -156,20 +156,21 @@ Cell[BoxData[
     RowBox[{"{", 
      RowBox[{
      "\[Theta]12", ",", "\[Theta]23", ",", "\[Theta]24", ",", "\[Theta]34", 
-      ",", "vars", ",", "mat", ",", "det1", ",", " ", "det2", ",", " ", 
-      "det3", ",", "det4", ",", "expr", ",", "minimum", ",", 
-      "\[IndentingNewLine]", 
+      ",", "mat", ",", "det1", ",", " ", "det2", ",", " ", "det3", ",", 
+      "det4", ",", "expr", ",", "minimum", ",", "\[IndentingNewLine]", 
       RowBox[{"cases", "=", 
        RowBox[{"{", "}"}]}], ",", 
       RowBox[{"noncases", "=", 
        RowBox[{"{", "}"}]}], ",", "msg", ",", 
       RowBox[{"examinedcnt", "=", "0"}], ",", 
       RowBox[{"remaincnt", "=", "0"}], ",", 
-      RowBox[{"nonzerot", "=", 
+      RowBox[{"smallestnonzero", "=", "\[Infinity]"}], ",", "region", ",", 
+      "boundbox", ",", 
+      RowBox[{"vars", "=", 
+       RowBox[{"{", "}"}]}], ",", 
+      RowBox[{"proofbound", "=", 
        RowBox[{"10", "^", 
-        RowBox[{"-", "4"}]}]}], ",", 
-      RowBox[{"smallestnonzero", "=", "\[Infinity]"}]}], "}"}], ",", 
-    "\[IndentingNewLine]", 
+        RowBox[{"-", "6"}]}]}]}], "}"}], ",", "\[IndentingNewLine]", 
     RowBox[{"(*", " ", 
      RowBox[{
       RowBox[{"Iterate", " ", "through", " ", "\[Theta]13"}], ",", " ", 
@@ -424,11 +425,15 @@ Cell[BoxData[
                     RowBox[{"det3", "^", "2"}], "+", 
                     RowBox[{"det4", "^", "2"}]}]}], ";", 
                     "\[IndentingNewLine]", "\[IndentingNewLine]", 
-                    RowBox[{"minimum", "=", 
-                    RowBox[{"NMinimize", "[", 
+                    RowBox[{"(*", 
                     RowBox[{
-                    RowBox[{"{", "\[IndentingNewLine]", 
-                    RowBox[{"expr", ",", "\[IndentingNewLine]", 
+                    "Reduce", " ", "the", " ", "constraints", " ", "on", " ", 
+                    "the", " ", "dihedral", " ", "angle", " ", "vars"}], 
+                    "*)"}], "\[IndentingNewLine]", 
+                    RowBox[{"region", "=", 
+                    RowBox[{
+                    RowBox[{"Reduce", "[", 
+                    RowBox[{
                     RowBox[{
                     RowBox[{
                     RowBox[{
@@ -484,17 +489,111 @@ Cell[BoxData[
                     RowBox[{
                     "\[Theta]13", "+", "\[Theta]24", "+", "\[Theta]14", "+", 
                     "\[Theta]23"}], "<", 
-                    RowBox[{"2", "Pi"}]}]}]}], "}"}], ",", 
-                    "\[IndentingNewLine]", " ", "vars", ",", 
+                    RowBox[{"2", "Pi"}]}]}], ",", " ", "vars"}], "]"}], "//", 
+                    "FullSimplify"}]}], ";", "\[IndentingNewLine]", 
                     "\[IndentingNewLine]", 
-                    RowBox[{"Method", "\[Rule]", 
+                    RowBox[{"(*", 
+                    RowBox[{
+                    "Remove", " ", "the", " ", "cases", " ", "for", " ", 
+                    "which", " ", "there", " ", "are", " ", "no", " ", 
+                    "points", " ", "that", " ", "satisfy", " ", "the", " ", 
+                    "constraints"}], "*)"}], "\[IndentingNewLine]", 
+                    RowBox[{"If", "[", 
+                    RowBox[{
+                    RowBox[{"region", "\[Equal]", "False"}], ",", " ", 
+                    RowBox[{
+                    RowBox[{"Continue", "[", "]"}], ";"}]}], "]"}], ";", 
+                    "\[IndentingNewLine]", "\[IndentingNewLine]", 
+                    RowBox[{"(*", 
+                    RowBox[{
+                    "Get", " ", "the", " ", "minimum", " ", "bounding", " ", 
+                    "box", " ", "about", " ", "the", " ", "region"}], "*)"}], 
+                    "\[IndentingNewLine]", 
+                    RowBox[{"boundbox", " ", "=", 
+                    RowBox[{"First", "/@", 
                     RowBox[{"{", 
-                    RowBox[{"\"\<RandomSearch\>\"", ",", 
-                    RowBox[{"\"\<SearchPoints\>\"", "\[Rule]", "10"}], ",", 
-                    RowBox[{"\"\<RandomSeed\>\"", "\[Rule]", "0"}]}], "}"}]}],
-                     ",", "\[IndentingNewLine]", 
-                    RowBox[{"WorkingPrecision", "\[Rule]", "30"}]}], "]"}]}], 
-                    ";", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+                    RowBox[{
+                    RowBox[{"Minimize", "[", 
+                    RowBox[{
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"vars", "[", 
+                    RowBox[{"[", "1", "]"}], "]"}], ",", "region"}], "}"}], 
+                    ",", "vars"}], "]"}], ",", 
+                    RowBox[{"Maximize", "[", 
+                    RowBox[{
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"vars", "[", 
+                    RowBox[{"[", "1", "]"}], "]"}], ",", "region"}], "}"}], 
+                    ",", "vars"}], "]"}], ",", 
+                    RowBox[{"Minimize", "[", 
+                    RowBox[{
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"vars", "[", 
+                    RowBox[{"[", "2", "]"}], "]"}], ",", "region"}], "}"}], 
+                    ",", "vars"}], "]"}], ",", 
+                    RowBox[{"Maximize", "[", 
+                    RowBox[{
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"vars", "[", 
+                    RowBox[{"[", "2", "]"}], "]"}], ",", "region"}], "}"}], 
+                    ",", "vars"}], "]"}], ",", 
+                    RowBox[{"Minimize", "[", 
+                    RowBox[{
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"vars", "[", 
+                    RowBox[{"[", "3", "]"}], "]"}], ",", "region"}], "}"}], 
+                    ",", "vars"}], "]"}], ",", 
+                    RowBox[{"Maximize", "[", 
+                    RowBox[{
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"vars", "[", 
+                    RowBox[{"[", "3", "]"}], "]"}], ",", "region"}], "}"}], 
+                    ",", "vars"}], "]"}]}], "}"}]}]}], ";", 
+                    "\[IndentingNewLine]", "\[IndentingNewLine]", 
+                    RowBox[{"(*", 
+                    RowBox[{
+                    "Run", " ", "the", " ", "global", " ", "minimization", 
+                    " ", "function"}], "*)"}], "\[IndentingNewLine]", 
+                    RowBox[{"minimum", "=", 
+                    RowBox[{"IntervalMinimize", "[", 
+                    RowBox[{"expr", ",", 
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"vars", "[", 
+                    RowBox[{"[", "1", "]"}], "]"}], ",", 
+                    RowBox[{"boundbox", "[", 
+                    RowBox[{"[", "1", "]"}], "]"}], ",", 
+                    RowBox[{"boundbox", "[", 
+                    RowBox[{"[", "2", "]"}], "]"}]}], "}"}], ",", 
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"vars", "[", 
+                    RowBox[{"[", "2", "]"}], "]"}], ",", 
+                    RowBox[{"boundbox", "[", 
+                    RowBox[{"[", "3", "]"}], "]"}], ",", 
+                    RowBox[{"boundbox", "[", 
+                    RowBox[{"[", "4", "]"}], "]"}]}], "}"}], ",", 
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"vars", "[", 
+                    RowBox[{"[", "3", "]"}], "]"}], ",", 
+                    RowBox[{"boundbox", "[", 
+                    RowBox[{"[", "5", "]"}], "]"}], ",", 
+                    RowBox[{"boundbox", "[", 
+                    RowBox[{"[", "6", "]"}], "]"}]}], "}"}], ",", "1", ",", 
+                    " ", 
+                    RowBox[{"TraceQ", "\[Rule]", " ", "False"}], ",", 
+                    RowBox[{"ProofBound", "\[Rule]", " ", "proofbound"}], ",", 
+                    RowBox[{
+                    "FormatIntervalsNicely", "\[Rule]", " ", "False"}], ",", 
+                    RowBox[{"ShowRectangles", "\[Rule]", "False"}]}], "]"}]}],
+                     ";", "\[IndentingNewLine]", "\[IndentingNewLine]", 
                     RowBox[{"Clear", "[", 
                     RowBox[{
                     "\[Theta]12", ",", "\[Theta]23", ",", "\[Theta]24", ",", 
@@ -509,9 +608,10 @@ Cell[BoxData[
                     RowBox[{
                     RowBox[{
                     RowBox[{"Abs", "[", 
+                    RowBox[{"Min", "[", 
                     RowBox[{"minimum", "[", 
-                    RowBox[{"[", "1", "]"}], "]"}], "]"}], ">", "nonzerot"}], 
-                    ",", "\[IndentingNewLine]", 
+                    RowBox[{"[", "1", "]"}], "]"}], "]"}], "]"}], ">", 
+                    "proofbound"}], ",", "\[IndentingNewLine]", 
                     RowBox[{
                     RowBox[{"Print", "[", 
                     RowBox[{
@@ -522,25 +622,32 @@ Cell[BoxData[
                     "\"\< n23=\>\"", ",", "n23", ",", "\"\< n24=\>\"", ",", 
                     "n24", ",", "\"\< n34=\>\"", ",", "n34", ",", 
                     "\[IndentingNewLine]", "\"\< with minimum \>\"", ",", 
-                    "minimum", ",", "\"\<.\>\""}], "]"}], ";", 
-                    "\[IndentingNewLine]", 
+                    RowBox[{"Abs", "[", 
+                    RowBox[{"Min", "[", 
+                    RowBox[{"minimum", "[", 
+                    RowBox[{"[", "1", "]"}], "]"}], "]"}], "]"}], ",", 
+                    "\"\<.\>\""}], "]"}], ";", "\[IndentingNewLine]", 
                     RowBox[{"AppendTo", "[", 
                     RowBox[{"noncases", ",", 
                     RowBox[{"{", 
                     RowBox[{
                     "\[Theta]13", ",", "\[Theta]14", ",", "n12", ",", "n23", 
                     ",", "n24", ",", "n34", ",", 
+                    RowBox[{"Abs", "[", 
+                    RowBox[{"Min", "[", 
                     RowBox[{"minimum", "[", 
-                    RowBox[{"[", "1", "]"}], "]"}], ",", 
+                    RowBox[{"[", "1", "]"}], "]"}], "]"}], "]"}], ",", 
                     RowBox[{"minimum", "[", 
                     RowBox[{"[", "2", "]"}], "]"}]}], "}"}]}], "]"}], ";", 
                     "\[IndentingNewLine]", 
                     RowBox[{"smallestnonzero", "=", 
                     RowBox[{"Min", "[", 
                     RowBox[{"smallestnonzero", ",", 
+                    RowBox[{"Abs", "[", 
+                    RowBox[{"Min", "[", 
                     RowBox[{"minimum", "[", 
-                    RowBox[{"[", "1", "]"}], "]"}]}], "]"}]}], ";", 
-                    "\[IndentingNewLine]", 
+                    RowBox[{"[", "1", "]"}], "]"}], "]"}], "]"}]}], "]"}]}], 
+                    ";", "\[IndentingNewLine]", 
                     RowBox[{"Continue", "[", "]"}], ";"}], ",", 
                     "\[IndentingNewLine]", "\[IndentingNewLine]", 
                     RowBox[{
@@ -551,15 +658,25 @@ Cell[BoxData[
                     "\"\< n12=\>\"", ",", "n12", ",", "\"\< n23=\>\"", ",", 
                     "n23", ",", "\"\< n24=\>\"", ",", "n24", ",", 
                     "\"\< n34=\>\"", ",", "n34", ",", "\"\< mininum=\>\"", 
-                    ",", "minimum"}], "]"}], ";", "\[IndentingNewLine]", 
+                    ",", 
+                    RowBox[{"Abs", "[", 
+                    RowBox[{"Min", "[", 
+                    RowBox[{"minimum", "[", 
+                    RowBox[{"[", "1", "]"}], "]"}], "]"}], "]"}], ",", 
+                    "\"\< values=\>\"", ",", 
+                    RowBox[{"minimum", "[", 
+                    RowBox[{"[", "2", "]"}], "]"}]}], "]"}], ";", 
+                    "\[IndentingNewLine]", 
                     RowBox[{"AppendTo", "[", 
                     RowBox[{"cases", ",", 
                     RowBox[{"{", 
                     RowBox[{
                     "\[Theta]13", ",", "\[Theta]14", ",", "n12", ",", "n23", 
                     ",", "n24", ",", "n34", ",", 
+                    RowBox[{"Abs", "[", 
+                    RowBox[{"Min", "[", 
                     RowBox[{"minimum", "[", 
-                    RowBox[{"[", "1", "]"}], "]"}], ",", 
+                    RowBox[{"[", "1", "]"}], "]"}], "]"}], "]"}], ",", 
                     RowBox[{"minimum", "[", 
                     RowBox[{"[", "2", "]"}], "]"}]}], "}"}]}], "]"}], ";", 
                     "\[IndentingNewLine]", 
@@ -675,7 +792,11 @@ Cell[BoxData[
    3.7088785709696836`*^9, 3.7088786107840548`*^9}, {3.708879077772925*^9, 
    3.708879166939098*^9}, {3.708879203912877*^9, 3.708879251790992*^9}, 
    3.708879338408842*^9, 3.708879384044895*^9, {3.708880784758861*^9, 
-   3.708880803727059*^9}}],
+   3.708880803727059*^9}, {3.7092382155186*^9, 3.709238220948161*^9}, {
+   3.70923831297878*^9, 3.709238334874214*^9}, {3.709238433992416*^9, 
+   3.7092385291373053`*^9}, 3.7092385845282183`*^9}],
+
+Cell[CellGroupData[{
 
 Cell[BoxData[
  RowBox[{
@@ -690,6 +811,178 @@ Cell[BoxData[
  CellChangeTimes->{{3.708521013949955*^9, 3.708521058080893*^9}, {
    3.7085231458990107`*^9, 3.708523146084538*^9}, {3.708562874165266*^9, 
    3.708562878877387*^9}, 3.708879373731106*^9, 3.708879908085285*^9}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "1", "\[InvisibleSpace]", "\<\": The determinant is not zero for \
+\[Theta]13=\"\>", "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "2"], "\[InvisibleSpace]", "\<\" \[Theta]14=\"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "2"], "\[InvisibleSpace]", "\<\" n12=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n23=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" n24=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" n34=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" with minimum \"\>", 
+   "\[InvisibleSpace]", "0.0008483052795568303`", 
+   "\[InvisibleSpace]", "\<\".\"\>"}],
+  SequenceForm[
+  1, ": The determinant is not zero for \[Theta]13=", Rational[1, 2] Pi, 
+   " \[Theta]14=", Rational[1, 2] Pi, " n12=", 2, " n23=", 0, " n24=", 0, 
+   " n34=", 2, " with minimum ", 0.0008483052795568303, "."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.709238592044286*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "2", "\[InvisibleSpace]", "\<\": The determinant is not zero for \
+\[Theta]13=\"\>", "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "2"], "\[InvisibleSpace]", "\<\" \[Theta]14=\"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "2"], "\[InvisibleSpace]", "\<\" n12=\"\>", 
+   "\[InvisibleSpace]", "4", "\[InvisibleSpace]", "\<\" n23=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" n24=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" n34=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" with minimum \"\>", 
+   "\[InvisibleSpace]", "0.030027496881921002`", 
+   "\[InvisibleSpace]", "\<\".\"\>"}],
+  SequenceForm[
+  2, ": The determinant is not zero for \[Theta]13=", Rational[1, 2] Pi, 
+   " \[Theta]14=", Rational[1, 2] Pi, " n12=", 4, " n23=", 0, " n24=", 0, 
+   " n34=", 2, " with minimum ", 0.030027496881921002`, "."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.709238599779242*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "3", "\[InvisibleSpace]", "\<\": The determinant is not zero for \
+\[Theta]13=\"\>", "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "2"], "\[InvisibleSpace]", "\<\" \[Theta]14=\"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "2"], "\[InvisibleSpace]", "\<\" n12=\"\>", 
+   "\[InvisibleSpace]", "6", "\[InvisibleSpace]", "\<\" n23=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" n24=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" n34=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" with minimum \"\>", 
+   "\[InvisibleSpace]", "0.000016193532772868512`", 
+   "\[InvisibleSpace]", "\<\".\"\>"}],
+  SequenceForm[
+  3, ": The determinant is not zero for \[Theta]13=", Rational[1, 2] Pi, 
+   " \[Theta]14=", Rational[1, 2] Pi, " n12=", 6, " n23=", 0, " n24=", 0, 
+   " n34=", 2, " with minimum ", 0.000016193532772868512`, "."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.709238602581945*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "4", "\[InvisibleSpace]", "\<\": The determinant is not zero for \
+\[Theta]13=\"\>", "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "2"], "\[InvisibleSpace]", "\<\" \[Theta]14=\"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "2"], "\[InvisibleSpace]", "\<\" n12=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n23=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" n24=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" n34=\"\>", 
+   "\[InvisibleSpace]", "4", "\[InvisibleSpace]", "\<\" with minimum \"\>", 
+   "\[InvisibleSpace]", "0.014604190704274812`", 
+   "\[InvisibleSpace]", "\<\".\"\>"}],
+  SequenceForm[
+  4, ": The determinant is not zero for \[Theta]13=", Rational[1, 2] Pi, 
+   " \[Theta]14=", Rational[1, 2] Pi, " n12=", 2, " n23=", 0, " n24=", 0, 
+   " n34=", 4, " with minimum ", 0.014604190704274812`, "."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.709238609794875*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "5", "\[InvisibleSpace]", "\<\": The determinant is not zero for \
+\[Theta]13=\"\>", "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "2"], "\[InvisibleSpace]", "\<\" \[Theta]14=\"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "2"], "\[InvisibleSpace]", "\<\" n12=\"\>", 
+   "\[InvisibleSpace]", "4", "\[InvisibleSpace]", "\<\" n23=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" n24=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" n34=\"\>", 
+   "\[InvisibleSpace]", "4", "\[InvisibleSpace]", "\<\" with minimum \"\>", 
+   "\[InvisibleSpace]", "0.0038209948786833143`", 
+   "\[InvisibleSpace]", "\<\".\"\>"}],
+  SequenceForm[
+  5, ": The determinant is not zero for \[Theta]13=", Rational[1, 2] Pi, 
+   " \[Theta]14=", Rational[1, 2] Pi, " n12=", 4, " n23=", 0, " n24=", 0, 
+   " n34=", 4, " with minimum ", 0.0038209948786833143`, "."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.709238611427636*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "6", "\[InvisibleSpace]", "\<\": The determinant is not zero for \
+\[Theta]13=\"\>", "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "2"], "\[InvisibleSpace]", "\<\" \[Theta]14=\"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "2"], "\[InvisibleSpace]", "\<\" n12=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n23=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" n24=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" n34=\"\>", 
+   "\[InvisibleSpace]", "6", "\[InvisibleSpace]", "\<\" with minimum \"\>", 
+   "\[InvisibleSpace]", "0.005599658538837462`", 
+   "\[InvisibleSpace]", "\<\".\"\>"}],
+  SequenceForm[
+  6, ": The determinant is not zero for \[Theta]13=", Rational[1, 2] Pi, 
+   " \[Theta]14=", Rational[1, 2] Pi, " n12=", 2, " n23=", 0, " n24=", 0, 
+   " n34=", 6, " with minimum ", 0.005599658538837462, "."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.709238613587607*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "7", "\[InvisibleSpace]", "\<\": The determinant is not zero for \
+\[Theta]13=\"\>", "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "2"], "\[InvisibleSpace]", "\<\" \[Theta]14=\"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "2"], "\[InvisibleSpace]", "\<\" n12=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n23=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" n24=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n34=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" with minimum \"\>", 
+   "\[InvisibleSpace]", "0.12518445106925108`", 
+   "\[InvisibleSpace]", "\<\".\"\>"}],
+  SequenceForm[
+  7, ": The determinant is not zero for \[Theta]13=", Rational[1, 2] Pi, 
+   " \[Theta]14=", Rational[1, 2] Pi, " n12=", 2, " n23=", 0, " n24=", 2, 
+   " n34=", 0, " with minimum ", 0.12518445106925108`, "."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.709238615776663*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "8", "\[InvisibleSpace]", "\<\": The determinant is not zero for \
+\[Theta]13=\"\>", "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "2"], "\[InvisibleSpace]", "\<\" \[Theta]14=\"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox["\[Pi]", "2"], "\[InvisibleSpace]", "\<\" n12=\"\>", 
+   "\[InvisibleSpace]", "4", "\[InvisibleSpace]", "\<\" n23=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" n24=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n34=\"\>", 
+   "\[InvisibleSpace]", "0", "\[InvisibleSpace]", "\<\" with minimum \"\>", 
+   "\[InvisibleSpace]", "0.011915425182581436`", 
+   "\[InvisibleSpace]", "\<\".\"\>"}],
+  SequenceForm[
+  8, ": The determinant is not zero for \[Theta]13=", Rational[1, 2] Pi, 
+   " \[Theta]14=", Rational[1, 2] Pi, " n12=", 4, " n23=", 0, " n24=", 2, 
+   " n34=", 0, " with minimum ", 0.011915425182581436`, "."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.709238624663279*^9}]
+}, Open  ]]
+}, Open  ]],
 
 Cell[BoxData[
  RowBox[{
@@ -722,9 +1015,21 @@ Notebook[{
 Cell[558, 20, 1025, 25, 46, "Input"],
 Cell[1586, 47, 1403, 37, 97, "Input"],
 Cell[2992, 86, 2852, 63, 182, "Input"],
-Cell[5847, 151, 27257, 526, 1882, "Input"],
-Cell[33107, 679, 523, 12, 46, "Input"],
-Cell[33633, 693, 328, 9, 46, "Input"]
+Cell[5847, 151, 32995, 645, 2069, "Input"],
+Cell[CellGroupData[{
+Cell[38867, 800, 523, 12, 46, "Input"],
+Cell[CellGroupData[{
+Cell[39415, 816, 993, 19, 36, "Print"],
+Cell[40411, 837, 992, 19, 36, "Print"],
+Cell[41406, 858, 998, 19, 36, "Print"],
+Cell[42407, 879, 992, 19, 36, "Print"],
+Cell[43402, 900, 994, 19, 36, "Print"],
+Cell[44399, 921, 991, 19, 36, "Print"],
+Cell[45393, 942, 990, 19, 36, "Print"],
+Cell[46386, 963, 992, 19, 36, "Print"]
+}, Open  ]]
+}, Open  ]],
+Cell[47405, 986, 328, 9, 46, "Input"]
 }
 ]
 *)
