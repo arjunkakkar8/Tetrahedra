@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     42234,        901]
-NotebookOptionsPosition[     41474,        872]
-NotebookOutlinePosition[     41830,        888]
-CellTagsIndexPosition[     41787,        885]
+NotebookDataLength[     85065,       2003]
+NotebookOptionsPosition[     80690,       1883]
+NotebookOutlinePosition[     81046,       1899]
+CellTagsIndexPosition[     81003,       1896]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -852,9 +852,1020 @@ Cell[BoxData[
    " n34=", 2, " n14=", 6, " n24=", 2, " with minimum ", 
    0.0015048788639349876`, "."],
   Editable->False]], "Print",
- CellChangeTimes->{3.709239445384144*^9, 3.709239927908943*^9}]
+ CellChangeTimes->{3.709239445384144*^9, 3.709239927908943*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "7", "\[InvisibleSpace]", "\<\": The determinant is not zero for n12=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n23=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n13=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n34=\"\>", 
+   "\[InvisibleSpace]", "4", "\[InvisibleSpace]", "\<\" n14=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n24=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" with minimum \"\>", 
+   "\[InvisibleSpace]", "0.0003434835301277381`", 
+   "\[InvisibleSpace]", "\<\".\"\>"}],
+  SequenceForm[
+  7, ": The determinant is not zero for n12=", 2, " n23=", 2, " n13=", 2, 
+   " n34=", 4, " n14=", 2, " n24=", 2, " with minimum ", 
+   0.0003434835301277381, "."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.709239445384144*^9, 3.709239952303072*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "8", "\[InvisibleSpace]", "\<\": The determinant is not zero for n12=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n23=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n13=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n34=\"\>", 
+   "\[InvisibleSpace]", "4", "\[InvisibleSpace]", "\<\" n14=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n24=\"\>", 
+   "\[InvisibleSpace]", "4", "\[InvisibleSpace]", "\<\" with minimum \"\>", 
+   "\[InvisibleSpace]", "0.0009847133742691045`", 
+   "\[InvisibleSpace]", "\<\".\"\>"}],
+  SequenceForm[
+  8, ": The determinant is not zero for n12=", 2, " n23=", 2, " n13=", 2, 
+   " n34=", 4, " n14=", 2, " n24=", 4, " with minimum ", 
+   0.0009847133742691045, "."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.709239445384144*^9, 3.709239993027499*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "9", "\[InvisibleSpace]", "\<\": No region satisfies the constraints.\"\>"}],
+  SequenceForm[9, ": No region satisfies the constraints."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.709239445384144*^9, 3.7092399946976137`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "10", "\[InvisibleSpace]", "\<\": The determinant is not zero for n12=\"\>",
+    "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n23=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n13=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n34=\"\>", 
+   "\[InvisibleSpace]", "4", "\[InvisibleSpace]", "\<\" n14=\"\>", 
+   "\[InvisibleSpace]", "4", "\[InvisibleSpace]", "\<\" n24=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" with minimum \"\>", 
+   "\[InvisibleSpace]", "0.009350191913060515`", 
+   "\[InvisibleSpace]", "\<\".\"\>"}],
+  SequenceForm[
+  10, ": The determinant is not zero for n12=", 2, " n23=", 2, " n13=", 2, 
+   " n34=", 4, " n14=", 4, " n24=", 2, " with minimum ", 0.009350191913060515,
+    "."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.709239445384144*^9, 3.709240094685143*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "11", "\[InvisibleSpace]", "\<\": No region satisfies the \
+constraints.\"\>"}],
+  SequenceForm[11, ": No region satisfies the constraints."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.709239445384144*^9, 3.70924009469239*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "12", "\[InvisibleSpace]", "\<\": No region satisfies the \
+constraints.\"\>"}],
+  SequenceForm[12, ": No region satisfies the constraints."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.709239445384144*^9, 3.709240098745297*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "13", "\[InvisibleSpace]", "\<\": The determinant is not zero for n12=\"\>",
+    "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n23=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n13=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n34=\"\>", 
+   "\[InvisibleSpace]", "6", "\[InvisibleSpace]", "\<\" n14=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n24=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" with minimum \"\>", 
+   "\[InvisibleSpace]", "0.000895700160723775`", 
+   "\[InvisibleSpace]", "\<\".\"\>"}],
+  SequenceForm[
+  13, ": The determinant is not zero for n12=", 2, " n23=", 2, " n13=", 2, 
+   " n34=", 6, " n14=", 2, " n24=", 2, " with minimum ", 0.000895700160723775,
+    "."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.709239445384144*^9, 3.7092401572382174`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "14", "\[InvisibleSpace]", "\<\": The determinant is not zero for n12=\"\>",
+    "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n23=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n13=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n34=\"\>", 
+   "\[InvisibleSpace]", "6", "\[InvisibleSpace]", "\<\" n14=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n24=\"\>", 
+   "\[InvisibleSpace]", "4", "\[InvisibleSpace]", "\<\" with minimum \"\>", 
+   "\[InvisibleSpace]", "2.192849270726951`*^-6", 
+   "\[InvisibleSpace]", "\<\".\"\>"}],
+  SequenceForm[
+  14, ": The determinant is not zero for n12=", 2, " n23=", 2, " n13=", 2, 
+   " n34=", 6, " n14=", 2, " n24=", 4, " with minimum ", 
+   2.192849270726951*^-6, "."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.709239445384144*^9, 3.709240166743869*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "15", "\[InvisibleSpace]", "\<\": No region satisfies the \
+constraints.\"\>"}],
+  SequenceForm[15, ": No region satisfies the constraints."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.709239445384144*^9, 3.709240167978109*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "16", "\[InvisibleSpace]", "\<\": The determinant is not zero for n12=\"\>",
+    "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n23=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n13=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n34=\"\>", 
+   "\[InvisibleSpace]", "6", "\[InvisibleSpace]", "\<\" n14=\"\>", 
+   "\[InvisibleSpace]", "4", "\[InvisibleSpace]", "\<\" n24=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" with minimum \"\>", 
+   "\[InvisibleSpace]", "0.000011154307046612032`", 
+   "\[InvisibleSpace]", "\<\".\"\>"}],
+  SequenceForm[
+  16, ": The determinant is not zero for n12=", 2, " n23=", 2, " n13=", 2, 
+   " n34=", 6, " n14=", 4, " n24=", 2, " with minimum ", 
+   0.000011154307046612032`, "."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.709239445384144*^9, 3.709240175127429*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "17", "\[InvisibleSpace]", "\<\": No region satisfies the \
+constraints.\"\>"}],
+  SequenceForm[17, ": No region satisfies the constraints."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.709239445384144*^9, 3.709240175147488*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "18", "\[InvisibleSpace]", "\<\": No region satisfies the \
+constraints.\"\>"}],
+  SequenceForm[18, ": No region satisfies the constraints."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.709239445384144*^9, 3.7092401781931143`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "19", "\[InvisibleSpace]", "\<\": The determinant is not zero for n12=\"\>",
+    "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n23=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n13=\"\>", 
+   "\[InvisibleSpace]", "4", "\[InvisibleSpace]", "\<\" n34=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n14=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n24=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" with minimum \"\>", 
+   "\[InvisibleSpace]", "0.015945392264534453`", 
+   "\[InvisibleSpace]", "\<\".\"\>"}],
+  SequenceForm[
+  19, ": The determinant is not zero for n12=", 2, " n23=", 2, " n13=", 4, 
+   " n34=", 2, " n14=", 2, " n24=", 2, " with minimum ", 
+   0.015945392264534453`, "."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.709239445384144*^9, 3.709240208247509*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "20", "\[InvisibleSpace]", "\<\": The determinant is not zero for n12=\"\>",
+    "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n23=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n13=\"\>", 
+   "\[InvisibleSpace]", "4", "\[InvisibleSpace]", "\<\" n34=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n14=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n24=\"\>", 
+   "\[InvisibleSpace]", "4", "\[InvisibleSpace]", "\<\" with minimum \"\>", 
+   "\[InvisibleSpace]", "0.0017109771429194205`", 
+   "\[InvisibleSpace]", "\<\".\"\>"}],
+  SequenceForm[
+  20, ": The determinant is not zero for n12=", 2, " n23=", 2, " n13=", 4, 
+   " n34=", 2, " n14=", 2, " n24=", 4, " with minimum ", 
+   0.0017109771429194205`, "."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.709239445384144*^9, 3.70924027488383*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "21", "\[InvisibleSpace]", "\<\": The determinant is not zero for n12=\"\>",
+    "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n23=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n13=\"\>", 
+   "\[InvisibleSpace]", "4", "\[InvisibleSpace]", "\<\" n34=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n14=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n24=\"\>", 
+   "\[InvisibleSpace]", "6", "\[InvisibleSpace]", "\<\" with minimum \"\>", 
+   "\[InvisibleSpace]", "0.010003620093607746`", 
+   "\[InvisibleSpace]", "\<\".\"\>"}],
+  SequenceForm[
+  21, ": The determinant is not zero for n12=", 2, " n23=", 2, " n13=", 4, 
+   " n34=", 2, " n14=", 2, " n24=", 6, " with minimum ", 
+   0.010003620093607746`, "."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.709239445384144*^9, 3.709240297662673*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "22", "\[InvisibleSpace]", "\<\": The determinant is not zero for n12=\"\>",
+    "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n23=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n13=\"\>", 
+   "\[InvisibleSpace]", "4", "\[InvisibleSpace]", "\<\" n34=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n14=\"\>", 
+   "\[InvisibleSpace]", "4", "\[InvisibleSpace]", "\<\" n24=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" with minimum \"\>", 
+   "\[InvisibleSpace]", "0.00006682946489620384`", 
+   "\[InvisibleSpace]", "\<\".\"\>"}],
+  SequenceForm[
+  22, ": The determinant is not zero for n12=", 2, " n23=", 2, " n13=", 4, 
+   " n34=", 2, " n14=", 4, " n24=", 2, " with minimum ", 
+   0.00006682946489620384, "."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.709239445384144*^9, 3.709240328114996*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "23", "\[InvisibleSpace]", "\<\": The determinant is not zero for n12=\"\>",
+    "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n23=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n13=\"\>", 
+   "\[InvisibleSpace]", "4", "\[InvisibleSpace]", "\<\" n34=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n14=\"\>", 
+   "\[InvisibleSpace]", "4", "\[InvisibleSpace]", "\<\" n24=\"\>", 
+   "\[InvisibleSpace]", "4", "\[InvisibleSpace]", "\<\" with minimum \"\>", 
+   "\[InvisibleSpace]", "0.00032318128908451834`", 
+   "\[InvisibleSpace]", "\<\".\"\>"}],
+  SequenceForm[
+  23, ": The determinant is not zero for n12=", 2, " n23=", 2, " n13=", 4, 
+   " n34=", 2, " n14=", 4, " n24=", 4, " with minimum ", 
+   0.00032318128908451834`, "."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.709239445384144*^9, 3.709240335999611*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "24", "\[InvisibleSpace]", "\<\": The determinant is not zero for n12=\"\>",
+    "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n23=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n13=\"\>", 
+   "\[InvisibleSpace]", "4", "\[InvisibleSpace]", "\<\" n34=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n14=\"\>", 
+   "\[InvisibleSpace]", "6", "\[InvisibleSpace]", "\<\" n24=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" with minimum \"\>", 
+   "\[InvisibleSpace]", "0.0030341820366764096`", 
+   "\[InvisibleSpace]", "\<\".\"\>"}],
+  SequenceForm[
+  24, ": The determinant is not zero for n12=", 2, " n23=", 2, " n13=", 4, 
+   " n34=", 2, " n14=", 6, " n24=", 2, " with minimum ", 
+   0.0030341820366764096`, "."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.709239445384144*^9, 3.7092403583267193`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "25", "\[InvisibleSpace]", "\<\": The determinant is not zero for n12=\"\>",
+    "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n23=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n13=\"\>", 
+   "\[InvisibleSpace]", "4", "\[InvisibleSpace]", "\<\" n34=\"\>", 
+   "\[InvisibleSpace]", "4", "\[InvisibleSpace]", "\<\" n14=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n24=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" with minimum \"\>", 
+   "\[InvisibleSpace]", "0.002351611885861036`", 
+   "\[InvisibleSpace]", "\<\".\"\>"}],
+  SequenceForm[
+  25, ": The determinant is not zero for n12=", 2, " n23=", 2, " n13=", 4, 
+   " n34=", 4, " n14=", 2, " n24=", 2, " with minimum ", 0.002351611885861036,
+    "."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.709239445384144*^9, 3.709240435518395*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "26", "\[InvisibleSpace]", "\<\": The determinant is not zero for n12=\"\>",
+    "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n23=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n13=\"\>", 
+   "\[InvisibleSpace]", "4", "\[InvisibleSpace]", "\<\" n34=\"\>", 
+   "\[InvisibleSpace]", "4", "\[InvisibleSpace]", "\<\" n14=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n24=\"\>", 
+   "\[InvisibleSpace]", "4", "\[InvisibleSpace]", "\<\" with minimum \"\>", 
+   "\[InvisibleSpace]", "0.0025962400601963597`", 
+   "\[InvisibleSpace]", "\<\".\"\>"}],
+  SequenceForm[
+  26, ": The determinant is not zero for n12=", 2, " n23=", 2, " n13=", 4, 
+   " n34=", 4, " n14=", 2, " n24=", 4, " with minimum ", 
+   0.0025962400601963597`, "."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.709239445384144*^9, 3.709240443554205*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "27", "\[InvisibleSpace]", "\<\": No region satisfies the \
+constraints.\"\>"}],
+  SequenceForm[27, ": No region satisfies the constraints."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.709239445384144*^9, 3.709240444579508*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "28", "\[InvisibleSpace]", "\<\": No region satisfies the \
+constraints.\"\>"}],
+  SequenceForm[28, ": No region satisfies the constraints."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.709239445384144*^9, 3.7092404447789783`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "29", "\[InvisibleSpace]", "\<\": No region satisfies the \
+constraints.\"\>"}],
+  SequenceForm[29, ": No region satisfies the constraints."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.709239445384144*^9, 3.70924044480372*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "30", "\[InvisibleSpace]", "\<\": No region satisfies the \
+constraints.\"\>"}],
+  SequenceForm[30, ": No region satisfies the constraints."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.709239445384144*^9, 3.709240445345991*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "31", "\[InvisibleSpace]", "\<\": The determinant is not zero for n12=\"\>",
+    "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n23=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n13=\"\>", 
+   "\[InvisibleSpace]", "6", "\[InvisibleSpace]", "\<\" n34=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n14=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n24=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" with minimum \"\>", 
+   "\[InvisibleSpace]", "0.0015048788639349876`", 
+   "\[InvisibleSpace]", "\<\".\"\>"}],
+  SequenceForm[
+  31, ": The determinant is not zero for n12=", 2, " n23=", 2, " n13=", 6, 
+   " n34=", 2, " n14=", 2, " n24=", 2, " with minimum ", 
+   0.0015048788639349876`, "."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.709239445384144*^9, 3.709240506254916*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "32", "\[InvisibleSpace]", "\<\": The determinant is not zero for n12=\"\>",
+    "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n23=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n13=\"\>", 
+   "\[InvisibleSpace]", "6", "\[InvisibleSpace]", "\<\" n34=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n14=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n24=\"\>", 
+   "\[InvisibleSpace]", "4", "\[InvisibleSpace]", "\<\" with minimum \"\>", 
+   "\[InvisibleSpace]", "0.001843492034809636`", 
+   "\[InvisibleSpace]", "\<\".\"\>"}],
+  SequenceForm[
+  32, ": The determinant is not zero for n12=", 2, " n23=", 2, " n13=", 6, 
+   " n34=", 2, " n14=", 2, " n24=", 4, " with minimum ", 0.001843492034809636,
+    "."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.709239445384144*^9, 3.709240518178056*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "33", "\[InvisibleSpace]", "\<\": No region satisfies the \
+constraints.\"\>"}],
+  SequenceForm[33, ": No region satisfies the constraints."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.709239445384144*^9, 3.709240524065613*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "34", "\[InvisibleSpace]", "\<\": The determinant is not zero for n12=\"\>",
+    "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n23=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n13=\"\>", 
+   "\[InvisibleSpace]", "6", "\[InvisibleSpace]", "\<\" n34=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n14=\"\>", 
+   "\[InvisibleSpace]", "4", "\[InvisibleSpace]", "\<\" n24=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" with minimum \"\>", 
+   "\[InvisibleSpace]", "0.01006909170459913`", 
+   "\[InvisibleSpace]", "\<\".\"\>"}],
+  SequenceForm[
+  34, ": The determinant is not zero for n12=", 2, " n23=", 2, " n13=", 6, 
+   " n34=", 2, " n14=", 4, " n24=", 2, " with minimum ", 0.01006909170459913, 
+   "."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.709239445384144*^9, 3.709240529122151*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "35", "\[InvisibleSpace]", "\<\": No region satisfies the \
+constraints.\"\>"}],
+  SequenceForm[35, ": No region satisfies the constraints."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.709239445384144*^9, 3.709240529160825*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "36", "\[InvisibleSpace]", "\<\": No region satisfies the \
+constraints.\"\>"}],
+  SequenceForm[36, ": No region satisfies the constraints."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.709239445384144*^9, 3.7092405298786383`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "37", "\[InvisibleSpace]", "\<\": No region satisfies the \
+constraints.\"\>"}],
+  SequenceForm[37, ": No region satisfies the constraints."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.709239445384144*^9, 3.709240529960751*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "38", "\[InvisibleSpace]", "\<\": No region satisfies the \
+constraints.\"\>"}],
+  SequenceForm[38, ": No region satisfies the constraints."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.709239445384144*^9, 3.709240530274377*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "39", "\[InvisibleSpace]", "\<\": The determinant is not zero for n12=\"\>",
+    "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n23=\"\>", 
+   "\[InvisibleSpace]", "4", "\[InvisibleSpace]", "\<\" n13=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n34=\"\>", 
+   "\[InvisibleSpace]", "4", "\[InvisibleSpace]", "\<\" n14=\"\>", 
+   "\[InvisibleSpace]", "4", "\[InvisibleSpace]", "\<\" n24=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" with minimum \"\>", 
+   "\[InvisibleSpace]", "0.00270336540438209`", 
+   "\[InvisibleSpace]", "\<\".\"\>"}],
+  SequenceForm[
+  39, ": The determinant is not zero for n12=", 2, " n23=", 4, " n13=", 2, 
+   " n34=", 4, " n14=", 4, " n24=", 2, " with minimum ", 0.00270336540438209, 
+   "."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.709239445384144*^9, 3.709240572994837*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "40", "\[InvisibleSpace]", "\<\": No region satisfies the \
+constraints.\"\>"}],
+  SequenceForm[40, ": No region satisfies the constraints."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.709239445384144*^9, 3.709240573021278*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "41", "\[InvisibleSpace]", "\<\": No region satisfies the \
+constraints.\"\>"}],
+  SequenceForm[41, ": No region satisfies the constraints."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.709239445384144*^9, 3.7092405773339453`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "42", "\[InvisibleSpace]", "\<\": No region satisfies the \
+constraints.\"\>"}],
+  SequenceForm[42, ": No region satisfies the constraints."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.709239445384144*^9, 3.7092405775837593`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "43", "\[InvisibleSpace]", "\<\": No region satisfies the \
+constraints.\"\>"}],
+  SequenceForm[43, ": No region satisfies the constraints."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.709239445384144*^9, 3.709240577784299*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "44", "\[InvisibleSpace]", "\<\": No region satisfies the \
+constraints.\"\>"}],
+  SequenceForm[44, ": No region satisfies the constraints."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.709239445384144*^9, 3.7092405809829617`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "45", "\[InvisibleSpace]", "\<\": No region satisfies the \
+constraints.\"\>"}],
+  SequenceForm[45, ": No region satisfies the constraints."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.709239445384144*^9, 3.709240581008157*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "46", "\[InvisibleSpace]", "\<\": No region satisfies the \
+constraints.\"\>"}],
+  SequenceForm[46, ": No region satisfies the constraints."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.709239445384144*^9, 3.7092405854258633`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "47", "\[InvisibleSpace]", "\<\": The determinant is not zero for n12=\"\>",
+    "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n23=\"\>", 
+   "\[InvisibleSpace]", "4", "\[InvisibleSpace]", "\<\" n13=\"\>", 
+   "\[InvisibleSpace]", "4", "\[InvisibleSpace]", "\<\" n34=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n14=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n24=\"\>", 
+   "\[InvisibleSpace]", "4", "\[InvisibleSpace]", "\<\" with minimum \"\>", 
+   "\[InvisibleSpace]", "0.00270336540438209`", 
+   "\[InvisibleSpace]", "\<\".\"\>"}],
+  SequenceForm[
+  47, ": The determinant is not zero for n12=", 2, " n23=", 4, " n13=", 4, 
+   " n34=", 2, " n14=", 2, " n24=", 4, " with minimum ", 0.00270336540438209, 
+   "."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.709239445384144*^9, 3.7092406268319483`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "48", "\[InvisibleSpace]", "\<\": The determinant is not zero for n12=\"\>",
+    "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n23=\"\>", 
+   "\[InvisibleSpace]", "4", "\[InvisibleSpace]", "\<\" n13=\"\>", 
+   "\[InvisibleSpace]", "4", "\[InvisibleSpace]", "\<\" n34=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n14=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n24=\"\>", 
+   "\[InvisibleSpace]", "6", "\[InvisibleSpace]", "\<\" with minimum \"\>", 
+   "\[InvisibleSpace]", "0.0015634589870494884`", 
+   "\[InvisibleSpace]", "\<\".\"\>"}],
+  SequenceForm[
+  48, ": The determinant is not zero for n12=", 2, " n23=", 4, " n13=", 4, 
+   " n34=", 2, " n14=", 2, " n24=", 6, " with minimum ", 
+   0.0015634589870494884`, "."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.709239445384144*^9, 3.7092406350106277`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "49", "\[InvisibleSpace]", "\<\": The determinant is not zero for n12=\"\>",
+    "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n23=\"\>", 
+   "\[InvisibleSpace]", "4", "\[InvisibleSpace]", "\<\" n13=\"\>", 
+   "\[InvisibleSpace]", "4", "\[InvisibleSpace]", "\<\" n34=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n14=\"\>", 
+   "\[InvisibleSpace]", "4", "\[InvisibleSpace]", "\<\" n24=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" with minimum \"\>", 
+   "\[InvisibleSpace]", "0.000042100381148471685`", 
+   "\[InvisibleSpace]", "\<\".\"\>"}],
+  SequenceForm[
+  49, ": The determinant is not zero for n12=", 2, " n23=", 4, " n13=", 4, 
+   " n34=", 2, " n14=", 4, " n24=", 2, " with minimum ", 
+   0.000042100381148471685`, "."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.709239445384144*^9, 3.709240679987363*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "50", "\[InvisibleSpace]", "\<\": The determinant is not zero for n12=\"\>",
+    "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n23=\"\>", 
+   "\[InvisibleSpace]", "4", "\[InvisibleSpace]", "\<\" n13=\"\>", 
+   "\[InvisibleSpace]", "4", "\[InvisibleSpace]", "\<\" n34=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n14=\"\>", 
+   "\[InvisibleSpace]", "4", "\[InvisibleSpace]", "\<\" n24=\"\>", 
+   "\[InvisibleSpace]", "4", "\[InvisibleSpace]", "\<\" with minimum \"\>", 
+   "\[InvisibleSpace]", "0.007475753838943378`", 
+   "\[InvisibleSpace]", "\<\".\"\>"}],
+  SequenceForm[
+  50, ": The determinant is not zero for n12=", 2, " n23=", 4, " n13=", 4, 
+   " n34=", 2, " n14=", 4, " n24=", 4, " with minimum ", 0.007475753838943378,
+    "."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.709239445384144*^9, 3.709240685451301*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "51", "\[InvisibleSpace]", "\<\": The determinant is not zero for n12=\"\>",
+    "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n23=\"\>", 
+   "\[InvisibleSpace]", "4", "\[InvisibleSpace]", "\<\" n13=\"\>", 
+   "\[InvisibleSpace]", "4", "\[InvisibleSpace]", "\<\" n34=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" n14=\"\>", 
+   "\[InvisibleSpace]", "6", "\[InvisibleSpace]", "\<\" n24=\"\>", 
+   "\[InvisibleSpace]", "2", "\[InvisibleSpace]", "\<\" with minimum \"\>", 
+   "\[InvisibleSpace]", "0.003588972470506927`", 
+   "\[InvisibleSpace]", "\<\".\"\>"}],
+  SequenceForm[
+  51, ": The determinant is not zero for n12=", 2, " n23=", 4, " n13=", 4, 
+   " n34=", 2, " n14=", 6, " n24=", 2, " with minimum ", 0.003588972470506927,
+    "."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.709239445384144*^9, 3.709240694882362*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "52", "\[InvisibleSpace]", "\<\": No region satisfies the \
+constraints.\"\>"}],
+  SequenceForm[52, ": No region satisfies the constraints."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.709239445384144*^9, 3.709240694907522*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "53", "\[InvisibleSpace]", "\<\": No region satisfies the \
+constraints.\"\>"}],
+  SequenceForm[53, ": No region satisfies the constraints."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.709239445384144*^9, 3.7092406949132843`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "54", "\[InvisibleSpace]", "\<\": No region satisfies the \
+constraints.\"\>"}],
+  SequenceForm[54, ": No region satisfies the constraints."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.709239445384144*^9, 3.709240694919132*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "55", "\[InvisibleSpace]", "\<\": No region satisfies the \
+constraints.\"\>"}],
+  SequenceForm[55, ": No region satisfies the constraints."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.709239445384144*^9, 3.709240694924831*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "56", "\[InvisibleSpace]", "\<\": No region satisfies the \
+constraints.\"\>"}],
+  SequenceForm[56, ": No region satisfies the constraints."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.709239445384144*^9, 3.709240694930827*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "57", "\[InvisibleSpace]", "\<\": No region satisfies the \
+constraints.\"\>"}],
+  SequenceForm[57, ": No region satisfies the constraints."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.709239445384144*^9, 3.709240697710079*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "58", "\[InvisibleSpace]", "\<\": No region satisfies the \
+constraints.\"\>"}],
+  SequenceForm[58, ": No region satisfies the constraints."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.709239445384144*^9, 3.709240702204006*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "59", "\[InvisibleSpace]", "\<\": No region satisfies the \
+constraints.\"\>"}],
+  SequenceForm[59, ": No region satisfies the constraints."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.709239445384144*^9, 3.709240703349045*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "60", "\[InvisibleSpace]", "\<\": No region satisfies the \
+constraints.\"\>"}],
+  SequenceForm[60, ": No region satisfies the constraints."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.709239445384144*^9, 3.7092407033742247`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "61", "\[InvisibleSpace]", "\<\": No region satisfies the \
+constraints.\"\>"}],
+  SequenceForm[61, ": No region satisfies the constraints."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.709239445384144*^9, 3.709240704541616*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "62", "\[InvisibleSpace]", "\<\": No region satisfies the \
+constraints.\"\>"}],
+  SequenceForm[62, ": No region satisfies the constraints."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.709239445384144*^9, 3.7092407047065277`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "63", "\[InvisibleSpace]", "\<\": No region satisfies the \
+constraints.\"\>"}],
+  SequenceForm[63, ": No region satisfies the constraints."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.709239445384144*^9, 3.7092407075653477`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "64", "\[InvisibleSpace]", "\<\": No region satisfies the \
+constraints.\"\>"}],
+  SequenceForm[64, ": No region satisfies the constraints."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.709239445384144*^9, 3.709240707590454*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "65", "\[InvisibleSpace]", "\<\": No region satisfies the \
+constraints.\"\>"}],
+  SequenceForm[65, ": No region satisfies the constraints."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.709239445384144*^9, 3.709240712811758*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "66", "\[InvisibleSpace]", "\<\": No region satisfies the \
+constraints.\"\>"}],
+  SequenceForm[66, ": No region satisfies the constraints."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.709239445384144*^9, 3.709240715557729*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "67", "\[InvisibleSpace]", "\<\": No region satisfies the \
+constraints.\"\>"}],
+  SequenceForm[67, ": No region satisfies the constraints."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.709239445384144*^9, 3.709240718799718*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "68", "\[InvisibleSpace]", "\<\": No region satisfies the \
+constraints.\"\>"}],
+  SequenceForm[68, ": No region satisfies the constraints."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.709239445384144*^9, 3.7092407200306273`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "69", "\[InvisibleSpace]", "\<\": No region satisfies the \
+constraints.\"\>"}],
+  SequenceForm[69, ": No region satisfies the constraints."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.709239445384144*^9, 3.709240724181592*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "70", "\[InvisibleSpace]", "\<\": No region satisfies the \
+constraints.\"\>"}],
+  SequenceForm[70, ": No region satisfies the constraints."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.709239445384144*^9, 3.709240724222321*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "71", "\[InvisibleSpace]", "\<\": No region satisfies the \
+constraints.\"\>"}],
+  SequenceForm[71, ": No region satisfies the constraints."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.709239445384144*^9, 3.7092407242282257`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "72", "\[InvisibleSpace]", "\<\": No region satisfies the \
+constraints.\"\>"}],
+  SequenceForm[72, ": No region satisfies the constraints."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.709239445384144*^9, 3.7092407242339373`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "73", "\[InvisibleSpace]", "\<\": No region satisfies the \
+constraints.\"\>"}],
+  SequenceForm[73, ": No region satisfies the constraints."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.709239445384144*^9, 3.709240724239785*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "74", "\[InvisibleSpace]", "\<\": No region satisfies the \
+constraints.\"\>"}],
+  SequenceForm[74, ": No region satisfies the constraints."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.709239445384144*^9, 3.7092407286402473`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "75", "\[InvisibleSpace]", "\<\": No region satisfies the \
+constraints.\"\>"}],
+  SequenceForm[75, ": No region satisfies the constraints."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.709239445384144*^9, 3.7092407297610807`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "76", "\[InvisibleSpace]", "\<\": No region satisfies the \
+constraints.\"\>"}],
+  SequenceForm[76, ": No region satisfies the constraints."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.709239445384144*^9, 3.709240729785997*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "77", "\[InvisibleSpace]", "\<\": No region satisfies the \
+constraints.\"\>"}],
+  SequenceForm[77, ": No region satisfies the constraints."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.709239445384144*^9, 3.709240730995521*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "78", "\[InvisibleSpace]", "\<\": No region satisfies the \
+constraints.\"\>"}],
+  SequenceForm[78, ": No region satisfies the constraints."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.709239445384144*^9, 3.7092407312800083`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "79", "\[InvisibleSpace]", "\<\": No region satisfies the \
+constraints.\"\>"}],
+  SequenceForm[79, ": No region satisfies the constraints."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.709239445384144*^9, 3.709240731322221*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "80", "\[InvisibleSpace]", "\<\": No region satisfies the \
+constraints.\"\>"}],
+  SequenceForm[80, ": No region satisfies the constraints."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.709239445384144*^9, 3.709240731328298*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "81", "\[InvisibleSpace]", "\<\": No region satisfies the \
+constraints.\"\>"}],
+  SequenceForm[81, ": No region satisfies the constraints."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.709239445384144*^9, 3.709240731334278*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "82", "\[InvisibleSpace]", "\<\": No region satisfies the \
+constraints.\"\>"}],
+  SequenceForm[82, ": No region satisfies the constraints."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.709239445384144*^9, 3.7092407313402243`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "83", "\[InvisibleSpace]", "\<\": No region satisfies the \
+constraints.\"\>"}],
+  SequenceForm[83, ": No region satisfies the constraints."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.709239445384144*^9, 3.709240731346064*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "84", "\[InvisibleSpace]", "\<\": No region satisfies the \
+constraints.\"\>"}],
+  SequenceForm[84, ": No region satisfies the constraints."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.709239445384144*^9, 3.709240731391221*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "85", "\[InvisibleSpace]", "\<\": No region satisfies the \
+constraints.\"\>"}],
+  SequenceForm[85, ": No region satisfies the constraints."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.709239445384144*^9, 3.709240731397657*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "86", "\[InvisibleSpace]", "\<\": No region satisfies the \
+constraints.\"\>"}],
+  SequenceForm[86, ": No region satisfies the constraints."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.709239445384144*^9, 3.709240731403844*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "87", "\[InvisibleSpace]", "\<\": No region satisfies the \
+constraints.\"\>"}],
+  SequenceForm[87, ": No region satisfies the constraints."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.709239445384144*^9, 3.709240731409954*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "88", "\[InvisibleSpace]", "\<\": No region satisfies the \
+constraints.\"\>"}],
+  SequenceForm[88, ": No region satisfies the constraints."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.709239445384144*^9, 3.709240731416009*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "89", "\[InvisibleSpace]", "\<\": No region satisfies the \
+constraints.\"\>"}],
+  SequenceForm[89, ": No region satisfies the constraints."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.709239445384144*^9, 3.709240731422266*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "90", "\[InvisibleSpace]", "\<\": No region satisfies the \
+constraints.\"\>"}],
+  SequenceForm[90, ": No region satisfies the constraints."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.709239445384144*^9, 3.709240731474247*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+  "91", "\[InvisibleSpace]", "\<\": No region satisfies the \
+constraints.\"\>"}],
+  SequenceForm[91, ": No region satisfies the constraints."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.709239445384144*^9, 3.7092407314806547`*^9}],
+
+Cell[BoxData["\<\"Examined 91 cases.\\nSmallest nonzero minimum is           \
+-6\\n2.19285 10.\\n0 cases remain.\"\>"], "Print",
+ CellChangeTimes->{3.709239445384144*^9, 3.7092407314864902`*^9}]
 }, Open  ]]
 }, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData["cases"], "Input",
+ CellChangeTimes->{{3.709240935227461*^9, 3.7092409356767683`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", "}"}]], "Output",
+ CellChangeTimes->{3.709240942247498*^9}]
+}, Open  ]],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.7092409387013273`*^9, 3.7092409389575377`*^9}}],
 
 Cell[BoxData[
  RowBox[{
@@ -899,10 +1910,101 @@ Cell[36307, 761, 905, 17, 21, "Print"],
 Cell[37215, 780, 903, 17, 21, "Print"],
 Cell[38121, 799, 902, 17, 21, "Print"],
 Cell[39026, 818, 903, 17, 21, "Print"],
-Cell[39932, 837, 906, 17, 21, "Print"]
+Cell[39932, 837, 906, 17, 21, "Print"],
+Cell[40841, 856, 905, 17, 21, "Print"],
+Cell[41749, 875, 905, 17, 21, "Print"],
+Cell[42657, 894, 281, 6, 22, "Print"],
+Cell[42941, 902, 905, 17, 21, "Print"],
+Cell[43849, 921, 282, 7, 22, "Print"],
+Cell[44134, 930, 283, 7, 22, "Print"],
+Cell[44420, 939, 907, 17, 21, "Print"],
+Cell[45330, 958, 907, 17, 23, "Print"],
+Cell[46240, 977, 283, 7, 22, "Print"],
+Cell[46526, 986, 912, 17, 21, "Print"],
+Cell[47441, 1005, 283, 7, 22, "Print"],
+Cell[47727, 1014, 285, 7, 22, "Print"],
+Cell[48015, 1023, 906, 17, 21, "Print"],
+Cell[48924, 1042, 907, 17, 21, "Print"],
+Cell[49834, 1061, 906, 17, 21, "Print"],
+Cell[50743, 1080, 909, 17, 21, "Print"],
+Cell[51655, 1099, 910, 17, 21, "Print"],
+Cell[52568, 1118, 910, 17, 21, "Print"],
+Cell[53481, 1137, 905, 17, 21, "Print"],
+Cell[54389, 1156, 908, 17, 21, "Print"],
+Cell[55300, 1175, 283, 7, 22, "Print"],
+Cell[55586, 1184, 285, 7, 22, "Print"],
+Cell[55874, 1193, 282, 7, 22, "Print"],
+Cell[56159, 1202, 283, 7, 22, "Print"],
+Cell[56445, 1211, 908, 17, 21, "Print"],
+Cell[57356, 1230, 905, 17, 21, "Print"],
+Cell[58264, 1249, 283, 7, 22, "Print"],
+Cell[58550, 1258, 903, 17, 21, "Print"],
+Cell[59456, 1277, 283, 7, 22, "Print"],
+Cell[59742, 1286, 285, 7, 22, "Print"],
+Cell[60030, 1295, 283, 7, 22, "Print"],
+Cell[60316, 1304, 283, 7, 22, "Print"],
+Cell[60602, 1313, 903, 17, 21, "Print"],
+Cell[61508, 1332, 283, 7, 22, "Print"],
+Cell[61794, 1341, 285, 7, 22, "Print"],
+Cell[62082, 1350, 285, 7, 22, "Print"],
+Cell[62370, 1359, 283, 7, 22, "Print"],
+Cell[62656, 1368, 285, 7, 22, "Print"],
+Cell[62944, 1377, 283, 7, 22, "Print"],
+Cell[63230, 1386, 285, 7, 22, "Print"],
+Cell[63518, 1395, 905, 17, 21, "Print"],
+Cell[64426, 1414, 910, 17, 21, "Print"],
+Cell[65339, 1433, 912, 17, 21, "Print"],
+Cell[66254, 1452, 905, 17, 21, "Print"],
+Cell[67162, 1471, 905, 17, 21, "Print"],
+Cell[68070, 1490, 283, 7, 22, "Print"],
+Cell[68356, 1499, 285, 7, 22, "Print"],
+Cell[68644, 1508, 283, 7, 22, "Print"],
+Cell[68930, 1517, 283, 7, 22, "Print"],
+Cell[69216, 1526, 283, 7, 22, "Print"],
+Cell[69502, 1535, 283, 7, 22, "Print"],
+Cell[69788, 1544, 283, 7, 22, "Print"],
+Cell[70074, 1553, 283, 7, 22, "Print"],
+Cell[70360, 1562, 285, 7, 22, "Print"],
+Cell[70648, 1571, 283, 7, 22, "Print"],
+Cell[70934, 1580, 285, 7, 22, "Print"],
+Cell[71222, 1589, 285, 7, 22, "Print"],
+Cell[71510, 1598, 283, 7, 22, "Print"],
+Cell[71796, 1607, 283, 7, 22, "Print"],
+Cell[72082, 1616, 283, 7, 22, "Print"],
+Cell[72368, 1625, 283, 7, 22, "Print"],
+Cell[72654, 1634, 285, 7, 22, "Print"],
+Cell[72942, 1643, 283, 7, 22, "Print"],
+Cell[73228, 1652, 283, 7, 22, "Print"],
+Cell[73514, 1661, 285, 7, 22, "Print"],
+Cell[73802, 1670, 285, 7, 22, "Print"],
+Cell[74090, 1679, 283, 7, 22, "Print"],
+Cell[74376, 1688, 285, 7, 22, "Print"],
+Cell[74664, 1697, 285, 7, 22, "Print"],
+Cell[74952, 1706, 283, 7, 22, "Print"],
+Cell[75238, 1715, 283, 7, 22, "Print"],
+Cell[75524, 1724, 285, 7, 22, "Print"],
+Cell[75812, 1733, 283, 7, 22, "Print"],
+Cell[76098, 1742, 283, 7, 22, "Print"],
+Cell[76384, 1751, 283, 7, 22, "Print"],
+Cell[76670, 1760, 285, 7, 22, "Print"],
+Cell[76958, 1769, 283, 7, 22, "Print"],
+Cell[77244, 1778, 283, 7, 22, "Print"],
+Cell[77530, 1787, 283, 7, 22, "Print"],
+Cell[77816, 1796, 283, 7, 22, "Print"],
+Cell[78102, 1805, 283, 7, 22, "Print"],
+Cell[78388, 1814, 283, 7, 22, "Print"],
+Cell[78674, 1823, 283, 7, 22, "Print"],
+Cell[78960, 1832, 283, 7, 22, "Print"],
+Cell[79246, 1841, 285, 7, 22, "Print"],
+Cell[79534, 1850, 195, 2, 67, "Print"]
 }, Open  ]]
 }, Open  ]],
-Cell[40865, 858, 605, 12, 46, "Input"]
+Cell[CellGroupData[{
+Cell[79778, 1858, 99, 1, 28, "Input"],
+Cell[79880, 1861, 87, 2, 62, "Output"]
+}, Open  ]],
+Cell[79982, 1866, 96, 1, 28, InheritFromParent],
+Cell[80081, 1869, 605, 12, 46, "Input"]
 }
 ]
 *)
