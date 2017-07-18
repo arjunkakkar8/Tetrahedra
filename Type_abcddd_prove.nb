@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     38492,        841]
-NotebookOptionsPosition[     37955,        820]
-NotebookOutlinePosition[     38310,        836]
-CellTagsIndexPosition[     38267,        833]
+NotebookDataLength[     39014,        848]
+NotebookOptionsPosition[     38517,        828]
+NotebookOutlinePosition[     38871,        844]
+CellTagsIndexPosition[     38828,        841]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -593,8 +593,8 @@ Cell[BoxData[
        RowBox[{"ToString", "[", "examinedcnt", "]"}], "<>", "\"\< cases.\>\"",
         "\[IndentingNewLine]", "<>", 
        "\"\<\\nSmallest nonzero minimum is \>\"", "<>", 
-       RowBox[{"ToString", "[", "smallestnonzero", "]"}], "<>", "\"\<.\>\"", 
-       "\[IndentingNewLine]", "<>", "\"\<\\n\>\"", "<>", 
+       RowBox[{"TextString", "[", "smallestnonzero", "]"}], "<>", "\"\<.\>\"",
+        "\[IndentingNewLine]", "<>", "\"\<\\n\>\"", "<>", 
        RowBox[{"ToString", "[", "remaincnt", "]"}], "<>", 
        "\"\< cases remain.\>\""}]}], ";", "\[IndentingNewLine]", 
      RowBox[{"Print", "[", "msg", "]"}], ";", "\[IndentingNewLine]", 
@@ -668,7 +668,8 @@ Cell[BoxData[
    3.708957425520859*^9}, {3.708957472945059*^9, 3.7089575736935043`*^9}, {
    3.708957612502924*^9, 3.7089576688996973`*^9}, {3.708957716340089*^9, 
    3.708957731762405*^9}, {3.708957852970152*^9, 3.708957882303287*^9}, 
-   3.708957996854577*^9, {3.7092371767364283`*^9, 3.709237314165345*^9}}],
+   3.708957996854577*^9, {3.7092371767364283`*^9, 3.709237314165345*^9}, {
+   3.709409323198495*^9, 3.7094093237793417`*^9}}],
 
 Cell[BoxData[
  RowBox[{
@@ -685,126 +686,133 @@ Cell[BoxData[
    3.708562878877387*^9}, 3.70895714803806*^9}],
 
 Cell[BoxData[
- RowBox[{"(*", 
-  RowBox[{
+ RowBox[{
+  RowBox[{"(*", 
    RowBox[{
-   "An", " ", "extra", " ", "case", " ", "has", " ", "been", " ", 
-    "discovered", " ", "from", " ", "the", " ", "IntervalMinimize", " ", 
-    "function"}], ",", " ", "however", ",", " ", 
-   RowBox[{
-   "this", " ", "is", " ", "an", " ", "edge", " ", "case", " ", "and", " ", 
-    "can", " ", "be", " ", "discarded", " ", "just", " ", "by", " ", 
-    "inspection"}]}], "*)"}]], "Input",
- CellChangeTimes->{{3.7092377796269836`*^9, 3.70923783406244*^9}}],
-
-Cell[BoxData[
- RowBox[{"cases", "=", 
-  RowBox[{"{", 
-   RowBox[{"{", 
     RowBox[{
-     FractionBox["\[Pi]", "2"], ",", 
-     FractionBox["\[Pi]", "2"], ",", 
-     FractionBox["\[Pi]", "2"], ",", "2", ",", "2", ",", "2", ",", 
-     "4.450147717014403`*^-308", ",", 
-     RowBox[{"{", 
+    "An", " ", "extra", " ", "case", " ", "has", " ", "been", " ", 
+     "discovered", " ", "from", " ", "the", " ", "IntervalMinimize", " ", 
+     "function"}], ",", " ", "however", ",", " ", 
+    RowBox[{
+    "this", " ", "is", " ", "an", " ", "edge", " ", "case", " ", "that", " ", 
+     "can", " ", "be", " ", "discarded", " ", "just", " ", "by", " ", 
+     RowBox[{"inspection", ":", "\[IndentingNewLine]", 
       RowBox[{
-       RowBox[{"{", 
-        RowBox[{
-         RowBox[{"\[Theta]23$138922", "\[Rule]", 
-          RowBox[{"Interval", "[", 
-           RowBox[{"{", 
-            RowBox[{"1.5698844604376545`", ",", "1.5701124270269662`"}], 
-            "}"}], "]"}]}], ",", 
-         RowBox[{"\[Theta]24$138922", "\[Rule]", 
-          RowBox[{"Interval", "[", 
-           RowBox[{"{", 
-            RowBox[{"1.5705683602055878`", ",", "1.5707963267948994`"}], 
-            "}"}], "]"}]}]}], "}"}], ",", 
-       RowBox[{"{", 
-        RowBox[{
-         RowBox[{"\[Theta]23$138922", "\[Rule]", 
-          RowBox[{"Interval", "[", 
-           RowBox[{"{", 
-            RowBox[{"1.5701124270269657`", ",", "1.5703403936162774`"}], 
-            "}"}], "]"}]}], ",", 
-         RowBox[{"\[Theta]24$138922", "\[Rule]", 
-          RowBox[{"Interval", "[", 
-           RowBox[{"{", 
-            RowBox[{"1.5705683602055878`", ",", "1.5707963267948994`"}], 
-            "}"}], "]"}]}]}], "}"}], ",", 
-       RowBox[{"{", 
-        RowBox[{
-         RowBox[{"\[Theta]23$138922", "\[Rule]", 
-          RowBox[{"Interval", "[", 
-           RowBox[{"{", 
-            RowBox[{"1.5705683602055878`", ",", "1.5707963267948994`"}], 
-            "}"}], "]"}]}], ",", 
-         RowBox[{"\[Theta]24$138922", "\[Rule]", 
-          RowBox[{"Interval", "[", 
-           RowBox[{"{", 
-            RowBox[{"1.5698844604376545`", ",", "1.5701124270269662`"}], 
-            "}"}], "]"}]}]}], "}"}], ",", 
-       RowBox[{"{", 
-        RowBox[{
-         RowBox[{"\[Theta]23$138922", "\[Rule]", 
-          RowBox[{"Interval", "[", 
-           RowBox[{"{", 
-            RowBox[{"1.5705683602055878`", ",", "1.5707963267948994`"}], 
-            "}"}], "]"}]}], ",", 
-         RowBox[{"\[Theta]24$138922", "\[Rule]", 
-          RowBox[{"Interval", "[", 
-           RowBox[{"{", 
-            RowBox[{"1.5701124270269657`", ",", "1.5703403936162774`"}], 
-            "}"}], "]"}]}]}], "}"}], ",", 
-       RowBox[{"{", 
-        RowBox[{
-         RowBox[{"\[Theta]23$138922", "\[Rule]", 
-          RowBox[{"Interval", "[", 
-           RowBox[{"{", 
-            RowBox[{"1.5703403936162765`", ",", "1.5705683602055882`"}], 
-            "}"}], "]"}]}], ",", 
-         RowBox[{"\[Theta]24$138922", "\[Rule]", 
-          RowBox[{"Interval", "[", 
-           RowBox[{"{", 
-            RowBox[{"1.5703403936162765`", ",", "1.5705683602055882`"}], 
-            "}"}], "]"}]}]}], "}"}], ",", 
-       RowBox[{"{", 
-        RowBox[{
-         RowBox[{"\[Theta]23$138922", "\[Rule]", 
-          RowBox[{"Interval", "[", 
-           RowBox[{"{", 
-            RowBox[{"1.5703403936162765`", ",", "1.5705683602055882`"}], 
-            "}"}], "]"}]}], ",", 
-         RowBox[{"\[Theta]24$138922", "\[Rule]", 
-          RowBox[{"Interval", "[", 
-           RowBox[{"{", 
-            RowBox[{"1.5705683602055878`", ",", "1.5707963267948994`"}], 
-            "}"}], "]"}]}]}], "}"}], ",", 
-       RowBox[{"{", 
-        RowBox[{
-         RowBox[{"\[Theta]23$138922", "\[Rule]", 
-          RowBox[{"Interval", "[", 
-           RowBox[{"{", 
-            RowBox[{"1.5705683602055878`", ",", "1.5707963267948994`"}], 
-            "}"}], "]"}]}], ",", 
-         RowBox[{"\[Theta]24$138922", "\[Rule]", 
-          RowBox[{"Interval", "[", 
-           RowBox[{"{", 
-            RowBox[{"1.5703403936162765`", ",", "1.5705683602055882`"}], 
-            "}"}], "]"}]}]}], "}"}], ",", 
-       RowBox[{"{", 
-        RowBox[{
-         RowBox[{"\[Theta]23$138922", "\[Rule]", 
-          RowBox[{"Interval", "[", 
-           RowBox[{"{", 
-            RowBox[{"1.5705683602055878`", ",", "1.5707963267948994`"}], 
-            "}"}], "]"}]}], ",", 
-         RowBox[{"\[Theta]24$138922", "\[Rule]", 
-          RowBox[{"Interval", "[", 
-           RowBox[{"{", 
-            RowBox[{"1.5705683602055878`", ",", "1.5707963267948994`"}], 
-            "}"}], "]"}]}]}], "}"}]}], "}"}]}], "}"}], "}"}]}]], "Input",
- CellChangeTimes->{{3.709237751506928*^9, 3.709237759724782*^9}}],
+      "\[Theta]34", " ", "is", " ", "close", " ", "to", " ", "0"}]}]}], ",", 
+    " ", 
+    RowBox[{
+    "but", " ", "we", " ", "know", " ", "it", " ", "has", " ", "to", " ", 
+     "be", " ", "at", " ", "least", " ", "36.5", " ", "degrees"}]}], " ", 
+   "*)"}], "\[IndentingNewLine]", 
+  RowBox[{"cases", "=", 
+   RowBox[{"{", 
+    RowBox[{"{", 
+     RowBox[{
+      FractionBox["\[Pi]", "2"], ",", 
+      FractionBox["\[Pi]", "2"], ",", 
+      FractionBox["\[Pi]", "2"], ",", "2", ",", "2", ",", "2", ",", 
+      "4.450147717014403`*^-308", ",", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"\[Theta]23$138922", "\[Rule]", 
+           RowBox[{"Interval", "[", 
+            RowBox[{"{", 
+             RowBox[{"1.5698844604376545`", ",", "1.5701124270269662`"}], 
+             "}"}], "]"}]}], ",", 
+          RowBox[{"\[Theta]24$138922", "\[Rule]", 
+           RowBox[{"Interval", "[", 
+            RowBox[{"{", 
+             RowBox[{"1.5705683602055878`", ",", "1.5707963267948994`"}], 
+             "}"}], "]"}]}]}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"\[Theta]23$138922", "\[Rule]", 
+           RowBox[{"Interval", "[", 
+            RowBox[{"{", 
+             RowBox[{"1.5701124270269657`", ",", "1.5703403936162774`"}], 
+             "}"}], "]"}]}], ",", 
+          RowBox[{"\[Theta]24$138922", "\[Rule]", 
+           RowBox[{"Interval", "[", 
+            RowBox[{"{", 
+             RowBox[{"1.5705683602055878`", ",", "1.5707963267948994`"}], 
+             "}"}], "]"}]}]}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"\[Theta]23$138922", "\[Rule]", 
+           RowBox[{"Interval", "[", 
+            RowBox[{"{", 
+             RowBox[{"1.5705683602055878`", ",", "1.5707963267948994`"}], 
+             "}"}], "]"}]}], ",", 
+          RowBox[{"\[Theta]24$138922", "\[Rule]", 
+           RowBox[{"Interval", "[", 
+            RowBox[{"{", 
+             RowBox[{"1.5698844604376545`", ",", "1.5701124270269662`"}], 
+             "}"}], "]"}]}]}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"\[Theta]23$138922", "\[Rule]", 
+           RowBox[{"Interval", "[", 
+            RowBox[{"{", 
+             RowBox[{"1.5705683602055878`", ",", "1.5707963267948994`"}], 
+             "}"}], "]"}]}], ",", 
+          RowBox[{"\[Theta]24$138922", "\[Rule]", 
+           RowBox[{"Interval", "[", 
+            RowBox[{"{", 
+             RowBox[{"1.5701124270269657`", ",", "1.5703403936162774`"}], 
+             "}"}], "]"}]}]}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"\[Theta]23$138922", "\[Rule]", 
+           RowBox[{"Interval", "[", 
+            RowBox[{"{", 
+             RowBox[{"1.5703403936162765`", ",", "1.5705683602055882`"}], 
+             "}"}], "]"}]}], ",", 
+          RowBox[{"\[Theta]24$138922", "\[Rule]", 
+           RowBox[{"Interval", "[", 
+            RowBox[{"{", 
+             RowBox[{"1.5703403936162765`", ",", "1.5705683602055882`"}], 
+             "}"}], "]"}]}]}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"\[Theta]23$138922", "\[Rule]", 
+           RowBox[{"Interval", "[", 
+            RowBox[{"{", 
+             RowBox[{"1.5703403936162765`", ",", "1.5705683602055882`"}], 
+             "}"}], "]"}]}], ",", 
+          RowBox[{"\[Theta]24$138922", "\[Rule]", 
+           RowBox[{"Interval", "[", 
+            RowBox[{"{", 
+             RowBox[{"1.5705683602055878`", ",", "1.5707963267948994`"}], 
+             "}"}], "]"}]}]}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"\[Theta]23$138922", "\[Rule]", 
+           RowBox[{"Interval", "[", 
+            RowBox[{"{", 
+             RowBox[{"1.5705683602055878`", ",", "1.5707963267948994`"}], 
+             "}"}], "]"}]}], ",", 
+          RowBox[{"\[Theta]24$138922", "\[Rule]", 
+           RowBox[{"Interval", "[", 
+            RowBox[{"{", 
+             RowBox[{"1.5703403936162765`", ",", "1.5705683602055882`"}], 
+             "}"}], "]"}]}]}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"\[Theta]23$138922", "\[Rule]", 
+           RowBox[{"Interval", "[", 
+            RowBox[{"{", 
+             RowBox[{"1.5705683602055878`", ",", "1.5707963267948994`"}], 
+             "}"}], "]"}]}], ",", 
+          RowBox[{"\[Theta]24$138922", "\[Rule]", 
+           RowBox[{"Interval", "[", 
+            RowBox[{"{", 
+             RowBox[{"1.5705683602055878`", ",", "1.5707963267948994`"}], 
+             "}"}], "]"}]}]}], "}"}]}], "}"}]}], "}"}], "}"}]}]}]], "Input",
+ CellChangeTimes->{{3.709237751506928*^9, 3.709237759724782*^9}, {
+  3.709408944089864*^9, 3.709408945022071*^9}, {3.7094092553324327`*^9, 
+  3.709409259714365*^9}, {3.709409486495286*^9, 3.709409517523378*^9}}],
 
 Cell[BoxData[
  RowBox[{
@@ -819,8 +827,8 @@ Cell[BoxData[
   3.709237343343693*^9}}]
 },
 WindowSize->{1052, 799},
-WindowMargins->{{Automatic, -1}, {Automatic, 0}},
-FrontEndVersion->"10.4 for Mac OS X x86 (32-bit, 64-bit Kernel) (April 11, \
+WindowMargins->{{Automatic, 83}, {Automatic, 0}},
+FrontEndVersion->"11.0 for Mac OS X x86 (32-bit, 64-bit Kernel) (July 28, \
 2016)",
 StyleDefinitions->"Default.nb"
 ]
@@ -835,14 +843,13 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[558, 20, 980, 25, 46, "Input"],
-Cell[1541, 47, 1403, 37, 97, "Input"],
-Cell[2947, 86, 2713, 60, 182, "Input"],
-Cell[5663, 148, 26585, 522, 1559, "Input"],
-Cell[32251, 672, 500, 12, 46, "Input"],
-Cell[32754, 686, 509, 11, 46, "Input"],
-Cell[33266, 699, 4277, 107, 345, "Input"],
-Cell[37546, 808, 405, 10, 46, "Input"]
+Cell[558, 20, 980, 25, 54, "Input"],
+Cell[1541, 47, 1403, 37, 117, "Input"],
+Cell[2947, 86, 2713, 60, 222, "Input"],
+Cell[5663, 148, 26639, 523, 1923, "Input"],
+Cell[32305, 673, 500, 12, 54, "Input"],
+Cell[32808, 687, 5297, 127, 473, "Input"],
+Cell[38108, 816, 405, 10, 54, "Input"]
 }
 ]
 *)
