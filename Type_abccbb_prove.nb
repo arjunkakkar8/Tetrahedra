@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     43737,        994]
-NotebookOptionsPosition[     42972,        965]
-NotebookOutlinePosition[     43326,        981]
-CellTagsIndexPosition[     43283,        978]
+NotebookDataLength[     43957,        997]
+NotebookOptionsPosition[     43192,        968]
+NotebookOutlinePosition[     43546,        984]
+CellTagsIndexPosition[     43503,        981]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -240,24 +240,6 @@ Cell[BoxData[
                    RowBox[{"2", "Pi"}], "-", 
                    RowBox[{"n13", " ", "\[Theta]13"}]}], ")"}], "/", 
                  "n34"}]}], ";", "\[IndentingNewLine]", "\[IndentingNewLine]", 
-               RowBox[{"mat", "=", 
-                RowBox[{"ModifiedMat", "[", 
-                 RowBox[{
-                 "\[Theta]12", ",", " ", "\[Theta]13", ",", " ", "\[Theta]14",
-                   ",", " ", "\[Theta]23", ",", " ", "\[Theta]24", ",", " ", 
-                  "\[Theta]34"}], "]"}]}], ";", "\[IndentingNewLine]", 
-               RowBox[{"det1", "=", 
-                RowBox[{
-                 RowBox[{"mat", "[", 
-                  RowBox[{"[", 
-                   RowBox[{"{", "1", "}"}], "]"}], "]"}], "//", "Det"}]}], 
-               ";", "\[IndentingNewLine]", 
-               RowBox[{"det2", "=", 
-                RowBox[{
-                 RowBox[{"mat", "[", 
-                  RowBox[{"[", 
-                   RowBox[{"{", "3", "}"}], "]"}], "]"}], "//", "Det"}]}], 
-               ";", "\[IndentingNewLine]", "\[IndentingNewLine]", 
                RowBox[{"(*", 
                 RowBox[{
                 "Reduce", " ", "the", " ", "constraints", " ", "on", " ", 
@@ -325,6 +307,24 @@ Cell[BoxData[
                  RowBox[{
                   RowBox[{"Continue", "[", "]"}], ";"}]}], "]"}], ";", 
                "\[IndentingNewLine]", "\[IndentingNewLine]", 
+               RowBox[{"mat", "=", 
+                RowBox[{"ModifiedMat", "[", 
+                 RowBox[{
+                 "\[Theta]12", ",", " ", "\[Theta]13", ",", " ", "\[Theta]14",
+                   ",", " ", "\[Theta]23", ",", " ", "\[Theta]24", ",", " ", 
+                  "\[Theta]34"}], "]"}]}], ";", "\[IndentingNewLine]", 
+               RowBox[{"det1", "=", 
+                RowBox[{
+                 RowBox[{"mat", "[", 
+                  RowBox[{"[", 
+                   RowBox[{"{", "1", "}"}], "]"}], "]"}], "//", "Det"}]}], 
+               ";", "\[IndentingNewLine]", 
+               RowBox[{"det2", "=", 
+                RowBox[{
+                 RowBox[{"mat", "[", 
+                  RowBox[{"[", 
+                   RowBox[{"{", "3", "}"}], "]"}], "]"}], "//", "Det"}]}], 
+               ";", "\[IndentingNewLine]", "\[IndentingNewLine]", 
                RowBox[{"(*", 
                 RowBox[{
                 "Get", " ", "the", " ", "minimum", " ", "bounding", " ", 
@@ -555,7 +555,10 @@ Cell[BoxData[
    3.708962565678884*^9}, {3.709145249929203*^9, 3.709145250115542*^9}, {
    3.7092364278699617`*^9, 3.70923643863487*^9}, {3.7092364710226583`*^9, 
    3.709236576706984*^9}, {3.709236611859413*^9, 3.7092367014232616`*^9}, {
-   3.709409778998025*^9, 3.7094097795196457`*^9}}],
+   3.709409778998025*^9, 3.7094097795196457`*^9}, {3.709414382619306*^9, 
+   3.709414420508453*^9}, 3.7094145001623583`*^9, {3.7094145608864202`*^9, 
+   3.709414563069044*^9}, {3.709414711545164*^9, 3.709414736926332*^9}, {
+   3.709414899198236*^9, 3.709414911986656*^9}}],
 
 Cell[BoxData[
  RowBox[{
@@ -587,20 +590,20 @@ Cell[BoxData[
                RowBox[{"{", 
                 RowBox[{
                  RowBox[{"{", 
-                  RowBox[{"\[Theta]13$12592", "\[Rule]", 
+                  RowBox[{"\[Theta]13$38433", "\[Rule]", 
                    RowBox[{"Interval", "[", 
                     RowBox[{"{", 
                     RowBox[{
                     "1.0464731713800954`", ",", "1.046929104558718`"}], "}"}],
                      "]"}]}], "}"}], ",", 
                  RowBox[{"{", 
-                  RowBox[{"\[Theta]13$12592", "\[Rule]", 
+                  RowBox[{"\[Theta]13$38433", "\[Rule]", 
                    RowBox[{"Interval", "[", 
                     RowBox[{"{", 
                     RowBox[{"1.0469291045587175`", ",", "1.04738503773734`"}],
                      "}"}], "]"}]}], "}"}], ",", 
                  RowBox[{"{", 
-                  RowBox[{"\[Theta]13$12592", "\[Rule]", 
+                  RowBox[{"\[Theta]13$38433", "\[Rule]", 
                    RowBox[{"Interval", "[", 
                     RowBox[{"{", 
                     RowBox[{
@@ -614,7 +617,7 @@ Cell[BoxData[
                RowBox[{"{", 
                 RowBox[{
                  RowBox[{"{", 
-                  RowBox[{"\[Theta]13$12592", "\[Rule]", 
+                  RowBox[{"\[Theta]13$38433", "\[Rule]", 
                    RowBox[{"Interval", "[", 
                     RowBox[{"{", 
                     RowBox[{
@@ -634,7 +637,7 @@ Cell[BoxData[
                     FrameMargins -> {{1, 1}, {1, 2}}, FrameStyle -> None, 
                     RoundingRadius -> 7]& )], ",", 
                  RowBox[{"{", 
-                  RowBox[{"\[Theta]13$12592", "\[Rule]", 
+                  RowBox[{"\[Theta]13$38433", "\[Rule]", 
                    RowBox[{"Interval", "[", 
                     RowBox[{"{", 
                     RowBox[{
@@ -682,8 +685,7 @@ Cell[BoxData[
                StyleBox[
                 DynamicBox[ToBoxes[
                   FEPrivate`FrontEndResource["FEStrings", "sizeShowLess"], 
-                  StandardForm],
-                 ImageSizeCache->{50., {0., 8.}}],
+                  StandardForm]],
                 StripOnInput->False,
                 DynamicUpdating->True], "SuggestionsBarControlActive",
                StripOnInput->False]}, Dynamic[
@@ -694,7 +696,7 @@ Cell[BoxData[
              Appearance->None,
              
              ButtonFunction:>OutputSizeLimit`ButtonFunction[
-              OutputSizeLimit`Defer, 71, 26875536218217497757, 5/2],
+              OutputSizeLimit`Defer, 84, 26875571280051369382, 5/2],
              Enabled->True,
              Evaluator->Automatic,
              Method->"Queued"], 
@@ -724,7 +726,7 @@ Cell[BoxData[
              Appearance->None,
              
              ButtonFunction:>OutputSizeLimit`ButtonFunction[
-              OutputSizeLimit`Defer, 71, 26875536218217497757, 5 2],
+              OutputSizeLimit`Defer, 84, 26875571280051369382, 5 2],
              Enabled->True,
              Evaluator->Automatic,
              Method->"Queued"], 
@@ -754,7 +756,7 @@ Cell[BoxData[
              Appearance->None,
              
              ButtonFunction:>OutputSizeLimit`ButtonFunction[
-              OutputSizeLimit`Defer, 71, 26875536218217497757, Infinity],
+              OutputSizeLimit`Defer, 84, 26875571280051369382, Infinity],
              Enabled->True,
              Evaluator->Automatic,
              Method->"Queued"], 
@@ -823,8 +825,9 @@ Cell[BoxData[
       StripOnInput->False],
      Deploy,
      DefaultBaseStyle->"Deploy"],
-    Out[71]]}], ";"}]], "Input",
- CellChangeTimes->{{3.7094099152677507`*^9, 3.709409922356653*^9}}],
+    Out[84]]}], ";"}]], "Input",
+ CellChangeTimes->{{3.7094099152677507`*^9, 3.709409922356653*^9}, {
+  3.70941496351293*^9, 3.7094149645955267`*^9}}],
 
 Cell[BoxData[
  RowBox[{
@@ -938,7 +941,7 @@ Cell[BoxData[
   "Checking ", {Rational[1, 3] Pi, Rational[1, 2] Pi, 2, 4}, " against ", {
    Rational[1, 3] Pi, Rational[1, 2] Pi, 2, 4}],
   Editable->False]], "Print",
- CellChangeTimes->{3.7094100499715033`*^9}],
+ CellChangeTimes->{3.709414976458024*^9}],
 
 Cell[BoxData[
  InterpretationBox[
@@ -956,15 +959,15 @@ Cell[BoxData[
   "Checking ", {Rational[1, 3] Pi, Rational[1, 2] Pi, 4, 2}, " against ", {
    Rational[1, 3] Pi, Rational[1, 2] Pi, 4, 2}],
   Editable->False]], "Print",
- CellChangeTimes->{3.709410049975737*^9}]
+ CellChangeTimes->{3.709414976462648*^9}]
 }, Open  ]],
 
 Cell[BoxData["True"], "Output",
- CellChangeTimes->{3.709410049984543*^9}]
+ CellChangeTimes->{3.709414976471177*^9}]
 }, Open  ]]
 },
 WindowSize->{1054, 855},
-WindowMargins->{{90, Automatic}, {Automatic, 0}},
+WindowMargins->{{Automatic, 65}, {Automatic, 0}},
 FrontEndVersion->"11.0 for Mac OS X x86 (32-bit, 64-bit Kernel) (July 28, \
 2016)",
 StyleDefinitions->"Default.nb"
@@ -983,18 +986,18 @@ Notebook[{
 Cell[558, 20, 980, 25, 54, "Input"],
 Cell[1541, 47, 1403, 37, 117, "Input"],
 Cell[2947, 86, 2659, 58, 180, "Input"],
-Cell[5609, 146, 21750, 411, 1566, "Input"],
-Cell[27362, 559, 311, 9, 54, "Input"],
-Cell[27676, 570, 10508, 256, 193, "Input"],
-Cell[38187, 828, 1180, 31, 132, "Input"],
-Cell[39370, 861, 2087, 53, 306, "Input"],
+Cell[5609, 146, 21972, 414, 1566, "Input"],
+Cell[27584, 562, 311, 9, 54, "Input"],
+Cell[27898, 573, 10508, 256, 193, "Input"],
+Cell[38409, 831, 1180, 31, 132, "Input"],
+Cell[39592, 864, 2087, 53, 306, "Input"],
 Cell[CellGroupData[{
-Cell[41482, 918, 102, 2, 32, "Input"],
+Cell[41704, 921, 102, 2, 32, "Input"],
 Cell[CellGroupData[{
-Cell[41609, 924, 629, 16, 38, "Print"],
-Cell[42241, 942, 627, 16, 38, "Print"]
+Cell[41831, 927, 627, 16, 38, "Print"],
+Cell[42461, 945, 627, 16, 38, "Print"]
 }, Open  ]],
-Cell[42883, 961, 73, 1, 32, "Output"]
+Cell[43103, 964, 73, 1, 66, "Output"]
 }, Open  ]]
 }
 ]
