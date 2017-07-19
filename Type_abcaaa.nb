@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     34419,        723]
-NotebookOptionsPosition[     33965,        704]
-NotebookOutlinePosition[     34320,        720]
-CellTagsIndexPosition[     34277,        717]
+NotebookDataLength[     34469,        723]
+NotebookOptionsPosition[     34015,        704]
+NotebookOutlinePosition[     34369,        720]
+CellTagsIndexPosition[     34326,        717]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -589,8 +589,8 @@ Cell[BoxData[
        RowBox[{"ToString", "[", "examinedcnt", "]"}], "<>", "\"\< cases.\>\"",
         "\[IndentingNewLine]", "<>", 
        "\"\<\\nSmallest nonzero minimum is \>\"", "<>", 
-       RowBox[{"ToString", "[", "smallestnonzero", "]"}], "<>", "\"\<.\>\"", 
-       "\[IndentingNewLine]", "<>", "\"\<\\n\>\"", "<>", 
+       RowBox[{"TextString", "[", "smallestnonzero", "]"}], "<>", "\"\<.\>\"",
+        "\[IndentingNewLine]", "<>", "\"\<\\n\>\"", "<>", 
        RowBox[{"ToString", "[", "remaincnt", "]"}], "<>", 
        "\"\< cases remain.\>\""}]}], ";", "\[IndentingNewLine]", 
      RowBox[{"Print", "[", "msg", "]"}], ";", "\[IndentingNewLine]", 
@@ -675,7 +675,7 @@ Cell[BoxData[
    3.7088785709696836`*^9, 3.7088786107840548`*^9}, {3.708879077772925*^9, 
    3.708879166939098*^9}, {3.708879203912877*^9, 3.708879251790992*^9}, 
    3.708879338408842*^9, 3.708879384044895*^9, {3.708880784758861*^9, 
-   3.708880803727059*^9}}],
+   3.708880803727059*^9}, {3.7094156839213877`*^9, 3.709415684473247*^9}}],
 
 Cell[BoxData[
  RowBox[{
@@ -703,8 +703,8 @@ Cell[BoxData[
    3.708879996348179*^9}]
 },
 WindowSize->{1057, 933},
-WindowMargins->{{Automatic, -1}, {Automatic, 0}},
-FrontEndVersion->"10.4 for Mac OS X x86 (32-bit, 64-bit Kernel) (April 11, \
+WindowMargins->{{Automatic, 95}, {Automatic, 0}},
+FrontEndVersion->"11.0 for Mac OS X x86 (32-bit, 64-bit Kernel) (July 28, \
 2016)",
 StyleDefinitions->"Default.nb"
 ]
@@ -719,12 +719,12 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[558, 20, 1025, 25, 46, "Input"],
-Cell[1586, 47, 1403, 37, 97, "Input"],
-Cell[2992, 86, 2852, 63, 182, "Input"],
-Cell[5847, 151, 27257, 526, 1882, "Input"],
-Cell[33107, 679, 523, 12, 46, "Input"],
-Cell[33633, 693, 328, 9, 46, "Input"]
+Cell[558, 20, 1025, 25, 54, "Input"],
+Cell[1586, 47, 1403, 37, 117, "Input"],
+Cell[2992, 86, 2852, 63, 222, "Input"],
+Cell[5847, 151, 27307, 526, 2322, "Input"],
+Cell[33157, 679, 523, 12, 54, "Input"],
+Cell[33683, 693, 328, 9, 54, "Input"]
 }
 ]
 *)
