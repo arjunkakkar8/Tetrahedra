@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     30874,        654]
-NotebookOptionsPosition[     30421,        635]
-NotebookOutlinePosition[     30775,        651]
-CellTagsIndexPosition[     30732,        648]
+NotebookDataLength[     30927,        655]
+NotebookOptionsPosition[     30473,        636]
+NotebookOutlinePosition[     30827,        652]
+CellTagsIndexPosition[     30784,        649]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -524,8 +524,8 @@ Cell[BoxData[
        RowBox[{"ToString", "[", "examinedcnt", "]"}], "<>", "\"\< cases.\>\"",
         "\[IndentingNewLine]", "<>", 
        "\"\<\\nSmallest nonzero minimum is \>\"", "<>", 
-       RowBox[{"ToString", "[", "smallestnonzero", "]"}], "<>", "\"\<.\>\"", 
-       "\[IndentingNewLine]", "<>", "\"\<\\n\>\"", "<>", 
+       RowBox[{"TextString", "[", "smallestnonzero", "]"}], "<>", "\"\<.\>\"",
+        "\[IndentingNewLine]", "<>", "\"\<\\n\>\"", "<>", 
        RowBox[{"ToString", "[", "remaincnt", "]"}], "<>", 
        "\"\< cases remain.\>\""}]}], ";", "\[IndentingNewLine]", 
      RowBox[{"Print", "[", "msg", "]"}], ";", "\[IndentingNewLine]", 
@@ -602,7 +602,8 @@ Cell[BoxData[
    3.708876607830349*^9}, {3.708878495969369*^9, 3.708878496310999*^9}, {
    3.7088917569636307`*^9, 3.708891804287395*^9}, {3.708891936031983*^9, 
    3.708892025018496*^9}, {3.7088922184588737`*^9, 3.708892218528475*^9}, {
-   3.708892264911894*^9, 3.708892285637053*^9}}],
+   3.708892264911894*^9, 3.708892285637053*^9}, {3.709411586182501*^9, 
+   3.709411586722713*^9}}],
 
 Cell[BoxData[
  RowBox[{
@@ -634,8 +635,8 @@ Cell[BoxData[
   3.708815044312215*^9}}]
 },
 WindowSize->{1057, 955},
-WindowMargins->{{Automatic, 1}, {Automatic, 0}},
-FrontEndVersion->"10.4 for Mac OS X x86 (32-bit, 64-bit Kernel) (April 11, \
+WindowMargins->{{42, Automatic}, {Automatic, 0}},
+FrontEndVersion->"11.0 for Mac OS X x86 (32-bit, 64-bit Kernel) (July 28, \
 2016)",
 StyleDefinitions->"Default.nb"
 ]
@@ -650,12 +651,12 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[558, 20, 980, 25, 46, "Input"],
-Cell[1541, 47, 1403, 37, 97, "Input"],
-Cell[2947, 86, 2910, 65, 182, "Input"],
-Cell[5860, 153, 23425, 451, 1474, "Input"],
-Cell[29288, 606, 574, 13, 46, "Input"],
-Cell[29865, 621, 552, 12, 46, "Input"]
+Cell[558, 20, 980, 25, 54, "Input"],
+Cell[1541, 47, 1403, 37, 117, "Input"],
+Cell[2947, 86, 2910, 65, 222, "Input"],
+Cell[5860, 153, 23477, 452, 1818, "Input"],
+Cell[29340, 607, 574, 13, 54, "Input"],
+Cell[29917, 622, 552, 12, 54, "Input"]
 }
 ]
 *)
