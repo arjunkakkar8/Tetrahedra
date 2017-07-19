@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     53933,       1258]
-NotebookOptionsPosition[     52997,       1225]
-NotebookOutlinePosition[     53351,       1241]
-CellTagsIndexPosition[     53308,       1238]
+NotebookDataLength[     52799,       1234]
+NotebookOptionsPosition[     51864,       1201]
+NotebookOutlinePosition[     52217,       1217]
+CellTagsIndexPosition[     52174,       1214]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -258,36 +258,7 @@ Cell[BoxData[
                    RowBox[{"vars", "=", 
                     RowBox[{"{", 
                     RowBox[{"\[Theta]23", ",", "\[Theta]24"}], "}"}]}], ";", 
-                   "\[IndentingNewLine]", 
-                   RowBox[{"mat", "=", 
-                    RowBox[{"ModifiedMat", "[", 
-                    RowBox[{
-                    "\[Theta]12", ",", " ", "\[Theta]13", ",", " ", 
-                    "\[Theta]14", ",", " ", "\[Theta]23", ",", " ", 
-                    "\[Theta]24", ",", " ", "\[Theta]34"}], "]"}]}], ";", 
-                   "\[IndentingNewLine]", 
-                   RowBox[{"det1", "=", 
-                    RowBox[{
-                    RowBox[{"mat", "[", 
-                    RowBox[{"[", 
-                    RowBox[{"{", 
-                    RowBox[{"1", ",", "4"}], "}"}], "]"}], "]"}], "//", 
-                    "Det"}]}], ";", "\[IndentingNewLine]", 
-                   RowBox[{"det2", "=", 
-                    RowBox[{
-                    RowBox[{"mat", "[", 
-                    RowBox[{"[", 
-                    RowBox[{"{", 
-                    RowBox[{"2", ",", "4"}], "}"}], "]"}], "]"}], "//", 
-                    "Det"}]}], ";", "\[IndentingNewLine]", 
-                   RowBox[{"det3", "=", 
-                    RowBox[{
-                    RowBox[{"mat", "[", 
-                    RowBox[{"[", 
-                    RowBox[{"{", 
-                    RowBox[{"3", ",", "4"}], "}"}], "]"}], "]"}], "//", 
-                    "Det"}]}], ";", "\[IndentingNewLine]", 
-                   "\[IndentingNewLine]", 
+                   "\[IndentingNewLine]", "\[IndentingNewLine]", 
                    RowBox[{"(*", 
                     RowBox[{
                     "Reduce", " ", "the", " ", "constraints", " ", "on", " ", 
@@ -366,6 +337,40 @@ Cell[BoxData[
                     RowBox[{"region", "\[Equal]", "False"}], ",", " ", 
                     RowBox[{
                     RowBox[{"Continue", "[", "]"}], ";"}]}], "]"}], ";", 
+                   "\[IndentingNewLine]", "\[IndentingNewLine]", 
+                   RowBox[{"mat", "=", 
+                    RowBox[{"ModifiedMat", "[", 
+                    RowBox[{
+                    "\[Theta]12", ",", " ", "\[Theta]13", ",", " ", 
+                    "\[Theta]14", ",", " ", "\[Theta]23", ",", " ", 
+                    "\[Theta]24", ",", " ", "\[Theta]34"}], "]"}]}], ";", 
+                   "\[IndentingNewLine]", 
+                   RowBox[{"det1", "=", 
+                    RowBox[{
+                    RowBox[{
+                    RowBox[{"mat", "[", 
+                    RowBox[{"[", 
+                    RowBox[{"{", 
+                    RowBox[{"1", ",", "4"}], "}"}], "]"}], "]"}], "//", 
+                    "Det"}], "//", "FullSimplify"}]}], ";", 
+                   "\[IndentingNewLine]", 
+                   RowBox[{"det2", "=", 
+                    RowBox[{
+                    RowBox[{
+                    RowBox[{"mat", "[", 
+                    RowBox[{"[", 
+                    RowBox[{"{", 
+                    RowBox[{"2", ",", "4"}], "}"}], "]"}], "]"}], "//", 
+                    "Det"}], "//", "FullSimplify"}]}], ";", 
+                   "\[IndentingNewLine]", 
+                   RowBox[{"det3", "=", 
+                    RowBox[{
+                    RowBox[{
+                    RowBox[{"mat", "[", 
+                    RowBox[{"[", 
+                    RowBox[{"{", 
+                    RowBox[{"3", ",", "4"}], "}"}], "]"}], "]"}], "//", 
+                    "Det"}], "//", "FullSimplify"}]}], ";", 
                    "\[IndentingNewLine]", "\[IndentingNewLine]", 
                    RowBox[{"(*", 
                     RowBox[{
@@ -595,7 +600,8 @@ Cell[BoxData[
    3.7092271276470623`*^9}, {3.709227346901729*^9, 3.709227347639244*^9}, 
    3.7092275221298437`*^9, 3.709227582998643*^9, {3.70922791922423*^9, 
    3.709227923944837*^9}, {3.7092280360376053`*^9, 3.709228039836492*^9}, {
-   3.709410882573954*^9, 3.709410900823585*^9}}],
+   3.709410882573954*^9, 3.709410900823585*^9}, {3.70941520653163*^9, 
+   3.709415214078164*^9}, {3.709415298745082*^9, 3.7094153086186247`*^9}}],
 
 Cell[BoxData[
  RowBox[{
@@ -626,38 +632,36 @@ Cell[BoxData[
               RowBox[{
                FractionBox["\[Pi]", "2"], ",", 
                FractionBox["\[Pi]", "3"], ",", "2", ",", "2", ",", "2", ",", 
-               "4", ",", "4.450147717014403`*^-308", ",", 
+               "4", ",", "3.226357094835442`*^-307", ",", 
                RowBox[{"{", 
                 RowBox[{
                  RowBox[{"{", 
                   RowBox[{
-                   RowBox[{"\[Theta]23$21256", "\[Rule]", 
+                   RowBox[{"\[Theta]23$53517", "\[Rule]", 
+                    RowBox[{"Interval", "[", 
+                    RowBox[{"{", 
+                    RowBox[{"0.6370451769779294`", ",", "0.65163503869382`"}],
+                     "}"}], "]"}]}], ",", 
+                   RowBox[{"\[Theta]24$53517", "\[Rule]", 
                     RowBox[{"Interval", "[", 
                     RowBox[{"{", 
                     RowBox[{
-                    "0.6370451769779292`", ",", "0.6406926424069022`"}], 
-                    "}"}], "]"}]}], ",", 
-                   RowBox[{"\[Theta]24$21256", "\[Rule]", 
-                    RowBox[{"Interval", "[", 
-                    RowBox[{"{", 
-                    RowBox[{
-                    "1.0359824472140564`", ",", "1.0367835260699532`"}], 
-                    "}"}], "]"}]}]}], "}"}], ",", 
+                    "1.0407889203494318`", ",", "1.043993235773016`"}], "}"}],
+                     "]"}]}]}], "}"}], ",", 
                  RowBox[{"{", 
                   RowBox[{
-                   RowBox[{"\[Theta]23$21256", "\[Rule]", 
+                   RowBox[{"\[Theta]23$53517", "\[Rule]", 
+                    RowBox[{"Interval", "[", 
+                    RowBox[{"{", 
+                    RowBox[{"0.6370451769779294`", ",", "0.65163503869382`"}],
+                     "}"}], "]"}]}], ",", 
+                   RowBox[{"\[Theta]24$53517", "\[Rule]", 
                     RowBox[{"Interval", "[", 
                     RowBox[{"{", 
                     RowBox[{
-                    "0.6370451769779292`", ",", "0.6406926424069022`"}], 
-                    "}"}], "]"}]}], ",", 
-                   RowBox[{"\[Theta]24$21256", "\[Rule]", 
-                    RowBox[{"Interval", "[", 
-                    RowBox[{"{", 
-                    RowBox[{
-                    "1.0367835260699527`", ",", "1.0375846049258495`"}], 
+                    "1.0439932357730155`", ",", "1.0471975511965996`"}], 
                     "}"}], "]"}]}]}], "}"}], ",", 
-                 TemplateBox[{"2837"},
+                 TemplateBox[{"127"},
                   "OutputSizeLimit`Skeleton",
                   DisplayFunction->(FrameBox[
                     
@@ -672,37 +676,19 @@ Cell[BoxData[
                     RoundingRadius -> 7]& )], ",", 
                  RowBox[{"{", 
                   RowBox[{
-                   RowBox[{"\[Theta]23$21256", "\[Rule]", 
+                   RowBox[{"\[Theta]23$53517", "\[Rule]", 
                     RowBox[{"Interval", "[", 
                     RowBox[{"{", 
                     RowBox[{
-                    "2.500900011182893`", ",", "2.5045474766118674`"}], "}"}],
-                     "]"}]}], ",", 
-                   RowBox[{"\[Theta]24$21256", "\[Rule]", 
+                    "2.4899576148959746`", ",", "2.5045474766118665`"}], 
+                    "}"}], "]"}]}], ",", 
+                   RowBox[{"\[Theta]24$53517", "\[Rule]", 
                     RowBox[{"Interval", "[", 
                     RowBox[{"{", 
-                    RowBox[{"1.0463964723407033`", ",", "1.0471975511966`"}], 
+                    RowBox[{
+                    "1.0439932357730155`", ",", "1.0471975511965996`"}], 
                     "}"}], "]"}]}]}], "}"}]}], "}"}]}], "}"}], ",", 
-             RowBox[{"{", 
-              RowBox[{
-               FractionBox["\[Pi]", "2"], ",", 
-               FractionBox["\[Pi]", "3"], ",", "2", ",", "2", ",", "4", ",", 
-               "2", ",", "4.450147717014403`*^-308", ",", 
-               RowBox[{"{", 
-                TemplateBox[{"1"},
-                 "OutputSizeLimit`Skeleton",
-                 DisplayFunction->(FrameBox[
-                   
-                   RowBox[{
-                    "\" \[CenterEllipsis]\"", #, "\"\[CenterEllipsis] \""}], 
-                   Background -> GrayLevel[0.75], 
-                   BaseStyle -> {
-                    "Deploy", FontColor -> GrayLevel[1], FontSize -> Smaller, 
-                    ShowStringCharacters -> False}, BaselinePosition -> 
-                   Baseline, ContentPadding -> False, 
-                   FrameMargins -> {{1, 1}, {1, 2}}, FrameStyle -> None, 
-                   RoundingRadius -> 7]& )], "}"}]}], "}"}], ",", 
-             TemplateBox[{"2"},
+             TemplateBox[{"4"},
               "OutputSizeLimit`Skeleton",
               DisplayFunction->(FrameBox[
                 
@@ -716,35 +702,24 @@ Cell[BoxData[
                 FrameMargins -> {{1, 1}, {1, 2}}, FrameStyle -> None, 
                 RoundingRadius -> 7]& )], ",", 
              RowBox[{"{", 
-              TemplateBox[{"1"},
-               "OutputSizeLimit`Skeleton",
-               DisplayFunction->(FrameBox[
-                 
-                 RowBox[{
-                  "\" \[CenterEllipsis]\"", #, "\"\[CenterEllipsis] \""}], 
-                 Background -> GrayLevel[0.75], 
-                 BaseStyle -> {
-                  "Deploy", FontColor -> GrayLevel[1], FontSize -> Smaller, 
-                   ShowStringCharacters -> False}, BaselinePosition -> 
-                 Baseline, ContentPadding -> False, 
-                 FrameMargins -> {{1, 1}, {1, 2}}, FrameStyle -> None, 
-                 RoundingRadius -> 7]& )], "}"}], ",", 
-             RowBox[{"{", 
               RowBox[{
                FractionBox["\[Pi]", "2"], ",", 
-               TemplateBox[{"7"},
-                "OutputSizeLimit`Skeleton",
-                DisplayFunction->(FrameBox[
-                  
-                  RowBox[{
-                   "\" \[CenterEllipsis]\"", #, "\"\[CenterEllipsis] \""}], 
-                  Background -> GrayLevel[0.75], 
-                  BaseStyle -> {
-                   "Deploy", FontColor -> GrayLevel[1], FontSize -> Smaller, 
+               FractionBox["\[Pi]", "4"], ",", "2", ",", "2", ",", "4", ",", 
+               "2", ",", "6.675221575521604`*^-308", ",", 
+               RowBox[{"{", 
+                TemplateBox[{"1"},
+                 "OutputSizeLimit`Skeleton",
+                 DisplayFunction->(FrameBox[
+                   
+                   RowBox[{
+                    "\" \[CenterEllipsis]\"", #, "\"\[CenterEllipsis] \""}], 
+                   Background -> GrayLevel[0.75], 
+                   BaseStyle -> {
+                    "Deploy", FontColor -> GrayLevel[1], FontSize -> Smaller, 
                     ShowStringCharacters -> False}, BaselinePosition -> 
-                  Baseline, ContentPadding -> False, 
-                  FrameMargins -> {{1, 1}, {1, 2}}, FrameStyle -> None, 
-                  RoundingRadius -> 7]& )]}], "}"}]}], "}"}],
+                   Baseline, ContentPadding -> False, 
+                   FrameMargins -> {{1, 1}, {1, 2}}, FrameStyle -> None, 
+                   RoundingRadius -> 7]& )], "}"}]}], "}"}]}], "}"}],
            Short[#, 5]& ],
           BaseStyle->{Deployed -> False},
           StripOnInput->False]},
@@ -798,7 +773,7 @@ Cell[BoxData[
              Appearance->None,
              
              ButtonFunction:>OutputSizeLimit`ButtonFunction[
-              OutputSizeLimit`Defer, 109, 26875536218217497757, 5/2],
+              OutputSizeLimit`Defer, 108, 26875571280051369382, 5/2],
              Enabled->True,
              Evaluator->Automatic,
              Method->"Queued"], 
@@ -828,7 +803,7 @@ Cell[BoxData[
              Appearance->None,
              
              ButtonFunction:>OutputSizeLimit`ButtonFunction[
-              OutputSizeLimit`Defer, 109, 26875536218217497757, 5 2],
+              OutputSizeLimit`Defer, 108, 26875571280051369382, 5 2],
              Enabled->True,
              Evaluator->Automatic,
              Method->"Queued"], 
@@ -856,8 +831,9 @@ Cell[BoxData[
               FrameMargins->0,
               ImageSize->{Automatic, 25}],
              Appearance->None,
+             
              ButtonFunction:>OutputSizeLimit`ButtonFunction[
-              OutputSizeLimit`Defer, 109, 26875536218217497757, Infinity],
+              OutputSizeLimit`Defer, 108, 26875571280051369382, Infinity],
              Enabled->True,
              Evaluator->Automatic,
              Method->"Queued"], 
@@ -876,8 +852,7 @@ Cell[BoxData[
                StyleBox[
                 DynamicBox[ToBoxes[
                   FEPrivate`FrontEndResource["FEStrings", "sizeChangeLimit"], 
-                  StandardForm],
-                 ImageSizeCache->{74., {0., 8.}}],
+                  StandardForm]],
                 StripOnInput->False,
                 DynamicUpdating->True], "SuggestionsBarControlActive",
                StripOnInput->False]}, Dynamic[
@@ -927,9 +902,10 @@ Cell[BoxData[
       StripOnInput->False],
      Deploy,
      DefaultBaseStyle->"Deploy"],
-    Out[109]]}], ";"}]], "Input",
+    Out[108]]}], ";"}]], "Input",
  CellChangeTimes->{{3.709230174032898*^9, 3.7092301767459793`*^9}, {
-  3.709411380222246*^9, 3.709411381390395*^9}}],
+  3.709411380222246*^9, 3.709411381390395*^9}, {3.7094154794491367`*^9, 
+  3.709415480221682*^9}}],
 
 Cell[BoxData[
  RowBox[{
@@ -1121,7 +1097,7 @@ Cell[BoxData[
   "Checking ", {Rational[1, 2] Pi, Rational[1, 3] Pi, 2, 2, 2, 4}, 
    " against ", {Rational[1, 2] Pi, Rational[1, 3] Pi, 2, 2, 2, 4}],
   Editable->False]], "Print",
- CellChangeTimes->{3.709411412076807*^9}],
+ CellChangeTimes->{3.709415492077141*^9}],
 
 Cell[BoxData[
  InterpretationBox[
@@ -1140,7 +1116,7 @@ Cell[BoxData[
   "Checking ", {Rational[1, 2] Pi, Rational[1, 3] Pi, 2, 2, 4, 2}, 
    " against ", {Rational[1, 2] Pi, Rational[1, 3] Pi, 2, 2, 4, 2}],
   Editable->False]], "Print",
- CellChangeTimes->{3.709411412081148*^9}],
+ CellChangeTimes->{3.709415492081822*^9}],
 
 Cell[BoxData[
  InterpretationBox[
@@ -1159,7 +1135,7 @@ Cell[BoxData[
   "Checking ", {Rational[1, 2] Pi, Rational[1, 3] Pi, 2, 6, 2, 2}, 
    " against ", {Rational[1, 2] Pi, Rational[1, 3] Pi, 2, 6, 2, 2}],
   Editable->False]], "Print",
- CellChangeTimes->{3.709411412089807*^9}],
+ CellChangeTimes->{3.709415492090507*^9}],
 
 Cell[BoxData[
  InterpretationBox[
@@ -1178,7 +1154,7 @@ Cell[BoxData[
   "Checking ", {Rational[1, 2] Pi, Rational[1, 3] Pi, 4, 4, 2, 2}, 
    " against ", {Rational[1, 2] Pi, Rational[1, 3] Pi, 4, 4, 2, 2}],
   Editable->False]], "Print",
- CellChangeTimes->{3.709411412094653*^9}],
+ CellChangeTimes->{3.709415492095752*^9}],
 
 Cell[BoxData[
  InterpretationBox[
@@ -1197,7 +1173,7 @@ Cell[BoxData[
   "Checking ", {Rational[1, 2] Pi, Rational[1, 3] Pi, 6, 2, 2, 2}, 
    " against ", {Rational[1, 2] Pi, Rational[1, 3] Pi, 6, 2, 2, 2}],
   Editable->False]], "Print",
- CellChangeTimes->{3.7094114120996227`*^9}],
+ CellChangeTimes->{3.7094154921007*^9}],
 
 Cell[BoxData[
  InterpretationBox[
@@ -1216,15 +1192,15 @@ Cell[BoxData[
   "Checking ", {Rational[1, 2] Pi, Rational[1, 4] Pi, 2, 2, 4, 2}, 
    " against ", {Rational[1, 2] Pi, Rational[1, 4] Pi, 2, 2, 4, 2}],
   Editable->False]], "Print",
- CellChangeTimes->{3.709411412104315*^9}]
+ CellChangeTimes->{3.7094154921060343`*^9}]
 }, Open  ]],
 
 Cell[BoxData["True"], "Output",
- CellChangeTimes->{3.7094114121090107`*^9}]
+ CellChangeTimes->{3.709415492110944*^9}]
 }, Open  ]]
 },
 WindowSize->{1239, 938},
-WindowMargins->{{Automatic, 11}, {Automatic, 0}},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
 FrontEndVersion->"11.0 for Mac OS X x86 (32-bit, 64-bit Kernel) (July 28, \
 2016)",
 StyleDefinitions->"Default.nb"
@@ -1243,22 +1219,22 @@ Notebook[{
 Cell[558, 20, 980, 25, 54, "Input"],
 Cell[1541, 47, 1403, 37, 117, "Input"],
 Cell[2947, 86, 2399, 55, 180, "Input"],
-Cell[5349, 143, 22884, 454, 1692, "Input"],
-Cell[28236, 599, 525, 12, 54, "Input"],
-Cell[28764, 613, 13604, 318, 215, "Input"],
-Cell[42371, 933, 4153, 108, 541, "Input"],
-Cell[46527, 1043, 2085, 53, 306, "Input"],
+Cell[5349, 143, 23203, 460, 1713, "Input"],
+Cell[28555, 605, 525, 12, 54, "Input"],
+Cell[29083, 619, 12156, 288, 224, "Input"],
+Cell[41242, 909, 4153, 108, 541, "Input"],
+Cell[45398, 1019, 2085, 53, 306, "Input"],
 Cell[CellGroupData[{
-Cell[48637, 1100, 102, 2, 32, "Input"],
+Cell[47508, 1076, 102, 2, 32, "Input"],
 Cell[CellGroupData[{
-Cell[48764, 1106, 685, 17, 38, "Print"],
-Cell[49452, 1125, 685, 17, 38, "Print"],
-Cell[50140, 1144, 685, 17, 38, "Print"],
-Cell[50828, 1163, 685, 17, 38, "Print"],
-Cell[51516, 1182, 687, 17, 38, "Print"],
-Cell[52206, 1201, 685, 17, 38, "Print"]
+Cell[47635, 1082, 685, 17, 38, "Print"],
+Cell[48323, 1101, 685, 17, 38, "Print"],
+Cell[49011, 1120, 685, 17, 38, "Print"],
+Cell[49699, 1139, 685, 17, 38, "Print"],
+Cell[50387, 1158, 683, 17, 38, "Print"],
+Cell[51073, 1177, 687, 17, 38, "Print"]
 }, Open  ]],
-Cell[52906, 1221, 75, 1, 66, "Output"]
+Cell[51775, 1197, 73, 1, 66, "Output"]
 }, Open  ]]
 }
 ]
