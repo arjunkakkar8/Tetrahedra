@@ -2,7 +2,7 @@ Elimination note:
 
 aaabcd: 224 cases -> 7 cases -> 2 cases							Has been verified by proof.
 abaacb: 396 cases -> 1 case -> 1 case	 [surface area is worse than sommerville]		Has been verified by proof.
-abaacd: 315 cases -> 8 cases -> 2 cases [both belong to 1st Goldberg family]		Has been verified by proof.
+abaacd: 315 cases -> 8 cases -> 2 cases
 abcaaa: 435 cases -> 0 cases
 abcacb: 91 cases -> 0 cases
 abcacd: 324 cases -> 6 cases -> 1 case
@@ -12,6 +12,7 @@ abcddd: 67 cases -> 0 cases
 
 Remaining cases note:
 
+abaacd: Both cases remaining belong to the 1st Goldberg family
 abcaaa: No cases remain
 abcacb: No cases remain
 abcacd: We prove that the 1 case remaining must belong to the 2nd Goldberg family
@@ -21,6 +22,7 @@ abcddd: No cases remain
 
 Proof note:
 
+abaacd: All cases match
 abcaaa: All cases match
 abcacb: All cases match
 abcacd: All cases match
