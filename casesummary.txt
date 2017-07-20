@@ -1,6 +1,6 @@
 Elimination note:
 
-aaabcd: 224 cases -> 7 cases -> 2 cases							Has been verified by proof.
+aaabcd: 224 cases -> 7 cases -> 2 cases
 abaacb: 396 cases -> 1 case -> 1 case	 [surface area is worse than sommerville]		Has been verified by proof.
 abaacd: 315 cases -> 8 cases -> 2 cases
 abcaaa: 435 cases -> 0 cases
@@ -12,6 +12,8 @@ abcddd: 67 cases -> 0 cases
 
 Remaining cases note:
 
+aaabcd: ???
+abaacb:
 abaacd: Both cases remaining belong to the 1st Goldberg family
 abcaaa: No cases remain
 abcacb: No cases remain
@@ -22,6 +24,8 @@ abcddd: No cases remain
 
 Proof note:
 
+aaabcd: All cases match
+abaacb:
 abaacd: All cases match
 abcaaa: All cases match
 abcacb: All cases match
