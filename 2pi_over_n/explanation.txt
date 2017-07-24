@@ -1,0 +1,35 @@
+The files should be run in this order.
+
+search.m
+--------
+
+1. Perform search and output dihedral angles
+
+2. Compute face areas from dihedral angles
+
+verify_eq.nb
+------------
+Use dihedral angles from search.m
+
+3. Verify that the determinant is zero symbolically
+
+verify_ineq.py
+--------------
+Use dihedral angles and face areas from search.m
+
+4. Compute edge lengths from dihedral angles and face areas
+
+5. Check that edge lengths form a tetrahedron, except for the Cayley-Menger determinant condition
+
+6. Check that these edge lengths give original face areas
+
+7. Check that these edge lengths and face areas give original dihedral angles
+
+volume.m
+--------
+Use dihedral angles and face areas from search.m
+Use edge lengths from verify_ineq.py
+
+8. Compute volume, and thereby checking the Cayley-Menger determinant condition that was missing from 5.
+
+9. Compute normalized surface areas
