@@ -3,7 +3,7 @@ Elimination note:
 aaabcd: 224 cases -> 7 cases -> 2 cases
 abaacb: 396 cases -> 1 case -> 1 case
 abaacd: 315 cases -> 8 cases -> 2 cases
-abcaaa: 435 cases -> 0 cases
+abcaaa: 459 cases -> 0 cases
 abcacb: 91 cases -> 0 cases
 abcacd: 324 cases -> 6 cases -> 1 case
 abcade: 144 cases -> 5 cases -> 0 cases
