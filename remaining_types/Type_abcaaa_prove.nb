@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     41747,        877]
-NotebookOptionsPosition[     40817,        850]
-NotebookOutlinePosition[     41173,        866]
-CellTagsIndexPosition[     41130,        863]
+NotebookDataLength[     41864,        879]
+NotebookOptionsPosition[     40933,        852]
+NotebookOutlinePosition[     41290,        868]
+CellTagsIndexPosition[     41247,        865]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -206,17 +206,17 @@ Cell[BoxData[
                "n34"}], " ", "\[LessEqual]", " ", "9"}]}]}], ",", 
           "\[IndentingNewLine]", 
           RowBox[{"Combinatorial", " ", 
-           RowBox[{"assumption", ":", " ", "n23"}]}], ",", " ", "n24", ",", 
+           RowBox[{"assumption", ":", " ", "n12"}]}], ",", " ", "n23", ",", 
           " ", 
           RowBox[{
-          "n34", " ", "have", " ", "the", " ", "same", " ", "parity"}], ",", 
+          "n24", " ", "have", " ", "the", " ", "same", " ", "parity"}], ",", 
           " ", 
-          RowBox[{"n12", " ", "is", " ", "even"}], ",", "\[IndentingNewLine]", 
+          RowBox[{"n34", " ", "is", " ", "even"}], ",", "\[IndentingNewLine]", 
           RowBox[{"Nondegeneracy", " ", 
            RowBox[{"assumption", ":", " ", 
             RowBox[{
-            "At", " ", "most", " ", "two", " ", "of", " ", "n23"}]}]}], ",", 
-          " ", "n24", ",", " ", 
+            "At", " ", "most", " ", "two", " ", "of", " ", "n12"}]}]}], ",", 
+          " ", "n23", ",", " ", "n24", ",", " ", 
           RowBox[{"n34", " ", "are", " ", "zero"}], ",", 
           "\[IndentingNewLine]", 
           RowBox[{"Symmetry", " ", 
@@ -807,7 +807,9 @@ Cell[BoxData[
    3.7092385291373053`*^9}, 3.7092385845282183`*^9, {3.7094157145247717`*^9, 
    3.7094157737485723`*^9}, {3.7094159854595823`*^9, 3.709415985568248*^9}, {
    3.709417671698985*^9, 3.709417671884368*^9}, {3.710774429990787*^9, 
-   3.7107744494657373`*^9}},ExpressionUUID->"8ba2ae82-3c4e-4bdb-91b5-\
+   3.7107744494657373`*^9}, {3.711389345804002*^9, 3.711389352637349*^9}, {
+   3.71138940481609*^9, 
+   3.711389405328746*^9}},ExpressionUUID->"8ba2ae82-3c4e-4bdb-91b5-\
 18fc3a6db054"],
 
 Cell[BoxData[
@@ -849,8 +851,8 @@ Cell[BoxData[
 438b258cb7f9"]
 },
 WindowSize->{1057, 933},
-WindowMargins->{{Automatic, 109}, {Automatic, 0}},
-FrontEndVersion->"11.1 for Mac OS X x86 (32-bit, 64-bit Kernel) (March 16, \
+WindowMargins->{{Automatic, -208}, {Automatic, 0}},
+FrontEndVersion->"11.1 for Mac OS X x86 (32-bit, 64-bit Kernel) (April 27, \
 2017)",
 StyleDefinitions->"Default.nb"
 ]
@@ -871,13 +873,13 @@ Cell[1646, 49, 1463, 39, 117, "Input", "ExpressionUUID" -> \
 "4833b89b-39ad-4cd8-9b63-be73bb565eae"],
 Cell[3112, 90, 2909, 64, 222, "Input", "ExpressionUUID" -> \
 "0019b80e-f209-4cc4-a76a-ea29fa49536f"],
-Cell[6024, 156, 33491, 654, 2553, "Input", "ExpressionUUID" -> \
+Cell[6024, 156, 33607, 656, 2553, "Input", "ExpressionUUID" -> \
 "8ba2ae82-3c4e-4bdb-91b5-18fc3a6db054"],
-Cell[39518, 812, 584, 14, 54, "Input", "ExpressionUUID" -> \
+Cell[39634, 814, 584, 14, 54, "Input", "ExpressionUUID" -> \
 "8e725db6-154f-4db1-8d18-e18edd6c8822"],
-Cell[40105, 828, 265, 7, 32, "Input", "ExpressionUUID" -> \
+Cell[40221, 830, 265, 7, 32, "Input", "ExpressionUUID" -> \
 "a86aceb1-9b66-4b33-95fa-ae6d6f83417b"],
-Cell[40373, 837, 440, 11, 54, "Input", "ExpressionUUID" -> \
+Cell[40489, 839, 440, 11, 54, "Input", "ExpressionUUID" -> \
 "c51f4deb-40cb-4e4d-bef7-438b258cb7f9"]
 }
 ]
