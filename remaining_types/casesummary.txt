@@ -12,8 +12,8 @@ abcddd: 67 cases -> 0 cases
 
 Remaining cases note:
 
-aaabcd: [use solid angle?]
-abaacb: [surface area is worse than sommerville]
+aaabcd: Eliminated by solid angle considerations
+abaacb: Normalized surface area is worse than Sommerville No. 1
 abaacd: Both cases remaining belong to the 1st Goldberg family
 abcaaa: No cases remain
 abcacb: No cases remain
