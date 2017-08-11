@@ -68,8 +68,8 @@ Type abcaaa
 What the code searches for:
 1. theta13, theta14 are of the form 2pi/(2n)
 2. d12 = d23 = d24 = d34
-3. n23, n24, n34 have the same parity
-4. n12 is even
+3. n12, n23, n24 have the same parity
+4. n34 is even
 5. at least two of n12, n23, n24, n34 are nonzero
 
 Justification for the remaining possibilities:
