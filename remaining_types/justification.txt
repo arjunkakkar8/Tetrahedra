@@ -1,158 +1,130 @@
+How to do this:
+
+Step 1. Copy all assumptions from code comment to this file
+Step 2. Check that code implements these assumptions correctly
+Step 3. Type these in paper [Not done]
+Step 4. Argue they are correct [Not done]
+        - Conditions match with type
+        - Reductions correct
+        - Symmetries correct
+
 Type aaabcd
 -----------
+Covers type (r).
 
-What the code searches for:
-1. theta23, theta24, theta34 are of the form 2pi/(2n)
-2. d12 = d13 = d14
-3. n12, n13, n14 have the same parity and at least two are nonzero
-4. d12 != d23, d12 != d24, d12 != d34
-
-Note that it is okay to enforce 4. because no other type shares this code.
-
-Justification for the remaining possibilities:
-Otherwise theta12, theta13, theta14 are of the form 2pi/(2n).
-So we can reduce to the 2pi/n case.
-
-Type aabbcd
------------
-
-There is no code for this type.
-
-Justification for the remaining possibilities:
-We have
-1. theta14, theta23, theta24, theta34 are of the form 2pi/(2n)
-2. d12 = d13
-3. d14 = d23
-4. at least one of these is true
-   4a. n12, n13 are even and nonzero
-   4b. theta12, theta13 are of the form 2pi/(2n)
-
-If 4a is true, then the code for Type abcade covers this (with some permutation).
-If 4b is true, then we can reduce to the 2pi/n case.
+1. theta23, theta24, theta34 are in {pi/2, pi/3, pi/4}
+   theta23, theta24, theta34 cannot all be pi/2
+2. matrix of type (r) has nontrivial null space (d12 = d13 = d14)
+3. n12theta12 + n13theta13 + n14theta14 = 2pi
+   n12 + n13 + n14 <= 9
+   n12, n13, n14 have the same parity and at least two are nonzero
+4. n12 <= n13 <= n14
+   if n12 = n13, then theta24 >= theta34
+   if n13 = n14, then theta23 >= theta24
+5. Omega1 divides 4pi
 
 Type abaacb
 -----------
+Covers type (n).
 
-What the code searches for:
-1. theta24 is of the form 2pi/(2n)
-2. d12 = d14 = d23
-3. d13 = d34
-4. n12, n14, n23 are even and at least two are nonzero
-5. n13, n34 are even and nonzero
-
-Justification for the remaining possibilities:
-Otherwise, at least one of the following is true
-I. theta12, theta14, theta23 are of the form 2pi/(2n) (breaks 4.)
-II. theta13, theta34 are of the form 2pi/(2n) (breaks 5.)
-
-If only I is true, then the code for Type abcade covers this (with some permutation).
-If only II is true, then the code for Type abaacd covers this.
-If both are true, then we can reduce to the 2pi/n case.
+1. theta24 is in {pi/2, pi/3, pi/4}
+2. matrix of type (n) has nontrivial null space (d12 = d14 = d23, d13 = d34)
+3. n12theta12 + n14theta14 + n23theta23 = 2pi
+   n12 + n14 + n23 <= 9
+   n12, n14, n23 are even and at least two are nonzero
+4. n13theta13 + n34theta34 = 2pi
+   n13 + n34 <= 9
+   n13, n34 are even and nonzero
 
 Type abaacd
 -----------
+Covers type (t), (n).
 
-What the code searches for:
-[This code also covers part of abaacb]
-1. theta13, theta24, theta34 are of the form 2pi/(2n)
-2. d12 = d14 = d23
-3. n12, n14, n23 are even and at least two are nonzero
-
-Justification for the remaining possibilities:
-Otherwise theta12, theta14, theta23 are of the form 2pi/(2n).
-So we can reduce to the 2pi/n case.
+1. theta13, theta24, theta34 are in {pi/2, pi/3, pi/4}
+2. matrix of type (t) has nontrivial null space (d12 = d14 = d23)
+3. n12theta12 + n14theta14 + n23theta23 = 2pi
+   n12 + n14 + n23 <= 9
+   n12, n14, n23 are even and at least two are nonzero
+4. n14 <= n23
+   if n13 = n23, then theta13 >= theta24
 
 Type abcaaa
 -----------
+Covers type (m).
 
-What the code searches for:
-1. theta13, theta14 are of the form 2pi/(2n)
-2. d12 = d23 = d24 = d34
-3. n12, n23, n24 have the same parity
-4. n34 is even
-5. at least two of n12, n23, n24, n34 are nonzero
-
-Justification for the remaining possibilities:
-Otherwise theta12, theta23, theta24, theta34 are of the form 2pi/(2n).
-So we can reduce to the 2pi/n case.
+1. theta13, theta14 are in {pi/2, pi/3, pi/4}
+2. matrix of type (m) has nontrivial null space (d12 = d23 = d24 = d34)
+3. n12theta12 + n23theta23 + n24theta24 + n34theta34 = 2pi
+   n12 + n23 + n24 + n34 <= 9
+   n12, n23, n24 have the same parity, n34 is even
+   at least two of n12, n23, n24, n34 are nonzero
+4. n23 <= n24
+   if n23 = n24, then theta13 >= theta14
 
 Type abcacb
 -----------
+Covers type (o).
 
-What the code searches for:
-1. d12 = d23
-2. d13 = d34
-3. d14 = d24
-4. n12, n23 are even and nonzero
-5. n13, n34 are even and nonzero
-6. n14, n24 are even and nonzero
-
-Justification for the remaining possibilities:
-Otherwise, at least one of the following is true
-I. theta12, theta23 are of the form 2pi/(2n) (breaks 4.)
-II. theta13, theta34 are of the form 2pi/(2n) (breaks 5.)
-III. theta14, theta24 are of the form 2pi/(2n) (breaks 6.)
-
-Note the cyclic symmetry in I, II, and III.
-If only II is true, then the code for Type abcacd covers this.
-If only II and III are true, then the code for Type abcade covers this.
-If all are true, then we can reduce to the 2pi/n case.
+1. matrix of type (o) has nontrivial null space (d12 = d23, d13 = d34, d14 = d24)
+2. n12theta12 + n23theta23 = 2pi
+   n12 + n23 <= 9
+   n12, n23 are even and nonzero
+3. n13theta13 + n34theta34 = 2pi
+   n13 + n34 <= 9
+   n13, n34 are even and nonzero
+4. n14theta14 + n24theta24 = 2pi
+   n14 + n24 <= 9
+   n14, n24 are even and nonzero
+5. (n12, n23) <= (n13, n34) and (n12, n23) <= (n14, n24) in dictionary order
 
 Type abcacd
 -----------
+Covers type (v), (o).
 
-What the code searches for:
-[This code also covers part of abcacb]
-1. theta13, theta34 are of the form 2pi/(2n)
-2. d12 = d23
-3. d14 = d24
-4. n12, n23 are even and nonzero
-5. n14, n24 are even and nonzero
-
-Justification for the remaining possibilities:
-Otherwise, at least one of the following is true
-I. theta12, theta23 are of the form 2pi/(2n) (breaks 4.)
-II. theta14, theta24 are of the form 2pi/(2n) (breaks 5.)
-
-If only I is true, then the code for Type abcade covers this (with some permutation).
-If only II is true, then the code for Type abcade covers this.
-If both are true, then we can reduce to the 2pi/n case.
+1. theta13, theta34 are in {pi/2, pi/3, pi/4}
+2. matrix of type (v) has nontrivial null space (d12 = d23, d14 = d24)
+3. n12theta12 + n23theta23 = 2pi
+   n12 + n23 <= 9
+   n12, n23 are even and nonzero
+4. n14theta14 + n24theta24 = 2pi
+   n14 + n24 <= 9
+   n14, n24 are even and nonzero
 
 Type abcade
 -----------
+Covers type (x), (u), (t), (o), (v).
 
-What the code searches for:
-[This code also covers part of aabbcd, abaacb, abcacb, and abcacd]
-1. theta13, theta14, theta24, theta34 are of the form 2pi/(2n)
-2. d12 = d23
-3. n12, n23 are even and nonzero
-
-Justification for the remaining possibilities:
-Otherwise theta12, theta23 are of the form 2pi/(2n).
-So we can reduce to the 2pi/n case.
+1. theta13, theta14, theta24, theta34 are in {pi/2, pi/3, pi/4}
+   theta13, theta14, theta34 cannot all be pi/2
+   theta14 + theta24 + theta34 > pi
+2. matrix of type (x) has nontrivial null space (d12 = d23)
+3. n12theta12 + n23theta23 = 2pi
+   n12 + n23 <= 9
+   n12, n23 are even and nonzero
+4. n12 <= n23
+   if n12 = n23, then theta14 >= theta34
 
 Type abccbb
 -----------
+Covers type (h).
 
-What the code searches for:
-1. theta12, theta14 = theta23 are of the form 2pi/(2n)
-2. d14 = d23
-3. d13 = d24 = d34
-4. theta13 = theta24
-5. n13, n34 are even and nonzero
-
-Justification for the remaining possibilities:
-Otherwise theta13 = theta24, theta34 are of the form 2pi/(2n).
-So we can reduce to the 2pi/n case.
+1. theta12, theta14 = theta23 are in {pi/2, pi/3, pi/4}
+2. matrix of type (h) has nontrivial null space (d14 = d23, d13 = d24 = d34)
+3. theta13 = theta24
+4. n13theta13 + n34theta34 = 2pi
+   n13 + n34 <= 9
+   n13, n34 are even and nonzero
 
 Type abcddd
 -----------
+Covers type (s).
 
-What the code searches for:
-1. theta12, theta13, theta14 are of the form 2pi/(2n)
-2. d23 = d24 = d34
-3. n23, n24, n34 are even and at least two are nonzero
-
-Justification for the remaining possibilities:
-Otherwise theta23, theta24, theta34 are of the form 2pi/(2n).
-So we can reduce to the 2pi/n case.
+1. theta12, theta13, theta14 are in {pi/2, pi/3, pi/4}
+   theta12 + theta13 + theta14 > pi
+2. matrix of type (s) has nontrivial null space (d23 = d24 = d34)
+3. n23theta23 + n24theta24 + n34theta34 = 2pi
+   n23 + n24 + n34 <= 9
+   n23, n24, n34 are even and at least two are nonzero
+4. n23 <= n24 <= n34
+   if n23 = n24, then theta13 >= theta14
+   if n24 = n34, then theta12 >= theta13
