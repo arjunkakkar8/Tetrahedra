@@ -46,7 +46,7 @@ Covers type (t), (n).
    n12 + n14 + n23 <= 9
    n12, n14, n23 are even and at least two are nonzero
 4. n14 <= n23
-   if n13 = n23, then theta13 >= theta24
+   if n14 = n23, then theta13 >= theta24
 
 Type abcaaa
 -----------
