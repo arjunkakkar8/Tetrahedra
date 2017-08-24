@@ -2,8 +2,8 @@ How to do this:
 
 Step 1. Copy all assumptions from code comment to this file
 Step 2. Check that code implements these assumptions correctly
-Step 3. Type these in paper [Not done]
-Step 4. Argue they are correct [Not done]
+Step 3. Type these in paper
+Step 4. Argue they are correct
         - Conditions match with type
         - Reductions correct
         - Symmetries correct
